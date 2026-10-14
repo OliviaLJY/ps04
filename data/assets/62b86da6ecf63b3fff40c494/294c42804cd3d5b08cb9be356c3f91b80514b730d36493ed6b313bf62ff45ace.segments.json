@@ -1,0 +1,176 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 0.0,
+    "end_seconds": 2.961,
+    "text": "Can an AI agent look at a 2D image"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 2.961,
+    "end_seconds": 5.422,
+    "text": "that uses complex architectural geometry"
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 5.422,
+    "end_seconds": 7.132,
+    "text": " and build it inside Blender on its own?"
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 7.132,
+    "end_seconds": 10.677,
+    "text": "This is how I use Gemini 4 Argon\nand Antigravity to do so."
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 10.677,
+    "end_seconds": 13.847,
+    "text": "I started in Flow, prompting for an empty catherdral"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 13.847,
+    "end_seconds": 16.516,
+    "text": "with specific lighting and angles."
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 16.516,
+    "end_seconds": 18.642999999999997,
+    "text": "I chose this particular image"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 18.643,
+    "end_seconds": 20.645,
+    "text": "of the repeating arches and columns"
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 20.645,
+    "end_seconds": 22.48,
+    "text": "that creates this perspective effect."
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 22.48,
+    "end_seconds": 25.15,
+    "text": "Next, I fed that image into my terminal"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 25.15,
+    "end_seconds": 29.237,
+    "text": "connecting Antigravity directly to Blender via the MCP."
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 29.237,
+    "end_seconds": 31.031,
+    "text": "I kicked off an agentic loop prompt."
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 31.031,
+    "end_seconds": 34.743,
+    "text": "For 45 rounds, the model iteratively built the base mesh."
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 34.743,
+    "end_seconds": 37.203,
+    "text": "An agent even automatically overlaid"
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 37.203,
+    "end_seconds": 38.538000000000004,
+    "text": "these comparison strips"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 38.538,
+    "end_seconds": 40.123,
+    "text": "against the reference image"
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 40.123,
+    "end_seconds": 41.666,
+    "text": "to get the geometry closer,"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 41.666,
+    "end_seconds": 43.543,
+    "text": "iteration after iteration."
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 43.543,
+    "end_seconds": 44.961,
+    "text": "Once the structure was locked,"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 44.961,
+    "end_seconds": 47.464,
+    "text": "I paused the CLI to trigger target targeted micro-loops"
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 47.464,
+    "end_seconds": 49.882999999999996,
+    "text": "for column fluting and floor textures."
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 49.883,
+    "end_seconds": 51.342000000000006,
+    "text": "Then came lighting."
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 51.342,
+    "end_seconds": 54.554,
+    "text": "The model automatically dialed in volumetric fog,"
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 54.554,
+    "end_seconds": 57.057,
+    "text": "camera depth and audio-reactive sunlight"
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 57.348,
+    "end_seconds": 58.85,
+    "text": "And here's the final result:"
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 58.85,
+    "end_seconds": 60.56,
+    "text": "from a flat 2D prompt"
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 60.56,
+    "end_seconds": 61.853,
+    "text": "to a fully realized"
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 61.853,
+    "end_seconds": 64.06400000000001,
+    "text": "light-mapped, 3D cathedral walkthrough."
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 64.064,
+    "end_seconds": 67.64999999999999,
+    "text": "All driven by Gemini 4 Argon in Antigravity."
+  }
+]

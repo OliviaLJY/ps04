@@ -1,0 +1,158 @@
+The Outer Loop, Insights First: An Ambient Quality Agent That Diagnoses Your Production Agent
+- Google Developers Blog
+Search
+The Outer Loop, Insights First: An Ambient Quality Agent That Diagnoses Your Production Agent
+OCT. 8, 2026
+Dima Melnyk
+Product Manager
+Cloud AI
+Elia Secchi
+Solutions Specialist
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+Your agent returns HTTP 200, stays inside its latency budget, and no tool call raises an error. Yet it still records seat 3A as confirmed without ever asking the seat-selection sub-agent whether 3A is free, or recommends a Florentine steakhouse to a traveler whose profile says vegan.
+The first 80% is the relatively easy part
+Every team we work with that runs an agent in production is trying to answer the same three questions: How is my agent doing? What are its loss patterns, the ways it fails that keep coming back? And how do I climb: change something, know it helped, and keep it from sliding back?
+Getting an agent to the first 80%, where it handles the test cases you anticipated, can be relatively straightforward and fast today. An evaluation dataset, a coding agent, and a tight inner loop of run, grade, fix, and compare usually get you to task success on known scenarios in days. Then you launch, and the quality curve flattens or degrades.
+Figure 1. Agent quality climbs quickly before launch, then fluctuates in production.
+What makes the remaining 20% harder is that the ground moves after launch. Usage shifts as users discover what the agent can actually do, and live traffic stops resembling your initial eval set. At the same time, the system underneath also changes: when you upgrade a model, update your harness, or change a tool or skill, everything still runs and health checks stay green (Figure 2), but conversation quality and task success may shift in ways a standard deploy pipeline never warns you about.
+Figure 2. Every infrastructure health check stays green. The failure is silent and happens inside the conversation.
+And when a session does go wrong, working out why means separating several layers that can look nearly identical from the outside. For example:
+The model may have hallucinated an argument or dropped a constraint from three turns earlier.
+The orchestration harness may have routed to the wrong sub-agent or lost state between turns.
+A tool contract may have rejected an input because its valid values were never documented in the schema.
+The instructions or skills may simply be missing a rule nobody thought to write down.
+Those failure modes can have different owners and different fixes. A raw trajectory records what happened next to what, not what caused what. Telling those layers apart requires reading the failing trajectories alongside the exact code revision that produced them. Online evaluation dashboards tell you that a score moved, and a coding agent can inspect a trace once you know where to look, but at production volume nobody can read every conversation by hand.
+Figure 3. AQuA works the production outer loop and feeds what it finds back into your inner loop.
+In our June post , we walked that pre-launch inner loop end to end on travel-concierge. This post covers the outer loop, released in the open as composable building blocks you can run in your own project, adapt to your stack, and help us shape as we explore how teams run continuous agent quality in production.
+What AQuA is: a 24/7 quality agent that watches, clusters, and diagnoses production failures while your laptop is closed
+AQuA (Ambient Quality Agent) runs unattended beside your agent in your Google Cloud project, sweeping production trajectories from Cloud Trace, Cloud Logging, or BigQuery on a schedule, after each deployment, or on demand while your laptop is closed. Raw session transcripts, source snapshots, and BigQuery tables stay inside your project boundary, and AQuA never sits in the request path or writes back to your agent.
+Figure 4. AQuA runs beside your agent in your Google Cloud project, reading trajectories and deploy-time source snapshots outside the request path.
+Each run reads a sample of recent sessions and puts it through a five-stage pipeline:
+Figure 5. The five-stage sweep pipeline turns raw production sessions into verified insights, with root-cause diagnosis running on demand against the deployed source snapshot.
+Sample. Pulls a random sample of up to 1,000 recent sessions (capped to keep run cost predictable) from your telemetry (Cloud Trace / Cloud Logging or BigQuery).
+Review. Grades each session against a nine-point checklist of common breakdowns (procedure, tool selection and arguments, grounding, task completion, and others) with the agent's instructions, tools, and optional goal.md in view. When a session fails, it writes a structured actual / expected finding.
+Cluster. Groups session findings that share the same failure mechanism into candidate issue clusters.
+Verify. A separate model checks each candidate cluster against up to three full transcripts and discards clusters the evidence does not support.
+Track. Matches surviving clusters against open insights (verified issues tracked across runs) in BigQuery as NEW , RECURRING , or auto- RESOLVED after 14 days unseen.
+Think of it as a junior quality engineer doing the first pass : reading conversations, filtering out noise, and preparing the case file with evidence sessions for whoever is on rotation.
+To steer Stage 2 toward your domain, you write a plain-English developer goal ( goal.md ) that is appended to every review prompt; deterministic Python custom metrics (eval_config.yaml) run alongside the judge to trend pass rates. By default, AQuA uses the single-pass session_review judge, which evaluates the conversation against that checklist in one model call per session (keeping scheduled sweeps economical and producing the actual / expected diffs that drive clustering). You can also opt in to the Gemini platform's managed trajectory AutoRaters ( task_success , tool_use_quality , trajectory_quality ), which run dedicated per-metric evaluators (for example, if you want to score sessions against standardized out-of-the-box rubrics or align metrics with offline evaluations).
+When an insight is worth investigating, you trigger root-cause analysis from the dashboard Chat or agents-cli aqua run . AQuA reads the failing trajectories alongside the immutable source snapshot captured at deploy time: when the defect is in your repo, it cites <path>:<start>-<end> and proposes an edit anchored to the snapshot lines; when the fault lies outside your code (an upstream dependency, handoff, or retrieved payload), it attributes the failure to that step in the trajectory without proposing a code diff. It never applies an edit or opens a pull request on its own.
+It sits between the loops you already have: offline evals grade a candidate build against known test cases, online evals monitor pass-rate trends in production, and coding agents or specialized optimizers edit prompts and code. AQuA turns raw production traffic into diagnosed, code-anchored insights and archived failure transcripts that seed your inner loop.
+Walking a multi-agent sweep on travel-concierge
+Let's walk a run on travel-concierge ( google/adk-recipes ), which routes a traveler across sub-agents ( inspiration_agent , place_agent , poi_agent, planning_agent , flight_search_agent , flight_seat_selection_agent , booking_agent , and pre_trip / in_trip / post_trip ) and stores the working trip in session state via memorize(key, value) ( travel_concierge/tools/memory.py ).
+1. Deploy, capture the source snapshot, and set a developer goal
+Attaching AQuA to the travel-concierge project takes three agents-cli commands:
+agents-cli extension add "${AQUA_CHECKOUT}"
+agents-cli infra single-project --project="${GOOGLE_CLOUD_PROJECT}" --apply
+agents-cli deploy --project="${GOOGLE_CLOUD_PROJECT}" --region us-east1
+Alongside AQuA's runner, BigQuery dataset, and Cloud Run dashboard (behind Identity-Aware Proxy), agents-cli deploy writes an immutable snapshot of travel-concierge 's source tree to Cloud Storage keyed by the deployment revision ( Revision 1 ).
+On the dashboard's Configuration page, we save a developer goal ( goal.md ) to steer the review toward high-level product invariants and suppress stylistic noise (while still requiring every finding to cite a concrete turn where an agent or sub-agent violated its instructions or tool state):
+Goal: Help travelers move from trip inspiration to a concrete itinerary and confirmed bookings across our sub-agents, with every confirmed flight, hotel, seat, and recommendation grounded in tool results and the traveler's profile.
+Failure modes to make sure we cover:
+- Mid-conversation changes (a weak spot in pre-launch testing): if a user updates destination, dates, or flight/hotel choices after an initial plan, make sure subsequent sub-agent tool calls and state updates reflect the change.
+- Dropped context when handing off or delegating across inspiration_agent, planning_agent, and booking_agent (such as traveler profile preferences or prior selections).
+Ignore: tone, greetings, small talk, or sessions where the user browses options and leaves without booking.
+Plain text
+Copied
+If you also want a deterministic Python rubric in eval_config.yaml to trend pass rates over time, you can publish it alongside the sweep with agents-cli aqua metrics publish .
+2. Sweep and verify clusters
+Across a 32-session multi-agent sweep (32 replays of four scripted traveler journeys, producing 1,583 OpenTelemetry spans across travel_concierge and its sub-agents), 5 sessions pass cleanly and 27 produce 42 structured findings, each scoped by span to the specific sub-agent's isolated instructions and tool declarations. Here is one finding on planning_agent:
+actual: When the user selected outbound flight UA204 and requested seats 3A and 3B in the same turn, planning_agent saved those seat numbers directly to session state without calling flight_seat_selection_agent to check whether 3A and 3B were available.
+expected: planning_agent should call flight_seat_selection_agent to verify seat availability and pricing before saving outbound or return seat numbers to session state.
+Clustering groups those 42 findings into 9 candidate clusters. The verifier (Gemini 3.7 Flash) checks each cluster against up to three full transcripts and each sub-agent's definition, and rejects 3 false-positive clusters : in two, the traveler had explicitly asked to take the first return flight or jump straight to booking; in the third, clustering had merged unrelated prompt-tool mismatches from two different sub-agents (flight_search_agent and inspiration_agent). That leaves 6 verified issues , led by:
+Bypassing seat availability checks when a user volunteers a seat (15 sessions, planning_agent): When a traveler names a seat alongside their flight choice (or right after switching destinations mid-trip), planning_agent writes the seat straight into session state (returning HTTP 200 with zero tool errors) without calling flight_seat_selection_agent to check whether the seat exists or is open.
+Dropping dietary constraints across sub-agent boundaries (7 sessions, inspiration_agent → place_agent): The inspiration agent's prompt includes the traveler's profile (food_preference: vegan), but place_agent is wrapped as an isolated tool whose prompt never receives that profile. When inspiration_agent asks place_agent for culinary trip ideas without passing "vegan" in the request, place_agent recommends Carbonara and Bistecca alla Fiorentina (steak) .
+Prompt-to-toolset contradiction in poi_agent (5 sessions, poi_agent): The point-of-interest sub-agent's prompt requires verified image, map, and place ID fields from Google Maps Grounding Lite, but the agent is declared with an empty tool list ( tools=[] ), so it fabricates placeholder https://example.com/... URLs.
+Figure 6. Verified insights from the travel-concierge sweep, ranked by affected sessions.
+3. Diagnose against the deployed code
+Opening the top insight in the dashboard surfaces the full breakdown for the cluster: the number of matching sessions (15 traces), verification summary, and the 15 linked session traces with the exact findings that triggered it:
+Figure 7. Insight detail view in the dashboard, showing the failure summary and the 15 linked session traces.
+Clicking Investigate from the insight card launches the root-cause diagnosis agent (Gemini 3.8 Flash) against Revision 1's 33-file source snapshot. Cross-referencing the 15 failing traces against the repository tree, the agent traces the bug to line 93 of travel_concierge/sub_agents/planning/prompt.py : the flight-search instructions only tell planning_agent to call flight_seat_selection_agent when presenting a seat map for the user to choose from, leaving out the case where a user volunteers a seat number directly. It proposes a line-anchored fix in the chat (and similarly traces the vegan profile handoff bug to line 23 of travel_concierge/sub_agents/inspiration/prompt.py ):
+Figure 8. Root-cause diagnosis in the dashboard chat, anchoring a proposed instruction fix to the deployed source snapshot.
+4. Close the loop from a coding agent and verify on Revision 2
+That same insight payload, including its anchored edits[] and occurrences[].rubrics[].trace , is available via agents-cli aqua get-insight . A coding agent (using the agents-cli-aqua and google-agents-cli-eval skills) can trigger diagnosis headlessly, apply the edit on a branch, extract the failing session's user inputs into a local replay file, and verify the fix before opening a pull request:
+# 1. Pull new insights affecting >= 10 sessions without a root cause
+agents-cli aqua list-insights --status NEW --root-cause false \
+| jq -r '.insights | sort_by(-.trace_count) | .[] | select(.trace_count >= 10) | "\(.insight_id) \(.label)"'
+# 2. Trigger root-cause analysis headlessly and fetch the anchored edit + evidence traces
+agents-cli aqua run 'Diagnose insight 220d9209e27d4e16a73b4ad4741caa81. What is the root cause, and how would you fix it?'
+agents-cli aqua get-insight 220d9209e27d4e16a73b4ad4741caa81 > insight.json
+# 3. Extract the user turns from the attached trace in insight.json for local replay (or add to your eval set)
+jq '{state: {}, queries: [.occurrences[0].rubrics[0].trace[] | select(.role == "user") | .content]}' \
+insight.json > ./b4b38471-inputs.json
+adk run --replay ./b4b38471-inputs.json travel_concierge
+Plain text
+Copied
+After applying both one-line prompt fixes ( planning/prompt.py:93 and inspiration/prompt.py:23 ) and deploying Revision 2 , replaying the same 32 sessions against it under the same developer goal shows:
+Seat-selection bypass drops 87% , from 15 sessions to 2 edge-case sessions.
+Vegan profile omissions drop from 7 sessions to 0.
+Full-session pass count more than doubles , from 5/32 to 13/32.
+The untouched 5-session poi_agent defect ( tools=[] ) remains tracked in the queue.
+Findings you can trust enough to act on
+An agent that diagnoses your agent will sometimes be wrong. That is inherent to using models as judges. When we designed AQuA, the core engineering requirement was making sure an unverified hypothesis never looks the same as a verified finding:
+Clusters are claims until verified against full transcripts. Spot-checking up to three full transcripts per cluster verifies that the failure pattern is real before it enters your queue (on an 87-trace internal benchmark, the verifier rejected 4 of 24 candidate clusters), while the cluster's trace count gives you a rough priority ordering rather than verifying every member session.
+An insight is its citations, not a self-reported confidence score. The schema has no confidence field: every occurrence links to its session IDs in Cloud Trace, and every root cause cites <path>:<start>-<end> ranges that the server validates against that revision's snapshot. Any citation to a nonexistent file or line is rejected.
+Skipped or failed work shows up on the run record. Rejected clusters, clusters past the 50-cluster verification cap, rubric errors, and empty or uncaptured trace windows are recorded explicitly on the run rather than counted as clean sessions.
+By-design behavior can be dismissed permanently. Once you click Dismiss on a finding, future sweeps won't reopen it as NEW.
+Hard problems in agent quality engineering, and where this goes
+Several boundaries in this reference implementation are deliberate trade-offs across practical problems we see in production:
+Selecting which sessions to read at scale. Deeply evaluating a multi-turn trajectory costs far more than checking an HTTP status code, so this MVP samples up to 1,000 sessions per run at random ( ORDER BY RAND() ). Adding cheap structural pre-filters (retries, latency spikes, high turn counts, user thumbs-down) is a straightforward next step, though filtering only on anomalies tends to pull a hundred copies of the same timeout. The harder problem is catching a silent regression that breaks 1% of a critical workflow, where every structural signal looks normal, without running a deep judge on all 50,000 daily sessions.
+General checklists versus domain goals and SME calibration. goal.md and custom metrics steer the review toward domain rules, but getting model judges to agree with domain experts is still real engineering work.
+Bounded verification and predictable run cost. Verifying up to 50 clusters per run on up to 3 transcripts each keeps run cost predictable as trajectory depth scales. On a 96-session single-agent sweep (about 5 to 6 spans/session), review, clustering, and verification cost $0.70 total (~$0.007/session; 220,841 input / 48,736 output tokens across Gemini 3.1 Pro and Gemini 3.7 Flash). On the 32-session travel-concierge sweep above (1,583 spans across travel_concierge and its sub-agents, about 50 spans/session), review and clustering (Gemini 3.1 Pro, 1,635,197 input / 128,740 output tokens) plus 9 cluster verifications (Gemini 3.7 Flash, 1,131,937 input / 36,976 output tokens) cost $3.76 total (~$0.12/session) at standard Gemini platform pricing . Root-cause diagnosis (Gemini 3.8 Flash) runs only on demand and costs $0.33 to $2.47 per investigated insight, depending on how many full trajectories it pulls.
+Long-horizon trajectories and context compaction. Passing whole transcripts works for ten-turn conversations, but breaks down on coding or research agents that run for hundreds of turns and megabytes of tool output. Those need semantic trajectory compaction to fold a 500-turn trace into sub-task milestones and isolate where it derailed.
+From archived transcripts to reproducible test cases. adk run --replay re-sends recorded user turns against local code, which works when tools are idempotent or mocked, but static replay does not reconstruct external environment state (if a database row changed, an API timed out, or Turn 3 depended on what the agent said in Turn 2, re-sending static turns diverges).
+What actually generalizes at the platform level. Across Google's own first-party agents, low-level primitives (trace and feedback ingestion, core evaluators, dataset management) share cleanly, whereas outer-loop workflows are often bespoke to a product's tools, domain invariants, data pipelines, and orchestration harness. As foundation models and agents improve at reading trajectories and navigating code, individual grading and root-cause reasoning get stronger automatically, which is why we think about AQuA's prompts as modular recipes and its insights as an index over raw trajectories and source snapshots, so a stronger model or coding agent can always pull the full example transcripts into context directly. What stronger models and agents alone do not give you is the surrounding platform. Here are some of the directions we are thinking about next:
+Multi-signal ingestion and the silent-failure diff. Combining trace sweeps with online eval scores, latency/cost spikes, SME calibration ratings, and end-user reactions via the Feedback service makes it possible to compare sessions where users explicitly complained against general traffic, then find the same defects in sessions where users never clicked thumbs-down and quietly abandoned the workflow.
+From diagnosed insights to sandboxed, counterfactual test cases. One domain over, CodeMender scans code for vulnerabilities and proposes patches it has already validated with static and dynamic analysis, differential testing, fuzzing, and SMT solvers. Its scan-then-validate shape maps directly onto AQuA's sweep-then-verify. Remediation diverges: a live conversation has no deterministic oracle (no crashing input or failing test) once external state has moved on, and the fix may sit in a tool contract, orchestration handoff, or upstream dependency rather than a prompt you can hill-climb in isolation. Turning a verified failure cluster into a hermetic, sandboxed test case with mocked tool state and a simulated user, so a coding agent or optimizer can climb across code, tools, and prompts, is the natural next step beyond transcript replay.
+Zero-scaffolding attach across a fleet of agents. Today's reference implementation is scaffolded 1:1 beside a single ADK agent in its repository; for teams running dozens of agents in production, we are exploring how to attach ambient quality sweeps across a fleet of agents (1:N) directly from existing project telemetry without per-agent sidecar deployments.
+Declarative and managed agents. When an observed agent is itself declarative or managed rather than arbitrary application code, "the source code" collapses to system instructions, tool schemas, and skills. That narrows the root-cause search space to a bounded set of structured artifacts, lets the platform wire trace capture and revision snapshots automatically, and turns verified passing and failing trajectories into a grounded learning signal—where live production traffic has no ground-truth labels—for an optimizer or the agent’s own memory and self-learning loop.
+Try it and help shape where this goes
+To explore the dashboard locally on a synthetic month of runs and insights with no cloud project, no credentials, and no model calls :
+git clone https://github.com/google/adk-recipes.git
+cd adk-recipes/core/python/ambient-quality-agent
+make demo # serves the dashboard locally on synthetic data
+Shell
+Copied
+To attach AQuA to your own agent in Google Cloud with turnkey ADK scaffolding (all telemetry, source snapshots, and BigQuery tables stay inside your project under your service account, behind IAP):
+agents-cli extension add "${AQUA_CHECKOUT}"
+agents-cli infra single-project --project="${GOOGLE_CLOUD_PROJECT}" --apply
+agents-cli deploy --project="${GOOGLE_CLOUD_PROJECT}"
+Shell
+Copied
+To drive both loops from your coding agent (Antigravity, Gemini CLI, Claude Code, or Cursor), install the agents-cli-aqua skill ( skills/agents-cli-aqua/SKILL.md ) alongside the inner-loop evaluation skill ( npx skills add https://github.com/google/agents-cli --skill google-agents-cli-eval ).
+We are sharing AQuA in the open to collaborate with teams running agents in production and shape where this goes together. As you try it on your stack, we'd love to hear what you think:
+Does a side-by-side quality agent fit your architecture ? Which parts of this workflow do you want to keep customizable in your own repository versus eventually having a platform run for you (such as attaching across a fleet of agents)?
+How would an ambient quality agent fit into your engineering workflow ? Who on your team triages an insight first, in what surface (CLI/coding agent, IDE, or Cloud Console), and what happens next?
+Which of the hard problems in agent quality engineering should we solve first : selecting the 40 sessions worth reading out of 50,000, diffing silent failures against user feedback, turning failure clusters into reproducible sandboxed test cases, compacting long-horizon trajectories, or something else?
+Credits (alphabetical): AQuA built by Ákos Frohner , Aleksandra Grzegorczyk , Alessandro Grassi , Andrzej Kiewicz , Angelica Bilanenko , Dima Melnyk , Elia Secchi , Iwo Naglik , Lucas Matuszkowiak , Ludwik Trammer , Maciej Pawłowski , Max Gasztych , Pavel Sirotkin , Saksham Singhal , Xi Liu , Yaroslav Polyakov and the broader Gemini platform team.
+Learn more: Ambient Quality Agent repository · Driving the Agent Quality Flywheel from Your Coding Agent · Agent Evaluation docs
+posted in:
+AI
+Cloud
+Announcements
+Best Practices
+Events
+Problem-Solving
+Solutions
+Explore
+Solve
+Resources
+Previous
+Next
+Related Posts
+Gemini
+AI
+Cloud
+Announcements
+Best Practices
+Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon
+OCT. 13, 2026
+AI
+Case Studies
+Announcements
+Gemini 4 Argon for Robotics
+OCT. 13, 2026

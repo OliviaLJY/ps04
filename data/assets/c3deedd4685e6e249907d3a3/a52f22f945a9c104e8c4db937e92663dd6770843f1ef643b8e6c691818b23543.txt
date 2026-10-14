@@ -1,0 +1,56 @@
+A quote from Geoffrey Huntley
+Simon Willison’s Weblog
+Newsletter
+Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI
+13th October 2026
+If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library. All of a sudden it's ten out of ten.
+— Geoffrey Huntley , nobody should type code by hand anymore. here's what's left.
+Posted 13th October 2026 at 1:32 pm
+Recent articles
+Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026
+A new feature for my blog, built using my voice - 9th October 2026
+Claude Haiku 5.5 - 7th October 2026
+We're going to need default hard budget caps on pretty much everything - 3rd October 2026
+This is a quotation collected by Simon Willison, posted on 13th October 2026 .
+git
+58
+ai
+2,279
+generative-ai
+2,021
+llms
+1,987
+coding-agents
+257
+geoffrey-huntley
+4
+agentic-engineering
+66
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

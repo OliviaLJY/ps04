@@ -1,0 +1,58 @@
+Improved detection for withdrawn Dependabot alerts - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 13, 2026 •
+1 minute read
+Improved detection for withdrawn Dependabot alerts
+You can now more easily detect withdrawn Dependabot alerts. Dependabot withdraws and removes an alert when the advisory or vulnerability that produced it is no longer valid. Two changes help you detect these withdrawals:
+Webhooks: The dependabot_alert webhook event now includes a withdrawn action. The payload contains identifiers captured before the alert was removed, such as the alert number, GHSA and CVE IDs, package, and manifest path. If you already subscribe to dependabot_alert events, you’ll automatically receive these deliveries.
+REST API: Requests to get or update a withdrawn alert now return 410 Gone instead of 404 Not Found , so you can tell a withdrawn alert apart from one that never existed.
+These changes are available for all repositories on github.com and will be included in GitHub Enterprise Server 3.24.
+Learn more about the dependabot_alert webhook event and the REST API endpoints for Dependabot alerts .
+Related Posts
+Oct.12 Improvement
+Anonymous organization-level registries for Dependabot
+supply chain security
+Oct.02 Retired
+Unvalidated npm trusted publishing configurations now expire
+supply chain security
+Oct.02 Improvement
+npm staged publishing now supports creating new packages
+supply chain security
+Oct.02 Improvement
+New fields for SecurityAdvisory GraphQL API
+ecosystem & accessibility
+supply chain security
+...
++1
+Oct.02 Release
+Confidential comments on repository security advisories
+supply chain security
+Oct.02 Release
+Repository security advisory comments API in public preview
+ecosystem & accessibility
+supply chain security
+...
++1
+Oct.01 Improvement
+Rate limits for private vulnerability reports
+supply chain security
+Oct.01 Release
+Structured forms for private vulnerability reports
+supply chain security
+Sep.30 Improvement
+Opt-in dist-tag permissions for npm trusted publishing
+supply chain security
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

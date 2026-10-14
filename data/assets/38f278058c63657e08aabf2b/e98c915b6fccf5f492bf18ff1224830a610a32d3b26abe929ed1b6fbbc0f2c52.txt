@@ -1,0 +1,61 @@
+Intelligent local model routing is
+coming to GitHub Copilot. A few weeks
+ago, we announced Project Hydra Fusion,
+an intelligent model orchestration that
+plans, implements, and executes across a
+wide range of cloud models, giving you
+frontier-level performance while
+significantly reducing cost up to 67%.
+But our vision goes beyond just the
+models that are available in the cloud
+because we think that unlimited and
+unmetered intelligence belongs on every
+desktop. This is why we're pleased to
+announce that soon, Copilot will
+intelligently route to and leverage
+local models on capable devices. First,
+you'll no longer have to configure local
+models in GitHub Copilot itself. Any
+models that you have installed with
+supported providers such as Microsoft
+Foundry Local or Ollama will just
+automatically be discovered and will
+appear in the model picker.
+Capable devices will also be able to
+install MAI Code 1.1/
+a local model available for install
+right from GitHub Copilot. Copilot will
+then automatically use these models when
+set to auto routing. There are a myriad
+of scenarios where local models are
+perfect and the inference is completely
+free for you. For instance, when set to
+auto routing, Copilot can automatically
+offload to a local model for simple
+tasks such as explaining how a code base
+works or how to run a project. You can
+also plan with large frontier models
+such as Astra and then hand off to a
+local model to implement while you
+sleep.
+End users love automations in GitHub
+Copilot. These are tasks that run on a
+schedule in the background. Local models
+work incredibly here, able to work on
+very long-running tasks and costing you
+exactly zero AI credits to use.
+You can also go completely offline and
+still have access to your local models,
+which is perfect for working
+disconnected or when you just don't have
+an internet connection.
+Project Hydro Fusion is available today
+in GitHub Copilot. You can look for it
+under experimental settings. And capable
+devices will be able to use intelligent
+local model routing very soon, including
+MAI Code 1.1 flash. With GitHub Copilot,
+you get intelligent multi-model routing
+both in the cloud and very soon with
+local models that run on your machine
+and cost you exactly $0.00.

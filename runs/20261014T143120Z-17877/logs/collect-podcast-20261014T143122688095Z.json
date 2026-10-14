@@ -1,0 +1,18 @@
+{
+  "stage": "collect-podcast",
+  "status": "incomplete",
+  "input_count": 2,
+  "output_count": 6,
+  "started_at": "2026-10-14T14:31:21Z",
+  "finished_at": "2026-10-14T14:31:22Z",
+  "elapsed_seconds": 0.727,
+  "tools_or_models": [
+    "python-urllib",
+    "xml.etree.ElementTree"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "pragmatic-engineer-podcast: HTTP Error 404: Not Found"
+  ]
+}

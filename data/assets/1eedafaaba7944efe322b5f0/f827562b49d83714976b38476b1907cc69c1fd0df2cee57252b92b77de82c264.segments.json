@@ -1,0 +1,1064 @@
+[
+  {
+    "segment_id": "p-0001",
+    "start_seconds": 1.0,
+    "end_seconds": 35.0,
+    "text": "Narrator: Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You can learn more at practicalai.fm."
+  },
+  {
+    "segment_id": "p-0002",
+    "start_seconds": 35.0,
+    "end_seconds": 41.0,
+    "text": "Narrator: Now onto the show."
+  },
+  {
+    "segment_id": "p-0003",
+    "start_seconds": 41.0,
+    "end_seconds": 64.0,
+    "text": "Chris: Hey. Welcome to another episode of the Practical AI Podcast. I am Chris Benson, your cohost. Daniel is out today, and he's really gonna miss this one because we have an old friend of the podcast who has been on multiple times, Demetrios Brinkmann, who is okay. Let's get the title right here, Demetrios."
+  },
+  {
+    "segment_id": "p-0004",
+    "start_seconds": 64.0,
+    "end_seconds": 83.0,
+    "text": "Chris: Head of development experience and a member of the nontechnical staff at the Agentic AI Foundation. And he's also, by the way, as most folks who have seen shows with us before, he's the founder of the MLOps community. Oh my god. That's the longest title, Demetrios, I think I've had to do on the show."
+  },
+  {
+    "segment_id": "p-0005",
+    "start_seconds": 83.0,
+    "end_seconds": 84.0,
+    "text": "Demetrios: I made it hard on you."
+  },
+  {
+    "segment_id": "p-0006",
+    "start_seconds": 84.0,
+    "end_seconds": 124.0,
+    "text": "Chris: You made it real I'll tell you what, I just read a paragraph. So great to have you back. I've lost count of how many times we've done this together. For those who are joining us that are not familiar with you, in addition to all these hats that you wear, amazing thought leader in the world of AI, I know we're gonna have some really good stuff to talk about today, and I know that the viewers and the listeners will enjoy this as much as I do. And before we start, I have to say, so after the last time we talked, you had sent me It's a super cool t shirt."
+  },
+  {
+    "segment_id": "p-0007",
+    "start_seconds": 124.0,
+    "end_seconds": 138.0,
+    "text": "Chris: It's one of my favorite bum around the house t shirts. I'm wearing it right now. For those who are watching us on YouTube, it says, I hallucinate more than chat GPT. So my wife is completely sick of seeing me wear it. It's faded red now."
+  },
+  {
+    "segment_id": "p-0008",
+    "start_seconds": 138.0,
+    "end_seconds": 145.0,
+    "text": "Chris: I'm sorry, man. Looked good when you gave it to me, but it doesn't look good anymore because it's all faded out. But that's because it's a fun t shirt to wear."
+  },
+  {
+    "segment_id": "p-0009",
+    "start_seconds": 145.0,
+    "end_seconds": 149.0,
+    "text": "Demetrios: I'm send you the next one. Anytime I wear it"
+  },
+  {
+    "segment_id": "p-0010",
+    "start_seconds": 149.0,
+    "end_seconds": 165.0,
+    "text": "Chris: out, have to tell people. Everyone asks me about the hallucination thing. Then I have to also say, and just because there are people at my real job, I'm not hallucinating. Just so you know, there's no drug test required or anything. No hallucinating here whatsoever."
+  },
+  {
+    "segment_id": "p-0011",
+    "start_seconds": 165.0,
+    "end_seconds": 182.0,
+    "text": "Chris: So with all the fun start, this is probably not the show most viewers were expecting that we'd start with, but we always have fun. How are you doing? Things have really changed since the last time we talked for you. Tell us where you're at, what you're doing, what's going on with it at this point."
+  },
+  {
+    "segment_id": "p-0012",
+    "start_seconds": 182.0,
+    "end_seconds": 200.0,
+    "text": "Demetrios: Well, first of all, let me just say that the last time we chatted, we came up with some bangers that people are still hitting me up for, like Broccoli AI. Don't know if I you remember do. Going I do. Gartner hype cycle. And we created our own Gartner hype cycle."
+  },
+  {
+    "segment_id": "p-0013",
+    "start_seconds": 200.0,
+    "end_seconds": 216.0,
+    "text": "Demetrios: And one of the things that was on there was Broccoli AI. It was almost peak hype. So Yeah. And for those who didn't hear that episode, is that AI that you probably don't like because it tastes bad, but you need it because it's good for your organization."
+  },
+  {
+    "segment_id": "p-0014",
+    "start_seconds": 216.0,
+    "end_seconds": 239.0,
+    "text": "Chris: That's right. That was something, and Daniel is not here today, but he was also all about that. There are things in our world, the hype tends to take over, but there are things in our AI world that you just gotta do to do this stuff well, and some of it's not the coolest and most fun thing, and we were talking about that, that Broccoli AI was born."
+  },
+  {
+    "segment_id": "p-0015",
+    "start_seconds": 239.0,
+    "end_seconds": 239.0,
+    "text": "Demetrios: So there"
+  },
+  {
+    "segment_id": "p-0016",
+    "start_seconds": 239.0,
+    "end_seconds": 240.0,
+    "text": "Chris: you go."
+  },
+  {
+    "segment_id": "p-0017",
+    "start_seconds": 240.0,
+    "end_seconds": 249.0,
+    "text": "Demetrios: The next thing I wanna say is I'm gonna get you the new shirt that says member of the nontechnical staff. Excellent. You can join me in my ranks."
+  },
+  {
+    "segment_id": "p-0018",
+    "start_seconds": 249.0,
+    "end_seconds": 254.0,
+    "text": "Chris: Excellent. I gotta get my ego stroked right there. You know? That's good. I appreciate that."
+  },
+  {
+    "segment_id": "p-0019",
+    "start_seconds": 254.0,
+    "end_seconds": 265.0,
+    "text": "Demetrios: I just find it hilarious that everyone at Anthropic or OpenAI, they're members of the technical staff. And so I had to go against the grain and be a member of the nontechnical staff."
+  },
+  {
+    "segment_id": "p-0020",
+    "start_seconds": 265.0,
+    "end_seconds": 266.0,
+    "text": "Chris: That's where"
+  },
+  {
+    "segment_id": "p-0021",
+    "start_seconds": 266.0,
+    "end_seconds": 267.0,
+    "text": "Demetrios: that came from."
+  },
+  {
+    "segment_id": "p-0022",
+    "start_seconds": 267.0,
+    "end_seconds": 275.0,
+    "text": "Chris: That's a pretty good point. Yeah. I mean, tell tell me about MLOps community and and the Agentic AI Foundation and what what happened here."
+  },
+  {
+    "segment_id": "p-0023",
+    "start_seconds": 275.0,
+    "end_seconds": 310.0,
+    "text": "Demetrios: Well, so I'm super excited because in the beginning of the year or just at the end of last year, MCP got donated to the Linux Foundation. They created the Agentic AI Foundation around it. And out of that, there's just been, like, huge interest from all the top players because now MCP went from being something that was owned by Anthropic Yep. To being this neutral governing body that is steering it. And so I was sitting there, and I was like, man, that is an awesome opportunity."
+  },
+  {
+    "segment_id": "p-0024",
+    "start_seconds": 310.0,
+    "end_seconds": 332.0,
+    "text": "Demetrios: We've been doing so much already in the MLOps community around Agents. You know? The MLOps community started as putting machine learning into production. Then when LLMs came out and they were all the rage, we kind of started incorporating more of the putting LLMs into production. And then Agents became a real thing, and they became something that we were using every day."
+  },
+  {
+    "segment_id": "p-0025",
+    "start_seconds": 332.0,
+    "end_seconds": 366.0,
+    "text": "Demetrios: And then it was like, okay. Well, what about putting agents into production? And so it just kinda made sense when we were looking at, hey. Is there a home for the ML Ops community to do more and have more resources around it and take the same types of stuff that we're doing and the same reasons that people enjoy being in, like, this very deep technical community and then just, like, do more and better. And so that was the pitch."
+  },
+  {
+    "segment_id": "p-0026",
+    "start_seconds": 366.0,
+    "end_seconds": 388.0,
+    "text": "Demetrios: And, luckily, the folks at the Agentic AI Foundation were on board, and so we we kinda merged. We're now going to be doing a bit of a rebrand. The ML Ops community is becoming the Agentic AI community or the Agentic AI Foundation community. And we're just doing more of the same. Like, we're doing a whole lot of conferences."
+  },
+  {
+    "segment_id": "p-0027",
+    "start_seconds": 388.0,
+    "end_seconds": 437.0,
+    "text": "Demetrios: Next week, I'm going to Japan for MCP Dev Summit, and then I'm right back in Amsterdam for Agent Con. Agent Con is, like, our big flagship event in Europe, and that is September 17. And then we have another Agent Con in North America in San Jose on October 22, and you'll like this. One thing I'm doing for Agent Con that is very much in the spirit of what we did in the MO ops days is I got a thirty six hour livestream put together. So we have the live event, and what I, you know, I love watching Coachella or, like, these very highly produced events that are both they're taking the virtual aspect into consideration."
+  },
+  {
+    "segment_id": "p-0028",
+    "start_seconds": 437.0,
+    "end_seconds": 468.0,
+    "text": "Demetrios: It's not just like a in person and you fully optimize for in person, but then the virtual aspect isn't really there. So what I decided to do is how can we make the agent con in Amsterdam absolutely, like, optimized for in person, but not forgetting about the virtual aspect? And that's why we decided to do, you know, thirty six hours livestreaming the whole thing. I'm gonna be hosting it, so we'll be popping in and out. It's gonna be, like, ESPN style, play by play of the talks."
+  },
+  {
+    "segment_id": "p-0029",
+    "start_seconds": 468.0,
+    "end_seconds": 484.0,
+    "text": "Demetrios: Oh, what does that mean? What do we think? I'm gonna be grabbing people from the crowd, walking around the Expo Hall. All that is to say, it's the first time I'm going fully all in on it, so there's gonna be a few problems, things will break, but that's where I'm at right now."
+  },
+  {
+    "segment_id": "p-0030",
+    "start_seconds": 484.0,
+    "end_seconds": 495.0,
+    "text": "Chris: It sounds like a lot of fun. So I just you're not gonna stay up for thirty six hours there, right? Mean, I would Please not tell me you're be not able gonna do that to yourself. I was gonna say, you'd just be"
+  },
+  {
+    "segment_id": "p-0031",
+    "start_seconds": 495.0,
+    "end_seconds": 497.0,
+    "text": "Demetrios: babbling, You'd bring you tricks in there."
+  },
+  {
+    "segment_id": "p-0032",
+    "start_seconds": 497.0,
+    "end_seconds": 500.0,
+    "text": "Chris: Okay, okay, okay, I gotcha."
+  },
+  {
+    "segment_id": "p-0033",
+    "start_seconds": 500.0,
+    "end_seconds": 512.0,
+    "text": "Demetrios: Yeah. Because there's gonna be breakout sessions. Right? There's really three or four tracks going on at once. And so we'll be live streaming the main track during the day when it's actually happening live."
+  },
+  {
+    "segment_id": "p-0034",
+    "start_seconds": 512.0,
+    "end_seconds": 538.0,
+    "text": "Demetrios: But then we're recording all of the breakout tracks, and then we're going to put those back to back on top of it. But there's some other cool things that I don't wanna fully give away yet, but I'm be recording some stuff that we can splice in in between different talks. And we're we've also got some of the sponsors to, like, give us some cool material that we can also splice in. So it's gonna be an event. That's for sure."
+  },
+  {
+    "segment_id": "p-0035",
+    "start_seconds": 538.0,
+    "end_seconds": 545.0,
+    "text": "Demetrios: It may totally fall flat on its face, but I'm gonna go down with the ship if it does."
+  },
+  {
+    "segment_id": "p-0036",
+    "start_seconds": 545.0,
+    "end_seconds": 563.0,
+    "text": "Chris: Okay. Fair enough. I'm just glad you have something there to mix in with it so that I'm imagining interviewing you right after a thirty six hour marathon, and you're just laying your head on the desk, unable to function. So it's good. I'm glad we got the stuff in there, get a little sleep in the process."
+  },
+  {
+    "segment_id": "p-0037",
+    "start_seconds": 563.0,
+    "end_seconds": 568.0,
+    "text": "Chris: Looking forward to watching the live feed myself as we get there."
+  },
+  {
+    "segment_id": "p-0038",
+    "start_seconds": 568.0,
+    "end_seconds": 582.0,
+    "text": "Sponsor: Listen. I've been to an incredible amount of AI events, many of which are good, but many of which are not practical. You know I love practicality. We're on Practical AI. And some are just hype focused."
+  },
+  {
+    "segment_id": "p-0039",
+    "start_seconds": 582.0,
+    "end_seconds": 634.0,
+    "text": "Sponsor: Some are sales focused. That's why I'm always eager to share about an event that I truly think is practical and useful for people. That's what I discovered last year at the Midwest AI Summit, and they're gonna have another Midwest AI Summit October 15 in Indianapolis this year, 2026. One of the reasons why I love this event was there was an AI engineering lounge where you could sit down and talk through your use cases with actual experienced AI engineers and practitioners to really brainstorm and come back from the event with actual solutions and practicality rather than just a bunch of content and slides. But there were also amazing keynote speakers, speakers from, even that had been on the podcast before, like Rajeev Shah, was at last year's event."
+  },
+  {
+    "segment_id": "p-0040",
+    "start_seconds": 634.0,
+    "end_seconds": 661.0,
+    "text": "Sponsor: I would really recommend that you go to midwestaisummit.com. And, for our listeners, you can actually get 20% off with the code Practical AI 20. So go to Midwest AI Summit dot com. Don't miss your chance to attend this event and get 20% off with the code Practical AI 20."
+  },
+  {
+    "segment_id": "p-0041",
+    "start_seconds": 661.0,
+    "end_seconds": 675.0,
+    "text": "Chris: Okay, so lot of cool events that you're working on, and it sounds like a lot of fun. Looking forward to seeing how all that goes, but you're not just doing events, I know that, so what else you got going on there?"
+  },
+  {
+    "segment_id": "p-0042",
+    "start_seconds": 675.0,
+    "end_seconds": 696.0,
+    "text": "Demetrios: Well, yeah, I think that's been some of the biggest surprises for me is how the community has rallied, and there's so much interest, not only from the member companies of the Agentic AI Foundation. Now there's over 250, which is wild to think about how many companies. Yeah. They wanna be members, and they wanna be a part of this movement. Right?"
+  },
+  {
+    "segment_id": "p-0043",
+    "start_seconds": 696.0,
+    "end_seconds": 732.0,
+    "text": "Demetrios: And then we've got ambassadors around the globe. So we opened up the ambassador program, and there was over a thousand applications of people that wanted to be an ambassador. And we also set up these local chapters of community events, so anybody can organize a community event, and now we're in over 80 cities, and there's, like, 250 different community chapter leads. And all of that is just to say, like, it's kinda taken on its own thing. It's Yeah."
+  },
+  {
+    "segment_id": "p-0044",
+    "start_seconds": 732.0,
+    "end_seconds": 733.0,
+    "text": "Demetrios: That's a big thing."
+  },
+  {
+    "segment_id": "p-0045",
+    "start_seconds": 733.0,
+    "end_seconds": 750.0,
+    "text": "Chris: Yeah. That's huge. Like, pretty quick, I mean, considering you're only talking a few months. Yeah. It's, so it's The Linux Foundation's gonna be like, well, we took him on, but oh my gosh, the baby's growing up pretty quick here."
+  },
+  {
+    "segment_id": "p-0046",
+    "start_seconds": 750.0,
+    "end_seconds": 750.0,
+    "text": "Chris: You"
+  },
+  {
+    "segment_id": "p-0047",
+    "start_seconds": 750.0,
+    "end_seconds": 759.0,
+    "text": "Demetrios: know. Is one of the Don't quote me on it, but I think it's one of the biggest foundations in the Lytics Foundation even."
+  },
+  {
+    "segment_id": "p-0048",
+    "start_seconds": 759.0,
+    "end_seconds": 760.0,
+    "text": "Chris: I would not be surprised."
+  },
+  {
+    "segment_id": "p-0049",
+    "start_seconds": 760.0,
+    "end_seconds": 761.0,
+    "text": "Demetrios: It's longer than a year."
+  },
+  {
+    "segment_id": "p-0050",
+    "start_seconds": 761.0,
+    "end_seconds": 796.0,
+    "text": "Chris: Yeah, mean, when you think about just like, so much has happened. Just since we talked last, so much has happened. This world, the rise of Agents were around last time we talked, but they were still in absolute infancy. And at this point, it is dominating everything going forward and just growing. That sounds very hype y, and I apologize for that, but it's just, the monster gets bigger and bigger."
+  },
+  {
+    "segment_id": "p-0051",
+    "start_seconds": 796.0,
+    "end_seconds": 826.0,
+    "text": "Demetrios: Me tell you, because I was the one who was probably the biggest naysayer on the hype naming and agents, and it's like, yeah. Yeah. I remember using, what was it, like, baby AGI back in the day and just getting mad because all it did was give me so it got stuck in a recursive loop, and I got, like, a $80 API bill from OpenAI. And it was like, these agents don't work, dude. What's going on?"
+  },
+  {
+    "segment_id": "p-0052",
+    "start_seconds": 826.0,
+    "end_seconds": 845.0,
+    "text": "Demetrios: Yeah. But since then, you're right, man. Like, I'm fully bought in now, and I am the first one to say that I was way wrong. Like, they were coming, and they came hard, and I wanna tell you about the newest stuff that I've been doing, specifically with, like, computer use."
+  },
+  {
+    "segment_id": "p-0053",
+    "start_seconds": 845.0,
+    "end_seconds": 846.0,
+    "text": "Chris: Yeah. Go for it."
+  },
+  {
+    "segment_id": "p-0054",
+    "start_seconds": 846.0,
+    "end_seconds": 863.0,
+    "text": "Demetrios: Because that man, I feel like my life has changed. And there's something that happened, I will say, in the latest OpenAI model release, which came out what? It's 5.6 is what we're at right now."
+  },
+  {
+    "segment_id": "p-0055",
+    "start_seconds": 863.0,
+    "end_seconds": 866.0,
+    "text": "Chris: So it's like five But"
+  },
+  {
+    "segment_id": "p-0056",
+    "start_seconds": 866.0,
+    "end_seconds": 897.0,
+    "text": "Demetrios: Yeah. And so since that came out, if you specifically use the Computer-Use skill, it is so good. There are very few things that I can throw at it that it does not accomplish, which is wild because okay. So now I'd never have to worry about getting APIs for anything. I don't have to worry about, oh, but I can't reach that data because of some block or something that's wrong with it."
+  },
+  {
+    "segment_id": "p-0057",
+    "start_seconds": 897.0,
+    "end_seconds": 921.0,
+    "text": "Demetrios: And granted, this is me as a personal use type thing. Like, I'm I'm able to do that. I have my three or four different Gmails logged in, and so Computer-Use can go and look at all three or four of them, which I know that with one I can't remember if it's Hermes or Grock Bot. You can also set up multiple accounts. But"
+  },
+  {
+    "segment_id": "p-0058",
+    "start_seconds": 921.0,
+    "end_seconds": 921.0,
+    "text": "Chris: just to be"
+  },
+  {
+    "segment_id": "p-0059",
+    "start_seconds": 921.0,
+    "end_seconds": 936.0,
+    "text": "Demetrios: able to, like, use that, throw at it, like, hey. Check all of my emails and give me the daily briefing, and also check Slack and give me a daily briefing. And not just one of the Slack workspaces that I'm in, like, all five of them. Yeah. Right?"
+  },
+  {
+    "segment_id": "p-0060",
+    "start_seconds": 936.0,
+    "end_seconds": 961.0,
+    "text": "Demetrios: And so you don't have to worry you don't have to fiddle with any connections or anything. You can just go and it'll use computer use, and that is great. That's like quality of life thing. But what was wild to me is now I can set up these workflows or triggers, I guess is what you call them, that, hey. When you see something, then just do this automatically."
+  },
+  {
+    "segment_id": "p-0061",
+    "start_seconds": 961.0,
+    "end_seconds": 984.0,
+    "text": "Demetrios: So for example, one of these things is, as you know, we've had all these conferences all over the world, and I've been taking a lot of flights. Well, I will buy the flight with Computer-Use. I just say, find me the best flight on this day to this day. And then before it actually pays, I'm the one who actually will click the button because Sure. We're still not at that point."
+  },
+  {
+    "segment_id": "p-0062",
+    "start_seconds": 984.0,
+    "end_seconds": 990.0,
+    "text": "Demetrios: But Or I need a few more zeros in my bank account before I'm cool with it being at that point."
+  },
+  {
+    "segment_id": "p-0063",
+    "start_seconds": 990.0,
+    "end_seconds": 1025.0,
+    "text": "Chris: I'm the same. I get it. It's funny when you say that because I'm having agents do all the things, and my focus has been on a little bit different use case in swarms of agents, where you have many agents addressing really complex things at once. But then, it's funny, like, if I'm doing something like you and it's my personal bank account, which doesn't have anywhere near as many zeros as I wish it did, I'm the same way. I'm like, that very what would really have quite a small purchase, but I'm like, okay."
+  },
+  {
+    "segment_id": "p-0064",
+    "start_seconds": 1025.0,
+    "end_seconds": 1063.0,
+    "text": "Chris: So I have that same reservation. Like, they're doing amazing things, you know, what you can get agents to go do, and yet there's still that that intrinsic trust factor. And if you and I are having that with the of the fact that this is what we do, then I know we have to deal with that with general population as Oh, one they percent. Come So it's interesting to see the technology running into this amazing space that is beyond really where anybody was predicting this fast. And then simultaneously, Do I want it to buy the movie tickets for me?"
+  },
+  {
+    "segment_id": "p-0065",
+    "start_seconds": 1063.0,
+    "end_seconds": 1067.0,
+    "text": "Chris: Okay. That's not too expensive. I'll just tell to do it. You know?"
+  },
+  {
+    "segment_id": "p-0066",
+    "start_seconds": 1067.0,
+    "end_seconds": 1077.0,
+    "text": "Demetrios: Totally. You know what? Though, I've seen and I've heard of my friends saying, like, they'll set up rules where if it's under $20,"
+  },
+  {
+    "segment_id": "p-0067",
+    "start_seconds": 1077.0,
+    "end_seconds": 1080.0,
+    "text": "Chris: the agent can just I've done that."
+  },
+  {
+    "segment_id": "p-0068",
+    "start_seconds": 1080.0,
+    "end_seconds": 1103.0,
+    "text": "Demetrios: I'm still afraid of that because I'm like, yeah, it can just buy something for $20 20 times, and then I'm pissed. Good. Good. Because it can figure out we've all heard those stories, so I'm not quite there yet, but I wanted to mention the the different workflows that I have set up around it. So for example, this workflow of buy my ticket, get the ticket, cool."
+  },
+  {
+    "segment_id": "p-0069",
+    "start_seconds": 1103.0,
+    "end_seconds": 1148.0,
+    "text": "Demetrios: I don't have to fill out any forms anymore, which is absolutely Like, on the Internet, you know how many pointless forms you have to fill out, which are just your name and your phone number and whatever, like, oh, passport number, and I never have it memorized, so then I have to go and search for it and find that number, and boom, I got it. Well, now I don't have to do that because I have my all my information stored in a document that the agent can reference. Yeah. And then it'll buy the flight, and when it comes time to check-in, I just told an agent, hey, monitor my inbox, and if you ever see a email come through that says it's time for you to check-in, just go check-in. You don't even have to ask me."
+  },
+  {
+    "segment_id": "p-0070",
+    "start_seconds": 1148.0,
+    "end_seconds": 1166.0,
+    "text": "Demetrios: Just go and do it. Check-in. Send me the boarding pass to my phone. And so now, I don't ever have to work at any of that, which total side note, I'm pretty sure, like, checking in why do we have to do that still? Somebody needs to explain why checking I'm in is still a"
+  },
+  {
+    "segment_id": "p-0071",
+    "start_seconds": 1166.0,
+    "end_seconds": 1168.0,
+    "text": "Chris: not sure. I don't know."
+  },
+  {
+    "segment_id": "p-0072",
+    "start_seconds": 1168.0,
+    "end_seconds": 1187.0,
+    "text": "Demetrios: I spend so much money on a flight. Who's gonna just miss I don't know. That's for me, and I'm sure there's plenty of people that will check-in, and they still miss their flight. So it's not like it's a good gauge of who's actually gonna show up for the flight. So that's a total non agent, non AI tangent."
+  },
+  {
+    "segment_id": "p-0073",
+    "start_seconds": 1187.0,
+    "end_seconds": 1193.0,
+    "text": "Chris: Suspect the people missing the flight, like they've checked in. I just don't think there's a strong correlation between the two."
+  },
+  {
+    "segment_id": "p-0074",
+    "start_seconds": 1193.0,
+    "end_seconds": 1196.0,
+    "text": "Demetrios: It doesn't make any sense to me. I'm sure there"
+  },
+  {
+    "segment_id": "p-0075",
+    "start_seconds": 1196.0,
+    "end_seconds": 1212.0,
+    "text": "Chris: is somebody at one of these airlines out there listening right now going, Oh, these guys totally don't get it. They don't understand. They don't understand why. There's a very clear reason we do this, and we acknowledge that for that person, just to let you know. We just don't understand our We don't get it."
+  },
+  {
+    "segment_id": "p-0076",
+    "start_seconds": 1212.0,
+    "end_seconds": 1215.0,
+    "text": "Chris: So, okay, fair Back to computer use."
+  },
+  {
+    "segment_id": "p-0077",
+    "start_seconds": 1215.0,
+    "end_seconds": 1240.0,
+    "text": "Demetrios: Yeah. So I have something like that going. I also have a great use case that I had this morning was I need to update my Spanish driver's license to a German driver's license. And so I before computer use was going and taking screenshots and then giving it to my agent and saying or giving it just to the chat, really. It wasn't even an agent."
+  },
+  {
+    "segment_id": "p-0078",
+    "start_seconds": 1240.0,
+    "end_seconds": 1259.0,
+    "text": "Demetrios: And saying, what does this say? What should I click on? Where should I put my information? Because this is a perfect example of the German government in my small town does not have an API that my coding agent can access and submit something through. Right?"
+  },
+  {
+    "segment_id": "p-0079",
+    "start_seconds": 1259.0,
+    "end_seconds": 1291.0,
+    "text": "Demetrios: But what it does have is a web page where I can go and submit something, or I can have Computer-Use go and submit something. So now it just did it. It created my appointment, and then it created a calendar invite for me so I know when the appointment is, and it said everything I needed to bring, and it said my cancellation number, it said my, like, main number, blah blah blah. That's all there, and I didn't have to worry about it at all. And I changed that, like three different times, and all I have to do is say, like, change it to a different day because I can't do it on this day anymore."
+  },
+  {
+    "segment_id": "p-0080",
+    "start_seconds": 1291.0,
+    "end_seconds": 1314.0,
+    "text": "Chris: Yeah. So I'm curious, like, what do you think are some really You've talked a little bit about how you're using it. What do you think are some really good opportunities for folks watching or listening out there? As they're listening and they've heard some of the things that you're talking about, what would you suggest to go try out? What are some of the fruits that maybe people haven't picked from yet?"
+  },
+  {
+    "segment_id": "p-0081",
+    "start_seconds": 1314.0,
+    "end_seconds": 1318.0,
+    "text": "Chris: And you're just like, oh, man, this is amazing. You know, just like other than flights."
+  },
+  {
+    "segment_id": "p-0082",
+    "start_seconds": 1318.0,
+    "end_seconds": 1348.0,
+    "text": "Demetrios: I think for me, the biggest eye opener of getting it right was now anytime I encounter a forum, when I'm using the Internet. Right? And I'm going through my day to day, and I'm using the Internet, and I encounter a form, and it has this big trigger that goes off in my head, and I'm like, why didn't I ask Computer-Use to do this whole task? Because I just got to this point where I realized, oh, forms, I don't have to fill out anymore. That's something that is good enough to be done by Computer-Use."
+  },
+  {
+    "segment_id": "p-0083",
+    "start_seconds": 1348.0,
+    "end_seconds": 1358.0,
+    "text": "Demetrios: So I just go and I I now am like, oh, right. Let's see if let's see if they can do that. Boom. So that would be one. Anytime you encounter a form on the Internet."
+  },
+  {
+    "segment_id": "p-0084",
+    "start_seconds": 1358.0,
+    "end_seconds": 1377.0,
+    "text": "Demetrios: However, I will caveat this with a conversation that I just had yesterday with my friend Sam, who was saying, like, this is such a thing that you can do if you're b to c. But if you're trying to do this in B2B, like, good luck, dude. You're gonna go tell your employees"
+  },
+  {
+    "segment_id": "p-0085",
+    "start_seconds": 1377.0,
+    "end_seconds": 1445.0,
+    "text": "Chris: that you That's can exactly really what I was gonna ask you next. I literally was in my head, I'm like, oh, I know where I wanna go, and that's it. And that is with the inevitability of the B2B use case, being an Agentic to Agentic use case, where you're doing agents interoperating with agents beyond your borker, in other words, some other entity, another commercial entity or whatever it is that you're talking about, and instead of being static APIs that your agent is going and talking to, or you're web scraping with the agent and doing the of the form stuff that we're talking about, what are your thoughts around when is every organization out there going to have an agentic interface in which your agents, as you're doing what you're describing, are just interoperating, giving it a lot more fluidity and dynamic capability because you're doing an agent to agent interaction, which can accommodate things. It's no longer just the static API that your agent has navigate. What are your thoughts around that, and like how far out do you think it is before we get to that?"
+  },
+  {
+    "segment_id": "p-0086",
+    "start_seconds": 1445.0,
+    "end_seconds": 1504.0,
+    "text": "Demetrios: Well, I think that's one reason that MCP is so popular is because of those use cases, and it feels like that's the way that the industry has standardized on being able to give agents access to different systems. Right? But then what we have to do is we have to wait for everyone to have MCP servers that are good enough for my agent just to pick up and use at will and use well so that I can get what I need done, which feels like there still needs to be some maturing that needs to happen before we get to that point. And so that's why it's beautiful with computer use because you don't have to wait for the other person to set up an MCP server, or you don't have to go and build an MCP server to enable that. And there's a lot of these use cases that who knows if they even are gonna build an MCP server."
+  },
+  {
+    "segment_id": "p-0087",
+    "start_seconds": 1504.0,
+    "end_seconds": 1530.0,
+    "text": "Demetrios: Like, the German government DMV, I'm not sure they ever are gonna have an MCP server that my agent can go and talk to. Right? So that's going back to this b to c use case in a way. But if you think about it, what what's incredible for me is us consumers are tasting this, like, forbidden fruit of, wow, things can really be that easy? Like, it can just work?"
+  },
+  {
+    "segment_id": "p-0088",
+    "start_seconds": 1530.0,
+    "end_seconds": 1530.0,
+    "text": "Chris: Mhmm."
+  },
+  {
+    "segment_id": "p-0089",
+    "start_seconds": 1530.0,
+    "end_seconds": 1553.0,
+    "text": "Demetrios: And then you know that that pressure is going to start building on the software that we have and we're using in our day to day lives at the office. Like, that's how I feel. I feel like it's coming. It's just gonna put a lot of pressure on, hey. This is this doesn't have to be like this, or we don't have to be blocked by something."
+  },
+  {
+    "segment_id": "p-0090",
+    "start_seconds": 1553.0,
+    "end_seconds": 1584.0,
+    "text": "Demetrios: Can we figure out a way to make it work with I mean, I don't know how it's gonna play out because I will say that there's a security nightmare happening if you just start doing, like, computer use. Everyone at your company now has computer use going on all five of their emails and all of your ERP systems or you're like like on the oh, man. Basically, any anything that you can think of. God. That sounds so dangerous, but wow."
+  },
+  {
+    "segment_id": "p-0091",
+    "start_seconds": 1584.0,
+    "end_seconds": 1586.0,
+    "text": "Demetrios: It is, like, quality of life there."
+  },
+  {
+    "segment_id": "p-0092",
+    "start_seconds": 1586.0,
+    "end_seconds": 1671.0,
+    "text": "Chris: I think, you you talk about the security issue, and I think you're at the place, at the center of, at the foundation, where as good security architectures are further developed, they will find their way into the foundation probably for purposes of getting widespread acceptance through the world. I think there's another point I'm gonna diverge hard as you were doing that. As you're talking about that, I think that what you were describing there is very much the story starting with us and the people watching this, because these are AI native folks. The folks that are showing up for your podcast and showing up for this podcast are folks that they work in it, they care enough about it, and they're following that. I'm curious, what's it gonna take to bring because we're all kind of going, Holy cow, look at what I can do now, which is kind of what What you're does it take to bring We're only now getting to where the general population is starting to get comfortable using just kind of what seems very old fashioned chat, whether it's Gemini or ChatGPT or Quad or whatever, they're just coming along there."
+  },
+  {
+    "segment_id": "p-0093",
+    "start_seconds": 1671.0,
+    "end_seconds": 1698.0,
+    "text": "Chris: What does it take to bring that in? Not only for just so they can do this, but as they're worrying about jobs and all the bigger things everyone is so concerned about in the world, how that all How do you bring the masses that are not AI native into being able to do this to get the benefits? Because right now, they're just all scared to death, you know? Yeah. Get that more and more."
+  },
+  {
+    "segment_id": "p-0094",
+    "start_seconds": 1698.0,
+    "end_seconds": 1739.0,
+    "text": "Demetrios: I remember back in the day when Google came out, or when the search engines came out, the Internet came out, and it was magical that you could go to a website, or you could search something and find information on the Internet. Yeah. And we were there was a lot of people that were just early adopters, and they were very early on that and using it. It feels a little bit like that now in that so my wife is not very technologically savvy. She avoids phones and computers at all costs, but today she had to cancel her PayPal account and then start a new one."
+  },
+  {
+    "segment_id": "p-0095",
+    "start_seconds": 1739.0,
+    "end_seconds": 1754.0,
+    "text": "Demetrios: And I told her, okay. Watch this. And I downloaded ChatGPT on her computer, and then I got her set up. I also got her set up with WhisperFlow so you can just talk to the computer. And I I gave it to I said, hey."
+  },
+  {
+    "segment_id": "p-0096",
+    "start_seconds": 1754.0,
+    "end_seconds": 1777.0,
+    "text": "Demetrios: Look. I need to get rid of my PayPal account, and I need to start a new one. Let's start with just, like, deleting this PayPal account and, like, canceling everything that's related to it. And it did that, and my wife's eyes lit up because for her, that is so much time that she would have had to have spent, especially yeah. Because she's not It's incredible."
+  },
+  {
+    "segment_id": "p-0097",
+    "start_seconds": 1777.0,
+    "end_seconds": 1791.0,
+    "text": "Demetrios: So you have those experiences for someone, and they're it's instantly bought in. It's like, oh, okay. So tell me what else can I do here? Or let me try. And then the person just tries, and there's not a lot that's what I'm saying."
+  },
+  {
+    "segment_id": "p-0098",
+    "start_seconds": 1791.0,
+    "end_seconds": 1827.0,
+    "text": "Demetrios: Like, there's not a lot that I throw at it these days that it can't do. And I keep going back to, like, my personal Computer-Use stuff, which is great. Going to the b to b stuff, though, this is where I really feel like you're putting pressure on what we do at work because if what we do at work still feels cumbersome or we have to be really technical in order to get the advances that AI brings, then we're doing it wrong. It really feels like that's not how it should be. And so how can we enable that type of thing?"
+  },
+  {
+    "segment_id": "p-0099",
+    "start_seconds": 1827.0,
+    "end_seconds": 1857.0,
+    "text": "Demetrios: But with all of the enterprise y features you that you the organizations have come to grow and they've loved over these years, you know, just like Mhmm. Role based access control is one. And so I guess if you're using Computer-Use, you've already got your roles set out, and so you're not gonna have problems with that. But there's a lot of I will not be naive and say that it's the end all to be all, especially inside of the enterprise. It could cause a lot of problems."
+  },
+  {
+    "segment_id": "p-0100",
+    "start_seconds": 1857.0,
+    "end_seconds": 1894.0,
+    "text": "Demetrios: However, man, the thing that is great for me is using it on my personal use cases, and I'll give you another one. I've got, like, 20 of them that I've been doing because as you asked, and I think it's good to, like, stimulate folks' creativity when they hear it. I have this 36 livestream coming up, and I want to reach out to everyone that I've had a conversation with on LinkedIn that's been, like, an actual two way conversation, and it's been a few turns back and forth. Right? So acquaintances, you could put in parentheses."
+  },
+  {
+    "segment_id": "p-0101",
+    "start_seconds": 1894.0,
+    "end_seconds": 1912.0,
+    "text": "Demetrios: And so what I did is I told Computer-Use, I said, go and look through all my LinkedIn. Because LinkedIn has this API that you cannot it's notoriously hard. Like, you can't get stuff from LinkedIn's API. It's not like x where you can pay and then you get everything. It's fully locked down."
+  },
+  {
+    "segment_id": "p-0102",
+    "start_seconds": 1912.0,
+    "end_seconds": 1958.0,
+    "text": "Demetrios: So I was sitting there and I was like, I wanna analyze all of my DMs and see who I've interacted with a bit, and then we make this short list of people that I can reach out to and let them know that I'm having this livestream event. And what it did was instead of just going through all of my DMs, it was like, oh, well, you know what? I just found this ability to download all your data. So it downloaded all of my data, but LinkedIn has to package it up and then send it to your email over forty eight hour span. So what it did is it set a reminder for itself to just kept checking my email, and so then once it got my data, then it analyzed everything."
+  },
+  {
+    "segment_id": "p-0103",
+    "start_seconds": 1958.0,
+    "end_seconds": 1988.0,
+    "text": "Demetrios: It created this short list of 500 people, and then it created personalized messages that I could send them to let them know about the thirty six hour livestream. But then I went one step further, and I because AI and why not. Right? I said, well, create a personalized media kit for each person in case they need some Yeah. Kind of And so every single person has their own website that says like, hey, Chris, you're awesome for doing this, and here's some inspiration in case you wanna post this."
+  },
+  {
+    "segment_id": "p-0104",
+    "start_seconds": 1988.0,
+    "end_seconds": 2018.0,
+    "text": "Demetrios: You can just copy paste, or here's some prompts if you wanna write it yourself. And by the way, here's some funny photos of me if you wanna add those, but I would love it if you share about this livestream event. And so now those are firing off, And you may say that is absolutely ridiculous because I took all of the personalization out of it and tried to make it as personalized as possible still, or maybe it's cool. I don't know. But that's another thing that I've been doing over the past twenty four hours."
+  },
+  {
+    "segment_id": "p-0105",
+    "start_seconds": 2018.0,
+    "end_seconds": 2052.0,
+    "text": "Chris: Very cool, man. Is I've had some similar things. Don't have time to cover it all today, but I love the inspiration that you're offering, and I'm hoping that folks watching or listening are kind of thinking of the things that they can go do and stuff. One of the things I want to make sure that we get in is I know you have an interest in harnesses and the current state and some of the challenges around that. I wanted to make sure we fit that in today."
+  },
+  {
+    "segment_id": "p-0106",
+    "start_seconds": 2052.0,
+    "end_seconds": 2056.0,
+    "text": "Chris: I'll toss the ball to you and let you run with that, because I know you have some thinking around it."
+  },
+  {
+    "segment_id": "p-0107",
+    "start_seconds": 2056.0,
+    "end_seconds": 2064.0,
+    "text": "Demetrios: Let me keep blabbing. Yeah. This is the episode nobody asked for, but we're getting somehow. Just making a bad time, man."
+  },
+  {
+    "segment_id": "p-0108",
+    "start_seconds": 2064.0,
+    "end_seconds": 2066.0,
+    "text": "Chris: We always have a good time, so let's go for it."
+  },
+  {
+    "segment_id": "p-0109",
+    "start_seconds": 2066.0,
+    "end_seconds": 2121.0,
+    "text": "Demetrios: Hopefully, yeah, hopefully, I've I've inspired you, and please write me if you use Computer-Use and you find a rough edge where it doesn't do something. But, man, these different, like, five, ten step procedures where it does stuff is it's incredible. But, anyway, on the harnesses, and I wanna talk to you about is really just how much of the harness is being blurred into the actual model, it feels like, and how we've got now these, you know, like, Claude code harness doesn't there's a whole lot of things wrong with it right now today with, like, Fable and Opus five. That's, again, time stamping it. People are not happy with the Claude code experience, and I myself have pretty much stopped using it, which is wild because, I don't know, six months ago, I put up with all the crap that Anthropic was doing."
+  },
+  {
+    "segment_id": "p-0110",
+    "start_seconds": 2121.0,
+    "end_seconds": 2134.0,
+    "text": "Demetrios: I put up with everything. Maybe not all the crap. I love Anthropic. I love everybody there, but I put up with everything that was going on. There's so much drama in the news all the time because they had such a superior product."
+  },
+  {
+    "segment_id": "p-0111",
+    "start_seconds": 2134.0,
+    "end_seconds": 2160.0,
+    "text": "Demetrios: It was so good. And then somehow or another, when they r l'd this last model, and you try and bring a lot of this harness into the model, or I guess it inherently becomes blurry because they have their system prompt. Yeah. After the world uses the model for long enough, that system prompt just, like, keeps getting longer and longer and longer. Right?"
+  },
+  {
+    "segment_id": "p-0112",
+    "start_seconds": 2160.0,
+    "end_seconds": 2194.0,
+    "text": "Demetrios: And then they come out with a new model, and that system prompt can shrink again because all of that long system prompt from the last model gets almost like RL'd into the new model. But that can create some weird janky stuff that happens, and we're seeing that. And I'm sure that Anthropic's next model is gonna be incredible, and we're gonna be right back at like, oh, wow. They were able to do it. But this is just for me, when it comes to harnesses, it is so fascinating to see how these I think some people call it the inner harness."
+  },
+  {
+    "segment_id": "p-0113",
+    "start_seconds": 2194.0,
+    "end_seconds": 2225.0,
+    "text": "Demetrios: Basically, the harness that the labs provide is very much, like, you are super optimized for the model that is that lab is putting out. Yeah. And if you wanna have your own kind of harness, if you're trying to run PIE or some of the or Hermes or whatever, you know what? It's actually like, maybe you're gonna do better on some open source models. And a lot of these open source models coming from China are really great with that."
+  },
+  {
+    "segment_id": "p-0114",
+    "start_seconds": 2225.0,
+    "end_seconds": 2258.0,
+    "text": "Demetrios: And so there was something that a friend my friend Drew told me how a lot of times in Pi, you would hear Mario, the creator of Pi, talk about how he had to fight with Claude to not, like, make these API calls like Claude code API calls, then it it was like, man, I have to fight against the model to not act like the harness that it was trained with. You know? So that's fascinating for me to just think about all of that, and how it's going to affect the next few months that we're seeing the models come out with."
+  },
+  {
+    "segment_id": "p-0115",
+    "start_seconds": 2258.0,
+    "end_seconds": 2292.0,
+    "text": "Chris: How do you think, you know, as we look at that, and right now, with Hermes and Pi on the rise, and with Cloud Code having been through these user challenges, and if you go into some of the forums on that, people are just really frustrated with it. And I have too, so I use Cloud Code quite a lot, and there's all sorts of issues. So it's a love hate relationship. There are things I love about it. There are things I'm like, Oh, God."
+  },
+  {
+    "segment_id": "p-0116",
+    "start_seconds": 2292.0,
+    "end_seconds": 2312.0,
+    "text": "Chris: And obviously with Codex out there, what do you think of either is the future or do you have any suggestions on where things need to go, both for users or even for the companies? Have folks from all these organizations who tune in. So you know, like, how do you see this shaking out going forward?"
+  },
+  {
+    "segment_id": "p-0117",
+    "start_seconds": 2312.0,
+    "end_seconds": 2342.0,
+    "text": "Demetrios: For me, it's just it would be really wild if the research labs didn't have the best product, because they're getting all of this data on how folks are using their products, and then they can incorporate that into the product itself. Right? The model or the harness that they're giving. So that's why it's it's crazy to me right now that Claude Code is having this moment where it's like, man, they might have gone a little too far on this. They they may have tried to push it too much."
+  },
+  {
+    "segment_id": "p-0118",
+    "start_seconds": 2342.0,
+    "end_seconds": 2360.0,
+    "text": "Demetrios: And the fact that they have all that information and this and this data of people using it and how they're using it makes me think that they are for sure going to have the best product. However, today, as it stands, that's not necessarily the case."
+  },
+  {
+    "segment_id": "p-0119",
+    "start_seconds": 2360.0,
+    "end_seconds": 2389.0,
+    "text": "Chris: Yeah. I think I think there's a lot of work there that needs to be done to improve because we're seeing, kind of to your point, we're seeing user experience very jittery. Goes from being very good to being a struggle. And then I see people, I mean, even things like rolling back to older models within Claude Code, for instance, because they're complaining about how Opus is so verbose, and it is. It drives me nuts."
+  },
+  {
+    "segment_id": "p-0120",
+    "start_seconds": 2389.0,
+    "end_seconds": 2398.0,
+    "text": "Chris: But I'm like, Oh my God, you just wrote a book on this last thing, and I just wanna get to the end. That's my typical thing. I want to get to the end. Get there. Yeah."
+  },
+  {
+    "segment_id": "p-0121",
+    "start_seconds": 2398.0,
+    "end_seconds": 2415.0,
+    "text": "Chris: It's interesting to see how all this is gonna shake out in the harness merging with different models space, and what the relationship is, and where the line between the two is being drawn in terms of that."
+  },
+  {
+    "segment_id": "p-0122",
+    "start_seconds": 2415.0,
+    "end_seconds": 2417.0,
+    "text": "Demetrios: By the way, have you seen the Bro skill?"
+  },
+  {
+    "segment_id": "p-0123",
+    "start_seconds": 2417.0,
+    "end_seconds": 2419.0,
+    "text": "Chris: I have not seen the Bro skill."
+  },
+  {
+    "segment_id": "p-0124",
+    "start_seconds": 2419.0,
+    "end_seconds": 2444.0,
+    "text": "Demetrios: So this skill is incredible. For anybody who's having these issues like you're having where it's like, man, that was a book, and I don't know if I understand half of it. You use you invoke the bro skill, and it forces the model to explain things very simply so that it doesn't give you these this jargon and all these big words and all this stuff that you're like, woah. What is what does that even mean? Right?"
+  },
+  {
+    "segment_id": "p-0125",
+    "start_seconds": 2444.0,
+    "end_seconds": 2447.0,
+    "text": "Demetrios: It just is like kinda explain it to me like I'm five type thing."
+  },
+  {
+    "segment_id": "p-0126",
+    "start_seconds": 2447.0,
+    "end_seconds": 2448.0,
+    "text": "Chris: Yeah. Yep."
+  },
+  {
+    "segment_id": "p-0127",
+    "start_seconds": 2448.0,
+    "end_seconds": 2477.0,
+    "text": "Demetrios: And so that is a very, very useful one. Another skill that is quite useful is called show me. Okay. And so this one basically just makes it give you visuals when it's instead of, like, writing the book and trying to explain it in words that you kinda get lost in, it will give you visuals so that it can go with it. And both of those together are very useful"
+  },
+  {
+    "segment_id": "p-0128",
+    "start_seconds": 2477.0,
+    "end_seconds": 2478.0,
+    "text": "Chris: Oh, dude."
+  },
+  {
+    "segment_id": "p-0129",
+    "start_seconds": 2478.0,
+    "end_seconds": 2479.0,
+    "text": "Demetrios: When you're encountering these problems."
+  },
+  {
+    "segment_id": "p-0130",
+    "start_seconds": 2479.0,
+    "end_seconds": 2502.0,
+    "text": "Chris: I am that like today, because I spend a lot of time in client code, and I didn't know that, so I am invoking those today, because I have an emotional cycle that goes with using it as I prompt through things, then I'm going scroll yeah. So you've just solved it for me. Dude, just just go ahead."
+  },
+  {
+    "segment_id": "p-0131",
+    "start_seconds": 2502.0,
+    "end_seconds": 2531.0,
+    "text": "Demetrios: Oh, sorry to cut you off, but you know what I would love to get your take on. Some other thing that I've been thinking about deeply is really along the lines of the shopping experience and where we're going to shop in the future on the Internet. Because for me, it feels like we're not that far off from doing everything in the chat. Like, the chat is the new browser in a way. Yeah."
+  },
+  {
+    "segment_id": "p-0132",
+    "start_seconds": 2531.0,
+    "end_seconds": 2532.0,
+    "text": "Demetrios: That's not"
+  },
+  {
+    "segment_id": "p-0133",
+    "start_seconds": 2532.0,
+    "end_seconds": 2532.0,
+    "text": "Chris: It is."
+  },
+  {
+    "segment_id": "p-0134",
+    "start_seconds": 2532.0,
+    "end_seconds": 2560.0,
+    "text": "Demetrios: That novel of a term. I think we're all okay with saying that these days because the majority of our work gets done from the chat. And so what I realized, and this came from me being in Seoul, and I talked to a lot of payment processing companies who just joined the Agentic AI Foundation. And they were wondering, like, well, what is the future of payments? How is it gonna work?"
+  },
+  {
+    "segment_id": "p-0135",
+    "start_seconds": 2560.0,
+    "end_seconds": 2589.0,
+    "text": "Demetrios: Where are people going to pay? Especially if you start to think about ecommerce worlds and you think about folks have Shopify stores, or you can even think about Amazon. Right? And normally, what we do is we go to some ecommerce store and we buy something from this Shopify store by having an experience on that website. Or we go to Amazon, and we pick out what we want, and then we buy something from Amazon, and it comes same day or the next day or whatever."
+  },
+  {
+    "segment_id": "p-0136",
+    "start_seconds": 2589.0,
+    "end_seconds": 2597.0,
+    "text": "Demetrios: But what happens when our whole experience is being done through the chat, and the agent is the one that's going, and"
+  },
+  {
+    "segment_id": "p-0137",
+    "start_seconds": 2597.0,
+    "end_seconds": 2615.0,
+    "text": "Chris: Which is it is really where we're going. I mean, that's where I'm already trying to go. Don't want to be amazon.com. Spend, I always have chats open. I always have agents doing stuff, and I do my shopping that way, you know, and I only will go to where I have to do that."
+  },
+  {
+    "segment_id": "p-0138",
+    "start_seconds": 2615.0,
+    "end_seconds": 2624.0,
+    "text": "Chris: And actually, at this point, even for Amazon, I just need the agents to buy the stuff within thresholds and stuff like that and be done with it. So, yeah, exactly what you're"
+  },
+  {
+    "segment_id": "p-0139",
+    "start_seconds": 2624.0,
+    "end_seconds": 2653.0,
+    "text": "Demetrios: Well, here's what gets me about this is how there there's so many things that are big question marks in my mind. Right? The first one is, how is Amazon just gonna let that happen? A, because they normally, when you, a human user, log on to Amazon and you shop around, they get all that first party data, and that is used to serve up recommendations or it's used to get you on other things. Right?"
+  },
+  {
+    "segment_id": "p-0140",
+    "start_seconds": 2653.0,
+    "end_seconds": 2666.0,
+    "text": "Demetrios: And hopefully, increase the amount of money that you spend on Amazon. Or, again, not singling out Amazon, there's plenty of other e commerce stores out there. We can just use Shopify John's e commerce store."
+  },
+  {
+    "segment_id": "p-0141",
+    "start_seconds": 2666.0,
+    "end_seconds": 2667.0,
+    "text": "Chris: Okay."
+  },
+  {
+    "segment_id": "p-0142",
+    "start_seconds": 2667.0,
+    "end_seconds": 2698.0,
+    "text": "Demetrios: So, now what happens? They're just gonna be like, alright, cool. Well, now that it's an agent doing it, you don't understand the intent. You don't understand the agent just goes for the thing. It's using it in a way that you're not used to seeing a human use it, and it also bypasses all this stuff that we spent the last twenty, twenty five years optimizing, like the upsell or the pop ups or the all this stuff that it's like, oh, yeah, Chris, by the way, if you spend 3 more dollars, we're gonna give you free shipping."
+  },
+  {
+    "segment_id": "p-0143",
+    "start_seconds": 2698.0,
+    "end_seconds": 2711.0,
+    "text": "Demetrios: And the agent doesn't care about that. Right? The agent just gets the stuff and gets out. It doesn't have that kind of discernment, at least as of now. Maybe it'll come back to you and say, oh, Chris, by the way, there's these things."
+  },
+  {
+    "segment_id": "p-0144",
+    "start_seconds": 2711.0,
+    "end_seconds": 2719.0,
+    "text": "Demetrios: Maybe, but maybe not. And so we're gonna have to start building our ecommerce websites to entice the agents, not the humans."
+  },
+  {
+    "segment_id": "p-0145",
+    "start_seconds": 2719.0,
+    "end_seconds": 2721.0,
+    "text": "Chris: So that's where think agents,"
+  },
+  {
+    "segment_id": "p-0146",
+    "start_seconds": 2721.0,
+    "end_seconds": 2731.0,
+    "text": "Demetrios: but we want the agents, we wanna entice them to go back and give you information. Right? So we've completely lost our relationship with the customer."
+  },
+  {
+    "segment_id": "p-0147",
+    "start_seconds": 2731.0,
+    "end_seconds": 2794.0,
+    "text": "Chris: I agree. I think we're in transition. And going back when I was talking about having an Agentic interface instead of And this is where I think there's room, not just room, this is where I think it almost has to go, given the necessities of marketing branding, capturing the customer, holding the customer, enticing the customer with various incentives, that kind of thing, is that you can't just have your agents go to an MCP server. I think that's how things will start, but I think for the sellers, for the companies that are trying to produce that, I think that they have to have these agentic interfaces that are going beyond MCP, where you're just going out and getting access to a tool or something, but you're actually having a negotiation across agents where that can happen, and then agents on both sides are getting smarter, or it may be that you have combinations of purchasing agents, and then you have negotiation agents, and things like that. I talked about kind of the swarms."
+  },
+  {
+    "segment_id": "p-0148",
+    "start_seconds": 2794.0,
+    "end_seconds": 2855.0,
+    "text": "Chris: You may have a mini swarm that does your shopping where each agent has its own set of responsibilities, including the negotiation from the upsell and all the other concerns that come about. So I think that to make it incredibly rich in the agentic context, the same way they've been trying to do it in a human world, is to make that an agentic to agentic transaction transaction with with all those kind of communications that go on in there, and it may bring it back. And then you develop a profile yourself as a consumer of the things that are interesting to you and not, and so your agent learns your preferences, and then when a deal comes from the agent that it's interacting with, kind of upsell thing, your agent understands your behavior and what would be acceptable, and it can act autonomously to a certain degree to satisfy your wishes before you even know it's there. That's what I think is happening. I"
+  },
+  {
+    "segment_id": "p-0149",
+    "start_seconds": 2855.0,
+    "end_seconds": 2874.0,
+    "text": "Demetrios: like that vision, and I do like the idea of, oh, it's gonna have its ear to the street, and constantly be getting hit up with offers, potentially, that's that's the world, and then it discerns whether or not it should tell you about the offer. Because the last thing we want is an agent that's constantly pinging us about, oh, there's this cool offer. There's this cool offer."
+  },
+  {
+    "segment_id": "p-0150",
+    "start_seconds": 2874.0,
+    "end_seconds": 2878.0,
+    "text": "Chris: Like, it'll have to know you. Yeah. Yeah. It's you'll have to"
+  },
+  {
+    "segment_id": "p-0151",
+    "start_seconds": 2878.0,
+    "end_seconds": 2907.0,
+    "text": "Demetrios: learn you. There's there's a few things that for me are wild there. It is true that, yeah, we can fan out right now and create these swarms, and these agents can go off and hit a 100 different websites looking for shoes, right, and or one item that we're trying to shop for. But what happens when I go and I say, cool. So get me these shoes and that dress and that and this banana."
+  },
+  {
+    "segment_id": "p-0152",
+    "start_seconds": 2907.0,
+    "end_seconds": 2933.0,
+    "text": "Demetrios: And the agent now, where are you gonna do the payments? And this is where why it all started for me. And so, first of all, actually, even taking another step back, does any of this even matter? Is there going to be a forcing function to create this reality if with browser use, I can already get what I want? So first of all, I will just say that, like, browser use is good enough for my agents to go and browse the front end Yeah."
+  },
+  {
+    "segment_id": "p-0153",
+    "start_seconds": 2933.0,
+    "end_seconds": 2947.0,
+    "text": "Demetrios: And get me what I want. So why is there going to be an incentive to create this new Internet where agents are talking to agents, you've got these swarms, and all this complex stuff happening? Because I just, I've already got what I need. Right? That's the point."
+  },
+  {
+    "segment_id": "p-0154",
+    "start_seconds": 2947.0,
+    "end_seconds": 2949.0,
+    "text": "Demetrios: With BrowserView. It's a"
+  },
+  {
+    "segment_id": "p-0155",
+    "start_seconds": 2949.0,
+    "end_seconds": 2949.0,
+    "text": "Chris: good So"
+  },
+  {
+    "segment_id": "p-0156",
+    "start_seconds": 2949.0,
+    "end_seconds": 2972.0,
+    "text": "Demetrios: that's where there's potential that it never happens. But I will I will go with you on this idea of, like, alright. If we do get there to the the swarms, and now I've just told my agent that I want three different things from three different merchants. The way that we do that today is, like, the agent will go to each one of these websites and it will buy them. Or it will tell us, hey."
+  },
+  {
+    "segment_id": "p-0157",
+    "start_seconds": 2972.0,
+    "end_seconds": 2992.0,
+    "text": "Demetrios: Here's here's the button. Are you okay to buy it? And we eventually click on it and say yes or no. But it's not that far off of a reality if we are living in this timeline where agents do that. When Anthropic or OpenAI, they say, well, why not just pay me directly as OpenAI?"
+  },
+  {
+    "segment_id": "p-0158",
+    "start_seconds": 2992.0,
+    "end_seconds": 3014.0,
+    "text": "Demetrios: I can be your payment processor, and you just pay me, and so then, you know what happens? You don't even need then you disintermediate Shopify. Like, why do I, as a merchant, even need to create a Shopify store? I just create the marketplace is all going towards the chat. And so now, what is is a marketplace now?"
+  },
+  {
+    "segment_id": "p-0159",
+    "start_seconds": 3014.0,
+    "end_seconds": 3028.0,
+    "text": "Demetrios: Is it just me creating an agent with my with all these different SKUs that is easily searchable, and then it can be bought through an agent on the chat, right? Do you see where I'm going with it?"
+  },
+  {
+    "segment_id": "p-0160",
+    "start_seconds": 3028.0,
+    "end_seconds": 3057.0,
+    "text": "Chris: I do see where you're going, and I think that that also will I think what I'm saying is likely to happen, but I also think, inclusively, what you're saying, I think there'll be a lot of experimentation from different types of merchants on how that, and there will be third party marketplaces forming to see if that works. So I think we'll see all of those. I know as a consumer, I don't wanna be shopping. It's not what I do. I don't care about it."
+  },
+  {
+    "segment_id": "p-0161",
+    "start_seconds": 3057.0,
+    "end_seconds": 3113.0,
+    "text": "Chris: But I will know that I will have all of my agents that are looking out for my interests, and they have learned me very, very well, and there is a lot of private profiling that, in other words, my agents profiling me and my wife and my daughter and our needs and how often we get things and when we need it, what the circumstances are, and my agents will learn that very well. And from my standpoint, I want good quality. I want it when I want it. I want to not spend too much money, and I don't really care where it comes from, if I can return it expeditiously as well and all that. So I'm gonna leave that to my agents at some point to figure out, you go to the marketplace, you go directly to an Agentic interface, you go to more of a Shopify or Amazon today and scrape it on the don't care, just make it happen, make sure all these things that I care about are in place, and don't bother me with it."
+  },
+  {
+    "segment_id": "p-0162",
+    "start_seconds": 3113.0,
+    "end_seconds": 3119.0,
+    "text": "Chris: Period. That's where I'm going. Bang. That I'm a demanding customer."
+  },
+  {
+    "segment_id": "p-0163",
+    "start_seconds": 3119.0,
+    "end_seconds": 3152.0,
+    "text": "Demetrios: Yeah. Yeah. And but don't that's why I feel like the friction, there's still some there's still some big question marks because the ideal scenario for us as a consumer is exactly what you just mapped out, where it knows us better than we know ourselves. Right? And I'm okay if I have an agent or my swarm of agents, my army of agents that I know are looking out for my best interest, I'm okay with giving it all the information it needs, and having like the top recommender system."
+  },
+  {
+    "segment_id": "p-0164",
+    "start_seconds": 3152.0,
+    "end_seconds": 3196.0,
+    "text": "Demetrios: It's like, I will gladly give you anything, any information. You can quiz me or grill me on my likes and dislikes, because I trust that you're looking out for my best interest. Right? Now the big question mark here and where OpenAI could potentially fumble is if they see that, wow, we could be the marketplace, and we can make money anytime there's a transaction that happens, wouldn't that incentivize them to only show things that are coming from their marketplace? So I know I'm making all kinds of big leaps here in, like, what the potential future could be, because OpenAI does not have a marketplace right now, and they've never stated that they wanna be a marketplace."
+  },
+  {
+    "segment_id": "p-0165",
+    "start_seconds": 3196.0,
+    "end_seconds": 3239.0,
+    "text": "Demetrios: But if this is one of the potential timelines, and you think about it, like, they would only push their own product. However, that could make me feel like, oh, well, they're taking advantage of me because they're playing both sides. They know everything about me, and then they're finding a way to leverage the what the merchants have on OpenAI. Like, I would feel like I wouldn't trust it as much if I knew that they were in the middle of it. But if it wasn't agent, like you were saying, where it is going out and doing the searching on my behalf out in the wild wild west of the agent verse, then maybe I would feel a little bit more okay with it."
+  },
+  {
+    "segment_id": "p-0166",
+    "start_seconds": 3239.0,
+    "end_seconds": 3242.0,
+    "text": "Demetrios: I don't know. These are like the thought experiments."
+  },
+  {
+    "segment_id": "p-0167",
+    "start_seconds": 3242.0,
+    "end_seconds": 3261.0,
+    "text": "Chris: I think it's gonna be messy. I think it's gonna be messy, and people will try it out. On that note, I'm gonna wind us up, and this has been a fun, fun conversation. I always love these. Getting you back on the show and talking about these things."
+  },
+  {
+    "segment_id": "p-0168",
+    "start_seconds": 3261.0,
+    "end_seconds": 3292.0,
+    "text": "Chris: I think we're just at a moment in time where any of these things that we've just talked about might happen. And I think it's worth talking about because things are happening so much faster than anyone's expecting right now that I wouldn't surprise to see some of these things occurring before this year is out, as people start experimenting. So we'll see. Our next conversation, we'll look back, and this one will seem so outdated. This will seem so"
+  },
+  {
+    "segment_id": "p-0169",
+    "start_seconds": 3292.0,
+    "end_seconds": 3294.0,
+    "text": "Demetrios: It will be great to What were we"
+  },
+  {
+    "segment_id": "p-0170",
+    "start_seconds": 3294.0,
+    "end_seconds": 3297.0,
+    "text": "Chris: thinking about that? Like, We oh my were so far off."
+  },
+  {
+    "segment_id": "p-0171",
+    "start_seconds": 3297.0,
+    "end_seconds": 3297.0,
+    "text": "Demetrios: We were"
+  },
+  {
+    "segment_id": "p-0172",
+    "start_seconds": 3297.0,
+    "end_seconds": 3304.0,
+    "text": "Chris: so far off and all that. And it was so so much more than what we were expecting. So we'll see. Anyway I'm excited"
+  },
+  {
+    "segment_id": "p-0173",
+    "start_seconds": 3304.0,
+    "end_seconds": 3304.0,
+    "text": "Demetrios: for it."
+  },
+  {
+    "segment_id": "p-0174",
+    "start_seconds": 3304.0,
+    "end_seconds": 3317.0,
+    "text": "Chris: Demetrios, thank you again for coming on and having conversation. I hope the viewers and listeners enjoyed it as much as I did. I got some cool topics, man. So I'll see you next time. Thanks for coming on the show."
+  },
+  {
+    "segment_id": "p-0175",
+    "start_seconds": 3317.0,
+    "end_seconds": 3325.0,
+    "text": "Demetrios: Ciao."
+  },
+  {
+    "segment_id": "p-0176",
+    "start_seconds": 3325.0,
+    "end_seconds": 3346.0,
+    "text": "Narrator: Alright. That's our show for this week. If you haven't checked out our website, head to practicalai.fm and be sure to connect with us on LinkedIn, X, or Blue Sky. You'll see us posting insights related to the latest AI developments, and we would love for you to join the conversation. Thanks to our partner Prediction Guard for providing operational support for the show."
+  },
+  {
+    "segment_id": "p-0177",
+    "start_seconds": 3346.0,
+    "end_seconds": 3366.0,
+    "text": "Narrator: Check them out at predictionguard.com. Also, thanks to Breakmaster Cylinder for beats and to you for listening. That's all for now, but you'll hear from us again next week."
+  }
+]

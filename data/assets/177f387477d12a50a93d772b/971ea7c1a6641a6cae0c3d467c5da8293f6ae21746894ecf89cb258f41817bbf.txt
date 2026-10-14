@@ -1,0 +1,342 @@
+Hey everyone. My name is Patrick
+Nicoletis. I'm a product manager on the
+GitHub Copilot team.
+I specifically work on the Copilot SDK
+and runtime, which gives me an ability
+to work across many surfaces and
+accomplish many tasks related to the
+needs that agents are supposed to live
+up to and be responsible for in the
+future as we make this transition to
+this exciting new world.
+Before I I dive into the core topic,
+which is the agent host protocol, I want
+to touch a little bit on the Copilot SDK
+and how it relates to agent host
+protocol in particular and some of the
+investments that we're making over here
+at GitHub and some of the exciting new
+features that will be landing in the
+coming months here.
+For context, the GitHub Copilot SDK is
+our latest cutting-edge modern runtime
+for agents. Uh it's used within GitHub.
+It's also used across Microsoft such as
+the Office products to power the new
+agent mode capabilities that exist in
+those services as well.
+Uh when you think about the actual
+runtime, uh it's highly portable. It's
+designed to run in a whole host of
+different environments, a whole host of
+different constraints that are able to
+be applied to it. Just looking at the
+basic setup guides, you can see how
+diverse the the actual environments are
+that you can stick the runtime in today
+and then, you know, what additional
+problems start surfacing after that
+point. Um the runtime can be actually
+baked on your local machine
+as a local personal productivity
+application, can be hosted in a managed
+service in the cloud, can be run in
+process in other applications. Um we've
+recently made some improvements to our
+runtime that enable even more platforms
+that you can embed it in and run it on
+as well.
+Um but agent host protocol comes in at a
+really important intersection between
+runtime capabilities and your ability to
+access that runtime wherever you are.
+Uh and so something that the team has
+been excited to be working on since
+earlier this year, we call it the agent
+host protocol, uh which is essentially a
+definition for a protocol that can be
+wrapped around not just the GitHub
+Copilot runtime, uh but any runtime on
+the market today or any other agentic
+application.
+The core responsibility of the protocol
+is to make sure that we can meet users
+wherever they are.
+Uh while your hosts might be running
+different runtimes at different points
+in time, your ability to access that
+host is more diverse than ever.
+Uh we have laptops, we have phones, uh
+sometimes we will be introduced to new
+form factors like the Duo that we saw
+yesterday. And I think we're really
+preparing for a world where your agents
+can literally run anywhere. You can move
+them between locations. And more
+importantly, no matter which form factor
+or device you have available to you, you
+have access to that agent as well.
+Uh and so while we continue to bring
+these capabilities into places like VS
+Code and our our GitHub Copilot runtime
+as well as our other developer surfaces,
+we can already show off some of the
+directions that we're already heading
+and and hopefully uh you'll be excited
+to see where where we're leading to in
+the future.
+All right. To actually show off the
+agent host protocol,
+uh I'm going to use something that is is
+very common in the developer circles. Uh
+I think you'll find many of us have our
+own private little Tailscale networks.
+Uh where at home, you know, I'm running
+a Mac, Windows, and Linux machine at all
+times. Each one is running Copilot
+agents as well as other agents, too.
+Um but I'm always limited by the fact
+that I need to have a device connected
+to my Tailscale network to even access
+those machines. And really we want to
+set the stage to break free of even that
+constraint in the new world. Uh so the
+first thing that I'll do is I'll
+actually just go ahead and log into uh
+my home NAS. Uh at this point, uh
+I think we're all going to end up with
+80 terabyte NASs at home, but this is my
+personal one that I use to host large
+files, all the stuff my family likes to
+store and and keep a nice archive of
+what's going on as well as do some
+coding work.
+All right. AHP comes with a variety of
+clients. Um
+we have built one internally that we're
+using as a reference implementation to
+bring capabilities down into other
+surfaces. So, I'll talk a little bit
+about how you can play with your own
+hosts in a little bit, but for now, I'm
+going to use this one we call copilot D.
+Uh copilot D allows us to spin up a
+service on any host. Um we can, as you
+can see in this argument here, open up a
+relay. We can define an environment name
+easily, so this is my home Linux
+machine.
+Um there's a workspace folder. So, when
+you actually run the host, you know,
+what current working directory is it uh
+traditionally limited to? You can have
+more than one if you like to as well.
+And then, what do you want to expose it
+on and and what's the basic log output
+level?
+Uh when you'll see the the host spin up
+itself, um what it does is it produces
+an environment's identifier.
+We're just going to go ahead and copy
+that. Uh in the future, we're going to
+make this even friendlier and easier to
+use, but for now, the environment ID
+will be all that we need.
+And we now have a host running on this
+machine.
+Uh which doesn't mean much by itself,
+but when I actually come back to my
+local machine, which I'll do over here
+on this tab right here,
+I can actually just go right into the
+copilot CLI directly, which hopefully
+you all are very familiar with at this
+point.
+Um we'll go ahead and turn it on, and
+then inside of uh upcoming builds,
+there's a /ahp command.
+Um what this allows you to do is connect
+to hosts. It allows you to see sessions
+across the hosts, restart them. Um
+there's a few other exciting features
+related to it as well, but to really
+show off the core AHP concepts, what I'm
+going to first do is just show you the
+host command.
+Um we are not attached to any host
+currently. The copilot CLI hasn't been
+configured to be connected to one.
+But what I can do is run an AHP cloud
+command,
+give it the environment variable itself,
+and then if we flip back over to this
+AHP uh tab, we should see some
+connections coming in as well.
+Um the nice thing is uh now I've bridged
+essentially my local Copilot CLI
+instance to the cloud uh through the
+cloud to my local machine, uh which is
+the Linux box that's currently sitting
+at home.
+I can rerun the AHP hosts commands. You
+can see that we are connected externally
+through Copilot D. You get protocol
+versions, environment IDs, etc. Um this
+is showing that not only am I able to
+run Copilot uh locally, but we are
+connected through uh my machine to my
+external home machine as well.
+If I want to actually use that instead,
+I can simply run a {slash} AHP use
+command.
+This will allow me to connect directly
+to the machine. And it it will
+essentially uh enable me to create new
+sessions. It'll also allow me to attach,
+which I'll show you some of that that
+fun flexibility in a second here.
+Uh if we want to start a new session, um
+we can just do {slash} AHP new.
+This will uh
+update my interface to actually reflect
+the remote host instead. And so similar
+to the path that I showed you for my
+workspace folder, this is not actually
+anymore a a directory on my local
+machine. This is actually spun up a
+runtime on my local Linux server at
+home. It's set the current working
+directory to the workspace folder that
+I'm running the AHP host uh on directly.
+And I can go ahead and interface with
+the agent directly on that machine. Um
+one of the huge benefits of this again
+is that even though the runtime is
+running elsewhere, these really thin
+external clients, whether it's the CLI,
+whether it's VS Code, uh the GitHub
+Copilot app, or any other client you'd
+like to build uh that aligns with the
+protocol, can access this uh interface,
+can connect to the system, and can
+actually drive the agentic session. Um
+but it doesn't really just stop there.
+Uh, some of the unique capabilities that
+come with something like this uh that
+represent a really nice addition to our
+remoting technology
+is you're able to attach multiple
+sessions at the same time.
+Um, so if I go ahead and
+add the AHP host onto this client as
+well,
+I run a different command. So, take a
+look at the sessions. Oops.
+Oops.
+Helps if I add it at the end.
+You'll see that there is an active
+session, which is this E39.
+You'll see the OnePlus One, which
+matches my prompt, showing that uh I can
+actually uh attach to that session
+directly. So, if I use AHP attach,
+we copy this identifier right here.
+We should be able to bridge our sessions
+together. Uh, if you've used our
+remoting technology before, uh typically
+it was pull-based. It was really forcing
+you into a situation where you could
+have one active clients uh that could
+steer the session itself. Now you get uh
+more advanced capabilities when it comes
+to real-time replayability. Um, you get
+advanced capabilities when it comes to
+the playback systems and how sessions
+can be portable across clients. And what
+this really translates to
+is you get live updates across clients
+as well. As you see, I typed in one
+client 2 + 3. As soon as I hit enter, it
+can go to the other client, too. You can
+see the response on both. Um, our core
+objective and goal is to make sure as
+you bridge new clients into the
+experience and take them out, each one
+can participate in it to be the active
+driver. That way you can transition from
+your laptop to your phone, from your
+phone back to your laptop, from your
+work machine to your personal machine,
+depending on the context in which you're
+operating in. But it all is made
+available using this new AHP protocol.
+Again, that we're embedding in our
+surfaces and we're also uh sharing
+publicly and and diving deep looking for
+more ways to improve the offering and
+also add more runtime support, as well.
+When you think about how this translates
+ultimately to the github.com
+experiences,
+one of the most exciting things
+personally uh to me is its integration
+into mission control. Um our Copilot D
+service, which again, we're looking to
+bring functionality directly into our
+runtime, as well, uh enables you to
+actually engage with these remote
+execution environments directly from
+mission control. And so, while we look
+at IDE, CLI, mobile, let's talk a little
+bit about the web.
+Um for context, mission control is under
+github.com/copilot/agents.
+Uh if you look at this main home screen,
+uh there are a few options that should
+be familiar to most uh users that have
+uh that execute tasks on this screen.
+But, ultimately, the most exciting thing
+to me with AHP is the fact that you can
+now bring environments into the custom
+drop-down for actions and execute new
+sessions on your own local machines,
+cloud machines, wherever they might be,
+as long as they run the right AHP hosts,
+they connect back to mission control, it
+is now a new environment that you can
+execute on. So, you're not constrained
+by running things in actions or running
+things in remote cloud environments, uh
+you can actually run these on your home
+machines, as well, to continue to bridge
+uh your agent network and define where
+you want to run agents most or where it
+benefits you based on your current
+scenario.
+So, again, if we just simply
+hit a query here, uh it should actually
+route that down
+to my environment. You'll see a
+response. And again, this is all running
+off of github.com. It's running in my
+private network. And as we break free of
+all of our Tailscale setups uh and
+remove that requirement, ultimately, uh
+we'll find more flexibility and freedom
+to access your agents anywhere and
+again, move them where you want to go,
+as well.
+For more additional information, I'll
+I'll flash a few links on the screen.
+The AHP repo is public underneath
+Microsoft/agenthostprotocol.
+We have a website with the protocol
+specifications available as well.
+Mission control is on there and then in
+addition if you like to play around with
+the host built into VS code, I left a
+command code agent host there. You
+should be able to fire it up using the
+latest stable edition of VS code so you
+can start playing with your own host
+right away. Thank you all.

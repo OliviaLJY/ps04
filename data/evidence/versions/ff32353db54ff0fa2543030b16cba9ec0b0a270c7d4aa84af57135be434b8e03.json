@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:eca1c6ac2117b3bed2bf",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "How to run GitHub Copilot agent sessions across any device | GitHub Copilot Day",
+  "url": "https://www.youtube.com/watch?v=KT6p0MNXoCE",
+  "published_at": "2026-10-08T21:19:39Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "ff32353db54ff0fa2543030b16cba9ec0b0a270c7d4aa84af57135be434b8e03",
+  "text_path": "data/assets/177f387477d12a50a93d772b/971ea7c1a6641a6cae0c3d467c5da8293f6ae21746894ecf89cb258f41817bbf.txt",
+  "segments_path": "data/assets/177f387477d12a50a93d772b/3a7f131aaceeb02d4cece84648a77de6054a8660a8209159197f07e35c0411ee.segments.json"
+}

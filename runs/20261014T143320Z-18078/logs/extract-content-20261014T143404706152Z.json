@@ -1,0 +1,36 @@
+{
+  "stage": "extract-content",
+  "status": "incomplete",
+  "input_count": 64,
+  "output_count": 46,
+  "started_at": "2026-10-14T14:33:23Z",
+  "finished_at": "2026-10-14T14:34:04Z",
+  "elapsed_seconds": 41.321,
+  "tools_or_models": [
+    "python-urllib",
+    "html-text-extractor",
+    "youtube-timedtext"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "feed:200a5d3dd39c6bfb7a20: substantive written content was not retrievable",
+    "feed:8d45898e533e591d4241: substantive written content was not retrievable",
+    "feed:570fe3204556675e8dd9: substantive written content was not retrievable",
+    "feed:9bf93d58cc35db9987f8: substantive written content was not retrievable",
+    "feed:db7b9e6fe248e3146f87: substantive written content was not retrievable",
+    "feed:855092fba1df7e8a668b: substantive written content was not retrievable",
+    "feed:45d6a2b79938283a07ca: substantive written content was not retrievable",
+    "feed:d9e485b409fe8517ac6e: substantive written content was not retrievable",
+    "youtube:5e26efd3729e3dd4340e: HTTP Error 404: Not Found",
+    "youtube:8eff2932c5ec04cbb9e1: HTTP Error 404: Not Found",
+    "youtube:fbb3f391d155d72b3120: HTTP Error 404: Not Found",
+    "youtube:fefb60fc52d15f98936d: no public caption track",
+    "podcast:9ac60e17ea0374340eb6: timestamped transcript unavailable; configure transcript_url",
+    "podcast:a2439b7f2605a02a6ab5: timestamped transcript unavailable; configure transcript_url",
+    "podcast:7c289569dfbf1d597efa: timestamped transcript unavailable; configure transcript_url",
+    "podcast:7fc4405471533bd57fe2: timestamped transcript unavailable; configure transcript_url",
+    "podcast:e29ab050aeaf11c19b85: timestamped transcript unavailable; configure transcript_url",
+    "podcast:f891ebc2ee6ffd48a834: timestamped transcript unavailable; configure transcript_url"
+  ]
+}

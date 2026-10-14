@@ -1,0 +1,887 @@
+[music]
+Heat. Heat.
+Heat.
+Heat.
+>> [music]
+>> Heat.
+[music]
+Heat.
+Heat. Heat.
+Let's go. Hi everyone. How are we doing?
+Happy Friday.
+Good energy.
+That uh music is very uh
+high high impact. Feels like a workout
+class or something. Uh but anyway, how's
+everyone doing? What are you working on
+today? Thank you so much for hanging out
+with us on another open source Friday.
+This is my favorite thing to do on a
+Friday.
+come on stream, hang out with y'all,
+talk to open-source maintainers,
+contributors, people building awesome
+things, get inspired, and then I go and
+then I go and build my own thing. It's
+awesome.
+Love it. It's one of my favorite things
+of the week. But anyway, what are you
+all up to? Are you all building
+something? I see someone's asking about
+how to improve local AI speed. I like
+that.
+Just drop your drop your questions and
+comments in the chat and uh tell me what
+you're building, what what what's your
+current favorite model. I like
+I I still work work a lot with um
+I think soul is is probably like my most
+used soul in and Terra
+I I have not tried the new haik coup.
+Has anyone tried the new haiku?
+[snorts]
+Day two of asking for a reply to my
+GitHub support ticket that's been open
+for seven days now. If you could DM me,
+I I mean, I can't do this right now, but
+send me a message on Twitter or
+LinkedIn, made bygps, and then I can
+help with that. All right. Anyway, we're
+here for something else. We're not here
+for life support. We're here to talk
+about this awesome project. I'm very
+very excited to have uh this project and
+this person here mainly because I love
+when young people
+put in time of their own outside of work
+and school and whatever to build cool
+useful things. It's my favorite type of
+project. So we're going to talk about
+screen mine. Have you heard of it? If
+you have, let us know in the chat. And
+I'm gonna bring up Aush. Uh, let me
+bring you up right now. Hi, Aush. How
+are you?
+>> Hello, GPS. How are you?
+>> Welcome. Thank you for for coming on to
+Open Source Friday. Very excited to talk
+about Screen Mind. And um why don't you
+start by telling us
+let's say I have no idea what this
+project is. Can you explain to me what
+Screen Mine is?
+>> Okay. So, so screen mind is something
+you can keep a track records of your
+history. Okay. So, it basically what
+does is keep the track track your
+timeline keeps a record of your screen
+history and then makes you uh able to
+you can like query your screen history.
+You can ask questions with your screen
+history and you can also make
+automations on top of your screen
+history and then it helps you transcribe
+your meetings, create those
+transcriptions which are like the not so
+productive things
+>> since it's a productivity tool and then
+all your data is also on your machine.
+So that's the part uh
+>> I love it.
+>> So
+>> local local first very important I think
+the discussion of local AI is becoming
+more and more popular. So, it's great
+that your your your project is is taking
+advantage of that. Before we went live,
+you were telling me a little bit about
+how you started this like you created it
+during a hackathon and then you kind of
+just kept working on it. Can you tell me
+more about like where did you get the
+initial idea during the hackathon or or
+like how did that happen?
+>> So, it was like when Microsoft recall
+wasn't stopped know the I think in 2024.
+So that do prove that there was a use
+user base for this type of tool. Okay.
+And then it got this controversy about
+privacy backlash that you know data
+being sent and kept. So it was all this
+and then came the wave of such similar
+tools. I think it was uh uh open recall
+and rewind and then screen pipe and
+there were several many. Okay. So I
+tried a lot of them but they there was
+some things lacking in in every of them.
+So then came Gemma 4 and honestly Gemma
+4 was one of a kind because you know it
+it is able to run locally on even the
+lowerend machine like myself I do have a
+4GB RAM laptop and it's runs comfort
+comfortably enough to run locally on a
+machine and it does the image processing
+as well. It does the reasoning, it does
+the audio, it does everything. So it was
+like the core engine that pl and then
+there was this hackathon I think on dev
+2 where we have to build something on
+Gemma 4. So there was this gap which I
+thought need to be filled. So I thought
+let's just make it go and
+>> when I built it I think in first
+iteration it was just something
+screenshot tool but later on it
+developed into much more.
+>> Yeah. Awesome. Do do you
+feel like current models that can run
+locally are are more powerful than
+people give credit? Like I think people
+are so focused on using like the latest
+opus models, the latest uh you know like
+soul models or whatever that they don't
+pay attention too much to local AI and
+how capable it has become. So in your
+experience h how good are our local
+models right now?
+>> Yeah, honestly my opinion the local AI
+is the is can be the next big thing
+because you know uh about this
+centralized AI system we do not know the
+sustainability and all thing but with
+local AI you know your data is always
+with you and you know once you get it
+you have it on your machine. So yeah,
+local AI do not get the grade and I
+think like people should more focus more
+on building to using AI locally and
+building tools on those things.
+>> Yeah, I love it. Maybe as we speak you
+can like share more tips that you have
+but I know you want to just show us a
+little bit about the how the project
+works and capabilities. So you want to
+dive into that?
+>> Uh yeah,
+>> cool. We'll bring up your screen. Okay.
+Just
+>> Yeah.
+>> Okay, let me go ahead and add it. Okay,
+great. I see it now.
+>> Uh,
+>> so yeah, my screen is visible, right?
+>> Yes, we can see it. I saw you had a a
+passcode. Is that for like security? I
+think that's great though. [laughter]
+>> Privacy anger. You don't want your
+brother peeking in your into your
+screen.
+>> I [clears throat] love it. I love it.
+You thought of everything. [laughter]
+>> Yeah. So, basically, this is how your
+screen dashboard looks like. Uh I I've
+got a couple of screenshots analyzed
+previously because I don't want local to
+run while I'm streaming and my laptop
+crashing. So, that's why. So, here is
+the screenshots. You can just go into
+any see your timeline. Okay. And you can
+just like see how are the screenshots
+analyze like here I'm doing using
+antigraphy you get a summary the screen
+description and this also depends on
+like uh on the type of user using like
+if you are using it for uh some other
+use case like you are doing research on
+SEO projects or you know uh for any
+other thing you can like tweak the
+system prompt and you can do that thing
+and you know you have more focused
+description on the way you want okay so
+yeah and Then you can search along your
+screenshot. So supposedly you saw
+something like u a few days back and you
+can't get it. I'll show you example like
+just let's just search my name. Okay.
+So it'll basically get everything
+search.
+>> Yeah. So so when you do a search
+>> it this is looking through how like oh
+never mind. I see that you selected all
+time. So it's going through it all the
+yeah data that it has. Okay.
+>> It's like basically you can select the
+context of like
+>> Yes.
+>> If you if you'll see here so like uh
+suppose we open this you can also see
+the bounding boxes here where your
+keyword is found
+>> in the screenshot itself. Okay. Cool.
+>> Yeah. So yeah that's something you can
+you can see the confidence score here
+and you can see the relevant screen
+screenshot to it.
+>> Yeah.
+>> And that's it. And then we have this
+bookmark thing. You can also set up auto
+bookmarks.
+>> Okay, cool.
+>> And you can also set up auto bookmarks.
+And uh then uh yeah and analytics. In
+analytics you can see what you have been
+doing as tracking. This is like
+something you want to check if you are
+like very focused, very disciplined. And
+then
+>> I like this.
+>> And then rewind is something is just
+something like sideshow. I added in very
+initial iterations and then I just did
+not removed it. And you can also get
+your daily summary about this like what
+did you did all day uh something where
+the user was dominated by this this and
+your standup notes like what was what
+you all have been doing
+>> and then we have this chat thing it's
+basically [clears throat] it's basically
+you can query your screen history it's
+something like you can ask him and you
+can even do a follow-up questions okay
+well the accuracy of it depends on what
+model you are using okay for me I'm
+using the Gemma for E2B. Okay. So, it
+depends a lot upon on what model are you
+using. So, I I'll I'll show you what uh
+video was I watching on YouTube.
+So, it's like goes to the database. I
+I'll tell you how it works uh later. So
+yeah, it it'll go to the database and it
+will like fetch things like uh did I got
+any email from Google?
+So
+>> this is uh Gemma for
+>> E2B working
+>> E2B like that's that's the smaller one,
+right?
+>> Yeah, that's the smallest one actually.
+>> That's okay. Wow. Oh my I'm so impressed
+right now. Okay. [laughter]
+>> So, yeah, it basically gets like you
+I've got a couple of these things.
+>> Okay. And then we have this meetings
+things also where you can like enable it
+and it basically auto detects a meeting.
+Actually, I have stopped it right now
+because I don't want to recording all
+this. So, yeah. So yeah, it auto detects
+your meeting and like it breaks it into
+chunks of 15 to 20 seconds, transcribes
+it and like makes a summary as possible
+like the points you talk and I'm I'm
+planning to improve it in future like
+adding dation and all. So yeah, this
+works also pretty well. Mhm.
+>> Uh and then we have memos feature where
+you can just like you need to save save
+snapshot or something like I use this
+like if you want like this is the bug I
+would want to do tomorrow. You can just
+do it. There is a transcription and yeah
+you can get just press a hotkey and
+you'll get this voice memo saved.
+>> Okay.
+>> And then we have this automations thing.
+Okay. So this is where you can like make
+automations on top of your screen
+history. is I have since we have Gemma
+I've also added something like you don't
+need to code to write agents you can
+just like uh send me my productivity
+report to my slack or discord at like
+5:00 p.m. the agent will run at like at
+that time it will give your data summary
+to your which whatever you have selected
+as the output
+>> and uh then we have Python plug-in also
+stream man you can use that as well and
+I'll take the settings so yeah you have
+you can bookmark your hotkey you can
+change it whatever you want take
+screenshot pause resume and then voice
+memo and capture interval you can select
+this so right now like capture happens
+at a certain interval and at when there
+is content change on the uh screen. So
+you can set this as and and apart from
+that on the content change the do
+screenshot just happens and for auto
+pause heavy apps yeah you don't want it
+running and analyzing locally are
+running in the background while
+[laughter] playing games or
+>> or something
+>> that's smart yeah
+>> yeah and then deferred analysis again
+that when only system is idled you can
+make that screenshots get analyzed
+>> and I've also added this captive capture
+active monitor after uh PR or something
+where someone asked to like extend it to
+multiple monitors. So I I thought that
+would be pretty useful because it's
+better if we keep like multiple
+screenshots from you know two screens
+you take a screenshot here and when you
+switch there then you start tracking
+there and when you switch here you start
+tracking here that's
+>> yes
+>> that's what I thought would be more good
+and then started system startup just a
+simple thing and yeah we have model of
+two where you can just switch amongst
+the model Gemma 4 which supports the all
+three so I've added a lot of them
+whatever I got from the CV. So just you
+can switch your models seamlessly
+without you know going through all that
+tech thing.
+>> This is awesome. Do you find that at the
+smallest Gemma 4 model
+it still runs completely fine like is
+capable of accomplishing everything that
+it needs to accomplish.
+>> I mean yeah I do run it almost daily. So
+the thing is the you it's a trade-off
+you know uh like the ask feature like
+the chat features doesn't work very very
+well. It do ask DC answers but you know
+since the model is not smart enough so
+it doesn't and apart from that
+everything works well good enough.
+>> Amazing. Are there any optimizations
+that you are you're doing to get this to
+work? What like in terms of like how
+this actually works behind the scenes?
+Is there anything you can you can talk
+about? I mean obviously the code is open
+source. People can go and look at like
+that. Yeah.
+>> But anything you want to share?
+>> I I did a lot of things to you know make
+it work on this.
+>> Yeah. Uh it's like the chat feature was
+switch over for me to make it work and I
+literally wanted it to work anyhow
+because that was the that was the main
+distinguisher from from these tools. So
+yeah I'll get to it. I just complete
+this everything here what we had in
+settings. Yeah. So in performance mode
+you can you can also select as like uh
+how many layers of the model you want to
+we on CPU or want you want you to keep
+on GPU. So it's like it balances the
+performance. Here you can select context
+window and then you can also cache it
+and then there are three modes right now
+fast balanced analysis. I I'll tell you
+the working. So the so the screen so
+what happens when the screenshot is
+taken it goes through the analysis
+pipeline OCR is ran and then gemma 4 is
+ran before that every other privacy
+reduction reduction and all is done. So
+what passes done is is takes a
+screenshot. It it it's basically for the
+lowest end machine possible like the one
+for me because I this was for like GTX
+1650. So it basically skips the thinking
+part with that pretag and you get respon
+and screenshots get analyzed I think in
+like 10 to 12 seconds. So that's
+basically the fast mode. In balance mode
+the the Gemma is allowed to think So it
+gets more precise but the here the
+trade-off is time and then in accurate
+mode uh in accurate mode there is more
+than the screenshot actually the
+sections for the screenshots are also
+taken which makes the chat feature work.
+I I'll tell you how I made it work. So
+yeah these are the modes apart from that
+meeting transcription and then data
+retention. You don't want your storage
+to blow up with all your screenshots and
+everything. So you can like retain data
+up to the after that everything will be
+deleted and yeah I've also added in CP
+even here
+>> I think it have eight tools eight tools
+and you can like link it with your plot
+curs anything and you may take
+screenshot and you know query with your
+screen history what bug I was debating
+today should I continue from there and
+like that uh and for your obsotion and
+then debooks also if you want to import
+your data and then need in system and
+then about the sensitive data filter I
+have also added red action about credit
+cards and API keys and that's basically
+the pin pin which you saw at the very
+first thing [laughter]
+>> okay this is awesome you've thought
+about a lot
+>> you added a lot in here
+>> actually I kept on working on feedbacks
+I whatever I got from Reddit and you
+know from GitHub and Twitter I I just I
+don't hesitate in shipping features
+because at the end it's open source and
+you know it's not something enterprises
+are working on right now. So yeah, let's
+just see where it goes.
+>> Amazing. Amazing. Yeah, I want to hear
+about more like what you can share about
+like how do you make this work?
+>> Okay, so yeah about the thing everything
+was not the big part. Uh the chat thing
+was because like you're keeping a track
+of your screenshot was not a big deal
+because but the chat thing was because
+you know it's it's basically type of a
+rag where your the data is fed every 40
+seconds or 30 seconds. Okay. So you have
+to keep that up to date. So and also it
+had to feel like chat you have to get
+responses in like uh 3 to 4 seconds or
+six to seven seconds. Right?
+>> So in the very earlier iterations I
+didn't even have this. I have something
+like query where uh you could ask a
+question and get a response in 40 to 50
+seconds and it was like uh the relevant
+screenshot was taken and was sent to GMA
+along with the query and you would get
+the response in like 40 to 50 second but
+I had something like I had to make it
+feel like a chat you can ask a follow-up
+question you can ask it to draft a mail
+or something. So what I did is uh what
+we do behind the in the code we create a
+textual replica of that screenshot. Uh
+we do that you know we have easy OCR we
+have bounding boxes and we have all the
+words we have bounding boxes for all the
+words we just create a section of the
+screenshot and we put all those words on
+those section and we get relevant
+section of that screenshot and we fed
+that relevant section text to Gemma
+along with the query. So Gemma uh when
+processes takes it takes hardly 3 to 4
+seconds.
+>> Amazing. When when you
+started to build this did you have any
+prior experience with working with LLMs
+and rag systems? I mean, yeah, I I did
+made some I mean, not so professional,
+but they're like fun projects, but I
+used to like watch videos and you know,
+I was on on the Reddit like reading
+things and yeah, I built a few things. I
+I also created before this I think an
+autonomous agent type of thing and uh
+there was thing tool for I created one
+thing I created tool for yeah I like
+fine-tuned a model to so that it chooses
+the correct tool to use for a query
+calculator weather and you know yeah
+that that that's some basic because
+screen mind was like the I think it's
+the biggest I created right now
+>> although I didn't win that hackathon
+Yeah. No. Yeah. And wait, you didn't
+win?
+>> Yeah. I won a different one. [laughter]
+I want that winter.
+>> It's funny how how life works, isn't it?
+But it's it's it's interesting
+>> how because we talk about open source,
+about how good it is, not only for a way
+for people to, you know, get experience
+and maybe like potentially help get a
+job, but also from like learning. I'm
+sure you learned a lot while building
+this and like you're continuing to learn
+and I'm curious besides the ask
+functionality. What what else was like
+the hard like the thing that you had to
+learn the most about to implement in
+this project?
+>> I mean optimization was the biggest
+function for me because my one of the
+priority was also to make it run for the
+lower ends machine not thousand GPUs
+only.
+>> So yeah optimization was the hard part
+for which I did a couple of things. I
+have added caching mechanism as caching
+mechanism as well to the screenshots. So
+what happens when uh you know when when
+the same tool when the screenshot is
+taken it is checked from uh when the
+screenshot is taken okay then the
+whatever the tool you are using on the
+screen okay it is compared to other
+screenshots which on the same tool and
+it is like matched that how much the
+screen has changed from that. If it is
+above a certain threshold, we reanalyze
+it. And if it is not, we just use the
+same OCR. Uh we just use the same text,
+we use the same description. Like
+there's a three tier caching mechanism.
+One is like when everything is identical
+and in one we only run the OCR again, we
+skip the gem pre-processing and in third
+we do everything OCR and gem.
+>> So the hashing mechanism was the part.
+Apart from that yeah since optimization
+I said uh we are I stream mind doesn't
+uses streamman only uses one slot of
+llama llama okay because I don't want it
+because stream mind hogging up all your
+VM while you're doing uh other task
+because I wanted it to feel like
+something you know background service
+okay yeah so that's why it's just just
+uses one slots okay
+was one thing that was one due to which
+I couldn't implement that form of KV
+caching and all. So yeah, I think
+resource constraint was the biggest
+hurdle I faced and I had to make it work
+into this.
+>> Amazing. I this is this is fantastic. I
+I'll I'll make sure to share I'll put it
+up on the screen the link so people can
+go check out your your project and
+hopefully contribute as well. And what
+are you most excited to to to next
+implement or improve in the project?
+>> Okay, honestly there are certain
+improvements right now. Uh I mean there
+are some bugs also here reporting I got
+it. So yeah I think the very next will
+be the bug thing but yeah for a broader
+vision I have like some ideas in my mind
+right now just in the like kind of
+validating phase. I I can share them if
+you want. It's more like
+>> uh making uh making a sort of uh you
+know teams version of screen mind where
+you know your every team member have
+screen mind installed in it and you
+build a collective intelligence over the
+>> Okay. Yeah, that'd be cool.
+>> Yeah, something like I could check how
+did John debug the prediction issue last
+week and I I would get that. So
+>> yeah, so building something collective
+over it, collective intelligence and
+apart from that I was also thinking of
+making so like this was the one
+direction and another direction I was
+thinking of it making of a more of a
+personal agent type of thing. It's
+already gone hands and hands and legs.
+So you know you can and and what's more
+of a better personal assistant than it
+knows everything about your screen
+history whatever you did and it's you
+know and you have to don't worry about
+your data. So I think it could be more
+better a personal assistant as well. So
+I'm still in the like validation phase
+and you know things and we'll see.
+>> Yeah, I feel like there's a lot of
+potential.
+>> Yeah, until then I'm just improving
+these var I get.
+>> That's that's awesome. Are you primarily
+the the only person working on this or
+there are there other people also
+helping out?
+>> Yeah, I I am the only one. So, it's just
+like you
+and because you also mentioned that you
+work full-time, so you're doing this in
+your free time, you know,
+>> and I'm curious about your own use of AI
+when it comes to building this project
+like are you what does that look like?
+Are you manually writing code still? Are
+you using agents? Like are you using
+local agents?
+>> I mean, I don't manually write code. I
+don't think anybody does.
+>> Yeah. I mean there surely people are but
+you know I don't write codes you know uh
+I basically the all the architectural
+decisions are mine I look into the code
+where I think there might be something
+you know I need to look up to but yeah
+all the basic and you know simple things
+I just ask the II to write and it does
+the thing and I look over it and
+everything that is it doing fine or not.
+>> Yeah. Yeah. Yeah. It's funny how like so
+few people are manually coding now. It's
+like such a change. When you started
+when you started, how long ago did you
+start building this project?
+>> I mean three to four months I guess.
+>> Okay. And were you did you ever write
+any manual code or you were straight to
+a agents?
+>> I mean there were some parts of it where
+[clears throat] the agent didn't work
+pretty well. So I had to jump in and do
+that part of the code to that
+functionality.
+>> Yeah.
+>> But yeah, it it worked well enough.
+Yeah.
+>> Yeah. Yeah. Okay, [laughter] that's I'm
+almost always interested in hearing how
+people are like building things now with
+like the use of agents and everything.
+How are learning things? How are you
+ensuring like quality and things like
+that? So, it's always interesting to
+hear the perspective from different open
+source maintainers of like what their
+their approach is. I still know some
+people who manually code at least a
+little bit. So, I'm not going to say
+it's completely gone, but it's you know,
+it's so interesting. We're in a space
+now where there's so many options. You
+can
+>> go fully agentic if you want to. You can
+have like halfway maybe or none of it.
+It's just I don't know. I'm just very
+interested to to hear from from you know
+different people about like what what
+they're up to. Okay. So you have this
+this this project you've showed us this
+you showed us what you're interested in
+kind of building in like next steps for
+the project itself. But I'm I'm curious.
+What do you think? Like we have a couple
+people in the chat who probably would
+want to contribute. Is there any
+specific area in your project that you
+would love like more help on?
+>> Yeah, honestly like first I want you to
+use them and give feedback like that
+would be the biggest help for me. Yeah,
+feedback would be good enough. And yeah,
+apart from that I haven't tested it
+extensively on Mac. I need Mac users
+feedback from Mac users.
+>> Okay. Apart from that, yeah, I need some
+working on the meeting transcriptions
+thing if they would look into it because
+you know it it is a thing it
+automatically detects meeting. So that's
+there I do get false positives even now
+and then. So yeah, meeting transcription
+thing they can take a look on and uh
+yeah that's the thing.
+Yeah, just use it and you'll get to know
+what you need to tweak and what you
+don't need to. If you'll use it, you
+>> can explore different use cases. Uh I
+even got the different use cases ideas.
+I didn't even know from like when people
+started using it, they started posting
+on link and like someone is using using
+it for SEO research and like when people
+was using it for different things. So I
+even didn't thought of those use cases
+like people were using it.
+I the one that sticks out to me that I
+feel like it could have maybe potential
+is, you know, a lot of people are
+struggling with distraction and focus
+and, you know, this has the ability to
+see kind of everything that you're up
+to. What if it could give you some
+recommendations of stuff that you should
+stop doing or maybe like change certain
+behaviors so you can improve more of
+like that productive work on your
+computer? that's in there right now also
+like there is some there is something
+like break reminder if you're working on
+I for too long it just gives you a
+reminder that message
+>> I didn't know that see you already
+thought of it
+>> yeah I I mean I just did all the
+possible I I took I took feedback from
+everything okay I I observe it and I
+think yeah that would be a cool thing to
+add like the voice memo thing that that
+was one of the other submission of the
+hackathon someone made a very cool to
+like you press Ctrl and V and you put up
+your sound snippet and it will
+transcribe you and it will be saved. So
+I thought that's a good thing Screen
+could have. So yeah, I just took it from
+them and added it to Screen Mind.
+>> So yeah, it has things like this.
+>> It has that already. All right, I
+definitely need to download this. I'll
+have a Mac, so I will be use it there
+and give you some feedback. But when it
+comes to feedback, would you prefer like
+a GitHub issue or like what's the best
+way to reach that?
+>> And anything works for me. I think issue
+would be good. [laughter]
+>> Okay. All right. So, people in the chat,
+if you have a Mac, we need some more
+feedback from there. Just use it. Let us
+let you know, let uh you somehow know or
+any ideas that you have.
+>> And yeah, I think that's like such the
+coolest part about open source like you
+can truly just try it, change it, and
+see what happens. So I really encourage
+everyone to check it out. Let me see if
+we have any questions in here. I think
+you mentioned I know people were very
+curious about the optimizations that you
+did to get such small models to be able
+to power this. You spoke a little bit
+about like the caching and the
+performance stuff there. So I think we
+answered that. Let me see what else uh
+could be in here. If you have any
+questions, now is your time to to drop
+them in the in the chat uh before we
+end. I have a one question. So let's
+let's say you weren't working on this
+project at all like you had free time.
+Is there any other project in your mind
+that you wish you could build?
+>> I mean there have been a lot of them but
+yeah something I would say you know
+right now like people do write code with
+AI. So okay so you know AI is not very
+dependable thing to do. So I I had the
+idea to build something you know where
+you can get that you know if your code
+is the AI code sometimes it's like it
+just works anyhow in the back end you
+don't know it's all sloppy and you know
+that it is just working anyhow. It's
+more like you know removing the AI soft
+code from your project or you know
+refactoring it and uh uh you know
+improving your code if you have done it
+with AI because that's the thing I went
+to Reddit and I talked to people and I
+got to know that that the thing is
+probably lacking right now or there are
+not good enough tools for that thing.
+>> So that was in my mind something to work
+on
+>> some ideas. That's cool. So I like that
+you are getting feedback from people.
+Some people are scared to go on Reddit
+and ask for feedback, but it seems like
+you're you welcome it.
+>> I know I was also scared as well.
+[laughter]
+I I don't know. I I went there and like
+people were at the very starting they
+were like what is this guy? I started
+the Reddit thing after I started
+building screen man. So I had no idea
+that screen man that is also a thing
+where you can promote projects as well.
+So I got a lot of criticism there. Okay,
+this is just another rapper of screen
+bite, you know, recall. You know, it's
+many things like that. But yeah, I I
+improved. I I think I thought, you know,
+I took the feedback and
+>> it just got improved. And now I'm
+talking to people getting to know what's
+going on with the tech things and all.
+>> Yeah. And for your development, are you
+using local models to code too or or
+well like what are your favorite tools
+to to code with now? Uh no I can't my as
+I told you I have I have just 4 GB RAM
+laptop if I'll use the local model so I
+I wouldn't yeah I I usually go in
+anti-gravity and
+>> okay anti-gravity
+>> yeah that helps me a lot and yeah
+>> okay cool yeah I it's always interesting
+to hear what people are using and I do
+you try different things or are you open
+to you know change or are you sticking
+to anti-gravity
+>> I mean Uh yeah, I've tried but
+anti-gravity felt right for me. Uh I
+mean I have used cursor and uh you know
+claw code and I have tried all of them
+but yeah anti-gravity just gives you my
+homely feeling gives you everything.
+>> Okay, perfect. Um and I guess my my last
+question to you is just like why why
+open source? Why do you why do you care
+about open source? Why did you make this
+project open source?
+Yeah, because I I literally wanted
+feedback from people like seeing from
+the code like how well did I build it?
+Okay. And like people helping me out to
+improve it like that. I think that's the
+power of open source because you know
+people will come out they seek issues
+they even do PRs they they also help you
+to build around it. So so creating
+something big that that was on my mind
+if this goes something up like people be
+contributing there as well. So people
+can look up to that code and you know
+you can use it that as well.
+>> Amazing. I love it. All right. Well,
+thank you so much for being here chat.
+Make sure to check out the repo,
+download it, give feedback. Aush is
+excited to build everything that you
+asked for. So [laughter]
+>> yeah. Well, thank you. Thank you so much
+for for taking your time to to be here
+and and everyone else from the chat,
+thank you so much for hanging out with
+us and I hope you check out the project
+and I hope you have a great rest of your
+your day.
+>> Thanks.
+>> All right, bye everyone.
+Heat. Heat.
+Heat.
+[music]

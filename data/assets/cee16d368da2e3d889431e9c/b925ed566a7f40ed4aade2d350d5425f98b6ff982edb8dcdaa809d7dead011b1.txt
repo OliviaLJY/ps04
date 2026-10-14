@@ -1,0 +1,41 @@
+[Mati] This is my friend David
+who’s a nerd, 
+and has a robot arm
+for some reason.
+And me as a fellow nerd.
+Of course I wanted to use it,
+but he's in Texas and I'm in New York.
+So we thought, what if I could control
+that arm from 1700 miles away?
+[David] If Mati wanted to teleoperate
+the robot without building his own,
+he would need a digital version
+that he could control directly.
+I worked with Gemini
+to create a 3D visualizer of the robot.
+After a few iterations 
+and a little polish,
+it was ready.
+[David] Oh, alright,
+Bell is up.
+Now, when Mati moves a slider, the browser
+sends the new joint coordinates immediately.
+allowing every position he moved,
+to be streamed in real time.
+On my side, I gave Gemini
+the calibration file for the physical arm.
+Gemini generated a script, that listens
+for those updates
+and writes the motor positions,
+moving the arm.
+Great grip.
+[Mati] You need to drink more water.
+Let me help you with that.
+All yours.
+[David] Done with water.
+This is just the start.
+Explore,
+create.
+Have fun.
+Try new things.
+Success!

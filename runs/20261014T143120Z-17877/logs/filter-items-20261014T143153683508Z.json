@@ -1,0 +1,15 @@
+{
+  "stage": "filter-items",
+  "status": "completed",
+  "input_count": 30,
+  "output_count": 20,
+  "started_at": "2026-10-14T14:31:53Z",
+  "finished_at": "2026-10-14T14:31:53Z",
+  "elapsed_seconds": 0.007,
+  "tools_or_models": [
+    "python-datetime"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

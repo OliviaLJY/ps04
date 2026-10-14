@@ -1,0 +1,124 @@
+Supercharge your development with the Google Developer Knowledge API ecosystem
+- Google Developers Blog
+Search
+Supercharge your development with the Google Developer Knowledge API ecosystem
+OCT. 7, 2026
+Christina Gonzalez
+Technical Writer, Software Engineering
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+If you build AI agents or developer tools on Google Cloud, stop relying on brittle web-scraping or wrestling with stale LLM training cutoffs.
+Build faster, smarter, and with greater confidence using the Google Developer Knowledge API ecosystem, including our gcloud CLI surface, an official agent skill, API Explorer, and multi-language client libraries. Whether you are operating in a command-line terminal, prompting an AI agent, testing requests interactively, or writing production software, our tools deliver Google documentation.
+What is the Developer Knowledge API?
+The Developer Knowledge API is Google's official, programmatic source of truth for developer documentation about Google Cloud, Firebase, Android, and more. Designed specifically for modern AI agents, IDE extensions, and automated workflows, it replaces brittle web-scraping with a structured API that serves fresh, Markdown-formatted documentation.
+By offering semantic and keyword search, intelligent document chunking, and grounded Q&A capabilities, the API ensures your agents and developer tools remain accurate and token-efficient.
+The Developer Knowledge API is indexed frequently to ensure predictable retrieval, fresh documentation, and minimal lag between upstream updates and agent access.
+Tooling overview and capabilities
+With the Developer Knowledge API interfaces, developers and AI agents can discover, retrieve, and synthesize answers grounded in official Google documentation across terminals, IDEs, and backend codebases.
+gcloud CLI
+The Developer Knowledge API gcloud CLI surface integrates official documentation search, retrieval, and grounded Q&A into your command-line environment. It comes pre-installed in Cloud Shell and works across standard Google Cloud SDK installations on Linux, macOS, and Windows without requiring extra plugins or configuration.
+Key capabilities and commands:
+answer-query : Get grounded answers in your terminal.
+documents search-chunks : Search document snippets and chunks across Google documentation.
+documents describe : Retrieve metadata and content for a specific document.
+Examples:
+# Get grounded answers
+gcloud developer-knowledge answer-query --query="How do I create a BigQuery dataset?"
+# Search document chunks
+gcloud developer-knowledge documents search-chunks --query="Firestore transactions"
+# Retrieve metadata and content for a specific document
+gcloud developer-knowledge documents describe "documents/docs.cloud.google.com/storage/docs/creating-buckets"
+# Troubleshoot an error trace by piping it directly into the answer-query command
+gcloud developer-knowledge answer-query --query="$(cat error.txt)"
+Shell
+Copied
+To get started with the gcloud CLI, see the gcloud CLI Quickstart .
+Agent skill
+The Developer Knowledge agent skill establishes a link between AI coding assistants and Google's documentation ecosystem, enabling autonomous tools to access up-to-date technical specifications.
+Key Benefits
+Grounding & reduced hallucinations: Provides AI coding assistants and agentic workflows access to up-to-date Google developer documentation, reducing hallucinations from stale LLM training cutoffs.
+Optimized token & context usage: Uses a multi-step retrieval workflow—inspecting code and documentation chunks using searchDocumentChunks first before fetching complete Markdown pages with documents.get , or delivering grounded answers using answerQuery .
+Broad tooling compatibility: Uses the standard MCP integration across Google Antigravity, Claude Code, Cursor, GitHub Copilot, and custom agentic frameworks. The skill instructs your assistant how to use the Developer Knowledge MCP server (or fall back to the REST API via curl ).
+Configure the agent skill
+Configure the skill by running the following CLI helper command in your terminal:
+npx skills add google/skills --skill retrieving-developer-knowledge
+Shell
+Copied
+This command installs the Developer Knowledge agent skill in your project. The skill instructs your assistant how to use the Developer Knowledge MCP server (or fall back to the REST API using curl).
+To connect to the MCP server in your IDE, or to configure authentication with Application Default Credentials or an API key , see Connect to the Developer Knowledge MCP server .
+Client libraries
+The client libraries let you embed documentation retrieval, search, and grounded answer generation into production systems, automated CI/CD pipelines, and enterprise knowledge bots.
+Key benefits:
+Programmatic access: Provides programmatic access to AnswerQuery , SearchDocumentChunks , GetDocument , and BatchGetDocuments .
+Idiomatic integration: Native type definitions, builder patterns, error handling, and asynchronous execution tailored to each supported language ecosystem.
+Batching and efficiency: Methods like BatchGetDocuments enable retrieving up to 20 documents in a single API call.
+Enterprise security and reliability: Support for Google Cloud Application Default Credentials, automatic retries, and structured citation tracking.
+Supported languages:
+C#
+Go
+Java
+Node.js and TypeScript
+PHP
+Python
+Ruby
+Get started by following the Quickstart to set up your environment, install a library, and start retrieving developer documentation.
+Code examples:
+The following example demonstrates how an AI agent can use the Python client library to fetch the latest product release notes, ensuring its responses are grounded in data beyond its training cutoff:
+from google.cloud import developer_knowledge_v1
+def FetchMyProductReleaseNotes(my_product_name: str) -> str:
+"""Fetches the latest release notes to bridge a model's knowledge cutoff."""
+# Initialize the Developer Knowledge API client
+my_api_client = developer_knowledge_v1.DeveloperKnowledgeClient()
+# Formulate a targeted query for the specific product's release notes
+my_search_query = f"{my_product_name} latest release notes"
+my_request = developer_knowledge_v1.SearchDocumentChunksRequest(
+query=my_search_query,
+)
+# Retrieve and return the relevant documentation chunks
+my_response = my_api_client.search_document_chunks(request=my_request)
+# Extract the chunk text
+my_release_notes = [my_chunk.text for my_chunk in my_response.chunks]
+return "\n".join(my_release_notes)
+# Example usage:
+# my_latest_notes = FetchMyProductReleaseNotes("Firestore")
+Python
+Copied
+Code examples across various tasks:
+Answer a query with grounded generation
+Search for document chunks
+Retrieve a document
+Retrieve multiple documents
+APIs Explorer
+The Google APIs Explorer for the Developer Knowledge API offers an interactive, zero-code interface integrated into Google's developer site, enabling experimentation and verification of API requests and response structures.
+Through the APIs Explorer, you can test the following core endpoints:
+Next steps
+Ready to integrate Google developer documentation into your workflows and AI tools? Here are a few ways to get started:
+If you already have the gcloud CLI: You can start querying official documentation right away using the gcloud CLI surface .
+If you don't have the gcloud CLI: Give the agent skill to your AI coding assistant or agent to enable grounded retrieval.
+posted in:
+AI
+Announcements
+Learn
+Technical Writing
+API
+Google Cloud
+Generative AI
+Developer Tools
+Previous
+Next
+Related Posts
+Gemini
+AI
+Cloud
+Announcements
+Best Practices
+Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon
+OCT. 13, 2026
+AI
+Case Studies
+Announcements
+Gemini 4 Argon for Robotics
+OCT. 13, 2026

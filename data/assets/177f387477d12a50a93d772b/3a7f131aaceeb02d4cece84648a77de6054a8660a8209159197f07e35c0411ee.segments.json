@@ -1,0 +1,2054 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 5.08,
+    "end_seconds": 7.92,
+    "text": "Hey everyone. My name is Patrick"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 6.4,
+    "end_seconds": 9.68,
+    "text": "Nicoletis. I'm a product manager on the"
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 7.92,
+    "end_seconds": 12.08,
+    "text": "GitHub Copilot team."
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 9.68,
+    "end_seconds": 13.92,
+    "text": "I specifically work on the Copilot SDK"
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 12.08,
+    "end_seconds": 16.08,
+    "text": "and runtime, which gives me an ability"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 13.92,
+    "end_seconds": 17.759999999999998,
+    "text": "to work across many surfaces and"
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 16.08,
+    "end_seconds": 19.919999999999998,
+    "text": "accomplish many tasks related to the"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 17.76,
+    "end_seconds": 21.400000000000002,
+    "text": "needs that agents are supposed to live"
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 19.92,
+    "end_seconds": 22.96,
+    "text": "up to and be responsible for in the"
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 21.4,
+    "end_seconds": 24.799999999999997,
+    "text": "future as we make this transition to"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 22.96,
+    "end_seconds": 26.68,
+    "text": "this exciting new world."
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 24.8,
+    "end_seconds": 28.96,
+    "text": "Before I I dive into the core topic,"
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 26.68,
+    "end_seconds": 31.4,
+    "text": "which is the agent host protocol, I want"
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 28.96,
+    "end_seconds": 33.120000000000005,
+    "text": "to touch a little bit on the Copilot SDK"
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 31.4,
+    "end_seconds": 35.0,
+    "text": "and how it relates to agent host"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 33.12,
+    "end_seconds": 36.32,
+    "text": "protocol in particular and some of the"
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 35.0,
+    "end_seconds": 37.68,
+    "text": "investments that we're making over here"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 36.32,
+    "end_seconds": 38.96,
+    "text": "at GitHub and some of the exciting new"
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 37.68,
+    "end_seconds": 40.76,
+    "text": "features that will be landing in the"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 38.96,
+    "end_seconds": 43.72,
+    "text": "coming months here."
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 40.76,
+    "end_seconds": 46.08,
+    "text": "For context, the GitHub Copilot SDK is"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 43.72,
+    "end_seconds": 48.4,
+    "text": "our latest cutting-edge modern runtime"
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 46.08,
+    "end_seconds": 50.44,
+    "text": "for agents. Uh it's used within GitHub."
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 48.4,
+    "end_seconds": 52.04,
+    "text": "It's also used across Microsoft such as"
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 50.44,
+    "end_seconds": 53.76,
+    "text": "the Office products to power the new"
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 52.04,
+    "end_seconds": 55.56,
+    "text": "agent mode capabilities that exist in"
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 53.76,
+    "end_seconds": 56.96,
+    "text": "those services as well."
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 55.56,
+    "end_seconds": 59.480000000000004,
+    "text": "Uh when you think about the actual"
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 56.96,
+    "end_seconds": 61.36,
+    "text": "runtime, uh it's highly portable. It's"
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 59.48,
+    "end_seconds": 63.16,
+    "text": "designed to run in a whole host of"
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 61.36,
+    "end_seconds": 64.67999999999999,
+    "text": "different environments, a whole host of"
+  },
+  {
+    "segment_id": "yt-0032",
+    "start_seconds": 63.16,
+    "end_seconds": 67.67999999999999,
+    "text": "different constraints that are able to"
+  },
+  {
+    "segment_id": "yt-0033",
+    "start_seconds": 64.68,
+    "end_seconds": 70.2,
+    "text": "be applied to it. Just looking at the"
+  },
+  {
+    "segment_id": "yt-0034",
+    "start_seconds": 67.68,
+    "end_seconds": 72.44000000000001,
+    "text": "basic setup guides, you can see how"
+  },
+  {
+    "segment_id": "yt-0035",
+    "start_seconds": 70.2,
+    "end_seconds": 74.24000000000001,
+    "text": "diverse the the actual environments are"
+  },
+  {
+    "segment_id": "yt-0036",
+    "start_seconds": 72.44,
+    "end_seconds": 76.12,
+    "text": "that you can stick the runtime in today"
+  },
+  {
+    "segment_id": "yt-0037",
+    "start_seconds": 74.24,
+    "end_seconds": 77.88,
+    "text": "and then, you know, what additional"
+  },
+  {
+    "segment_id": "yt-0038",
+    "start_seconds": 76.12,
+    "end_seconds": 80.24000000000001,
+    "text": "problems start surfacing after that"
+  },
+  {
+    "segment_id": "yt-0039",
+    "start_seconds": 77.88,
+    "end_seconds": 81.88,
+    "text": "point. Um the runtime can be actually"
+  },
+  {
+    "segment_id": "yt-0040",
+    "start_seconds": 80.24,
+    "end_seconds": 83.75999999999999,
+    "text": "baked on your local machine"
+  },
+  {
+    "segment_id": "yt-0041",
+    "start_seconds": 81.88,
+    "end_seconds": 86.16,
+    "text": "as a local personal productivity"
+  },
+  {
+    "segment_id": "yt-0042",
+    "start_seconds": 83.76,
+    "end_seconds": 88.2,
+    "text": "application, can be hosted in a managed"
+  },
+  {
+    "segment_id": "yt-0043",
+    "start_seconds": 86.16,
+    "end_seconds": 90.92,
+    "text": "service in the cloud, can be run in"
+  },
+  {
+    "segment_id": "yt-0044",
+    "start_seconds": 88.2,
+    "end_seconds": 92.36,
+    "text": "process in other applications. Um we've"
+  },
+  {
+    "segment_id": "yt-0045",
+    "start_seconds": 90.92,
+    "end_seconds": 94.28,
+    "text": "recently made some improvements to our"
+  },
+  {
+    "segment_id": "yt-0046",
+    "start_seconds": 92.36,
+    "end_seconds": 95.76,
+    "text": "runtime that enable even more platforms"
+  },
+  {
+    "segment_id": "yt-0047",
+    "start_seconds": 94.28,
+    "end_seconds": 96.88,
+    "text": "that you can embed it in and run it on"
+  },
+  {
+    "segment_id": "yt-0048",
+    "start_seconds": 95.76,
+    "end_seconds": 99.16000000000001,
+    "text": "as well."
+  },
+  {
+    "segment_id": "yt-0049",
+    "start_seconds": 96.88,
+    "end_seconds": 101.28,
+    "text": "Um but agent host protocol comes in at a"
+  },
+  {
+    "segment_id": "yt-0050",
+    "start_seconds": 99.16,
+    "end_seconds": 104.28,
+    "text": "really important intersection between"
+  },
+  {
+    "segment_id": "yt-0051",
+    "start_seconds": 101.28,
+    "end_seconds": 107.0,
+    "text": "runtime capabilities and your ability to"
+  },
+  {
+    "segment_id": "yt-0052",
+    "start_seconds": 104.28,
+    "end_seconds": 108.32000000000001,
+    "text": "access that runtime wherever you are."
+  },
+  {
+    "segment_id": "yt-0053",
+    "start_seconds": 107.0,
+    "end_seconds": 110.0,
+    "text": "Uh and so something that the team has"
+  },
+  {
+    "segment_id": "yt-0054",
+    "start_seconds": 108.32,
+    "end_seconds": 111.75999999999999,
+    "text": "been excited to be working on since"
+  },
+  {
+    "segment_id": "yt-0055",
+    "start_seconds": 110.0,
+    "end_seconds": 114.16,
+    "text": "earlier this year, we call it the agent"
+  },
+  {
+    "segment_id": "yt-0056",
+    "start_seconds": 111.76,
+    "end_seconds": 116.0,
+    "text": "host protocol, uh which is essentially a"
+  },
+  {
+    "segment_id": "yt-0057",
+    "start_seconds": 114.16,
+    "end_seconds": 117.72,
+    "text": "definition for a protocol that can be"
+  },
+  {
+    "segment_id": "yt-0058",
+    "start_seconds": 116.0,
+    "end_seconds": 120.52,
+    "text": "wrapped around not just the GitHub"
+  },
+  {
+    "segment_id": "yt-0059",
+    "start_seconds": 117.72,
+    "end_seconds": 122.24,
+    "text": "Copilot runtime, uh but any runtime on"
+  },
+  {
+    "segment_id": "yt-0060",
+    "start_seconds": 120.52,
+    "end_seconds": 123.72,
+    "text": "the market today or any other agentic"
+  },
+  {
+    "segment_id": "yt-0061",
+    "start_seconds": 122.24,
+    "end_seconds": 126.479,
+    "text": "application."
+  },
+  {
+    "segment_id": "yt-0062",
+    "start_seconds": 123.72,
+    "end_seconds": 128.399,
+    "text": "The core responsibility of the protocol"
+  },
+  {
+    "segment_id": "yt-0063",
+    "start_seconds": 126.479,
+    "end_seconds": 129.679,
+    "text": "is to make sure that we can meet users"
+  },
+  {
+    "segment_id": "yt-0064",
+    "start_seconds": 128.399,
+    "end_seconds": 131.44,
+    "text": "wherever they are."
+  },
+  {
+    "segment_id": "yt-0065",
+    "start_seconds": 129.679,
+    "end_seconds": 133.2,
+    "text": "Uh while your hosts might be running"
+  },
+  {
+    "segment_id": "yt-0066",
+    "start_seconds": 131.44,
+    "end_seconds": 135.6,
+    "text": "different runtimes at different points"
+  },
+  {
+    "segment_id": "yt-0067",
+    "start_seconds": 133.2,
+    "end_seconds": 138.32,
+    "text": "in time, your ability to access that"
+  },
+  {
+    "segment_id": "yt-0068",
+    "start_seconds": 135.6,
+    "end_seconds": 141.4,
+    "text": "host is more diverse than ever."
+  },
+  {
+    "segment_id": "yt-0069",
+    "start_seconds": 138.32,
+    "end_seconds": 143.28,
+    "text": "Uh we have laptops, we have phones, uh"
+  },
+  {
+    "segment_id": "yt-0070",
+    "start_seconds": 141.4,
+    "end_seconds": 145.12,
+    "text": "sometimes we will be introduced to new"
+  },
+  {
+    "segment_id": "yt-0071",
+    "start_seconds": 143.28,
+    "end_seconds": 147.12,
+    "text": "form factors like the Duo that we saw"
+  },
+  {
+    "segment_id": "yt-0072",
+    "start_seconds": 145.12,
+    "end_seconds": 149.56,
+    "text": "yesterday. And I think we're really"
+  },
+  {
+    "segment_id": "yt-0073",
+    "start_seconds": 147.12,
+    "end_seconds": 151.8,
+    "text": "preparing for a world where your agents"
+  },
+  {
+    "segment_id": "yt-0074",
+    "start_seconds": 149.56,
+    "end_seconds": 153.6,
+    "text": "can literally run anywhere. You can move"
+  },
+  {
+    "segment_id": "yt-0075",
+    "start_seconds": 151.8,
+    "end_seconds": 155.68,
+    "text": "them between locations. And more"
+  },
+  {
+    "segment_id": "yt-0076",
+    "start_seconds": 153.6,
+    "end_seconds": 157.6,
+    "text": "importantly, no matter which form factor"
+  },
+  {
+    "segment_id": "yt-0077",
+    "start_seconds": 155.68,
+    "end_seconds": 160.28,
+    "text": "or device you have available to you, you"
+  },
+  {
+    "segment_id": "yt-0078",
+    "start_seconds": 157.6,
+    "end_seconds": 161.6,
+    "text": "have access to that agent as well."
+  },
+  {
+    "segment_id": "yt-0079",
+    "start_seconds": 160.28,
+    "end_seconds": 164.04,
+    "text": "Uh and so while we continue to bring"
+  },
+  {
+    "segment_id": "yt-0080",
+    "start_seconds": 161.6,
+    "end_seconds": 166.92,
+    "text": "these capabilities into places like VS"
+  },
+  {
+    "segment_id": "yt-0081",
+    "start_seconds": 164.04,
+    "end_seconds": 169.07999999999998,
+    "text": "Code and our our GitHub Copilot runtime"
+  },
+  {
+    "segment_id": "yt-0082",
+    "start_seconds": 166.92,
+    "end_seconds": 170.95899999999997,
+    "text": "as well as our other developer surfaces,"
+  },
+  {
+    "segment_id": "yt-0083",
+    "start_seconds": 169.08,
+    "end_seconds": 172.24,
+    "text": "we can already show off some of the"
+  },
+  {
+    "segment_id": "yt-0084",
+    "start_seconds": 170.959,
+    "end_seconds": 174.28,
+    "text": "directions that we're already heading"
+  },
+  {
+    "segment_id": "yt-0085",
+    "start_seconds": 172.24,
+    "end_seconds": 175.84,
+    "text": "and and hopefully uh you'll be excited"
+  },
+  {
+    "segment_id": "yt-0086",
+    "start_seconds": 174.28,
+    "end_seconds": 177.24,
+    "text": "to see where where we're leading to in"
+  },
+  {
+    "segment_id": "yt-0087",
+    "start_seconds": 175.84,
+    "end_seconds": 178.36,
+    "text": "the future."
+  },
+  {
+    "segment_id": "yt-0088",
+    "start_seconds": 177.24,
+    "end_seconds": 180.0,
+    "text": "All right. To actually show off the"
+  },
+  {
+    "segment_id": "yt-0089",
+    "start_seconds": 178.36,
+    "end_seconds": 181.60000000000002,
+    "text": "agent host protocol,"
+  },
+  {
+    "segment_id": "yt-0090",
+    "start_seconds": 180.0,
+    "end_seconds": 183.92,
+    "text": "uh I'm going to use something that is is"
+  },
+  {
+    "segment_id": "yt-0091",
+    "start_seconds": 181.6,
+    "end_seconds": 186.04,
+    "text": "very common in the developer circles. Uh"
+  },
+  {
+    "segment_id": "yt-0092",
+    "start_seconds": 183.92,
+    "end_seconds": 188.51899999999998,
+    "text": "I think you'll find many of us have our"
+  },
+  {
+    "segment_id": "yt-0093",
+    "start_seconds": 186.04,
+    "end_seconds": 189.88,
+    "text": "own private little Tailscale networks."
+  },
+  {
+    "segment_id": "yt-0094",
+    "start_seconds": 188.519,
+    "end_seconds": 191.72,
+    "text": "Uh where at home, you know, I'm running"
+  },
+  {
+    "segment_id": "yt-0095",
+    "start_seconds": 189.88,
+    "end_seconds": 194.2,
+    "text": "a Mac, Windows, and Linux machine at all"
+  },
+  {
+    "segment_id": "yt-0096",
+    "start_seconds": 191.72,
+    "end_seconds": 196.959,
+    "text": "times. Each one is running Copilot"
+  },
+  {
+    "segment_id": "yt-0097",
+    "start_seconds": 194.2,
+    "end_seconds": 198.56,
+    "text": "agents as well as other agents, too."
+  },
+  {
+    "segment_id": "yt-0098",
+    "start_seconds": 196.959,
+    "end_seconds": 200.36,
+    "text": "Um but I'm always limited by the fact"
+  },
+  {
+    "segment_id": "yt-0099",
+    "start_seconds": 198.56,
+    "end_seconds": 202.4,
+    "text": "that I need to have a device connected"
+  },
+  {
+    "segment_id": "yt-0100",
+    "start_seconds": 200.36,
+    "end_seconds": 204.519,
+    "text": "to my Tailscale network to even access"
+  },
+  {
+    "segment_id": "yt-0101",
+    "start_seconds": 202.4,
+    "end_seconds": 206.36,
+    "text": "those machines. And really we want to"
+  },
+  {
+    "segment_id": "yt-0102",
+    "start_seconds": 204.519,
+    "end_seconds": 208.56,
+    "text": "set the stage to break free of even that"
+  },
+  {
+    "segment_id": "yt-0103",
+    "start_seconds": 206.36,
+    "end_seconds": 209.76000000000002,
+    "text": "constraint in the new world. Uh so the"
+  },
+  {
+    "segment_id": "yt-0104",
+    "start_seconds": 208.56,
+    "end_seconds": 212.8,
+    "text": "first thing that I'll do is I'll"
+  },
+  {
+    "segment_id": "yt-0105",
+    "start_seconds": 209.76,
+    "end_seconds": 215.6,
+    "text": "actually just go ahead and log into uh"
+  },
+  {
+    "segment_id": "yt-0106",
+    "start_seconds": 212.8,
+    "end_seconds": 216.959,
+    "text": "my home NAS. Uh at this point, uh"
+  },
+  {
+    "segment_id": "yt-0107",
+    "start_seconds": 215.6,
+    "end_seconds": 218.88,
+    "text": "I think we're all going to end up with"
+  },
+  {
+    "segment_id": "yt-0108",
+    "start_seconds": 216.959,
+    "end_seconds": 220.88,
+    "text": "80 terabyte NASs at home, but this is my"
+  },
+  {
+    "segment_id": "yt-0109",
+    "start_seconds": 218.88,
+    "end_seconds": 223.56,
+    "text": "personal one that I use to host large"
+  },
+  {
+    "segment_id": "yt-0110",
+    "start_seconds": 220.88,
+    "end_seconds": 225.44,
+    "text": "files, all the stuff my family likes to"
+  },
+  {
+    "segment_id": "yt-0111",
+    "start_seconds": 223.56,
+    "end_seconds": 226.8,
+    "text": "store and and keep a nice archive of"
+  },
+  {
+    "segment_id": "yt-0112",
+    "start_seconds": 225.44,
+    "end_seconds": 228.16,
+    "text": "what's going on as well as do some"
+  },
+  {
+    "segment_id": "yt-0113",
+    "start_seconds": 226.8,
+    "end_seconds": 230.64000000000001,
+    "text": "coding work."
+  },
+  {
+    "segment_id": "yt-0114",
+    "start_seconds": 228.16,
+    "end_seconds": 232.07999999999998,
+    "text": "All right. AHP comes with a variety of"
+  },
+  {
+    "segment_id": "yt-0115",
+    "start_seconds": 230.64,
+    "end_seconds": 234.16,
+    "text": "clients. Um"
+  },
+  {
+    "segment_id": "yt-0116",
+    "start_seconds": 232.08,
+    "end_seconds": 236.0,
+    "text": "we have built one internally that we're"
+  },
+  {
+    "segment_id": "yt-0117",
+    "start_seconds": 234.16,
+    "end_seconds": 237.56,
+    "text": "using as a reference implementation to"
+  },
+  {
+    "segment_id": "yt-0118",
+    "start_seconds": 236.0,
+    "end_seconds": 239.12,
+    "text": "bring capabilities down into other"
+  },
+  {
+    "segment_id": "yt-0119",
+    "start_seconds": 237.56,
+    "end_seconds": 240.4,
+    "text": "surfaces. So, I'll talk a little bit"
+  },
+  {
+    "segment_id": "yt-0120",
+    "start_seconds": 239.12,
+    "end_seconds": 242.28,
+    "text": "about how you can play with your own"
+  },
+  {
+    "segment_id": "yt-0121",
+    "start_seconds": 240.4,
+    "end_seconds": 244.84,
+    "text": "hosts in a little bit, but for now, I'm"
+  },
+  {
+    "segment_id": "yt-0122",
+    "start_seconds": 242.28,
+    "end_seconds": 247.24,
+    "text": "going to use this one we call copilot D."
+  },
+  {
+    "segment_id": "yt-0123",
+    "start_seconds": 244.84,
+    "end_seconds": 250.56,
+    "text": "Uh copilot D allows us to spin up a"
+  },
+  {
+    "segment_id": "yt-0124",
+    "start_seconds": 247.24,
+    "end_seconds": 252.44,
+    "text": "service on any host. Um we can, as you"
+  },
+  {
+    "segment_id": "yt-0125",
+    "start_seconds": 250.56,
+    "end_seconds": 255.44,
+    "text": "can see in this argument here, open up a"
+  },
+  {
+    "segment_id": "yt-0126",
+    "start_seconds": 252.44,
+    "end_seconds": 257.16,
+    "text": "relay. We can define an environment name"
+  },
+  {
+    "segment_id": "yt-0127",
+    "start_seconds": 255.44,
+    "end_seconds": 258.2,
+    "text": "easily, so this is my home Linux"
+  },
+  {
+    "segment_id": "yt-0128",
+    "start_seconds": 257.16,
+    "end_seconds": 260.23900000000003,
+    "text": "machine."
+  },
+  {
+    "segment_id": "yt-0129",
+    "start_seconds": 258.2,
+    "end_seconds": 262.03999999999996,
+    "text": "Um there's a workspace folder. So, when"
+  },
+  {
+    "segment_id": "yt-0130",
+    "start_seconds": 260.239,
+    "end_seconds": 264.08,
+    "text": "you actually run the host, you know,"
+  },
+  {
+    "segment_id": "yt-0131",
+    "start_seconds": 262.04,
+    "end_seconds": 265.52000000000004,
+    "text": "what current working directory is it uh"
+  },
+  {
+    "segment_id": "yt-0132",
+    "start_seconds": 264.08,
+    "end_seconds": 267.68,
+    "text": "traditionally limited to? You can have"
+  },
+  {
+    "segment_id": "yt-0133",
+    "start_seconds": 265.52,
+    "end_seconds": 268.79999999999995,
+    "text": "more than one if you like to as well."
+  },
+  {
+    "segment_id": "yt-0134",
+    "start_seconds": 267.68,
+    "end_seconds": 270.76,
+    "text": "And then, what do you want to expose it"
+  },
+  {
+    "segment_id": "yt-0135",
+    "start_seconds": 268.8,
+    "end_seconds": 271.91900000000004,
+    "text": "on and and what's the basic log output"
+  },
+  {
+    "segment_id": "yt-0136",
+    "start_seconds": 270.76,
+    "end_seconds": 274.28,
+    "text": "level?"
+  },
+  {
+    "segment_id": "yt-0137",
+    "start_seconds": 271.919,
+    "end_seconds": 277.2,
+    "text": "Uh when you'll see the the host spin up"
+  },
+  {
+    "segment_id": "yt-0138",
+    "start_seconds": 274.28,
+    "end_seconds": 279.79999999999995,
+    "text": "itself, um what it does is it produces"
+  },
+  {
+    "segment_id": "yt-0139",
+    "start_seconds": 277.2,
+    "end_seconds": 281.08,
+    "text": "an environment's identifier."
+  },
+  {
+    "segment_id": "yt-0140",
+    "start_seconds": 279.8,
+    "end_seconds": 282.68,
+    "text": "We're just going to go ahead and copy"
+  },
+  {
+    "segment_id": "yt-0141",
+    "start_seconds": 281.08,
+    "end_seconds": 284.4,
+    "text": "that. Uh in the future, we're going to"
+  },
+  {
+    "segment_id": "yt-0142",
+    "start_seconds": 282.68,
+    "end_seconds": 286.68,
+    "text": "make this even friendlier and easier to"
+  },
+  {
+    "segment_id": "yt-0143",
+    "start_seconds": 284.4,
+    "end_seconds": 288.32,
+    "text": "use, but for now, the environment ID"
+  },
+  {
+    "segment_id": "yt-0144",
+    "start_seconds": 286.68,
+    "end_seconds": 289.96,
+    "text": "will be all that we need."
+  },
+  {
+    "segment_id": "yt-0145",
+    "start_seconds": 288.32,
+    "end_seconds": 290.919,
+    "text": "And we now have a host running on this"
+  },
+  {
+    "segment_id": "yt-0146",
+    "start_seconds": 289.96,
+    "end_seconds": 293.2,
+    "text": "machine."
+  },
+  {
+    "segment_id": "yt-0147",
+    "start_seconds": 290.919,
+    "end_seconds": 294.68,
+    "text": "Uh which doesn't mean much by itself,"
+  },
+  {
+    "segment_id": "yt-0148",
+    "start_seconds": 293.2,
+    "end_seconds": 296.56,
+    "text": "but when I actually come back to my"
+  },
+  {
+    "segment_id": "yt-0149",
+    "start_seconds": 294.68,
+    "end_seconds": 298.36,
+    "text": "local machine, which I'll do over here"
+  },
+  {
+    "segment_id": "yt-0150",
+    "start_seconds": 296.56,
+    "end_seconds": 300.04,
+    "text": "on this tab right here,"
+  },
+  {
+    "segment_id": "yt-0151",
+    "start_seconds": 298.36,
+    "end_seconds": 302.56,
+    "text": "I can actually just go right into the"
+  },
+  {
+    "segment_id": "yt-0152",
+    "start_seconds": 300.04,
+    "end_seconds": 304.08000000000004,
+    "text": "copilot CLI directly, which hopefully"
+  },
+  {
+    "segment_id": "yt-0153",
+    "start_seconds": 302.56,
+    "end_seconds": 305.12,
+    "text": "you all are very familiar with at this"
+  },
+  {
+    "segment_id": "yt-0154",
+    "start_seconds": 304.08,
+    "end_seconds": 307.03999999999996,
+    "text": "point."
+  },
+  {
+    "segment_id": "yt-0155",
+    "start_seconds": 305.12,
+    "end_seconds": 310.12,
+    "text": "Um we'll go ahead and turn it on, and"
+  },
+  {
+    "segment_id": "yt-0156",
+    "start_seconds": 307.04,
+    "end_seconds": 312.91900000000004,
+    "text": "then inside of uh upcoming builds,"
+  },
+  {
+    "segment_id": "yt-0157",
+    "start_seconds": 310.12,
+    "end_seconds": 315.56,
+    "text": "there's a /ahp command."
+  },
+  {
+    "segment_id": "yt-0158",
+    "start_seconds": 312.919,
+    "end_seconds": 317.59999999999997,
+    "text": "Um what this allows you to do is connect"
+  },
+  {
+    "segment_id": "yt-0159",
+    "start_seconds": 315.56,
+    "end_seconds": 320.08,
+    "text": "to hosts. It allows you to see sessions"
+  },
+  {
+    "segment_id": "yt-0160",
+    "start_seconds": 317.6,
+    "end_seconds": 321.91900000000004,
+    "text": "across the hosts, restart them. Um"
+  },
+  {
+    "segment_id": "yt-0161",
+    "start_seconds": 320.08,
+    "end_seconds": 324.03999999999996,
+    "text": "there's a few other exciting features"
+  },
+  {
+    "segment_id": "yt-0162",
+    "start_seconds": 321.919,
+    "end_seconds": 327.0,
+    "text": "related to it as well, but to really"
+  },
+  {
+    "segment_id": "yt-0163",
+    "start_seconds": 324.04,
+    "end_seconds": 328.64000000000004,
+    "text": "show off the core AHP concepts, what I'm"
+  },
+  {
+    "segment_id": "yt-0164",
+    "start_seconds": 327.0,
+    "end_seconds": 330.0,
+    "text": "going to first do is just show you the"
+  },
+  {
+    "segment_id": "yt-0165",
+    "start_seconds": 328.64,
+    "end_seconds": 332.28,
+    "text": "host command."
+  },
+  {
+    "segment_id": "yt-0166",
+    "start_seconds": 330.0,
+    "end_seconds": 334.48,
+    "text": "Um we are not attached to any host"
+  },
+  {
+    "segment_id": "yt-0167",
+    "start_seconds": 332.28,
+    "end_seconds": 336.64,
+    "text": "currently. The copilot CLI hasn't been"
+  },
+  {
+    "segment_id": "yt-0168",
+    "start_seconds": 334.48,
+    "end_seconds": 339.24,
+    "text": "configured to be connected to one."
+  },
+  {
+    "segment_id": "yt-0169",
+    "start_seconds": 336.64,
+    "end_seconds": 340.36,
+    "text": "But what I can do is run an AHP cloud"
+  },
+  {
+    "segment_id": "yt-0170",
+    "start_seconds": 339.24,
+    "end_seconds": 342.919,
+    "text": "command,"
+  },
+  {
+    "segment_id": "yt-0171",
+    "start_seconds": 340.36,
+    "end_seconds": 344.96000000000004,
+    "text": "give it the environment variable itself,"
+  },
+  {
+    "segment_id": "yt-0172",
+    "start_seconds": 342.919,
+    "end_seconds": 347.35999999999996,
+    "text": "and then if we flip back over to this"
+  },
+  {
+    "segment_id": "yt-0173",
+    "start_seconds": 344.96,
+    "end_seconds": 349.64,
+    "text": "AHP uh tab, we should see some"
+  },
+  {
+    "segment_id": "yt-0174",
+    "start_seconds": 347.36,
+    "end_seconds": 352.96000000000004,
+    "text": "connections coming in as well."
+  },
+  {
+    "segment_id": "yt-0175",
+    "start_seconds": 349.64,
+    "end_seconds": 355.4,
+    "text": "Um the nice thing is uh now I've bridged"
+  },
+  {
+    "segment_id": "yt-0176",
+    "start_seconds": 352.96,
+    "end_seconds": 357.79999999999995,
+    "text": "essentially my local Copilot CLI"
+  },
+  {
+    "segment_id": "yt-0177",
+    "start_seconds": 355.4,
+    "end_seconds": 360.15999999999997,
+    "text": "instance to the cloud uh through the"
+  },
+  {
+    "segment_id": "yt-0178",
+    "start_seconds": 357.8,
+    "end_seconds": 362.0,
+    "text": "cloud to my local machine, uh which is"
+  },
+  {
+    "segment_id": "yt-0179",
+    "start_seconds": 360.16,
+    "end_seconds": 363.16,
+    "text": "the Linux box that's currently sitting"
+  },
+  {
+    "segment_id": "yt-0180",
+    "start_seconds": 362.0,
+    "end_seconds": 365.92,
+    "text": "at home."
+  },
+  {
+    "segment_id": "yt-0181",
+    "start_seconds": 363.16,
+    "end_seconds": 368.8,
+    "text": "I can rerun the AHP hosts commands. You"
+  },
+  {
+    "segment_id": "yt-0182",
+    "start_seconds": 365.92,
+    "end_seconds": 371.04,
+    "text": "can see that we are connected externally"
+  },
+  {
+    "segment_id": "yt-0183",
+    "start_seconds": 368.8,
+    "end_seconds": 374.08,
+    "text": "through Copilot D. You get protocol"
+  },
+  {
+    "segment_id": "yt-0184",
+    "start_seconds": 371.04,
+    "end_seconds": 376.40000000000003,
+    "text": "versions, environment IDs, etc. Um this"
+  },
+  {
+    "segment_id": "yt-0185",
+    "start_seconds": 374.08,
+    "end_seconds": 378.76,
+    "text": "is showing that not only am I able to"
+  },
+  {
+    "segment_id": "yt-0186",
+    "start_seconds": 376.4,
+    "end_seconds": 381.4,
+    "text": "run Copilot uh locally, but we are"
+  },
+  {
+    "segment_id": "yt-0187",
+    "start_seconds": 378.76,
+    "end_seconds": 383.56,
+    "text": "connected through uh my machine to my"
+  },
+  {
+    "segment_id": "yt-0188",
+    "start_seconds": 381.4,
+    "end_seconds": 385.88,
+    "text": "external home machine as well."
+  },
+  {
+    "segment_id": "yt-0189",
+    "start_seconds": 383.56,
+    "end_seconds": 388.8,
+    "text": "If I want to actually use that instead,"
+  },
+  {
+    "segment_id": "yt-0190",
+    "start_seconds": 385.88,
+    "end_seconds": 389.84,
+    "text": "I can simply run a {slash} AHP use"
+  },
+  {
+    "segment_id": "yt-0191",
+    "start_seconds": 388.8,
+    "end_seconds": 392.12,
+    "text": "command."
+  },
+  {
+    "segment_id": "yt-0192",
+    "start_seconds": 389.84,
+    "end_seconds": 394.67999999999995,
+    "text": "This will allow me to connect directly"
+  },
+  {
+    "segment_id": "yt-0193",
+    "start_seconds": 392.12,
+    "end_seconds": 397.16,
+    "text": "to the machine. And it it will"
+  },
+  {
+    "segment_id": "yt-0194",
+    "start_seconds": 394.68,
+    "end_seconds": 399.32,
+    "text": "essentially uh enable me to create new"
+  },
+  {
+    "segment_id": "yt-0195",
+    "start_seconds": 397.16,
+    "end_seconds": 400.56,
+    "text": "sessions. It'll also allow me to attach,"
+  },
+  {
+    "segment_id": "yt-0196",
+    "start_seconds": 399.32,
+    "end_seconds": 402.84,
+    "text": "which I'll show you some of that that"
+  },
+  {
+    "segment_id": "yt-0197",
+    "start_seconds": 400.56,
+    "end_seconds": 406.24,
+    "text": "fun flexibility in a second here."
+  },
+  {
+    "segment_id": "yt-0198",
+    "start_seconds": 402.84,
+    "end_seconds": 409.03999999999996,
+    "text": "Uh if we want to start a new session, um"
+  },
+  {
+    "segment_id": "yt-0199",
+    "start_seconds": 406.24,
+    "end_seconds": 410.72,
+    "text": "we can just do {slash} AHP new."
+  },
+  {
+    "segment_id": "yt-0200",
+    "start_seconds": 409.04,
+    "end_seconds": 413.20000000000005,
+    "text": "This will uh"
+  },
+  {
+    "segment_id": "yt-0201",
+    "start_seconds": 410.72,
+    "end_seconds": 415.88000000000005,
+    "text": "update my interface to actually reflect"
+  },
+  {
+    "segment_id": "yt-0202",
+    "start_seconds": 413.2,
+    "end_seconds": 418.28,
+    "text": "the remote host instead. And so similar"
+  },
+  {
+    "segment_id": "yt-0203",
+    "start_seconds": 415.88,
+    "end_seconds": 420.919,
+    "text": "to the path that I showed you for my"
+  },
+  {
+    "segment_id": "yt-0204",
+    "start_seconds": 418.28,
+    "end_seconds": 422.84,
+    "text": "workspace folder, this is not actually"
+  },
+  {
+    "segment_id": "yt-0205",
+    "start_seconds": 420.919,
+    "end_seconds": 424.919,
+    "text": "anymore a a directory on my local"
+  },
+  {
+    "segment_id": "yt-0206",
+    "start_seconds": 422.84,
+    "end_seconds": 427.35999999999996,
+    "text": "machine. This is actually spun up a"
+  },
+  {
+    "segment_id": "yt-0207",
+    "start_seconds": 424.919,
+    "end_seconds": 429.44,
+    "text": "runtime on my local Linux server at"
+  },
+  {
+    "segment_id": "yt-0208",
+    "start_seconds": 427.36,
+    "end_seconds": 431.56,
+    "text": "home. It's set the current working"
+  },
+  {
+    "segment_id": "yt-0209",
+    "start_seconds": 429.44,
+    "end_seconds": 435.04,
+    "text": "directory to the workspace folder that"
+  },
+  {
+    "segment_id": "yt-0210",
+    "start_seconds": 431.56,
+    "end_seconds": 437.4,
+    "text": "I'm running the AHP host uh on directly."
+  },
+  {
+    "segment_id": "yt-0211",
+    "start_seconds": 435.04,
+    "end_seconds": 440.04,
+    "text": "And I can go ahead and interface with"
+  },
+  {
+    "segment_id": "yt-0212",
+    "start_seconds": 437.4,
+    "end_seconds": 441.919,
+    "text": "the agent directly on that machine. Um"
+  },
+  {
+    "segment_id": "yt-0213",
+    "start_seconds": 440.04,
+    "end_seconds": 444.12,
+    "text": "one of the huge benefits of this again"
+  },
+  {
+    "segment_id": "yt-0214",
+    "start_seconds": 441.919,
+    "end_seconds": 446.28,
+    "text": "is that even though the runtime is"
+  },
+  {
+    "segment_id": "yt-0215",
+    "start_seconds": 444.12,
+    "end_seconds": 448.48,
+    "text": "running elsewhere, these really thin"
+  },
+  {
+    "segment_id": "yt-0216",
+    "start_seconds": 446.28,
+    "end_seconds": 450.52,
+    "text": "external clients, whether it's the CLI,"
+  },
+  {
+    "segment_id": "yt-0217",
+    "start_seconds": 448.48,
+    "end_seconds": 452.88,
+    "text": "whether it's VS Code, uh the GitHub"
+  },
+  {
+    "segment_id": "yt-0218",
+    "start_seconds": 450.52,
+    "end_seconds": 454.56,
+    "text": "Copilot app, or any other client you'd"
+  },
+  {
+    "segment_id": "yt-0219",
+    "start_seconds": 452.88,
+    "end_seconds": 457.44,
+    "text": "like to build uh that aligns with the"
+  },
+  {
+    "segment_id": "yt-0220",
+    "start_seconds": 454.56,
+    "end_seconds": 459.64,
+    "text": "protocol, can access this uh interface,"
+  },
+  {
+    "segment_id": "yt-0221",
+    "start_seconds": 457.44,
+    "end_seconds": 462.44,
+    "text": "can connect to the system, and can"
+  },
+  {
+    "segment_id": "yt-0222",
+    "start_seconds": 459.64,
+    "end_seconds": 464.56,
+    "text": "actually drive the agentic session. Um"
+  },
+  {
+    "segment_id": "yt-0223",
+    "start_seconds": 462.44,
+    "end_seconds": 466.76,
+    "text": "but it doesn't really just stop there."
+  },
+  {
+    "segment_id": "yt-0224",
+    "start_seconds": 464.56,
+    "end_seconds": 468.76,
+    "text": "Uh, some of the unique capabilities that"
+  },
+  {
+    "segment_id": "yt-0225",
+    "start_seconds": 466.76,
+    "end_seconds": 471.08,
+    "text": "come with something like this uh that"
+  },
+  {
+    "segment_id": "yt-0226",
+    "start_seconds": 468.76,
+    "end_seconds": 472.8,
+    "text": "represent a really nice addition to our"
+  },
+  {
+    "segment_id": "yt-0227",
+    "start_seconds": 471.08,
+    "end_seconds": 475.08,
+    "text": "remoting technology"
+  },
+  {
+    "segment_id": "yt-0228",
+    "start_seconds": 472.8,
+    "end_seconds": 477.04,
+    "text": "is you're able to attach multiple"
+  },
+  {
+    "segment_id": "yt-0229",
+    "start_seconds": 475.08,
+    "end_seconds": 479.8,
+    "text": "sessions at the same time."
+  },
+  {
+    "segment_id": "yt-0230",
+    "start_seconds": 477.04,
+    "end_seconds": 483.28000000000003,
+    "text": "Um, so if I go ahead and"
+  },
+  {
+    "segment_id": "yt-0231",
+    "start_seconds": 479.8,
+    "end_seconds": 484.48,
+    "text": "add the AHP host onto this client as"
+  },
+  {
+    "segment_id": "yt-0232",
+    "start_seconds": 483.28,
+    "end_seconds": 486.47999999999996,
+    "text": "well,"
+  },
+  {
+    "segment_id": "yt-0233",
+    "start_seconds": 484.48,
+    "end_seconds": 489.88,
+    "text": "I run a different command. So, take a"
+  },
+  {
+    "segment_id": "yt-0234",
+    "start_seconds": 486.48,
+    "end_seconds": 489.88,
+    "text": "look at the sessions. Oops."
+  },
+  {
+    "segment_id": "yt-0235",
+    "start_seconds": 491.36,
+    "end_seconds": 496.0,
+    "text": "Oops."
+  },
+  {
+    "segment_id": "yt-0236",
+    "start_seconds": 493.88,
+    "end_seconds": 497.84,
+    "text": "Helps if I add it at the end."
+  },
+  {
+    "segment_id": "yt-0237",
+    "start_seconds": 496.0,
+    "end_seconds": 500.36,
+    "text": "You'll see that there is an active"
+  },
+  {
+    "segment_id": "yt-0238",
+    "start_seconds": 497.84,
+    "end_seconds": 501.64,
+    "text": "session, which is this E39."
+  },
+  {
+    "segment_id": "yt-0239",
+    "start_seconds": 500.36,
+    "end_seconds": 504.64,
+    "text": "You'll see the OnePlus One, which"
+  },
+  {
+    "segment_id": "yt-0240",
+    "start_seconds": 501.64,
+    "end_seconds": 507.44,
+    "text": "matches my prompt, showing that uh I can"
+  },
+  {
+    "segment_id": "yt-0241",
+    "start_seconds": 504.64,
+    "end_seconds": 511.44,
+    "text": "actually uh attach to that session"
+  },
+  {
+    "segment_id": "yt-0242",
+    "start_seconds": 507.44,
+    "end_seconds": 515.32,
+    "text": "directly. So, if I use AHP attach,"
+  },
+  {
+    "segment_id": "yt-0243",
+    "start_seconds": 511.44,
+    "end_seconds": 517.159,
+    "text": "we copy this identifier right here."
+  },
+  {
+    "segment_id": "yt-0244",
+    "start_seconds": 515.32,
+    "end_seconds": 519.36,
+    "text": "We should be able to bridge our sessions"
+  },
+  {
+    "segment_id": "yt-0245",
+    "start_seconds": 517.159,
+    "end_seconds": 521.84,
+    "text": "together. Uh, if you've used our"
+  },
+  {
+    "segment_id": "yt-0246",
+    "start_seconds": 519.36,
+    "end_seconds": 524.2,
+    "text": "remoting technology before, uh typically"
+  },
+  {
+    "segment_id": "yt-0247",
+    "start_seconds": 521.84,
+    "end_seconds": 526.0400000000001,
+    "text": "it was pull-based. It was really forcing"
+  },
+  {
+    "segment_id": "yt-0248",
+    "start_seconds": 524.2,
+    "end_seconds": 528.08,
+    "text": "you into a situation where you could"
+  },
+  {
+    "segment_id": "yt-0249",
+    "start_seconds": 526.04,
+    "end_seconds": 531.64,
+    "text": "have one active clients uh that could"
+  },
+  {
+    "segment_id": "yt-0250",
+    "start_seconds": 528.08,
+    "end_seconds": 533.48,
+    "text": "steer the session itself. Now you get uh"
+  },
+  {
+    "segment_id": "yt-0251",
+    "start_seconds": 531.64,
+    "end_seconds": 536.28,
+    "text": "more advanced capabilities when it comes"
+  },
+  {
+    "segment_id": "yt-0252",
+    "start_seconds": 533.48,
+    "end_seconds": 538.08,
+    "text": "to real-time replayability. Um, you get"
+  },
+  {
+    "segment_id": "yt-0253",
+    "start_seconds": 536.28,
+    "end_seconds": 540.04,
+    "text": "advanced capabilities when it comes to"
+  },
+  {
+    "segment_id": "yt-0254",
+    "start_seconds": 538.08,
+    "end_seconds": 542.1600000000001,
+    "text": "the playback systems and how sessions"
+  },
+  {
+    "segment_id": "yt-0255",
+    "start_seconds": 540.04,
+    "end_seconds": 544.28,
+    "text": "can be portable across clients. And what"
+  },
+  {
+    "segment_id": "yt-0256",
+    "start_seconds": 542.16,
+    "end_seconds": 546.56,
+    "text": "this really translates to"
+  },
+  {
+    "segment_id": "yt-0257",
+    "start_seconds": 544.28,
+    "end_seconds": 548.3199999999999,
+    "text": "is you get live updates across clients"
+  },
+  {
+    "segment_id": "yt-0258",
+    "start_seconds": 546.56,
+    "end_seconds": 551.2399999999999,
+    "text": "as well. As you see, I typed in one"
+  },
+  {
+    "segment_id": "yt-0259",
+    "start_seconds": 548.32,
+    "end_seconds": 553.08,
+    "text": "client 2 + 3. As soon as I hit enter, it"
+  },
+  {
+    "segment_id": "yt-0260",
+    "start_seconds": 551.24,
+    "end_seconds": 555.6800000000001,
+    "text": "can go to the other client, too. You can"
+  },
+  {
+    "segment_id": "yt-0261",
+    "start_seconds": 553.08,
+    "end_seconds": 557.5600000000001,
+    "text": "see the response on both. Um, our core"
+  },
+  {
+    "segment_id": "yt-0262",
+    "start_seconds": 555.68,
+    "end_seconds": 559.1999999999999,
+    "text": "objective and goal is to make sure as"
+  },
+  {
+    "segment_id": "yt-0263",
+    "start_seconds": 557.56,
+    "end_seconds": 561.64,
+    "text": "you bridge new clients into the"
+  },
+  {
+    "segment_id": "yt-0264",
+    "start_seconds": 559.2,
+    "end_seconds": 563.8000000000001,
+    "text": "experience and take them out, each one"
+  },
+  {
+    "segment_id": "yt-0265",
+    "start_seconds": 561.64,
+    "end_seconds": 565.8,
+    "text": "can participate in it to be the active"
+  },
+  {
+    "segment_id": "yt-0266",
+    "start_seconds": 563.8,
+    "end_seconds": 567.28,
+    "text": "driver. That way you can transition from"
+  },
+  {
+    "segment_id": "yt-0267",
+    "start_seconds": 565.8,
+    "end_seconds": 569.04,
+    "text": "your laptop to your phone, from your"
+  },
+  {
+    "segment_id": "yt-0268",
+    "start_seconds": 567.28,
+    "end_seconds": 570.48,
+    "text": "phone back to your laptop, from your"
+  },
+  {
+    "segment_id": "yt-0269",
+    "start_seconds": 569.04,
+    "end_seconds": 571.9599999999999,
+    "text": "work machine to your personal machine,"
+  },
+  {
+    "segment_id": "yt-0270",
+    "start_seconds": 570.48,
+    "end_seconds": 573.6800000000001,
+    "text": "depending on the context in which you're"
+  },
+  {
+    "segment_id": "yt-0271",
+    "start_seconds": 571.96,
+    "end_seconds": 576.0400000000001,
+    "text": "operating in. But it all is made"
+  },
+  {
+    "segment_id": "yt-0272",
+    "start_seconds": 573.68,
+    "end_seconds": 577.4,
+    "text": "available using this new AHP protocol."
+  },
+  {
+    "segment_id": "yt-0273",
+    "start_seconds": 576.04,
+    "end_seconds": 579.52,
+    "text": "Again, that we're embedding in our"
+  },
+  {
+    "segment_id": "yt-0274",
+    "start_seconds": 577.4,
+    "end_seconds": 581.8,
+    "text": "surfaces and we're also uh sharing"
+  },
+  {
+    "segment_id": "yt-0275",
+    "start_seconds": 579.52,
+    "end_seconds": 583.88,
+    "text": "publicly and and diving deep looking for"
+  },
+  {
+    "segment_id": "yt-0276",
+    "start_seconds": 581.8,
+    "end_seconds": 587.0799999999999,
+    "text": "more ways to improve the offering and"
+  },
+  {
+    "segment_id": "yt-0277",
+    "start_seconds": 583.88,
+    "end_seconds": 589.08,
+    "text": "also add more runtime support, as well."
+  },
+  {
+    "segment_id": "yt-0278",
+    "start_seconds": 587.08,
+    "end_seconds": 590.5600000000001,
+    "text": "When you think about how this translates"
+  },
+  {
+    "segment_id": "yt-0279",
+    "start_seconds": 589.08,
+    "end_seconds": 591.9200000000001,
+    "text": "ultimately to the github.com"
+  },
+  {
+    "segment_id": "yt-0280",
+    "start_seconds": 590.56,
+    "end_seconds": 593.1199999999999,
+    "text": "experiences,"
+  },
+  {
+    "segment_id": "yt-0281",
+    "start_seconds": 591.92,
+    "end_seconds": 595.56,
+    "text": "one of the most exciting things"
+  },
+  {
+    "segment_id": "yt-0282",
+    "start_seconds": 593.12,
+    "end_seconds": 598.08,
+    "text": "personally uh to me is its integration"
+  },
+  {
+    "segment_id": "yt-0283",
+    "start_seconds": 595.56,
+    "end_seconds": 599.68,
+    "text": "into mission control. Um our Copilot D"
+  },
+  {
+    "segment_id": "yt-0284",
+    "start_seconds": 598.08,
+    "end_seconds": 601.36,
+    "text": "service, which again, we're looking to"
+  },
+  {
+    "segment_id": "yt-0285",
+    "start_seconds": 599.68,
+    "end_seconds": 604.68,
+    "text": "bring functionality directly into our"
+  },
+  {
+    "segment_id": "yt-0286",
+    "start_seconds": 601.36,
+    "end_seconds": 606.92,
+    "text": "runtime, as well, uh enables you to"
+  },
+  {
+    "segment_id": "yt-0287",
+    "start_seconds": 604.68,
+    "end_seconds": 608.68,
+    "text": "actually engage with these remote"
+  },
+  {
+    "segment_id": "yt-0288",
+    "start_seconds": 606.92,
+    "end_seconds": 610.8,
+    "text": "execution environments directly from"
+  },
+  {
+    "segment_id": "yt-0289",
+    "start_seconds": 608.68,
+    "end_seconds": 613.3599999999999,
+    "text": "mission control. And so, while we look"
+  },
+  {
+    "segment_id": "yt-0290",
+    "start_seconds": 610.8,
+    "end_seconds": 614.88,
+    "text": "at IDE, CLI, mobile, let's talk a little"
+  },
+  {
+    "segment_id": "yt-0291",
+    "start_seconds": 613.36,
+    "end_seconds": 616.96,
+    "text": "bit about the web."
+  },
+  {
+    "segment_id": "yt-0292",
+    "start_seconds": 614.88,
+    "end_seconds": 619.96,
+    "text": "Um for context, mission control is under"
+  },
+  {
+    "segment_id": "yt-0293",
+    "start_seconds": 616.96,
+    "end_seconds": 619.96,
+    "text": "github.com/copilot/agents."
+  },
+  {
+    "segment_id": "yt-0294",
+    "start_seconds": 620.08,
+    "end_seconds": 624.24,
+    "text": "Uh if you look at this main home screen,"
+  },
+  {
+    "segment_id": "yt-0295",
+    "start_seconds": 622.6,
+    "end_seconds": 627.12,
+    "text": "uh there are a few options that should"
+  },
+  {
+    "segment_id": "yt-0296",
+    "start_seconds": 624.24,
+    "end_seconds": 629.72,
+    "text": "be familiar to most uh users that have"
+  },
+  {
+    "segment_id": "yt-0297",
+    "start_seconds": 627.12,
+    "end_seconds": 631.76,
+    "text": "uh that execute tasks on this screen."
+  },
+  {
+    "segment_id": "yt-0298",
+    "start_seconds": 629.72,
+    "end_seconds": 633.96,
+    "text": "But, ultimately, the most exciting thing"
+  },
+  {
+    "segment_id": "yt-0299",
+    "start_seconds": 631.76,
+    "end_seconds": 636.4,
+    "text": "to me with AHP is the fact that you can"
+  },
+  {
+    "segment_id": "yt-0300",
+    "start_seconds": 633.96,
+    "end_seconds": 638.88,
+    "text": "now bring environments into the custom"
+  },
+  {
+    "segment_id": "yt-0301",
+    "start_seconds": 636.4,
+    "end_seconds": 641.0,
+    "text": "drop-down for actions and execute new"
+  },
+  {
+    "segment_id": "yt-0302",
+    "start_seconds": 638.88,
+    "end_seconds": 643.16,
+    "text": "sessions on your own local machines,"
+  },
+  {
+    "segment_id": "yt-0303",
+    "start_seconds": 641.0,
+    "end_seconds": 645.12,
+    "text": "cloud machines, wherever they might be,"
+  },
+  {
+    "segment_id": "yt-0304",
+    "start_seconds": 643.16,
+    "end_seconds": 647.1999999999999,
+    "text": "as long as they run the right AHP hosts,"
+  },
+  {
+    "segment_id": "yt-0305",
+    "start_seconds": 645.12,
+    "end_seconds": 648.68,
+    "text": "they connect back to mission control, it"
+  },
+  {
+    "segment_id": "yt-0306",
+    "start_seconds": 647.2,
+    "end_seconds": 650.5600000000001,
+    "text": "is now a new environment that you can"
+  },
+  {
+    "segment_id": "yt-0307",
+    "start_seconds": 648.68,
+    "end_seconds": 653.12,
+    "text": "execute on. So, you're not constrained"
+  },
+  {
+    "segment_id": "yt-0308",
+    "start_seconds": 650.56,
+    "end_seconds": 655.4799999999999,
+    "text": "by running things in actions or running"
+  },
+  {
+    "segment_id": "yt-0309",
+    "start_seconds": 653.12,
+    "end_seconds": 657.24,
+    "text": "things in remote cloud environments, uh"
+  },
+  {
+    "segment_id": "yt-0310",
+    "start_seconds": 655.48,
+    "end_seconds": 659.52,
+    "text": "you can actually run these on your home"
+  },
+  {
+    "segment_id": "yt-0311",
+    "start_seconds": 657.24,
+    "end_seconds": 661.2,
+    "text": "machines, as well, to continue to bridge"
+  },
+  {
+    "segment_id": "yt-0312",
+    "start_seconds": 659.52,
+    "end_seconds": 663.24,
+    "text": "uh your agent network and define where"
+  },
+  {
+    "segment_id": "yt-0313",
+    "start_seconds": 661.2,
+    "end_seconds": 664.76,
+    "text": "you want to run agents most or where it"
+  },
+  {
+    "segment_id": "yt-0314",
+    "start_seconds": 663.24,
+    "end_seconds": 666.12,
+    "text": "benefits you based on your current"
+  },
+  {
+    "segment_id": "yt-0315",
+    "start_seconds": 664.76,
+    "end_seconds": 668.92,
+    "text": "scenario."
+  },
+  {
+    "segment_id": "yt-0316",
+    "start_seconds": 666.12,
+    "end_seconds": 671.12,
+    "text": "So, again, if we just simply"
+  },
+  {
+    "segment_id": "yt-0317",
+    "start_seconds": 668.92,
+    "end_seconds": 672.68,
+    "text": "hit a query here, uh it should actually"
+  },
+  {
+    "segment_id": "yt-0318",
+    "start_seconds": 671.12,
+    "end_seconds": 673.72,
+    "text": "route that down"
+  },
+  {
+    "segment_id": "yt-0319",
+    "start_seconds": 672.68,
+    "end_seconds": 676.0799999999999,
+    "text": "to my environment. You'll see a"
+  },
+  {
+    "segment_id": "yt-0320",
+    "start_seconds": 673.72,
+    "end_seconds": 678.0400000000001,
+    "text": "response. And again, this is all running"
+  },
+  {
+    "segment_id": "yt-0321",
+    "start_seconds": 676.08,
+    "end_seconds": 680.36,
+    "text": "off of github.com. It's running in my"
+  },
+  {
+    "segment_id": "yt-0322",
+    "start_seconds": 678.04,
+    "end_seconds": 682.24,
+    "text": "private network. And as we break free of"
+  },
+  {
+    "segment_id": "yt-0323",
+    "start_seconds": 680.36,
+    "end_seconds": 684.48,
+    "text": "all of our Tailscale setups uh and"
+  },
+  {
+    "segment_id": "yt-0324",
+    "start_seconds": 682.24,
+    "end_seconds": 686.28,
+    "text": "remove that requirement, ultimately, uh"
+  },
+  {
+    "segment_id": "yt-0325",
+    "start_seconds": 684.48,
+    "end_seconds": 687.96,
+    "text": "we'll find more flexibility and freedom"
+  },
+  {
+    "segment_id": "yt-0326",
+    "start_seconds": 686.28,
+    "end_seconds": 689.8,
+    "text": "to access your agents anywhere and"
+  },
+  {
+    "segment_id": "yt-0327",
+    "start_seconds": 687.96,
+    "end_seconds": 691.0400000000001,
+    "text": "again, move them where you want to go,"
+  },
+  {
+    "segment_id": "yt-0328",
+    "start_seconds": 689.8,
+    "end_seconds": 692.3599999999999,
+    "text": "as well."
+  },
+  {
+    "segment_id": "yt-0329",
+    "start_seconds": 691.04,
+    "end_seconds": 694.64,
+    "text": "For more additional information, I'll"
+  },
+  {
+    "segment_id": "yt-0330",
+    "start_seconds": 692.36,
+    "end_seconds": 697.52,
+    "text": "I'll flash a few links on the screen."
+  },
+  {
+    "segment_id": "yt-0331",
+    "start_seconds": 694.64,
+    "end_seconds": 699.84,
+    "text": "The AHP repo is public underneath"
+  },
+  {
+    "segment_id": "yt-0332",
+    "start_seconds": 697.52,
+    "end_seconds": 701.64,
+    "text": "Microsoft/agenthostprotocol."
+  },
+  {
+    "segment_id": "yt-0333",
+    "start_seconds": 699.84,
+    "end_seconds": 704.12,
+    "text": "We have a website with the protocol"
+  },
+  {
+    "segment_id": "yt-0334",
+    "start_seconds": 701.64,
+    "end_seconds": 706.56,
+    "text": "specifications available as well."
+  },
+  {
+    "segment_id": "yt-0335",
+    "start_seconds": 704.12,
+    "end_seconds": 708.12,
+    "text": "Mission control is on there and then in"
+  },
+  {
+    "segment_id": "yt-0336",
+    "start_seconds": 706.56,
+    "end_seconds": 710.8,
+    "text": "addition if you like to play around with"
+  },
+  {
+    "segment_id": "yt-0337",
+    "start_seconds": 708.12,
+    "end_seconds": 712.44,
+    "text": "the host built into VS code, I left a"
+  },
+  {
+    "segment_id": "yt-0338",
+    "start_seconds": 710.8,
+    "end_seconds": 714.12,
+    "text": "command code agent host there. You"
+  },
+  {
+    "segment_id": "yt-0339",
+    "start_seconds": 712.44,
+    "end_seconds": 716.08,
+    "text": "should be able to fire it up using the"
+  },
+  {
+    "segment_id": "yt-0340",
+    "start_seconds": 714.12,
+    "end_seconds": 717.52,
+    "text": "latest stable edition of VS code so you"
+  },
+  {
+    "segment_id": "yt-0341",
+    "start_seconds": 716.08,
+    "end_seconds": 720.6800000000001,
+    "text": "can start playing with your own host"
+  },
+  {
+    "segment_id": "yt-0342",
+    "start_seconds": 717.52,
+    "end_seconds": 720.68,
+    "text": "right away. Thank you all."
+  }
+]

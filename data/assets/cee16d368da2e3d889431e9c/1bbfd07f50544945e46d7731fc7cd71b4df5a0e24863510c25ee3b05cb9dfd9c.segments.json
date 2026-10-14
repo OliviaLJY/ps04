@@ -1,0 +1,188 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 3.033,
+    "end_seconds": 4.9,
+    "text": "[Mati] This is my friend David"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 4.9,
+    "end_seconds": 5.6000000000000005,
+    "text": "who’s a nerd, "
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 5.6,
+    "end_seconds": 7.866,
+    "text": "and has a robot arm\nfor some reason."
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 7.866,
+    "end_seconds": 9.266,
+    "text": "And me as a fellow nerd."
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 9.266,
+    "end_seconds": 13.133,
+    "text": "Of course I wanted to use it,\nbut he's in Texas and I'm in New York."
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 13.133,
+    "end_seconds": 17.732999999999997,
+    "text": "So we thought, what if I could control\nthat arm from 1700 miles away?"
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 17.733,
+    "end_seconds": 21.233,
+    "text": "[David] If Mati wanted to teleoperate\nthe robot without building his own,"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 21.233,
+    "end_seconds": 24.133,
+    "text": "he would need a digital version\nthat he could control directly."
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 24.133,
+    "end_seconds": 28.066,
+    "text": "I worked with Gemini\nto create a 3D visualizer of the robot."
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 28.066,
+    "end_seconds": 30.532999999999998,
+    "text": "After a few iterations \nand a little polish,"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 30.533,
+    "end_seconds": 31.900000000000002,
+    "text": "it was ready."
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 31.9,
+    "end_seconds": 33.233,
+    "text": "[David] Oh, alright,"
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 33.233,
+    "end_seconds": 34.266,
+    "text": "Bell is up."
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 34.666,
+    "end_seconds": 38.599999999999994,
+    "text": "Now, when Mati moves a slider, the browser\nsends the new joint coordinates immediately."
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 38.6,
+    "end_seconds": 40.166000000000004,
+    "text": "allowing every position he moved,"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 40.166,
+    "end_seconds": 42.266,
+    "text": "to be streamed in real time."
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 42.266,
+    "end_seconds": 45.8,
+    "text": "On my side, I gave Gemini\nthe calibration file for the physical arm."
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 45.8,
+    "end_seconds": 48.333,
+    "text": "Gemini generated a script, that listens\nfor those updates"
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 48.333,
+    "end_seconds": 49.8,
+    "text": "and writes the motor positions,"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 49.8,
+    "end_seconds": 50.599999999999994,
+    "text": "moving the arm."
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 50.6,
+    "end_seconds": 51.833,
+    "text": "Great grip."
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 52.333,
+    "end_seconds": 53.666,
+    "text": "[Mati] You need to drink more water."
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 54.033,
+    "end_seconds": 55.2,
+    "text": "Let me help you with that."
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 58.266,
+    "end_seconds": 59.033,
+    "text": "All yours."
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 60.966,
+    "end_seconds": 61.866,
+    "text": "[David] Done with water."
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 62.666,
+    "end_seconds": 63.833,
+    "text": "This is just the start."
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 63.833,
+    "end_seconds": 64.7,
+    "text": "Explore,"
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 64.7,
+    "end_seconds": 65.266,
+    "text": "create."
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 65.266,
+    "end_seconds": 66.16600000000001,
+    "text": "Have fun."
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 66.166,
+    "end_seconds": 67.1,
+    "text": "Try new things."
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 67.1,
+    "end_seconds": 67.866,
+    "text": "Success!"
+  }
+]

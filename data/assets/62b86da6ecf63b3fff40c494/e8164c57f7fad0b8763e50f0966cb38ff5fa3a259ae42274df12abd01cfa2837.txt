@@ -1,0 +1,30 @@
+Can an AI agent look at a 2D image
+that uses complex architectural geometry
+ and build it inside Blender on its own?
+This is how I use Gemini 4 Argon
+and Antigravity to do so.
+I started in Flow, prompting for an empty catherdral
+with specific lighting and angles.
+I chose this particular image
+of the repeating arches and columns
+that creates this perspective effect.
+Next, I fed that image into my terminal
+connecting Antigravity directly to Blender via the MCP.
+I kicked off an agentic loop prompt.
+For 45 rounds, the model iteratively built the base mesh.
+An agent even automatically overlaid
+these comparison strips
+against the reference image
+to get the geometry closer,
+iteration after iteration.
+Once the structure was locked,
+I paused the CLI to trigger target targeted micro-loops
+for column fluting and floor textures.
+Then came lighting.
+The model automatically dialed in volumetric fog,
+camera depth and audio-reactive sunlight
+And here's the final result:
+from a flat 2D prompt
+to a fully realized
+light-mapped, 3D cathedral walkthrough.
+All driven by Gemini 4 Argon in Antigravity.

@@ -1,0 +1,66 @@
+What can you build when your AI model
+runs directly on device?
+Hey Reachy, what is Gemma?
+Gemma is a family of open models
+from Google that powers my brain.
+Gemma 4 is Google's family of open models.
+The difference is where they can go.
+Gemini runs in the cloud.
+With Gemma, you can download the weights,
+run them locally, fine-tune, and deploy them
+wherever you want.
+From a phone, to a Raspberry Pi,
+to even a workstation GPU.
+Here are four builds that show what that unlocks.
+Let's start with my favorite, mostly
+because you can talk to it.
+I'm basically a very smart set of weights
+and biases with a friendly face.
+Tell me more about your brain.
+I'm powered by LFG 3 Turbo,
+based on Gemma 4.
+It's a high-speed model that lets me chat
+with you naturally and completely offline.
+Oh, tell me more about your brain
+and who made it.
+I'm powered by LFG 3 Turbo,
+based on Gemma 4.
+As for who made it, I'm looking right
+at the genius responsible.
+Aw, you're too flattering.
+Next, a wearable robotic arm
+that runs entirely on-device.
+A larger Gemma model labels
+the training footage,
+while a fine-tuned, lighter-weight Gemma 4
+model handles the real-time work,
+turning what the camera sees and what
+you say into movement.
+The reasoning happens right there on the arm,
+with no internet connection to rely on.
+On-device isn't just about privacy here;
+it's what makes the arm fast enough
+to be useful.
+Now, take that same idea somewhere
+with no signal at all.
+This is PenguinAgent.
+It helps wildlife researchers analyze animal
+behavior in some of the most remote places on Earth.
+A Gemma 4 26B model runs locally,
+taking in video and sensor data, and answering
+questions against a library of scientific papers,
+all offline. No signal, no cloud, and no
+sensitive field data leaving the device.
+And finally, something small enough
+to fit in your pocket.
+CodeBuddy helps students in Indonesia learn
+to code without connected computers.
+A student writes Python in a paper notebook,
+snaps a photo,
+and Gemma 4 E4B reads the code, runs it,
+and debugs it, all offline.
+Try Gemma 4 right now in Google AI Studio,
+or download the weights from Hugging Face.
+What would you build with a model
+that goes wherever you do?
+Let us know in the comments.

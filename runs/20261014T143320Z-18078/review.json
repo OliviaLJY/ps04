@@ -1,0 +1,11 @@
+{
+  "review_id": "7e258bb6148d7acdcc166e5837939d3093cc149c779489ac5091a8231dbc6be5",
+  "passed": true,
+  "issues": [
+    {
+      "artifact": "review.json",
+      "severity": "warning",
+      "message": "Machine checks cannot establish sound interpretation; a human must inspect claims, disclosures, links, and corrections."
+    }
+  ]
+}

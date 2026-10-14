@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:463fd76b085050ad0d05",
+  "source_id": "google-developers-youtube",
+  "publisher_id": "google-developers-youtube",
+  "kind": "youtube",
+  "title": "Building low-latency remote robotics with Gemini",
+  "url": "https://www.youtube.com/watch?v=7sKHiuE7J-Y",
+  "published_at": "2026-10-09T16:00:10Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "4bc93097cdf64c0e072e8c2282359cb4b555ddbc5298df647f5f69535e32472e",
+  "text_path": "data/assets/cee16d368da2e3d889431e9c/b925ed566a7f40ed4aade2d350d5425f98b6ff982edb8dcdaa809d7dead011b1.txt",
+  "segments_path": "data/assets/cee16d368da2e3d889431e9c/1bbfd07f50544945e46d7731fc7cd71b4df5a0e24863510c25ee3b05cb9dfd9c.segments.json"
+}

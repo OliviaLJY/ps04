@@ -1,0 +1,734 @@
+[
+  {
+    "segment_id": "p-0001",
+    "start_seconds": 1.0,
+    "end_seconds": 35.0,
+    "text": "Narrator: Welcome to the Practical AI Podcast, where we break down the real world applications of artificial intelligence and how it's shaping the way we live, work, and create. Our goal is to help make AI technology practical, productive, and accessible to everyone. Whether you're a developer, business leader, or just curious about the tech behind the buzz, you're in the right place. Be sure to connect with us on LinkedIn, X, or Blue Sky to stay up to date with episode drops, behind the scenes content, and AI insights. You can learn more at practicalai.fm."
+  },
+  {
+    "segment_id": "p-0002",
+    "start_seconds": 35.0,
+    "end_seconds": 41.0,
+    "text": "Narrator: Now onto the show."
+  },
+  {
+    "segment_id": "p-0003",
+    "start_seconds": 41.0,
+    "end_seconds": 57.0,
+    "text": "Daniel: Welcome to another episode of Practical AI Podcast. This is Daniel Whitenack. I am CEO at Prediction Guard, and I'm joined as always by my cohost, Chris Benson, who is a principal AI and autonomy research engineer at Lockheed Martin. How are you doing, Chris?"
+  },
+  {
+    "segment_id": "p-0004",
+    "start_seconds": 57.0,
+    "end_seconds": 61.0,
+    "text": "Chris: Hey. Doing great today, Daniel. Looking forward to a conversation here."
+  },
+  {
+    "segment_id": "p-0005",
+    "start_seconds": 61.0,
+    "end_seconds": 75.0,
+    "text": "Daniel: Yeah. Yeah. Excited to chat about all sorts of things, both in in terms of background and current work with Chetan Gupta today, is chief AI officer at Rackspace. Well, welcome, Chetan. How are doing?"
+  },
+  {
+    "segment_id": "p-0006",
+    "start_seconds": 75.0,
+    "end_seconds": 81.0,
+    "text": "Chetan: I'm doing good. Thanks, Daniel and Chris, for having me. Quite excited about the conversation."
+  },
+  {
+    "segment_id": "p-0007",
+    "start_seconds": 81.0,
+    "end_seconds": 96.0,
+    "text": "Daniel: Let's start. Yeah. Yeah. Well, like I say, we we had bonded even yesterday when we were chatting about our backgrounds in in physics and mathematics. I know you started out in mathematics and spent a bunch of time at Hitachi."
+  },
+  {
+    "segment_id": "p-0008",
+    "start_seconds": 96.0,
+    "end_seconds": 103.0,
+    "text": "Daniel: Do you wanna give us just an idea of a little bit of your background and and what you've been involved with over the years?"
+  },
+  {
+    "segment_id": "p-0009",
+    "start_seconds": 103.0,
+    "end_seconds": 110.0,
+    "text": "Chetan: Sure. Sure. Sure, Daniel. So my background is actually quite diverse. It's sort of atypical of people in my role."
+  },
+  {
+    "segment_id": "p-0010",
+    "start_seconds": 110.0,
+    "end_seconds": 136.0,
+    "text": "Chetan: I started off with a PhD in mathematics. Then I joined Hewlett Packard Labs as a research scientist working on data mining, machine learning. Then I joined Hitachi as a principal researcher, if I remember correctly. And then I sort of, you know, through the management ladder was when I left Hitachi in 2026, I was leading all of AI research at Hitachi globally. This is a very strong team, and that's what I did."
+  },
+  {
+    "segment_id": "p-0011",
+    "start_seconds": 136.0,
+    "end_seconds": 156.0,
+    "text": "Chetan: And we were focused a lot. We started focusing we started with focus on industrial AI, as we defined it at that time. And as the industry matured, we started looking at a broader spectrum of things. And that's what I was doing. And then I joined Rackspace, and I've been here for four months."
+  },
+  {
+    "segment_id": "p-0012",
+    "start_seconds": 156.0,
+    "end_seconds": 177.0,
+    "text": "Chetan: So it's been sort of a very, very fascinating journey. And in some sense, prior to this podcast, I was thinking about my career. Typically, you don't think about these things. And I realized that I have a few in some sense, I have followed the trajectory of the whole community at a broad level. Right?"
+  },
+  {
+    "segment_id": "p-0013",
+    "start_seconds": 177.0,
+    "end_seconds": 199.0,
+    "text": "Chetan: I mean, if you guys, we were all doing machine learning, making small models, right? Solving specific problems. And there was a community in Bay Area that was focused primarily on set recommendation systems. And as Chris, you would know, in companies like Lockheed Martin or Hitachi, we focus on industrial problems. And so that's what I was doing for the first half of my career."
+  },
+  {
+    "segment_id": "p-0014",
+    "start_seconds": 199.0,
+    "end_seconds": 227.0,
+    "text": "Chetan: And then, more than the half. And then, obviously, deep learning became important. We started looking at vision models, language models that blossomed in total as language models. And in some sense, a lot of the traditional machine learning problems today are much more solvable with automated tools, with sort of whiteboarding and so on and so forth. And the new challenge now is, yes, you can do all this with machine learning and AI, but how do you make it accessible to more people?"
+  },
+  {
+    "segment_id": "p-0015",
+    "start_seconds": 227.0,
+    "end_seconds": 241.0,
+    "text": "Chetan: How do you make it actionable? How do you make it much more sort of safe? And that's where sort of rack space comes in. Right? So in some sense, if you look at the trajectory of problems, that's how I have traveled in some sense, like looking for trouble, so to speak."
+  },
+  {
+    "segment_id": "p-0016",
+    "start_seconds": 241.0,
+    "end_seconds": 243.0,
+    "text": "Daniel: I love that."
+  },
+  {
+    "segment_id": "p-0017",
+    "start_seconds": 243.0,
+    "end_seconds": 303.0,
+    "text": "Chris: So I wanna go back for a second. I'm gonna drag you back as you went through your timeline for a second, because as you were talking about coming up through the managerial ranks at Hitachi, and you look at with kind of the AI world exploding in terms of volume and importance and budgets and all that stuff, and so many times organizations will go to kind of an outside expert and bring them in to fill a particular key position and stuff, and yet you kind of came through the ranks at Hitachi, and I'm wondering if you have any thoughts about because there are other people out there that are watching this and listening to this right now that are in their careers, and they are aspiring to move up through the ranks themselves. What were some of the things that you brought to bear that made you able to move up through that and take on the leadership role at Hitachi before you were able to"
+  },
+  {
+    "segment_id": "p-0018",
+    "start_seconds": 303.0,
+    "end_seconds": 303.0,
+    "text": "Daniel: come over to"
+  },
+  {
+    "segment_id": "p-0019",
+    "start_seconds": 303.0,
+    "end_seconds": 309.0,
+    "text": "Chris: Rackspace, just from a growth learning standpoint, if you wouldn't mind sharing?"
+  },
+  {
+    "segment_id": "p-0020",
+    "start_seconds": 309.0,
+    "end_seconds": 327.0,
+    "text": "Chetan: Chris, that's a hard one. I was more prepared to answer the AI related question. I'm sorry. But I think that's actually a very, very interesting question. I think one thing that I think helped in my career, Hitachi, was we decided to take a bit on industrial AI."
+  },
+  {
+    "segment_id": "p-0021",
+    "start_seconds": 327.0,
+    "end_seconds": 342.0,
+    "text": "Chetan: This was 2016, 2017. And not very many people were talking about it. So we started a small research lab in North America. And I said given where Hitachi is, it's a giant industrial conglomerate, it makes lot of sense. But there wasn't a lot of background around it."
+  },
+  {
+    "segment_id": "p-0022",
+    "start_seconds": 342.0,
+    "end_seconds": 358.0,
+    "text": "Chetan: And it was a risky bet. We were in Bay Area. We were competing with the likes of Facebook, Google for top talent. But we took that risk. We were sort of forward looking in the sense that we figured that industrial AI, physical AI will become important."
+  },
+  {
+    "segment_id": "p-0023",
+    "start_seconds": 358.0,
+    "end_seconds": 416.0,
+    "text": "Chetan: And we tried to succeed, and we did succeed to a large extent. I think that sort of paved the way, in some sense, for management for our leadership from the CEO downwards to have confidence and internal talent to take Hitachi to the next level. And and I think so my if I if I look back, I would say look forward, see what's sort of around the corner. It's it's difficult, but I think if you spend time thinking about it, not just reading about it, but thinking about it as well, gestating what's happening in the industry around you, and take a risk, take a bet on on something different, something new that is aligned with your company's direction as well, obviously, Then I think that sort of shows your leadership in terms of looking ahead and ability to take risks and then to execute. I think that's maybe that's what worked for me, I would say."
+  },
+  {
+    "segment_id": "p-0024",
+    "start_seconds": 416.0,
+    "end_seconds": 452.0,
+    "text": "Daniel: Yeah. I I love that answer because even, you know, Chris, I don't know if you remember, but the beginning of this year, I think we said, Chetan, we do a kind of forward looking episode usually at the beginning of each year, and one of the things we talked about about kind of coming into its own was this idea of physical AI, I think, if I'm if I'm remembering right. And so you were very much ahead of that as you mentioned. You know, you took a maybe a gamble or a risk looking towards that direction. I'm wondering for the listeners who might not be as familiar with industrial AI, physical AI, these sorts of terms."
+  },
+  {
+    "segment_id": "p-0025",
+    "start_seconds": 452.0,
+    "end_seconds": 464.0,
+    "text": "Daniel: If you could just help us understand kind of maybe what that meant when you started getting into it and what that means now if those things are different, you know, in any That's sort of"
+  },
+  {
+    "segment_id": "p-0026",
+    "start_seconds": 464.0,
+    "end_seconds": 496.0,
+    "text": "Chetan: actually a very good question, Daniel. And I think it certainly doesn't mean the same thing. Nothing means the same thing anymore. But when we first started out, we were trying to solve industrial problems, right? So if you look at the industrial value chain from design all the way to manufacturing, and this is not just manufacturing, but you think about power plants, you think about rail systems, you think about any industrial system, you could sort of organize the challenges in, say, maintenance, design, production."
+  },
+  {
+    "segment_id": "p-0027",
+    "start_seconds": 496.0,
+    "end_seconds": 526.0,
+    "text": "Chetan: You could look at these verticals. And if you took a step back, you realized that although every vertical is different, the data itself is different, but there are a lot of commonalities in terms of the problems that you could solve and in terms of the techniques that you could bring to bear on there. So initially, it was much more around prediction, like you failure to predict. That was a classical predictive maintenance problem. And then, can you recommend the right repair to a technician, and whether that technician is an automotive technician or sort of in some other domain doesn't really matter."
+  },
+  {
+    "segment_id": "p-0028",
+    "start_seconds": 526.0,
+    "end_seconds": 558.0,
+    "text": "Chetan: But the math behind it was somewhat similar. And that's how it started out. And those are the kinds of problems we were solving around maintenance, around quality, how do you sort of predict if a part was going to fail, and so forth. And then, as the industry evolved, both the physical industries, meaning companies like, say, Hitachi, they started collecting more data, and sort of the AI industry also was evolving towards deep learning. Right?"
+  },
+  {
+    "segment_id": "p-0029",
+    "start_seconds": 558.0,
+    "end_seconds": 571.0,
+    "text": "Chetan: And as the technology was becoming more mature, then computer vision problems became much more important. Right? Can you detect defects on a surface? Can you count number of cars in a parking lot kind of a problem? Right?"
+  },
+  {
+    "segment_id": "p-0030",
+    "start_seconds": 571.0,
+    "end_seconds": 606.0,
+    "text": "Chetan: And then, as we got into large language models, then there was further expansion of what you could do in the industrial world itself. So one big move, obviously, is what we what people call physical AI now, which is sort of contested definition, but the idea that you could do robotics at scale. So so part of the work that we've done on automation with traditional reinforcement learning now could sort of be done in a much more formal, larger basis with sort of around robotics. Right? Can you make multiple robots work together, or even a robot can work in this environment or not?"
+  },
+  {
+    "segment_id": "p-0031",
+    "start_seconds": 606.0,
+    "end_seconds": 634.0,
+    "text": "Chetan: And also, the traditional sort of industry AI kind of problems also became on a larger scale. So people started expecting much better answers, a way for humans to communicate. Metaverse sort of becomes important where you could construct these sort of virtual worlds for training, for problem resolution. Right? So so in some sense, the the field has moved along with the maturity of the AI technology as well."
+  },
+  {
+    "segment_id": "p-0032",
+    "start_seconds": 634.0,
+    "end_seconds": 641.0,
+    "text": "Chetan: So that's and then this is a very exciting moment to be in that space as well, I would say, because a lot of emotion will come there."
+  },
+  {
+    "segment_id": "p-0033",
+    "start_seconds": 641.0,
+    "end_seconds": 691.0,
+    "text": "Chris: Yeah. I I know in you know, that you have you've run labs both in North America and Japan. And as we're talking about physical AI at this point, it occurs to me as I'm listening to you that, you know, we have a global audience here, and people from different parts of the world have different experiences in terms of this move into physical AI and some of these processes. I would imagine, I don't want to put words in your mouth, but I would imagine your time in Japan, there's a lot more robotics out there, and as we're all sitting here in The United States, there's a little bit less exposure to most people out there in terms of physical AI and robotics. I think we're kind of, in my view, we're kind of lagging other parts of the world in capacity."
+  },
+  {
+    "segment_id": "p-0034",
+    "start_seconds": 691.0,
+    "end_seconds": 717.0,
+    "text": "Chris: I'm kind of curious, as you're looking at this, kind of what your experiences were about different parts of the globe and how that's moving the the notion of physical AI forward in these various contexts you're talking about, and and maybe, you know, with the advent of kind of embodied intelligence coming more and more into play with robotics and edge computing and stuff, What your thoughts are around that, you know, with your experiences."
+  },
+  {
+    "segment_id": "p-0035",
+    "start_seconds": 717.0,
+    "end_seconds": 738.0,
+    "text": "Chetan: A actually, that's an interesting sort of reminds of cultural dimension to all of this. Right? So what I learned, and I should not make a cultural generalization often people, but I learned that at least, say, folks in Japan are much more open to sort of robots than, say, folks in North America. I think that is something cultural. I can't explain why."
+  },
+  {
+    "segment_id": "p-0036",
+    "start_seconds": 738.0,
+    "end_seconds": 771.0,
+    "text": "Chetan: And that's why even, like, very many years ago, we were thinking about robots for elderly support. Even if they could not move, at least they could talk and understand and be empathetic. So getting the empathy right was a very hard problem. Just the way a machine would talk to a human, it's how do you introduce the right sort of language, the empathy, the warmth that typically humans have for each other? And so, in that sense, for use cases like elderly care, I would say yes."
+  },
+  {
+    "segment_id": "p-0037",
+    "start_seconds": 771.0,
+    "end_seconds": 802.0,
+    "text": "Chetan: The United States was sort of behind other Asian countries not all the Asian countries, but the leading countries in Japan, China, and so forth. And then, when it comes to industrial robotics as well, you're right, the center of gravity is not in North America. If you think about large language models, the center of gravity is North America. But for robots, for the industrial world, the center of gravity is in China. Today, you've seen robots do multiple things."
+  },
+  {
+    "segment_id": "p-0038",
+    "start_seconds": 802.0,
+    "end_seconds": 831.0,
+    "text": "Chetan: But I think we are catching up. We have some excellent startups that are trying very many new ways for the robots to work in the physical world. Whether they are for industrial use or whether they are for sort of more commercial use. And I would say the commercial use robots would be the first one to have an impact because a lot of industrial processes are already, in some sense, robotized because they're task specific. They don't need to be that general."
+  },
+  {
+    "segment_id": "p-0039",
+    "start_seconds": 831.0,
+    "end_seconds": 857.0,
+    "text": "Chetan: More general robotics are needed more for the human environment, whereas a lot of factories are quite automated already. And I think that's where the next sort of battle lines are. And I think in that, there is I mean, it's anyone's game right now, I would say. Because some of the underlying math is where we are better than everyone else. Some of the underlying mechanics, maybe other countries are better than us."
+  },
+  {
+    "segment_id": "p-0040",
+    "start_seconds": 857.0,
+    "end_seconds": 875.0,
+    "text": "Chetan: But yes, but culturally, you are spot on, right? So there was a broader acceptance, and maybe that is still there, of robots for day to day interaction in Japan compared to say North America. Does that answer your question, or did I sort of take it down sort of? That was"
+  },
+  {
+    "segment_id": "p-0041",
+    "start_seconds": 875.0,
+    "end_seconds": 875.0,
+    "text": "Daniel: a great answer."
+  },
+  {
+    "segment_id": "p-0042",
+    "start_seconds": 875.0,
+    "end_seconds": 876.0,
+    "text": "Chris: I appreciate it."
+  },
+  {
+    "segment_id": "p-0043",
+    "start_seconds": 876.0,
+    "end_seconds": 916.0,
+    "text": "Sponsor: I hope that you're finding this episode practical and helpful. As the name suggests, we want this podcast to be practical, not just hype. And that's one of the reasons why we partnered with the Midwest AI Summit, which is happening October 15 in Indianapolis. This summit is more than just a bunch of hyped talks. There's really practical things there, like an AI engineering lounge where you can sit down with experienced AI practitioners like myself and others and work through your architecture, your tool questions, your road map, your strategy, etcetera."
+  },
+  {
+    "segment_id": "p-0044",
+    "start_seconds": 916.0,
+    "end_seconds": 951.0,
+    "text": "Sponsor: And that way you can actually leave with a huge value from the event. Again, the event is happening October 15 in Indianapolis. Some amazing speakers, some practical advice. Don't don't miss this event. Make sure you're there October 15 in Indianapolis. You can check us out at midwestaisummit.com, and you can use Practical AI 20 to get 20% off registration. Again, Midwest AI Summit, and you can use Practical AI 20 to get 20% off registration."
+  },
+  {
+    "segment_id": "p-0045",
+    "start_seconds": 951.0,
+    "end_seconds": 982.0,
+    "text": "Daniel: So, Chetan, I I wanna circle back to a comment that you made as you were talking about the the arc of your career and landing at Rackspace. You mentioned something to the effect of going with the technology, but now moving to a place where you could make it, you know, more accessible and and safe and etcetera, and oper operationalize it, if I'm if I'm understanding you right. Could you help us understand that dynamic a little bit more around kind of the technology?"
+  },
+  {
+    "segment_id": "p-0046",
+    "start_seconds": 982.0,
+    "end_seconds": 1015.0,
+    "text": "Daniel: Now now it almost seems like with AI, every everything is feasible, but not everything is easy. Right? Or not everything is you can't operationalize everything. You can't make it accessible. Could could you help us understand your thought process around maybe that transition then from that world of industrial AI to now where when you're thinking a lot about these types of issues around operationalizing, scaling, making accessible these an actual useful and safe So,"
+  },
+  {
+    "segment_id": "p-0047",
+    "start_seconds": 1015.0,
+    "end_seconds": 1050.0,
+    "text": "Chetan: Daniel, when we were working with our industrial partners, both internal and external, we were a team of highly trained researchers, engineers, right? PhDs and all of that. And so we will take up a customer problem, we'll understand the data, we'll build the model, and then we'll work with the customer to deploy it. Right? So and that deployment does not mean sort of throwing the model over the wall, but you sort of work with the customer, you talk to them, you understand exact business pain point, you understand the workflows, and then you integrate your model in the workflow."
+  },
+  {
+    "segment_id": "p-0048",
+    "start_seconds": 1050.0,
+    "end_seconds": 1078.0,
+    "text": "Chetan: And typically, that model was small enough that you could have it in their own environment. Right? So and this is what we did again and again. But if you now look and if you look back, like, maybe even five years, most of us were not using AI directly in our day to day world, right? So, AI was always mediated through maybe a solution that was developed, deployed, and operated by someone."
+  },
+  {
+    "segment_id": "p-0049",
+    "start_seconds": 1078.0,
+    "end_seconds": 1085.0,
+    "text": "Chetan: Right? So they took that responsibility. Now, with generative AI, AI has become democratized. Right? Everyone has access to AI."
+  },
+  {
+    "segment_id": "p-0050",
+    "start_seconds": 1085.0,
+    "end_seconds": 1098.0,
+    "text": "Chetan: Every enterprise wants to use AI. And you don't have this team of PhDs and researchers everywhere who can sort of build a model and deploy it. First of all, it's cost prohibitive. Right? These large language models are typically very difficult to build."
+  },
+  {
+    "segment_id": "p-0051",
+    "start_seconds": 1098.0,
+    "end_seconds": 1111.0,
+    "text": "Chetan: They're very expensive to build. Right? So so so the whole model of how you would bring AI machine learning to an enterprise changes with generative AI. So that's the challenge, right? So at a high level."
+  },
+  {
+    "segment_id": "p-0052",
+    "start_seconds": 1111.0,
+    "end_seconds": 1122.0,
+    "text": "Chetan: But what does that mean in practical terms? The number of things. So you ask a question, right? I use, for example, some large language model. Now I could simply ask, What's the capital of St."
+  },
+  {
+    "segment_id": "p-0053",
+    "start_seconds": 1122.0,
+    "end_seconds": 1134.0,
+    "text": "Chetan: Norway? So for that, I don't need to go to, say, chat GPT based my tokens are expensive. If I have a local model, I should ask that question. It'll be much more cheaper. And I and right?"
+  },
+  {
+    "segment_id": "p-0054",
+    "start_seconds": 1134.0,
+    "end_seconds": 1148.0,
+    "text": "Chetan: So that's number one. Number two is, this is an issue raised by Chetan Adela and even, I think, Jensen. Whenever you, as an enterprise, say, now you want to say, I want to operationalize AI. AI is accessible. I want my staff."
+  },
+  {
+    "segment_id": "p-0055",
+    "start_seconds": 1148.0,
+    "end_seconds": 1167.0,
+    "text": "Chetan: And everyone wants use Now, every time you ask a question, say, to a large language model, in some sense, you are sending your data over to them. So your data sovereignty is not guaranteed. So your so the way, sort of, said it, you're losing your alpha. Right? That's your IP."
+  },
+  {
+    "segment_id": "p-0056",
+    "start_seconds": 1167.0,
+    "end_seconds": 1183.0,
+    "text": "Chetan: So that's that's another problem. Then and AI, in some sense today, is jagged. So so so meaning that there are some tasks for which AI is really good at. Right? So so I can really write some very good sort of software program using AI."
+  },
+  {
+    "segment_id": "p-0057",
+    "start_seconds": 1183.0,
+    "end_seconds": 1190.0,
+    "text": "Chetan: Right? I can code with AI. But if you try to write an email with AI, you realize that it's not all that great. Right? It's quite Right?"
+  },
+  {
+    "segment_id": "p-0058",
+    "start_seconds": 1190.0,
+    "end_seconds": 1215.0,
+    "text": "Chetan: So I get AI emails, and they sometimes annoy me because they're sort of very verbose, and, you know, they're very cliched in some sense. Right? So although we thought that writing is the strength of AI, but it is turning out that it's good at it, but not that great at it. Humans can still do better at writing emails maybe than AI can. So that means in terms of capabilities of where AI is good or bad, it's jagged."
+  },
+  {
+    "segment_id": "p-0059",
+    "start_seconds": 1215.0,
+    "end_seconds": 1229.0,
+    "text": "Chetan: Right? So so for an enterprise, they need to know. Right? So this is where I should use AI. And then to my first point earlier, whether I should use a local model because that's more expensive."
+  },
+  {
+    "segment_id": "p-0060",
+    "start_seconds": 1229.0,
+    "end_seconds": 1253.0,
+    "text": "Chetan: Should I use a larger model? And then, how do I preserve my health? So these are all the three questions that are today difficult to answer. Now, the jargon of AI also is in terms of how do you guarantee that it behaves in a responsible manner. So we all heard that Anthropic, sort of the latest model hacked Hugging Face website."
+  },
+  {
+    "segment_id": "p-0061",
+    "start_seconds": 1253.0,
+    "end_seconds": 1277.0,
+    "text": "Chetan: So now, if you're going to deploy your own model, suppose you say, I want to develop my own model within the enterprise on my own data, and you deploy it. How do you guarantee that behaves in a regulated in a way that is safe? And also, you're using someone else's AI, like you're using a large LLM, how do you ensure that it behaves within guardrails? Right? It behaves in a way that is suitable for your enterprise."
+  },
+  {
+    "segment_id": "p-0062",
+    "start_seconds": 1277.0,
+    "end_seconds": 1311.0,
+    "text": "Chetan: Right? So the problem of governance and assurance becomes very important. The governance, the problem of how do you maximize the value of your AI, the tokenomics becomes important. The value of preserving your IP becomes important. And the problem of having the right architecture so that you can cater to the multiple needs within the enterprise from say programming, to writing emails, to summarizing, to research can be done in sort of a safe, guaranteed manner so that you can sort of interchange the models if needed."
+  },
+  {
+    "segment_id": "p-0063",
+    "start_seconds": 1311.0,
+    "end_seconds": 1322.0,
+    "text": "Chetan: You can sort of right? So because the model technology is changing very rapidly. So all of that requires a very systematic way of thinking about your AI architectures. And I think this is the next frontier. This is the next challenge."
+  },
+  {
+    "segment_id": "p-0064",
+    "start_seconds": 1322.0,
+    "end_seconds": 1340.0,
+    "text": "Chetan: Right? So now how do we go from so simply sort of chatting with an AI through an interface, through working in the enterprise where there are people, processes, and all of the complications. It was a very long winded answer, but I hope sort of it addressed Great. The"
+  },
+  {
+    "segment_id": "p-0065",
+    "start_seconds": 1340.0,
+    "end_seconds": 1407.0,
+    "text": "Chris: And not only was it good, I'd like to actually get you to extend it a little bit by throwing a couple of extra logs on the fire. One of the challenges that we see in industry right now, and it's been evolving over the past, especially over the past year, is where open weights or open source models are available from. And there's so many external considerations that get brought into bear as while, to your point earlier, that the center of gravity for LLM development may be still in The US. A lot of those are closed. The number of available open weights models kind of shrunk a little bit with Metas kind of going away from that, and NVIDIA started stepping up a little bit more because the rest of the commercial industry in The US was reducing, and we're seeing an explosion of capability in terms of new models that are kind of rapidly catching up with very close followers or potentially equal from China."
+  },
+  {
+    "segment_id": "p-0066",
+    "start_seconds": 1407.0,
+    "end_seconds": 1459.0,
+    "text": "Chris: And overlaying all this, you have all these countries have their various exports concerns, import concerns, what you're allowed to use, and that makes it quite complicated as an ecosystem for companies in various businesses to try to figure out what makes sense for me. You talked about governance. You talked about data sovereignty. How do you navigate with some of these big issues that go beyond the technology of AI and the implementation of AI and can affect management concerns all the way up to the CEO and the board of directors? How do you start If you're a company now, it's late twenty twenty six, and all this has rapidly developed, how do you look at all these and make decisions for strategic interest in your organization going forward?"
+  },
+  {
+    "segment_id": "p-0067",
+    "start_seconds": 1459.0,
+    "end_seconds": 1462.0,
+    "text": "Chris: Because it's quite the quagmire at this point."
+  },
+  {
+    "segment_id": "p-0068",
+    "start_seconds": 1462.0,
+    "end_seconds": 1473.0,
+    "text": "Chetan: Yeah, know. And it's quagmire and the changes are at a dizzying pace as well, right? It does. So there is no easy answer to that. I do want to address the question of open models, though."
+  },
+  {
+    "segment_id": "p-0069",
+    "start_seconds": 1473.0,
+    "end_seconds": 1498.0,
+    "text": "Chetan: And I know you said that we are somewhat behind in terms of open models. But I think the beauty of The United States is that the right incentive, we really step up. Right? So now, we realize, the AI community realizes as well that, look, with open source models, maybe they're from China today, obviously NVIDIA is doing a great job in it. Is a lot of merit in that."
+  },
+  {
+    "segment_id": "p-0070",
+    "start_seconds": 1498.0,
+    "end_seconds": 1517.0,
+    "text": "Chetan: And from what I know of people I talk to and friends I talk to, I think it's a matter of time before our open source model will be part of everyone else. That's number one, right? Number two, like, how do enterprises get started? I think they have to sort of fix few things, I would say. Right?"
+  },
+  {
+    "segment_id": "p-0071",
+    "start_seconds": 1517.0,
+    "end_seconds": 1542.0,
+    "text": "Chetan: Fix few things, meaning they need to sort of understand how much of their workload is sensitive today. Meaning, if you are, say, doing an HR query, maybe it's okay to go to an LLM. So one thing is sort of figure out what data is something you really want to work around. And there, ideally, you should sort of think about local models, open weight models in your own environment that you control. So I would say that's one North Star you should try to fix."
+  },
+  {
+    "segment_id": "p-0072",
+    "start_seconds": 1542.0,
+    "end_seconds": 1565.0,
+    "text": "Chetan: Don't marry into any model family because they will swap in and out both for commercial reasons, geopolitical reasons, right? So all of that will sort of evolve, change. So don't marry into any sort of Marry into an architectural way of thinking. Right? Meaning that these are the workloads that I can push to an LLM, outside LLM."
+  },
+  {
+    "segment_id": "p-0073",
+    "start_seconds": 1565.0,
+    "end_seconds": 1601.0,
+    "text": "Chetan: These are the workloads that I need to have on prem or in a governed environment, and what are my governance and assurance layers that I want to have? So what are the properties that are important to my enterprise, right, that I really need to enforce in the way I work with AI? Right? So I think if you have some of those principles pinned down, it becomes an easier way to get started. And I think most and then a year or so ago, I would have said, right, pick one problem up, and then do it well all the way, and then pick the second one up, then do it all the way."
+  },
+  {
+    "segment_id": "p-0074",
+    "start_seconds": 1601.0,
+    "end_seconds": 1614.0,
+    "text": "Chetan: Because at least six months to a year ago, there were so many pilots and not as much impact on the bottom line or top line of a corporation. But I think people are learning that lesson. But yep. But that's the other thing. Right?"
+  },
+  {
+    "segment_id": "p-0075",
+    "start_seconds": 1614.0,
+    "end_seconds": 1638.0,
+    "text": "Chetan: Pick one or two sort of problems that are meaningful in terms of impact if you're not started yet, and start with the but for most enterprises, which are already somewhere in the journey that have started, I would say stop thinking models and start thinking architectures, right, enterprise architectures for AI. Right? So so that would be sort of my one liner, if you would, for how to go about it, if that makes sense."
+  },
+  {
+    "segment_id": "p-0076",
+    "start_seconds": 1638.0,
+    "end_seconds": 1697.0,
+    "text": "Sponsor: I love how Chetan in this episode is emphasizing the need for operational sovereignty as we move into agentic AI. As agents have autonomy in your own infrastructure and touch your critical systems, it's absolutely crucial that you maintain control and limit the blast radius. That's why I'm so privileged to be leading a company called Prediction Guard, which has a self hosted control plane that allows you to maintain least agency for the agents operating in your environment and limit the blast radius of those agents. This runs in your own infrastructure. You have complete sovereign control, whether that's on prem, air gapped, or in your cloud VPC, and it's available on the AWS and Azure marketplaces. I would encourage you to check us out at predictionguard.com/practicalai. Again, check us out at predictionguard.com/practicalai."
+  },
+  {
+    "segment_id": "p-0077",
+    "start_seconds": 1697.0,
+    "end_seconds": 1729.0,
+    "text": "Daniel: So, Chetan, you you brought us to the point of talking through kind of thinking about architecture, and I want I I do wanna come back to that here in a second in terms of how you're thinking about that and enabling that at Rackspace. But before I do that, I wanted maybe to get your perspective on a word that you that you used a a little bit ago, which was sovereignty, which has to do I I think maybe there's listeners out there that are thinking, oh, I'm you know, I work for an an industry company. I'm not a nation state."
+  },
+  {
+    "segment_id": "p-0078",
+    "start_seconds": 1729.0,
+    "end_seconds": 1753.0,
+    "text": "Daniel: I don't need I don't have a sovereign cloud. What what does sovereignty have to do with with me? Could you help clarify that? Because, some people might be thinking or or have different views of what that means and and kind of bring it down to maybe the the commercial or the industry setting. What what does sovereignty mean in that sense, both in terms of maybe privacy and control?"
+  },
+  {
+    "segment_id": "p-0079",
+    "start_seconds": 1753.0,
+    "end_seconds": 1769.0,
+    "text": "Chetan: So, yeah, that's an excellent question, Daniel. And I think that's exactly the evolution that has happened. Folks typically associated sovereignty with sort of a nation state. That nation state is sovereign, and it needs to have their own AI stack. And that's how the conversation started."
+  },
+  {
+    "segment_id": "p-0080",
+    "start_seconds": 1769.0,
+    "end_seconds": 1819.0,
+    "text": "Chetan: But I think maybe a few months ago, conversation shifted because people realized that whenever you are interacting with a large language model that is not sort of in your own environment, you are sharing your data, your context, your processes, your information. And that is an IP. And given how powerful these AI tools can be, so that is an IP in terms of your data, your knowledge that you're giving to someone else. And not only that, it can be acted upon using AI to build solutions that might impact you as a corporation. So the notion of then sovereignty comes down to not just a nation but also any entity."
+  },
+  {
+    "segment_id": "p-0081",
+    "start_seconds": 1819.0,
+    "end_seconds": 1835.0,
+    "text": "Chetan: Enterprise entity, for example. And I'll sort of make an interesting extension to it. Then that means that how do I protect my own IP? How do I protect my own data? How do I ensure that my model behaves in the way that I want it to behave?"
+  },
+  {
+    "segment_id": "p-0082",
+    "start_seconds": 1835.0,
+    "end_seconds": 1869.0,
+    "text": "Chetan: My AI behaves in a way not model, sorry. My AI behaves in a way that I want it to behave with sort of the governance and assurances that I think are appropriate in my environment, not someone else dictating to me what my governance should be. It is not someone else's constitution that I have to use, but my own constitution as from a sovereign standpoint. And I think that idea will extend further as we go ahead, maybe to an individual as well, right? So we are quite of now used to the idea of sharing our private information with abandon, so to speak, right?"
+  },
+  {
+    "segment_id": "p-0083",
+    "start_seconds": 1869.0,
+    "end_seconds": 1898.0,
+    "text": "Chetan: But I think this idea of sovereignty, I think, will eventually extend to humans as well, to us as well, where we'll say, Look, how do I protect my own data when I'm interacting with these language models? Because people are sharing a lot of private information now, right? They are sort of using them as therapists, as guides, as friends. So this notion of sovereignty will come all the way down. And the idea is I am this entity, I have my own interests that are distinct from someone else's interests, and I need to protect them."
+  },
+  {
+    "segment_id": "p-0084",
+    "start_seconds": 1898.0,
+    "end_seconds": 1930.0,
+    "text": "Daniel: That's great. And I I love well, I love that definition. I think it gets people thinking in the right direction. But I also loved how you actually kind of made a distinction there when you talked about AI versus model, and you you brought us to the point of thinking about architecture before. And I'm wondering if you can help us now that you're kinda you're at Rackspace, you're helping Rackspace think through the architecture that needs to be enabled for different enterprises."
+  },
+  {
+    "segment_id": "p-0085",
+    "start_seconds": 1930.0,
+    "end_seconds": 1952.0,
+    "text": "Daniel: Actually, that that in itself becomes a little bit complicated because, like you said, models are not the same as, quote, AI that you're deploying in the sense of, oh, maybe there's an agent that uses multiple models. It has a harness. It connects to MCP servers. There's a governance element to it. There's an observability element to it, etcetera, etcetera."
+  },
+  {
+    "segment_id": "p-0086",
+    "start_seconds": 1952.0,
+    "end_seconds": 1987.0,
+    "text": "Daniel: It it's almost like you can look at that AI stack, and it can be very overwhelming to understand, you know, how to put all the pieces together, what what is the right architecture. Could you help help us understand maybe how you're think helping Rackspace enable, the architecture the architectures that are important for people now and how you're encouraging your customers, your partners to think about that architecture, not just as a model, but as a whole architecture that's supporting the deployment of AI."
+  },
+  {
+    "segment_id": "p-0087",
+    "start_seconds": 1987.0,
+    "end_seconds": 2021.0,
+    "text": "Chetan: So in some sense, Rackspace today goes from, as you say, from chip to outcome, right? Because we have a partnership with AMD, we have our own data centers, so our stack goes all the way. And for our customers, we provide the whole sort of private AI kind of environment, private cloud kind of environment where they can safely run their AI in their own environment, completely controlled by them. And this is what we are trying to do. I'm trying to build this sort of stack out for our customers, partners, and also internally at Rackspace."
+  },
+  {
+    "segment_id": "p-0088",
+    "start_seconds": 2021.0,
+    "end_seconds": 2050.0,
+    "text": "Chetan: And I know I completely agree that this can be quite overwhelming, but I think it's not all that bad. If think if you take a step back and think systematically about it, it's sort of following the same paradigms of architecture and design that have come before. So if you think about, you start with a compute layer, then you have your data, it's fine, then you have a model layer. Now, by the model layer, it could mean not just the large LLMs, but also your own model. Right?"
+  },
+  {
+    "segment_id": "p-0089",
+    "start_seconds": 2050.0,
+    "end_seconds": 2061.0,
+    "text": "Chetan: There's a model library. And on top of it is an inference layer. So inference layer is how you get some intelligence out of a model. Right? So that is the inference layer."
+  },
+  {
+    "segment_id": "p-0090",
+    "start_seconds": 2061.0,
+    "end_seconds": 2095.0,
+    "text": "Chetan: And on top of it sits, I would say, the harness. And I think you've read the word harness, Daniel. I think it's very important to think of harness as a sort of key construct in how you deploy your AI. So harness is what, in my mind, ties a machine learning model to an outcome that you can use. So when, for example, people use plot code, it's not that you are directly working with the model itself, it is the coding harness, right, around the underlying machine learning model that enables you to do something very useful."
+  },
+  {
+    "segment_id": "p-0091",
+    "start_seconds": 2095.0,
+    "end_seconds": 2129.0,
+    "text": "Chetan: So you take the same model and you build two different harnesses, you will get two different outcomes. So, it's very important to think through what sort of a harness looks like. And harness simply thinks through a harness as sort of the machinery that sort of specifies the logic the underlying underlying AI model to use and setting a set of tool sets that it could use, right, through MCP or whatever. And then, in any enterprise, there will be multiple harnesses. Right?"
+  },
+  {
+    "segment_id": "p-0092",
+    "start_seconds": 2129.0,
+    "end_seconds": 2150.0,
+    "text": "Chetan: So you will have a coding harness, you might have a harness for your agents for HR, you might have a harness for agents for blah blah blah. And so, ideally, you should think of building an orchestration layer to manage multiple harnesses. Right? And on top of it, you can then think of the consumption layer. And around the whole thing should be wrapped, I would say, with the governance and assurance planes."
+  },
+  {
+    "segment_id": "p-0093",
+    "start_seconds": 2150.0,
+    "end_seconds": 2191.0,
+    "text": "Chetan: So if you think of this, this is not so different from how we thought about other sort of stacks in the past. It's a matter of just abstracting out the use cases and commonality and things from that point of view. And once you do that, this falls out naturally, at least to me. And everything can then be done through sort of the way we have done that in the past, through APIs, through specifications, who says what to whom, how do they interact, and that's how these multiple layers can interact. So, yes, I mean, it looks overwhelming, but I think the design principles are the same like in the past, and it should not be all that intimidating."
+  },
+  {
+    "segment_id": "p-0094",
+    "start_seconds": 2191.0,
+    "end_seconds": 2284.0,
+    "text": "Chris: No. I I think that was I think that's quite an elegant way of describing how architectural components fit together. I really found myself gravitating to the way that you were explaining it, and in my head, as you were doing that, I had a question which I think you've already started to answer, but I wanted to extend it a little bit, and that is from a customer standpoint, as they are looking at the products and services that, whatever their business is, that they're offering their own customers, and there's some sense of stability to achieve that value. They need the product or service to be reliable to their own customers over time, and yet on the back end, your customer who is providing that service to them is trying to navigate those decisions that you just were describing in terms of what harnesses for what kinds of jobs I wanna get done. And my question, which maybe I have a glimpse of, was how do you manage the tumultuousness of the evolving set of models, the never ending set of new harnesses and stuff that are always coming out, while keeping that customer experience downstream steady and level based on the value that you're trying to provide, I'm guessing that that's somehow being managed through the orchestration layer in terms of how you're Right."
+  },
+  {
+    "segment_id": "p-0095",
+    "start_seconds": 2284.0,
+    "end_seconds": 2285.0,
+    "text": "Chris: Doing"
+  },
+  {
+    "segment_id": "p-0096",
+    "start_seconds": 2285.0,
+    "end_seconds": 2299.0,
+    "text": "Chetan: you need to sort of build evals for your own workloads. I think one thing people often gravitate towards is like, Oh, these are benchmark. This model is doing something else. It's better than the other benchmark. But those benchmarks are only guidelines in some sense."
+  },
+  {
+    "segment_id": "p-0097",
+    "start_seconds": 2299.0,
+    "end_seconds": 2325.0,
+    "text": "Chetan: They don't represent your workloads. And as we said earlier, the boundary of AI is jagged, right? So although a certain model might do very well on a benchmark, it doesn't necessarily translate into that it will do very well for your workloads as well. So I would say having your own evals is very important. And once you make that eval layer, then in some sense you can have a very consistent experience for your customers."
+  },
+  {
+    "segment_id": "p-0098",
+    "start_seconds": 2325.0,
+    "end_seconds": 2340.0,
+    "text": "Chetan: So you can swap in models in and out based on your evaluation results. Right? So so you should say, okay. I have the same Evalids from my previous model to your model. New model is cheaper, lighter, whatever, or, you know, it's it's safe."
+  },
+  {
+    "segment_id": "p-0099",
+    "start_seconds": 2340.0,
+    "end_seconds": 2349.0,
+    "text": "Chetan: I will use this. Right? So I think you need to build an eval layer as part of the orchestration framework. And that can then help you decide which sort of harness to go to. Sorry, sorry, Daniel."
+  },
+  {
+    "segment_id": "p-0100",
+    "start_seconds": 2349.0,
+    "end_seconds": 2382.0,
+    "text": "Daniel: No, I was just going to say I think that ties into what you were saying about some of the intuition that we've had from building software over the years and architecture over the years. Certainly, testing end to end testing, etcetera, is a key piece of that. And maybe the kinds of tests are slightly different or or there's different ways of testing in in this case, but I I love how you tied that that piece together. And also thinking about the you mentioned the term outcome. You know, what outcome are you after, and are you really testing for for that outcome?"
+  },
+  {
+    "segment_id": "p-0101",
+    "start_seconds": 2382.0,
+    "end_seconds": 2385.0,
+    "text": "Daniel: I think that's a key piece of it."
+  },
+  {
+    "segment_id": "p-0102",
+    "start_seconds": 2385.0,
+    "end_seconds": 2400.0,
+    "text": "Chetan: I'm wondering Yeah. Just to add to that, Daniel. Right? If you remember, I mean, when we were doing sort of these machine learning models for industrial use cases, we had this golden dataset. So before you could deploy, the customer will say, prove your model works on this golden dataset."
+  },
+  {
+    "segment_id": "p-0103",
+    "start_seconds": 2400.0,
+    "end_seconds": 2407.0,
+    "text": "Chetan: Right? So I think it's the same. Like, now we call it Evalse. It is more comprehensive. But the basic idea is the same."
+  },
+  {
+    "segment_id": "p-0104",
+    "start_seconds": 2407.0,
+    "end_seconds": 2416.0,
+    "text": "Chetan: Right? You've got to prove that your model works on data that's relevant to me before you deploy it for my customers in some sense. Right? So sorry. Sorry to interrupt you, but I apologize."
+  },
+  {
+    "segment_id": "p-0105",
+    "start_seconds": 2416.0,
+    "end_seconds": 2417.0,
+    "text": "Daniel: No. That's great."
+  },
+  {
+    "segment_id": "p-0106",
+    "start_seconds": 2417.0,
+    "end_seconds": 2418.0,
+    "text": "Chetan: Make make that connection."
+  },
+  {
+    "segment_id": "p-0107",
+    "start_seconds": 2418.0,
+    "end_seconds": 2437.0,
+    "text": "Daniel: Yeah. Yeah. I I love that. And I I guess kind of as we as we get closer to the to the end here, I I wanna give you a chance to you know, you're sitting in this chief AI officer role. You've kind of navigated the this career are coming to Rackspace."
+  },
+  {
+    "segment_id": "p-0108",
+    "start_seconds": 2437.0,
+    "end_seconds": 2490.0,
+    "text": "Daniel: Obviously, I know you can't share, you know, anything that that's not public, but I wonder if you could give us a sense of what are the types of challenges and the and the things that you're encouraging Rackspace to think about as we're going into the rest of this year and next year. What's what's on your mind as that chief AI officer for Rackspace? What's what's kind of, yeah. What what sorts of challenges are at kind of the top of your mind as you're as you're laying down to to to sleep at night or or coming to the end of the day? What what's at the top of your mind that that needs to be addressed, you know, within Rackspace and maybe the industry a little bit more broadly to make sure that we move forward to produce the types of AI outcomes and the accessibility and the safety that that we're after?"
+  },
+  {
+    "segment_id": "p-0109",
+    "start_seconds": 2490.0,
+    "end_seconds": 2496.0,
+    "text": "Chetan: Yeah. I would say a couple of things, Daniel. So one sort of there are couple of things I think about. Right? So one is obviously the architecture."
+  },
+  {
+    "segment_id": "p-0110",
+    "start_seconds": 2496.0,
+    "end_seconds": 2504.0,
+    "text": "Chetan: Right? So, like, how do you make it better? How do you define it? Who do we partner with for what layer? What are the different types of customers?"
+  },
+  {
+    "segment_id": "p-0111",
+    "start_seconds": 2504.0,
+    "end_seconds": 2531.0,
+    "text": "Chetan: Like, what makes sense? There's no one answer that fits all. So the general design questions around architecture and all the sort of underlying components of that are of interest and of importance to me, and we think about that. The other thing I think about, and I think in this case, in the sense Rackspace is unique, could be like other companies could learn from us as well. I want to build I don't know what the right word for it is, like, a mirror org."
+  },
+  {
+    "segment_id": "p-0112",
+    "start_seconds": 2531.0,
+    "end_seconds": 2561.0,
+    "text": "Chetan: Meaning, what you're saying now is if you can build it internally and use it internally, then you can go sell it externally. Right? So if I have an AI solution that I have proven on my own workloads, then I can have confidence and go to my customer and say, You could use this. And so what I'm trying to do is, from an internal standpoint, build a discipline around it, right? So it's not that the central project is just valuable and it's like a throwaway project, right?"
+  },
+  {
+    "segment_id": "p-0113",
+    "start_seconds": 2561.0,
+    "end_seconds": 2594.0,
+    "text": "Chetan: The intent should be that if you do it well, then we rotate it out to our customers. So I would say that's number two. And number three is around the governance, assurance, orchestration. I think these three layers are underserved today, and especially in a sovereign sort of environment. So how do I bring self sovereignty to our enterprises, to our customers, in a way that it is cost effective, it is safe, it is reliable, and I can orchestrate multiple workloads for them."
+  },
+  {
+    "segment_id": "p-0114",
+    "start_seconds": 2594.0,
+    "end_seconds": 2606.0,
+    "text": "Chetan: Because any enterprise will require multiple kinds of workloads, AI workloads for them. And I think that is sort of the broader design question I think about. I'm not sure if I answered your question correctly, but those are some of things that yeah."
+  },
+  {
+    "segment_id": "p-0115",
+    "start_seconds": 2606.0,
+    "end_seconds": 2624.0,
+    "text": "Daniel: Yeah. I think that's great. I I love that perspective. Of of course, from from where you're sitting, you have a a broad view of of what challenges you're trying to address and and what's important, so always eager to to get insight there. This has been a a great conversation, Chetan."
+  },
+  {
+    "segment_id": "p-0116",
+    "start_seconds": 2624.0,
+    "end_seconds": 2651.0,
+    "text": "Daniel: I would very much encourage our listeners to check out what Rackspace is doing. We'll include some links in our in our show notes. Is there anywhere in particular, Chetan, that, obviously, people can go to the website, see what you're doing with AI, but anything to highlight in terms of what Rackspace is doing, kind of a jumping off point for people, or anything to highlight as we close out here in terms of what's what's currently available from Rackspace and what people can explore?"
+  },
+  {
+    "segment_id": "p-0117",
+    "start_seconds": 2651.0,
+    "end_seconds": 2667.0,
+    "text": "Chetan: So I would say that the questions that Rackspace are trying to answer is where the industry is moving towards. So you should think about those as well. How do you maintain? How do you build AI that is sovereign, that is safe, that meets your outcomes, and all of that. Right?"
+  },
+  {
+    "segment_id": "p-0118",
+    "start_seconds": 2667.0,
+    "end_seconds": 2694.0,
+    "text": "Chetan: So those are things that everyone should think about. And those are the kind of solutions that is bringing to market. So please visit us, send me an email, or reach out to me on LinkedIn if you have specific questions as to what sort of Rackspace is to it. But I would encourage everyone, if there is Rackspace or not, to think systematically about these problems because that's how you can ensure that AI succeeds in your own"
+  },
+  {
+    "segment_id": "p-0119",
+    "start_seconds": 2694.0,
+    "end_seconds": 2706.0,
+    "text": "Daniel: That's that's great. Well, thank you so much for joining us, Chetan. Look forward to having you back on the show to give us some updates as you continue to advance with Rackspace. Thank you much so much for joining."
+  },
+  {
+    "segment_id": "p-0120",
+    "start_seconds": 2706.0,
+    "end_seconds": 2719.0,
+    "text": "Chetan: Yeah. Thank you, Chris and Daniel. Fantastic conversation. Thank you for hosting me. Love it."
+  },
+  {
+    "segment_id": "p-0121",
+    "start_seconds": 2719.0,
+    "end_seconds": 2740.0,
+    "text": "Narrator: All right. That's our show for this week. If you haven't checked out our website, head to practicalai.fm and be sure to connect with us on LinkedIn, X, or Blue Sky. You'll see us posting insights related to the latest AI developments, and we would love for you to join the conversation. Thanks to our partner, Prediction Guard, for providing operational support for the show."
+  },
+  {
+    "segment_id": "p-0122",
+    "start_seconds": 2740.0,
+    "end_seconds": 2760.0,
+    "text": "Narrator: Check them out at predictionguard.com. Also, thanks to Breakmaster Cylinder for the beats and to you for listening. That's all for now, but you'll hear from us again next week."
+  }
+]

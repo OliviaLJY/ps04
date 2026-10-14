@@ -1,0 +1,236 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 0.0,
+    "end_seconds": 4.5,
+    "text": "What can you build when your AI model\nruns directly on device?"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 4.5,
+    "end_seconds": 7.5,
+    "text": "Hey Reachy, what is Gemma?"
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 7.5,
+    "end_seconds": 11.8,
+    "text": "Gemma is a family of open models\nfrom Google that powers my brain."
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 11.8,
+    "end_seconds": 14.8,
+    "text": "Gemma 4 is Google's family of open models."
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 14.8,
+    "end_seconds": 17.3,
+    "text": "The difference is where they can go."
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 17.3,
+    "end_seconds": 19.2,
+    "text": "Gemini runs in the cloud."
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 19.2,
+    "end_seconds": 23.799999999999997,
+    "text": "With Gemma, you can download the weights,\nrun them locally, fine-tune, and deploy them"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 23.8,
+    "end_seconds": 25.5,
+    "text": "wherever you want."
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 25.5,
+    "end_seconds": 28.8,
+    "text": "From a phone, to a Raspberry Pi,\nto even a workstation GPU."
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 28.8,
+    "end_seconds": 31.0,
+    "text": "Here are four builds that show what that unlocks."
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 31.0,
+    "end_seconds": 34.5,
+    "text": "Let's start with my favorite, mostly\nbecause you can talk to it."
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 34.5,
+    "end_seconds": 38.8,
+    "text": "I'm basically a very smart set of weights\nand biases with a friendly face."
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 38.8,
+    "end_seconds": 41.199999999999996,
+    "text": "Tell me more about your brain."
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 41.2,
+    "end_seconds": 46.800000000000004,
+    "text": "I'm powered by LFG 3 Turbo,\nbased on Gemma 4."
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 46.8,
+    "end_seconds": 52.8,
+    "text": "It's a high-speed model that lets me chat\nwith you naturally and completely offline."
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 52.8,
+    "end_seconds": 56.5,
+    "text": "Oh, tell me more about your brain\nand who made it."
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 56.5,
+    "end_seconds": 61.8,
+    "text": "I'm powered by LFG 3 Turbo,\nbased on Gemma 4."
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 61.8,
+    "end_seconds": 65.8,
+    "text": "As for who made it, I'm looking right\nat the genius responsible."
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 65.8,
+    "end_seconds": 67.0,
+    "text": "Aw, you're too flattering."
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 67.0,
+    "end_seconds": 71.1,
+    "text": "Next, a wearable robotic arm\nthat runs entirely on-device."
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 71.1,
+    "end_seconds": 73.8,
+    "text": "A larger Gemma model labels\nthe training footage,"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 73.8,
+    "end_seconds": 77.8,
+    "text": "while a fine-tuned, lighter-weight Gemma 4\nmodel handles the real-time work,"
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 77.8,
+    "end_seconds": 81.0,
+    "text": "turning what the camera sees and what\nyou say into movement."
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 81.0,
+    "end_seconds": 84.8,
+    "text": "The reasoning happens right there on the arm,\nwith no internet connection to rely on."
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 84.8,
+    "end_seconds": 87.5,
+    "text": "On-device isn't just about privacy here;"
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 87.5,
+    "end_seconds": 90.2,
+    "text": "it's what makes the arm fast enough\nto be useful."
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 90.2,
+    "end_seconds": 93.8,
+    "text": "Now, take that same idea somewhere\nwith no signal at all."
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 93.8,
+    "end_seconds": 95.5,
+    "text": "This is PenguinAgent."
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 95.5,
+    "end_seconds": 99.8,
+    "text": "It helps wildlife researchers analyze animal\nbehavior in some of the most remote places on Earth."
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 99.8,
+    "end_seconds": 102.2,
+    "text": "A Gemma 4 26B model runs locally,"
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 102.2,
+    "end_seconds": 107.5,
+    "text": "taking in video and sensor data, and answering\nquestions against a library of scientific papers,"
+  },
+  {
+    "segment_id": "yt-0032",
+    "start_seconds": 107.5,
+    "end_seconds": 113.0,
+    "text": "all offline. No signal, no cloud, and no\nsensitive field data leaving the device."
+  },
+  {
+    "segment_id": "yt-0033",
+    "start_seconds": 113.0,
+    "end_seconds": 116.0,
+    "text": "And finally, something small enough\nto fit in your pocket."
+  },
+  {
+    "segment_id": "yt-0034",
+    "start_seconds": 116.0,
+    "end_seconds": 119.8,
+    "text": "CodeBuddy helps students in Indonesia learn\nto code without connected computers."
+  },
+  {
+    "segment_id": "yt-0035",
+    "start_seconds": 119.8,
+    "end_seconds": 123.8,
+    "text": "A student writes Python in a paper notebook,\nsnaps a photo,"
+  },
+  {
+    "segment_id": "yt-0036",
+    "start_seconds": 123.8,
+    "end_seconds": 128.8,
+    "text": "and Gemma 4 E4B reads the code, runs it,\nand debugs it, all offline."
+  },
+  {
+    "segment_id": "yt-0037",
+    "start_seconds": 128.8,
+    "end_seconds": 133.0,
+    "text": "Try Gemma 4 right now in Google AI Studio,\nor download the weights from Hugging Face."
+  },
+  {
+    "segment_id": "yt-0038",
+    "start_seconds": 133.0,
+    "end_seconds": 136.2,
+    "text": "What would you build with a model\nthat goes wherever you do?"
+  },
+  {
+    "segment_id": "yt-0039",
+    "start_seconds": 136.2,
+    "end_seconds": 138.0,
+    "text": "Let us know in the comments."
+  }
+]

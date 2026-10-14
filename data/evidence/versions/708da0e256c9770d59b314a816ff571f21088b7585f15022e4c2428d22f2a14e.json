@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:99e8fc0463ea1a2d1025",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "Live Coding with Wes Bos, Burke Holland, Pierce Boggan & Friends | GitHub Copilot Day",
+  "url": "https://www.youtube.com/watch?v=ql_-cPc_ZYQ",
+  "published_at": "2026-10-10T15:00:22Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "708da0e256c9770d59b314a816ff571f21088b7585f15022e4c2428d22f2a14e",
+  "text_path": "data/assets/ec174c398f04ee9b3dffc976/7b4b9a18a031c7c301e730f9c1738a23b3b1d5fa3e258061d3783a5007cbb2a5.txt",
+  "segments_path": "data/assets/ec174c398f04ee9b3dffc976/dc3baa881204a5c917b2f8d6db3d1f06148ad1ed0da2820d6ca8bae9a698d735.segments.json"
+}

@@ -1,0 +1,104 @@
+Bring multimodal semantic search to the edge with EmbeddingGemma 2
+- Google Developers Blog
+Search
+Bring multimodal semantic search to the edge with EmbeddingGemma 2
+OCT. 6, 2026
+Google AI Edge Team
+Android ML Team
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+Today, Google DeepMind launched EmbeddingGemma 2 , a best-in-class for its size, open-weight, multimodal embedding model that natively maps text, images, video frames, and audio into a single, unified vector space. For developers building local search and media retrieval experiences, it reduces the latency and memory overhead of chaining separate image captioning, speech-to-text, and text-embedding models. Designed specifically for local, privacy-first applications, EmbeddingGemma 2 covers text, vision, and audio modalities in a compact 740M parameter footprint, offering modular encoders that can run on as little as ~191MB active RAM for text-only weights and ~567MB for the full multimodal model on a Google Pixel 11 Pro. Most notably, EmbeddingGemma 2 can act as an ultra-low-latency on-device decision engine. Without requiring any training data or fine-tuning, it matches user inputs directly against classification labels and descriptions, delivering instant, zero-shot intent routing in a matter of milliseconds. For an overview of the model architecture and evals including multimodal embedding capabilities, check out the Google DeepMind blog .
+In this post, we’ll share how you can experience the power of EmbeddingGemma 2 right away through Google AI Edge’s interactive showcases, Google AI Edge Gallery on mobile and Google AI Edge Foresight on Mac, and how you can leverage the model to build your own private, on-device semantic search, visual keyframe retrieval, and condition-trigger workflows. In the coming weeks, we will also make this model available as a service on Android, accessible through ML Kit , including using NPU acceleration to further optimize performance across a broad range of devices.
+Instant Media Search and Video Moments Finder in Google AI Edge Gallery
+Google AI Edge Gallery is a cross-platform showcase application designed to allow users and developers to experience and evaluate on-device AI models and their capabilities in practical settings. Today, we are adding two interactive showcases powered by EmbeddingGemma 2 to the Google AI Edge Gallery app: Instant Media Search and Video Moments Finder .
+Instant Media Search allows users to find specific images or videos in their local media using natural language or example images. By converting both input query and the media into on-device embedding vectors - with the latter stored in a local SQLite database - the system retrieves relevant content by returning those with the largest cosine similarity. This enables an instant, interactive search experience as the user types.
+Sorry, your browser doesn't support playback for this video
+Search-as-you-type and image-to-image retrieval
+On-device image embedding calculation and fast multimodal retrieval: Whether you are starting with the sample image set provided by the app or testing instant search on your own media, you can experience how quickly EmbeddingGemma 2 executes embedding computations locally on your phone, no internet connection required.
+Multimodal retrieval and similarity matching: Because query token embedding and cosine similarity ranking execute quickly on device using MediaPipe UniversalEmbedder and SemanticRetriever , search results update live on every keystroke. As soon as you type "Katze" ( "Cat" in German), the grid immediately displays all feline photos in your collection; continuing to type "Katze schläft auf Tastatur" ( "Cat sleeping on keyboard" in German) dynamically re-ranks and brings the specific photo you have in mind to the top in real time. Besides text queries in multiple languages, users can also select any image from their phone or use their live camera stream to retrieve visually and semantically related photos.
+Video Moments Finder demonstrates another example of how EmbeddingGemma 2's cross-modal representations can be applied, enabling users to locate specific visual moments across local video recordings without transcribing audio or generating intermediate text captions.
+Sorry, your browser doesn't support playback for this video
+Search local video files for specific moments
+On-device video keyframe indexing and natural language search: After users select a local video (such as a family video or sports reel), the on-device engine indexes vision with audio chunks and generates embeddings for them. When users enter descriptive queries, such as "kids laughing" , "dog catching a frisbee" , or "person blowing out birthday candles," the engine computes the prompt embedding vector, compares it against the video frame embedding, and instantly highlights the exact timestamps where matching moments occur.
+Download the latest version of Google AI Edge Gallery app from Google Play Store or Apple App Store to try these new demos. Check-out the Github repo to learn how it’s implemented and start building your own experiences using EmbeddingGemma 2.
+Productivity boost and context retrieval in Google AI Edge Foresight on Mac
+We are excited to announce the launch of Google AI Edge Foresight for Mac, an experimental app that brings a context-aware meeting companion directly to your device. Powered by fully local AI processing, Foresight seamlessly assists with note-taking, indexing, and recalling your conversation transcripts and private files. By integrating directly with your system audio and microphone, it works out-of-the-box with any meeting platform, even completely offline.
+Sorry, your browser doesn't support playback for this video
+Automatic enhancement of shorthand notes
+Sorry, your browser doesn't support playback for this video
+Questions detected and answered live by AI
+Powered by EmbeddingGemma 2 and Gemma 4 models, Foresight delivers:
+Enhanced Note-taking: Enriches manual shorthand notes with details retrieved in real-time from your current meeting conversation.
+Cross-Modal Retrieval: Easily find different types of media (images, documents, transcripts, and notes) using natural language.
+On-device Benefits: Your sensitive information remains secure, along with uninterrupted productivity regardless of your network connection, and with no cloud subscription costs.
+By mapping text, audio, and visual data into a single vector space, Foresight runs local, secure searches across your personal knowledge library. The details you need are always at your fingertips, whether you are answering live questions mid-meeting or drafting thorough notes, while your sensitive data never leaves your device.
+Download the Google AI Edge Foresight Mac app today, and bring an intelligent, local companion to all your meetings.
+Build end-to-end search with ML Kit and MediaPipe Tasks
+Building For Android with ML Kit
+For developers building for the Android ecosystem, EmbeddingGemma 2 is a lightweight, task-specific model perfectly suited for on-device execution. We are bringing these unified search capabilities to ML Kit in the coming weeks, providing a standardized, platform-integrated path for production Android apps in the future. By integrating with ML Kit developers can get production-grade quality for EmbeddingGemma out of the box without having to manage the model or worrying about APK bloat. ML Kit will feature blazing fast performance through NPU acceleration (when available) and automatic model updates.
+Building For X-Platform with MediaPipe Tasks
+Integrating local search features, similar to those in Google AI Edge Gallery and Foresight above, usually requires developers to handle low-level media pre-processing for the data to be fed into the embedding model. To simplify this, MediaPipe Tasks is adding support for EmbeddingGemma 2 to the existing Embedder and Semantic Retriever; the new interface to our current RAG SDK.
+Whether you are targeting iOS, macOS, Windows, Linux or Web, MediaPipe Tasks provide a unified developer experience to write once and deploy across all platforms. Instead of developers manually managing pre-processing and data transformations, the Embedder and Semantic Retriever Tasks provide a turnkey solution that completely abstracts these steps.
+MediaPipe Universal Embedder Task : Automatically handles image resizing, tensor normalization, and multimodal tokenization. Pass raw images or text strings directly to receive 768-dimensional (or truncated 128d–512d) normalized vectors with zero boilerplate.
+MediaPipe Semantic Retriever Task : An edge-optimized embedded vector search engine indexes embeddings on-device and runs fast Approximate Nearest Neighbour (ANN) searches, returning ranked matches in single-digit milliseconds.
+EmbeddingGemma 2 can also be used as a multimodal, real-time decision engine with the MediaPipe Decision Task . This allows developers to effortlessly classify image, text or audio inputs without the need for fine-tuning and make instant decisions on-device, enabling use cases like routing or action prediction. The example below shows the MediaPipe Decision task running with less than 100ms response time to evaluate 500 options each turn in the chess game, showcasing the efficiency of EmbeddingGemma 2 as the decision engine fully on-device.
+Sorry, your browser doesn't support playback for this video
+EmbeddingGemma 2 powers low-latency MediaPipe Decision task on-device
+Building cross-platform apps using EmbeddingGemma 2 with LiteRT
+While MediaPipe Tasks offers turnkey simplicity, cross-platform applications requiring fine-grained control over processing and acceleration can be built directly on LiteRT , the proven engine powering ML Kit, MediaPipe Tasks, Google AI Edge Gallery, and Foresight. Powered by unified acceleration across CPUs, GPUs, and NPUs, deployment is greatly simplified with exceptional portability: a single .litertlm file runs out of the box on both CPU and GPU across all supported edge platforms.
+On Android, ML Kit APIs (coming soon) leverage LiteRT to provide optimized implementation for the platform, giving you both performance and simplicity without having to worry about model lifecycle management.
+To provide the best inference speed for EmbeddingGemma 2, we implemented targeted optimizations for compute-intensive workloads like vision encoding. This unlocks highly responsive, real-time AI experiences, as “search-as-you-type” in the Google AI Edge Gallery app, with visual embeddings taking as little as 37.3 ms (26.9 images per sec) on a MacBook M5 Pro GPU. See table for additional measurements.
+Table: Per image EmbeddingGemma 2 vision latency across CPU, GPU and NPU for a representative set of devices. Latency column specifies the vision embedding latency, evaluated with a maximum budget of 70 vision tokens per image.
+Architectural optimizations under the hood
+Achieving high-performance execution for EmbeddingGemma 2 on memory-constrained edge devices is enabled by the following optimizations:
+Modularity across modalities: Load only the encoders you need (e.g., Text + Vision for photo and video search, or dynamically activate the audio encoder when voice memos are added) to maximize edge efficiency and manage system memory pressure.
+Quantization-Aware Training (QAT): Compresses model weights to INT4 and INT8 , bringing multimodal vector search within reach of mid-range consumer hardware.
+Adaptive input and output scaling : Given the text and image input size, we dynamically load the optimal computational graph at runtime, consistently supported across all CPU, GPU, and NPU backends. This design accommodates variable text length without wasted compute while empowering developers to control vision token budgets for the ideal balance between latency and precision. For output, built-in Matryoshka Representation Learning (MRL) slicing allows on-the-fly dimension truncation, cutting local storage and index footprints by up to 8x.
+LiteRT delivers robust, cross-platform performance across a broad spectrum of edge devices and web (WASM) . For a complete list of supported hardware platforms and the latest performance benchmarks, see our Hugging Face model card . You can try the LiteRT benchmark tool with more physical devices on Google Cloud or check out our zero-setup web demo for an instant, browser-based playground.
+Get started today
+EmbeddingGemma 2 and Google AI Edge provide the building blocks to bring fast, private, and offline multimodal retrieval directly into your applications. Whether you’re experimenting with instant image search, visual keyframe retrieval, or ambient condition triggers, all the tools you need are available today.
+Experience the EmbeddingGemma 2 demos : Try Instant Media Search and Video Moments Finder on your own device with the Google AI Edge Gallery App on Android and iOS , and see personal knowledge base retrieval in action with AI Edge Foresight .
+Benchmark EmbeddingGemma 2: Benchmark and develop features with EmbeddingGemma 2 across over 200 different real physical devices in Google Cloud’s Developer Device Platform . Get started with our interactive Google Colab and guide on Github.
+Deploy EmbeddingGemma 2 : Download ready-to-run, pre-quantized .litertlm bundles directly from the Hugging Face LiteRT Community .
+Start building : Explore MediaPipe Tasks for turnkey integrations or follow the LiteRT-LM developer guide for more custom implementations. Explore the reference implementations in the Google AI Edge Gallery app .
+Acknowledgements
+We'd like to extend a special thanks to our significant contributors for their work on this project:
+Abhishek Jatram, Aditya Srivastava, Akshat Sharma, Alexander Kanaukou, Alice Zheng, Ami Kubota, Ander Dobo, Andrew Zhang, Brad Lassey, Chanchal Raj, Chandramouli Amarnath, Charlie Xu, Chenchen Tang, Chintan Parikh, Chirag Gupta, Cormac Brick, David Chou, Debapriya Maji, Denis Daletski, Fengwu Yao, Florian Kübler, Geonsun Lee, Gregory Karpiak, Henrique Schechter Vera, Himangshu Roy, Hriday Chhabria, Ian Ballantyne, Ivan Llanos, Jae Yoo, Jenn Lee, Jianing Wei, Jing Jin, Jingjiang Li, Jingtao Zhou, Jingxiao Zheng, Juhyun Lee, Julius Kammerl, Karthik Thirumalai, Kat Black, Kristen Quan, Kristen Wright, Lu Wang, Lutz Justen, Malini PV, Marissa Ikonomidis, Matthew Chan, Matthew Soulanille, Matthias Grundmann, Mogan Shieh, Na Li, Naina Singla, Olivier Lacombe, Priya Patel, Qidong Zhao, Queenie Zhang, Renjie Wu, Rishika Sinha, Rishubh Khurana, Ronald Wotzlaw, Sachin Kotwani, Sahil Dua, Sandeep Bandaru, Sandeep Patil, Sebastian Russo, Sebastian Schmidt, Shengyi Lin, Shuangfeng Li, Somdatta Banerjee, Steven Toribio, Suril Shah, Sylvain Vignaud, Tenghui Zhu, Vinod Mamillapalli, Vladimir Kirilyuk, Wai Hon Law, Weiyi Wang, Xiaoming Hu, Xinan Cheng, Xu Chen, Yang Zhang, Yi-Chun Kuo, Yishuang Pang, Yu-hui Chen.
+posted in:
+Mobile
+Web
+AI
+Announcements
+Learn
+Explore
+Resources
+events
+Previous
+Next
+Related Posts
+Gemini
+AI
+Cloud
+Announcements
+Best Practices
+Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon
+OCT. 13, 2026
+AI
+Case Studies
+Announcements
+Gemini 4 Argon for Robotics
+OCT. 13, 2026
+Mobile
+AI
+Announcements
+Announcing ADK for Kotlin 1.0: Building Production-Ready AI Agents in Kotlin, Android, and Beyond
+SEPT. 9, 2026
+Mobile
+Web
+Case Studies
+Announcements
+ML Drift: Next-Gen GPU AI/ML Inference at the Edge
+OCT. 8, 2026

@@ -1,0 +1,36 @@
+{
+  "stage": "extract-content",
+  "status": "incomplete",
+  "input_count": 42,
+  "output_count": 24,
+  "started_at": "2026-10-14T14:29:18Z",
+  "finished_at": "2026-10-14T14:30:06Z",
+  "elapsed_seconds": 47.715,
+  "tools_or_models": [
+    "python-urllib",
+    "html-text-extractor",
+    "youtube-timedtext"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "youtube:adf77dcd650b21518bd5: no element found: line 1, column 0",
+    "youtube:5e26efd3729e3dd4340e: HTTP Error 404: Not Found",
+    "youtube:8eff2932c5ec04cbb9e1: HTTP Error 404: Not Found",
+    "youtube:463fd76b085050ad0d05: no element found: line 1, column 0",
+    "youtube:ebc436c2af043ec8975c: no element found: line 1, column 0",
+    "youtube:fbb3f391d155d72b3120: HTTP Error 404: Not Found",
+    "youtube:99e8fc0463ea1a2d1025: no element found: line 1, column 0",
+    "youtube:7e04338a62c2fadd37ad: no element found: line 1, column 0",
+    "youtube:6b8f92bea21894b5a90b: no element found: line 1, column 0",
+    "youtube:eca1c6ac2117b3bed2bf: no element found: line 1, column 0",
+    "youtube:a71b3f24c317c85f73fb: no element found: line 1, column 0",
+    "youtube:fefb60fc52d15f98936d: no element found: line 1, column 0",
+    "podcast:1ea9bc08cf81ce2790ce: timestamped transcript unavailable; configure transcript_url",
+    "podcast:5f03b41a33ed1edf183c: timestamped transcript unavailable; configure transcript_url",
+    "podcast:fad37397a128b591f525: timestamped transcript unavailable; configure transcript_url",
+    "podcast:f77cc2ea82a77c9ee59f: timestamped transcript unavailable; configure transcript_url",
+    "podcast:93444c33669866575f07: timestamped transcript unavailable; configure transcript_url",
+    "podcast:ababb922ecb6c9915878: timestamped transcript unavailable; configure transcript_url"
+  ]
+}

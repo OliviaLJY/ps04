@@ -1,0 +1,58 @@
+[
+  {
+    "source_id": "github-changelog",
+    "publisher_id": "github",
+    "kind": "feed",
+    "url": "https://github.blog/changelog/feed/",
+    "limit": 8,
+    "perspective": "platform vendor product changes"
+  },
+  {
+    "source_id": "google-developers-blog",
+    "publisher_id": "google",
+    "kind": "feed",
+    "url": "https://developers.googleblog.com/feeds/posts/default",
+    "limit": 8,
+    "perspective": "platform vendor engineering announcements"
+  },
+  {
+    "source_id": "simon-willison-feed",
+    "publisher_id": "simon-willison",
+    "kind": "feed",
+    "url": "https://simonwillison.net/atom/everything/",
+    "limit": 8,
+    "perspective": "independent practitioner analysis"
+  },
+  {
+    "source_id": "google-developers-youtube",
+    "publisher_id": "google-developers-youtube",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw",
+    "limit": 6,
+    "perspective": "technical demonstrations"
+  },
+  {
+    "source_id": "github-youtube",
+    "publisher_id": "github-youtube",
+    "kind": "youtube",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7c3Kb6jYCRj4JOHHZTxKsQ",
+    "limit": 6,
+    "perspective": "vendor demonstrations; treated as non-independent from GitHub claims where applicable"
+  },
+  {
+    "source_id": "practical-ai-podcast",
+    "publisher_id": "changelog-practical-ai",
+    "kind": "podcast",
+    "url": "https://changelog.com/practicalai/feed",
+    "limit": 6,
+    "perspective": "practitioner interviews"
+  },
+  {
+    "source_id": "latent-space-podcast",
+    "publisher_id": "latent-space",
+    "kind": "podcast",
+    "url": "https://feeds.transistor.fm/latent-space",
+    "limit": 6,
+    "perspective": "AI engineering interviews"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "stage": "extract-content",
+  "status": "incomplete",
+  "input_count": 50,
+  "output_count": 30,
+  "started_at": "2026-10-14T14:31:22Z",
+  "finished_at": "2026-10-14T14:31:53Z",
+  "elapsed_seconds": 30.779,
+  "tools_or_models": [
+    "python-urllib",
+    "html-text-extractor",
+    "youtube-timedtext"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "feed:200a5d3dd39c6bfb7a20: HTTP Error 403: Forbidden",
+    "feed:8d45898e533e591d4241: HTTP Error 403: Forbidden",
+    "feed:570fe3204556675e8dd9: HTTP Error 403: Forbidden",
+    "feed:9bf93d58cc35db9987f8: HTTP Error 403: Forbidden",
+    "feed:db7b9e6fe248e3146f87: HTTP Error 403: Forbidden",
+    "feed:855092fba1df7e8a668b: HTTP Error 403: Forbidden",
+    "feed:45d6a2b79938283a07ca: HTTP Error 403: Forbidden",
+    "feed:d9e485b409fe8517ac6e: HTTP Error 403: Forbidden",
+    "youtube:adf77dcd650b21518bd5: Expecting value: line 1 column 1 (char 0)",
+    "youtube:5e26efd3729e3dd4340e: HTTP Error 404: Not Found",
+    "youtube:8eff2932c5ec04cbb9e1: HTTP Error 404: Not Found",
+    "youtube:463fd76b085050ad0d05: Expecting value: line 1 column 1 (char 0)",
+    "youtube:ebc436c2af043ec8975c: Expecting value: line 1 column 1 (char 0)",
+    "youtube:fbb3f391d155d72b3120: HTTP Error 404: Not Found",
+    "youtube:99e8fc0463ea1a2d1025: Expecting value: line 1 column 1 (char 0)",
+    "youtube:7e04338a62c2fadd37ad: Expecting value: line 1 column 1 (char 0)",
+    "youtube:6b8f92bea21894b5a90b: Expecting value: line 1 column 1 (char 0)",
+    "youtube:eca1c6ac2117b3bed2bf: Expecting value: line 1 column 1 (char 0)",
+    "youtube:a71b3f24c317c85f73fb: Expecting value: line 1 column 1 (char 0)",
+    "youtube:fefb60fc52d15f98936d: no public caption track"
+  ]
+}

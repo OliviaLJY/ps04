@@ -1,0 +1,16 @@
+{
+  "stage": "collect-feed",
+  "status": "completed",
+  "input_count": 3,
+  "output_count": 24,
+  "started_at": "2026-10-14T14:29:16Z",
+  "finished_at": "2026-10-14T14:29:17Z",
+  "elapsed_seconds": 0.775,
+  "tools_or_models": [
+    "python-urllib",
+    "xml.etree.ElementTree"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

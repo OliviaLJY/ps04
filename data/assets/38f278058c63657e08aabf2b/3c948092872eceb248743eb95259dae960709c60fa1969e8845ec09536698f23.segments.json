@@ -1,0 +1,368 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 0.0,
+    "end_seconds": 5.36,
+    "text": "Intelligent local model routing is"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 2.6,
+    "end_seconds": 8.4,
+    "text": "coming to GitHub Copilot. A few weeks"
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 5.36,
+    "end_seconds": 10.36,
+    "text": "ago, we announced Project Hydra Fusion,"
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 8.4,
+    "end_seconds": 12.84,
+    "text": "an intelligent model orchestration that"
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 10.36,
+    "end_seconds": 15.12,
+    "text": "plans, implements, and executes across a"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 12.84,
+    "end_seconds": 17.48,
+    "text": "wide range of cloud models, giving you"
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 15.12,
+    "end_seconds": 21.68,
+    "text": "frontier-level performance while"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 17.48,
+    "end_seconds": 24.560000000000002,
+    "text": "significantly reducing cost up to 67%."
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 21.68,
+    "end_seconds": 26.439999999999998,
+    "text": "But our vision goes beyond just the"
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 24.56,
+    "end_seconds": 29.72,
+    "text": "models that are available in the cloud"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 26.44,
+    "end_seconds": 32.96,
+    "text": "because we think that unlimited and"
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 29.72,
+    "end_seconds": 34.76,
+    "text": "unmetered intelligence belongs on every"
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 32.96,
+    "end_seconds": 37.24,
+    "text": "desktop. This is why we're pleased to"
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 34.76,
+    "end_seconds": 39.559999999999995,
+    "text": "announce that soon, Copilot will"
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 37.24,
+    "end_seconds": 42.88,
+    "text": "intelligently route to and leverage"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 39.56,
+    "end_seconds": 44.56,
+    "text": "local models on capable devices. First,"
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 42.88,
+    "end_seconds": 47.080000000000005,
+    "text": "you'll no longer have to configure local"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 44.56,
+    "end_seconds": 48.92,
+    "text": "models in GitHub Copilot itself. Any"
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 47.08,
+    "end_seconds": 50.879999999999995,
+    "text": "models that you have installed with"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 48.92,
+    "end_seconds": 53.400000000000006,
+    "text": "supported providers such as Microsoft"
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 50.88,
+    "end_seconds": 55.400000000000006,
+    "text": "Foundry Local or Ollama will just"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 53.4,
+    "end_seconds": 57.44,
+    "text": "automatically be discovered and will"
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 55.4,
+    "end_seconds": 59.48,
+    "text": "appear in the model picker."
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 57.44,
+    "end_seconds": 62.559999999999995,
+    "text": "Capable devices will also be able to"
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 59.48,
+    "end_seconds": 64.64,
+    "text": "install MAI Code 1.1/"
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 62.56,
+    "end_seconds": 67.36,
+    "text": "a local model available for install"
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 64.64,
+    "end_seconds": 70.08,
+    "text": "right from GitHub Copilot. Copilot will"
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 67.36,
+    "end_seconds": 72.72,
+    "text": "then automatically use these models when"
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 70.08,
+    "end_seconds": 74.36,
+    "text": "set to auto routing. There are a myriad"
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 72.72,
+    "end_seconds": 77.28,
+    "text": "of scenarios where local models are"
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 74.36,
+    "end_seconds": 80.56,
+    "text": "perfect and the inference is completely"
+  },
+  {
+    "segment_id": "yt-0032",
+    "start_seconds": 77.28,
+    "end_seconds": 82.88,
+    "text": "free for you. For instance, when set to"
+  },
+  {
+    "segment_id": "yt-0033",
+    "start_seconds": 80.56,
+    "end_seconds": 84.88,
+    "text": "auto routing, Copilot can automatically"
+  },
+  {
+    "segment_id": "yt-0034",
+    "start_seconds": 82.88,
+    "end_seconds": 87.47999999999999,
+    "text": "offload to a local model for simple"
+  },
+  {
+    "segment_id": "yt-0035",
+    "start_seconds": 84.88,
+    "end_seconds": 89.67999999999999,
+    "text": "tasks such as explaining how a code base"
+  },
+  {
+    "segment_id": "yt-0036",
+    "start_seconds": 87.48,
+    "end_seconds": 92.04,
+    "text": "works or how to run a project. You can"
+  },
+  {
+    "segment_id": "yt-0037",
+    "start_seconds": 89.68,
+    "end_seconds": 94.36000000000001,
+    "text": "also plan with large frontier models"
+  },
+  {
+    "segment_id": "yt-0038",
+    "start_seconds": 92.04,
+    "end_seconds": 96.28,
+    "text": "such as Astra and then hand off to a"
+  },
+  {
+    "segment_id": "yt-0039",
+    "start_seconds": 94.36,
+    "end_seconds": 97.88,
+    "text": "local model to implement while you"
+  },
+  {
+    "segment_id": "yt-0040",
+    "start_seconds": 96.28,
+    "end_seconds": 100.6,
+    "text": "sleep."
+  },
+  {
+    "segment_id": "yt-0041",
+    "start_seconds": 97.88,
+    "end_seconds": 102.75999999999999,
+    "text": "End users love automations in GitHub"
+  },
+  {
+    "segment_id": "yt-0042",
+    "start_seconds": 100.6,
+    "end_seconds": 105.55999999999999,
+    "text": "Copilot. These are tasks that run on a"
+  },
+  {
+    "segment_id": "yt-0043",
+    "start_seconds": 102.76,
+    "end_seconds": 107.80000000000001,
+    "text": "schedule in the background. Local models"
+  },
+  {
+    "segment_id": "yt-0044",
+    "start_seconds": 105.56,
+    "end_seconds": 110.16,
+    "text": "work incredibly here, able to work on"
+  },
+  {
+    "segment_id": "yt-0045",
+    "start_seconds": 107.8,
+    "end_seconds": 115.12,
+    "text": "very long-running tasks and costing you"
+  },
+  {
+    "segment_id": "yt-0046",
+    "start_seconds": 110.16,
+    "end_seconds": 117.56,
+    "text": "exactly zero AI credits to use."
+  },
+  {
+    "segment_id": "yt-0047",
+    "start_seconds": 115.12,
+    "end_seconds": 119.36,
+    "text": "You can also go completely offline and"
+  },
+  {
+    "segment_id": "yt-0048",
+    "start_seconds": 117.56,
+    "end_seconds": 121.04,
+    "text": "still have access to your local models,"
+  },
+  {
+    "segment_id": "yt-0049",
+    "start_seconds": 119.36,
+    "end_seconds": 123.68,
+    "text": "which is perfect for working"
+  },
+  {
+    "segment_id": "yt-0050",
+    "start_seconds": 121.04,
+    "end_seconds": 125.4,
+    "text": "disconnected or when you just don't have"
+  },
+  {
+    "segment_id": "yt-0051",
+    "start_seconds": 123.68,
+    "end_seconds": 128.03900000000002,
+    "text": "an internet connection."
+  },
+  {
+    "segment_id": "yt-0052",
+    "start_seconds": 125.4,
+    "end_seconds": 129.96,
+    "text": "Project Hydro Fusion is available today"
+  },
+  {
+    "segment_id": "yt-0053",
+    "start_seconds": 128.039,
+    "end_seconds": 132.6,
+    "text": "in GitHub Copilot. You can look for it"
+  },
+  {
+    "segment_id": "yt-0054",
+    "start_seconds": 129.96,
+    "end_seconds": 135.12,
+    "text": "under experimental settings. And capable"
+  },
+  {
+    "segment_id": "yt-0055",
+    "start_seconds": 132.6,
+    "end_seconds": 138.6,
+    "text": "devices will be able to use intelligent"
+  },
+  {
+    "segment_id": "yt-0056",
+    "start_seconds": 135.12,
+    "end_seconds": 142.28,
+    "text": "local model routing very soon, including"
+  },
+  {
+    "segment_id": "yt-0057",
+    "start_seconds": 138.6,
+    "end_seconds": 145.12,
+    "text": "MAI Code 1.1 flash. With GitHub Copilot,"
+  },
+  {
+    "segment_id": "yt-0058",
+    "start_seconds": 142.28,
+    "end_seconds": 147.6,
+    "text": "you get intelligent multi-model routing"
+  },
+  {
+    "segment_id": "yt-0059",
+    "start_seconds": 145.12,
+    "end_seconds": 149.84,
+    "text": "both in the cloud and very soon with"
+  },
+  {
+    "segment_id": "yt-0060",
+    "start_seconds": 147.6,
+    "end_seconds": 154.0,
+    "text": "local models that run on your machine"
+  },
+  {
+    "segment_id": "yt-0061",
+    "start_seconds": 149.84,
+    "end_seconds": 154.0,
+    "text": "and cost you exactly $0.00."
+  }
+]

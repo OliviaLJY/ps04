@@ -1,0 +1,15 @@
+{
+  "stage": "write-articles",
+  "status": "completed",
+  "input_count": 3,
+  "output_count": 3,
+  "started_at": "2026-10-14T14:34:26Z",
+  "finished_at": "2026-10-14T14:34:26Z",
+  "elapsed_seconds": 0.002,
+  "tools_or_models": [
+    "deterministic-draft-fallback (set AI_COMMAND for submitted live runs)"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "store-upsert",
+  "status": "completed",
+  "input_count": 24,
+  "output_count": 24,
+  "started_at": "2026-10-14T14:30:06Z",
+  "finished_at": "2026-10-14T14:30:06Z",
+  "elapsed_seconds": 0.005,
+  "tools_or_models": [
+    "json-version-store"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

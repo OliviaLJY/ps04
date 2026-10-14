@@ -1,0 +1,85 @@
+Search and filter for budgets now available - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 13, 2026 •
+1 minute read
+Search and filter for budgets now available
+The “Budgets and alerts” page in your GitHub billing settings now shows all of your budgets in one list that you can search and filter. Whether you manage budgets for a personal account, enterprise or organization, you can find a specific budget without paginating through the full list.
+With this release, you can:
+Search or filter budgets by scope, product, or SKU. In enterprises and organizations, you can also search by user.
+Narrow the list to one scope, such as organizations or cost centers, from the Scope menu.
+Track user-level budgets in the same list, including which budget applies to a specific user.
+To learn more, see Setting up budgets .
+Related Posts
+Oct.13 Improvement
+GitHub App improvements for least privilege and management
+enterprise management tools
+platform governance
+...
++1
+Oct.13 Improvement
+Enterprise managed settings enforcement updates
+client apps
+copilot
+enterprise management tools
+...
++2
+Oct.12 Improvement
+Client telemetry user attribution and configurable capture
+client apps
+copilot
+enterprise management tools
+...
++2
+Oct.10 Release
+New controls and chat improvements in Copilot for JetBrains
+copilot
+enterprise management tools
+...
++1
+Oct.06 Improvement
+Update your IDE to restore agent activity in Copilot usage metrics
+account management
+copilot
+enterprise management tools
+...
++2
+Sep.30 Retired
+X25519-only TLS ends for GHE.com on October 7
+application security
+ecosystem & accessibility
+enterprise management tools
+...
++2
+Sep.25 Improvement
+Enterprise managed settings in-product validator
+copilot
+enterprise management tools
+...
++1
+Sep.25 Improvement
+Usage metrics API adds pull request review stages
+account management
+copilot
+enterprise management tools
+...
++2
+Sep.24 Improvement
+Default Enablement of Copilot features for Copilot Business and Enterprise
+copilot
+enterprise management tools
+...
++1
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

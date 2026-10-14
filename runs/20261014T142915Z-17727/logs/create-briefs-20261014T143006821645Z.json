@@ -1,0 +1,17 @@
+{
+  "stage": "create-briefs",
+  "status": "failed",
+  "input_count": 16,
+  "output_count": 0,
+  "started_at": "2026-10-14T14:30:06Z",
+  "finished_at": "2026-10-14T14:30:06Z",
+  "elapsed_seconds": 0.0,
+  "tools_or_models": [
+    "python-standard-library"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "insufficient accepted evidence: need >=6 items, >=3 publishers, and all three media kinds"
+  ]
+}

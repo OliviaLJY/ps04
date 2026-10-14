@@ -1,0 +1,228 @@
+[music]
+>> Hackathons are one of the most fun
+experiences that you can have.
+>> [music]
+>> It's fun to build things. It's fun to
+make things.
+>> It's a great place to meet [music]
+people who are excited in the same
+things as you are.
+>> I got really amazing friends like out of
+the experience. [music]
+>> It's such a better way to learn.
+>> The best learning experience you can get
+as a technologist.
+>> I can't [music] remember a bigger
+hackathon that I've been to.
+And that's awesome.
+>> I'm so excited.
+>> Hackathons happen [music] all over the
+country. It's basically an invention
+marathon. Participants come up with
+ideas for robots and apps [music] and
+websites, and then they're challenged
+actually bring them to life.
+>> These aren't small things. These are big
+endeavors, and they're going to try to
+do it in basically 2 days.
+>> I spend 2 days intensely focused on one
+little one little experimental project
+[music] that moves the needle forward.
+>> You're working as hard as you can to try
+to put out a product that you're proud
+of. It's something that you don't really
+get an opportunity to do anywhere else.
+>> We've actually been able to see a lot
+more people who aren't [music] coming
+from traditional CS backgrounds
+participate in the event.
+>> In my day-to-day job, I don't really
+code, so like I jump into hackathon
+[music] as much as I can. Reigniting the
+skills that we know that we have.
+>> If you want to have like a low
+contribution, we have roles for you. If
+you are interested in diving in and
+building, we have a role for you. If you
+are more technical, we have a role for
+you.
+>> The next big thing could be built by
+someone who doesn't even know any of the
+basic computer science topics.
+>> When they're paired up with someone
+that's a CS major, or when they just go
+and use AI to start a prototype and
+convince others to join in on their
+idea, it's giving this like autonomy for
+people to do what they're most
+passionate about.
+>> [music]
+>> I think of hackathons like an
+educational bait-and-switch. If you
+[music] advertised it as this is a
+learning event, people might not want to
+go.
+>> When I was in college, I was more
+focused on getting the swag and the food
+than actually working on the product.
+>> Catch that sound?
+>> As soon as they opened the doors, they
+ran for the swag. We got some donuts. It
+was amazing.
+>> Someone just [music] burst in through
+the door. They're like, "There's pizza!"
+And everyone's like, "Oh my gosh,
+there's pizza!"
+>> The great unifier is a free pizza hour
+that just hits and no one expects it.
+>> Oh, yeah.
+>> We try to create an atmosphere that is
+just [music] like an incubator where
+they can come in and really work with
+each other and work with new members
+that come around.
+>> Everybody is here open to collaborate.
+They all want to speak to you. Nowhere
+here I felt like, you know, I should
+quit or I should leave.
+>> People here may be meeting people today
+that will be mentors [music] and
+collaborators for the rest of their
+lives.
+>> I could turn to my right, turn to my
+left, and ask that person a question.
+Hey, how do I do this? And they're
+[music] like, "Oh, I know how to do it."
+Or, "I don't know how to do it, but I
+know somebody else here who knows how to
+do it."
+>> Being in the trenches and working with
+someone is like you'll truly like see
+how well you mesh and like how much each
+person is able [music] to achieve.
+>> My first hackathon, I met two guys that
+are now my best friends.
+>> When you meet [music] someone who you
+bond with over a shared interest, that's
+a friendship of practice. And not only
+does it mean that you have a source of
+support, but it means you have a source
+of motivation.
+>> I searched on Google who came up with
+the term hackathon, and then popped up
+my name.
+And I don't remember. I mean, what I do
+remember is that wherever there was a
+space for a laptop, we found a put it
+down. Night, we would just sleep on the
+floor in a sleeping bag. And then the
+moment you got back up, you started, you
+know, hacking more on whatever you were
+working on.
+>> Hackathons always are just a huge grind,
+[music] continuous work, continuous
+debugging, and really challenges me to
+deliver success in a really short period
+of time.
+>> I think we should just try to focus on
+debugging first and just trying to get
+it done.
+>> It's been nerve-wracking.
+We're facing issues with the model
+movement. So, like when I'm moving, it's
+not able to detect my movements well.
+Like, nothing is working.
+>> It was really [music] just a progression
+of trial and error.
+>> There's duct tape, there's pieces of
+cardboard
+>> stuck it into it.
+>> Actually, there's a note that we wrote
+[music] inside here. Make it wider and
+longer and better.
+>> At the very last minute, we said to
+ourself, we need a news API for [music]
+people to really fact-check the
+information that they're getting.
+>> GitHub Copilot was able to not only
+create a front end in 30 minutes, but
+also [music] connect with the actual API
+itself and integrate it all together.
+>> You put yourself [music] out there to
+the judges and your fellow peers, and
+you shout, "Here's what I created, and
+it's out there for you to use as
+>> well."
+>> Just seeing your project at the end and
+demoing to judges [music] is one of the
+most rewarding things like ever.
+>> Nobody's got time to judge code, really.
+They're interested in the product,
+[music] the user experience, the problem
+it solves.
+>> [music]
+>> Hackathons is a safe third [music]
+place.
+It's okay to fail and experiment, and
+you're not going to get an app, you're
+not [music] going to get fired over it.
+>> A space where people can share not just
+how they [music] built something, but
+how they failed.
+>> And these are these are wrong.
+>> And overcoming that failure is really an
+important skill to learn.
+>> They may not all be overwhelming
+successes, but everyone fails, everyone
+starts from somewhere.
+>> To me, it comes back to the social
+aspect. Am I actually having fun doing
+this? Do I enjoy the people whom I'm
+with? Do I sort of get energized by
+them?
+If you feel you have to do it, and you
+don't like the people around you, then
+you're missing the point.
+>> [music]
+>> Regardless of what happens, I know that
+this is such a great learning
+environment.
+Coming in with an idea is what I've
+learned is enough for hackathons, and
+like
+>> [music]
+>> the implementation comes after it.
+>> My first hackathon, I learned more in
+one weekend than I had in my entire
+university degree up to that point.
+[music] And the next day, I looked
+myself in the mirror and I said, "Forget
+being a lawyer. Like, I have to be a
+hacker."
+>> Seen firsthand how hackathons
+>> [music]
+>> can act as a bridge between a spark of
+an idea and getting something rolled out
+into production. [music] Fortnite Battle
+Royale started out as an internal
+hackathon, and from there it
+skyrocketed.
+>> [music]
+>> We're trying to empower a new generation
+to be like, "Hey, it's actually not that
+hard to build something cool. Let's do
+it."
+>> The fact that work is [music] happening
+inspires more people to get involved
+because they see that now there is a bit
+more of an open group.
+>> The beauty of code is that it helps you
+realize that you can be the owner of
+your own life. [music]
+That you can have a voice.
+You can solve problems yourself. You
+don't have to ask someone else for
+permission.
+This [music] life is yours to live, and
+you can be anyone you want to be.
+>> [music]

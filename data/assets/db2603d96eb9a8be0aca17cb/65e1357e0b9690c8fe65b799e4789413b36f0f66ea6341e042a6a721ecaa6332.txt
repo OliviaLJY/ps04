@@ -1,0 +1,71 @@
+Enterprise managed settings enforcement updates - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 13, 2026 •
+1 minute read
+Enterprise managed settings enforcement updates
+Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version requirements to governance-focused managed settings keys over time, starting with the sandbox key.
+Force refresh settings on client startup
+Set forceRemoteSettingsRefresh to true through server-managed, MDM-managed, or file-based settings when a policy change must take effect before Copilot starts. The setting is supported in Copilot CLI, VS Code, and the GitHub Copilot app.
+MDM-managed and file-based delivery can require freshness before the client signs in for the first time. A server-managed value begins requiring refreshes on subsequent startups after the client has received it once. While the setting is active, a cached response cannot satisfy the freshness requirement. If the client cannot confirm current policy, it fails closed rather than running with a stale or unconfirmed policy. Without this setting, clients continue to use the normal managed-settings cache for faster startup and resilience during transient service failures.
+Minimum required client version
+We’ve also added enforcement of a required minimum client version to the sandbox key in support of the generally available local sandbox capability. When this key is included in managed settings, users who pin to older versions of Copilot clients will now be forced to update in order to resume using Copilot.
+To learn more, see Deploying enterprise managed settings .
+Join the discussion within GitHub Community .
+Related Posts
+Oct.13 Improvement
+GitHub App improvements for least privilege and management
+enterprise management tools
+platform governance
+...
++1
+Oct.13 Release
+Gemini 4 Argon in GitHub Copilot
+copilot
+Oct.13 Improvement
+Search and filter for budgets now available
+account management
+enterprise management tools
+...
++1
+Oct.12 Improvement
+Client telemetry user attribution and configurable capture
+client apps
+copilot
+enterprise management tools
+...
++2
+Oct.10 Release
+New controls and chat improvements in Copilot for JetBrains
+copilot
+enterprise management tools
+...
++1
+Oct.09 Release
+GitHub Copilot weekly releases — October 5
+copilot
+Oct.08 Improvement
+Copilot code review: New organization billing options and controls
+copilot
+Oct.07 Release
+Claude Haiku 5.5 in GitHub Copilot
+copilot
+Oct.07 Release
+Purpose-built model for leaked secret detection
+application security
+copilot
+...
++1
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

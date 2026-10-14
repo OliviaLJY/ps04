@@ -1,0 +1,14 @@
+[
+  {
+    "segment_id": "fixture-001",
+    "start_seconds": 12.0,
+    "end_seconds": 42.0,
+    "text": "This contract-test transcript describes an engineering demonstration and its limits. The speaker identifies the task, baseline, elapsed time, review burden, and a failure that required human correction."
+  },
+  {
+    "segment_id": "fixture-002",
+    "start_seconds": 43.0,
+    "end_seconds": 78.0,
+    "text": "This material is explicitly fictional fixture evidence and supports no real-world conclusion. A successful demonstration does not establish reliability across repositories, languages, security policies, or team structures."
+  }
+]

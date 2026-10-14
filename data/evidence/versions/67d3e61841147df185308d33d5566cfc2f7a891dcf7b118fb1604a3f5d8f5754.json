@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:7e04338a62c2fadd37ad",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "ScreenMind: Vision, Audio & Chat with Local AI | Open Source Friday",
+  "url": "https://www.youtube.com/watch?v=N_cGKFGMxxc",
+  "published_at": "2026-10-10T05:51:20Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "67d3e61841147df185308d33d5566cfc2f7a891dcf7b118fb1604a3f5d8f5754",
+  "text_path": "data/assets/4308fb7d0f3100178db970ac/26b6037b78609447c69aa556c6bbd569b712d97db0854bb89b71d651045b5071.txt",
+  "segments_path": "data/assets/4308fb7d0f3100178db970ac/f2d4c724f5f5fad95b7822bacbe109b30a57ac2a7736cd49ecac7e867f96ac73.segments.json"
+}

@@ -1,0 +1,67 @@
+Audit GitHub Code Quality finding dismissals and reopenings - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 13, 2026 •
+1 minute read
+Audit GitHub Code Quality finding dismissals and reopenings
+You can now review manual dismissals and reopenings of GitHub Code Quality findings in your organization or enterprise audit log. Findings may appear in either your repository’s default-branch backlog or pull requests. Two new events record these actions:
+repo.code_quality_findings_dismissed records a dismissal of one or more backlog findings.
+repo.code_quality_findings_reopened records a reopening of one or more backlog findings.
+Each event includes who made the request, when it happened, the repository and rule, and the identifiers and count of the affected findings.
+For repositories with Code Quality enabled, you don’t need additional setup. If you have access to your organization audit log or enterprise audit log , filter by these action names to review activity. On GitHub Enterprise Cloud, you can also retrieve these events through the audit log API.
+This improvement is generally available on GitHub Team and GitHub Enterprise Cloud, including enterprises with data residency. It isn’t available on GitHub Enterprise Server. For more on managing findings, see Fixing code quality findings in your repository backlog .
+Join the GitHub Community discussion .
+Related Posts
+Oct.13 Improvement
+GitHub App improvements for least privilege and management
+enterprise management tools
+platform governance
+...
++1
+Oct.13 Improvement
+Secret scanning blocks Anthropic keys by default, adds Salesforce
+application security
+Oct.13 Improvement
+Code scanning AI Scan metrics in security overview
+application security
+Oct.12 Release
+Push attribution for commits in limited public preview
+application security
+platform governance
+...
++1
+Oct.09 Improvement
+CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis
+application security
+Oct.07 Release
+Purpose-built model for leaked secret detection
+application security
+copilot
+...
++1
+Oct.07 Release
+Local sandboxing for GitHub Copilot now generally available
+application security
+copilot
+platform governance
+...
++2
+Oct.06 Improvement
+Code scanning AI Scan enablement status in security overview
+application security
+Oct.05 Improvement
+Secret scanning adds detectors for Lovable, Supabase, and more
+application security
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

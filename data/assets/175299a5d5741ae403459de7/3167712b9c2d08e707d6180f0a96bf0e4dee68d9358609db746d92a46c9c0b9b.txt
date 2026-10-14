@@ -1,0 +1,56 @@
+Research: Profiling web-edit with Python 3.15: flame graphs and source heatmaps
+Simon Willison’s Weblog
+Newsletter
+Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI
+12th October 2026
+Research
+Profiling web-edit with Python 3.15: flame graphs and source heatmaps
+— Profiling the unmodified web-edit app with Python 3.15’s built-in `profiling.sampling` revealed that mixed line-ending preservation dominated a busy editing workload: `preserve_endings` appeared in 64.8% of 15,296 recorded CPU stacks, with `SequenceMatcher.find_longest_match` contributing 38.3% of leaf samples. Sampling all threads was essential, since 95.1% of stacks came from AnyIO’s worker thread and would have been missed by a main-thread-only profile.
+I put the new Python 3.15 profiler through its paces by having GPT-6 Astra Extra High in Codex run it against my new web-edit app :
+I need a Python 3.15 flame graph and heatmap demo of the "web-edit" app from PyPI - research first then make me those demos
+Here's the resulting example flame graph and heatmap .
+Posted 12th October 2026 at 4:58 pm
+Recent articles
+Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026
+A new feature for my blog, built using my voice - 9th October 2026
+Claude Haiku 5.5 - 7th October 2026
+We're going to need default hard budget caps on pretty much everything - 3rd October 2026
+This is a beat by Simon Willison, posted on 12th October 2026 .
+profiling
+24
+python
+1,291
+codex
+61
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

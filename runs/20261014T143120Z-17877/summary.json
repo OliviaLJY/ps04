@@ -1,0 +1,93 @@
+{
+  "run_id": "20261014T143120Z-17877",
+  "status": "failed",
+  "counts": {
+    "discovered": 50,
+    "distinct_discovered": 50,
+    "duplicate_observations": 0,
+    "extracted": 30,
+    "new": 6,
+    "changed": 0,
+    "unchanged": 24,
+    "eligible": 20,
+    "excluded": 10,
+    "accepted": 5,
+    "rejected": 7,
+    "deferred": 8,
+    "articles": null,
+    "video_scripts": null
+  },
+  "coverage": {
+    "by_kind": {
+      "feed": 16,
+      "youtube": 0,
+      "podcast": 4
+    },
+    "independent_publishers": 3
+  },
+  "failed_or_incomplete_stages": [
+    {
+      "stage": "collect-podcast",
+      "status": "incomplete",
+      "errors": [
+        "pragmatic-engineer-podcast: HTTP Error 404: Not Found"
+      ]
+    },
+    {
+      "stage": "create-briefs",
+      "status": "failed",
+      "errors": [
+        "insufficient accepted evidence: need >=6 items, >=3 publishers, and all three media kinds"
+      ]
+    },
+    {
+      "stage": "extract-content",
+      "status": "incomplete",
+      "errors": [
+        "feed:200a5d3dd39c6bfb7a20: HTTP Error 403: Forbidden",
+        "feed:8d45898e533e591d4241: HTTP Error 403: Forbidden",
+        "feed:570fe3204556675e8dd9: HTTP Error 403: Forbidden",
+        "feed:9bf93d58cc35db9987f8: HTTP Error 403: Forbidden",
+        "feed:db7b9e6fe248e3146f87: HTTP Error 403: Forbidden",
+        "feed:855092fba1df7e8a668b: HTTP Error 403: Forbidden",
+        "feed:45d6a2b79938283a07ca: HTTP Error 403: Forbidden",
+        "feed:d9e485b409fe8517ac6e: HTTP Error 403: Forbidden",
+        "youtube:adf77dcd650b21518bd5: Expecting value: line 1 column 1 (char 0)",
+        "youtube:5e26efd3729e3dd4340e: HTTP Error 404: Not Found",
+        "youtube:8eff2932c5ec04cbb9e1: HTTP Error 404: Not Found",
+        "youtube:463fd76b085050ad0d05: Expecting value: line 1 column 1 (char 0)",
+        "youtube:ebc436c2af043ec8975c: Expecting value: line 1 column 1 (char 0)",
+        "youtube:fbb3f391d155d72b3120: HTTP Error 404: Not Found",
+        "youtube:99e8fc0463ea1a2d1025: Expecting value: line 1 column 1 (char 0)",
+        "youtube:7e04338a62c2fadd37ad: Expecting value: line 1 column 1 (char 0)",
+        "youtube:6b8f92bea21894b5a90b: Expecting value: line 1 column 1 (char 0)",
+        "youtube:eca1c6ac2117b3bed2bf: Expecting value: line 1 column 1 (char 0)",
+        "youtube:a71b3f24c317c85f73fb: Expecting value: line 1 column 1 (char 0)",
+        "youtube:fefb60fc52d15f98936d: no public caption track"
+      ]
+    }
+  ],
+  "elapsed_seconds": 32.824,
+  "tools_or_models": [
+    "deterministic-editorial-fallback (set AI_COMMAND for submitted live runs)",
+    "html-text-extractor",
+    "json-version-store",
+    "python-datetime",
+    "python-standard-library",
+    "python-urllib",
+    "xml.etree.ElementTree",
+    "youtube-timedtext"
+  ],
+  "cost": {
+    "known_or_estimated_usd": 0.0,
+    "unknown_stage_costs": []
+  },
+  "remaining_manual_actions": [
+    "Inspect at least three accepted and three rejected/deferred decisions.",
+    "Revise policy and preserve the comparison run.",
+    "Create matching human approval.json after corrections.",
+    "Render in Google Vids or HeyGen, publish on Substack/YouTube, and verify links.",
+    "Record the separate technical demonstration."
+  ],
+  "publication_links": []
+}

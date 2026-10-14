@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:6b8f92bea21894b5a90b",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "What really happens at a 48-hour hackathon",
+  "url": "https://www.youtube.com/watch?v=ICi1LPxx0ck",
+  "published_at": "2026-10-09T15:59:49Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "5bb7eaafd9a5acbb6861514284ff4d75bddf044cbb17e8341585766599e239e3",
+  "text_path": "data/assets/98e2614182a84b4b9f6cbf0d/2eef8d9ab5cbf000629b839b9a33d926d150418c48ef68f908259d9fdb063bd3.txt",
+  "segments_path": "data/assets/98e2614182a84b4b9f6cbf0d/bb651d0a3545d90943a474e3d359152500a94771b2ed04ff9325875c5b137e86.segments.json"
+}

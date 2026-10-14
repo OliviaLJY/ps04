@@ -1,0 +1,89 @@
+Secret scanning blocks Anthropic keys by default, adds Salesforce - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 13, 2026 •
+1 minute read
+Secret scanning blocks Anthropic keys by default, adds Salesforce
+Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default.
+New secret scanning partner
+Salesforce is now a secret scanning partner.
+When a provider’s secret is found in a public repository, GitHub forwards it to the relevant partner so they can revoke or rotate the credential before it can be abused.
+Provider
+Secret type
+Salesforce
+salesforce_marketing_cloud_api_oauth2_token
+Detectors added
+Secret scanning now automatically detects the following new secret types in your repositories.
+Provider
+Secret type
+Anthropic
+anthropic_service_api_key
+Anthropic
+anthropic_user_api_key
+Cloudsmith
+cloudsmith_api_key
+Partner secrets are automatically reported to the secret issuer when found in public repositories through the secret scanning partnership program . User secrets generate secret scanning alerts when found in public or private repositories.
+Push protection defaults expanded
+The following detectors are now included in push protection by default. Repositories with secret scanning enabled, including free public repositories, will have commits containing these secrets automatically blocked.
+Provider
+Secret type
+Anthropic
+anthropic_service_api_key
+Anthropic
+anthropic_user_api_key
+Learn more
+Learn more about secret scanning and see the full list of supported secrets in our documentation. Let us know what you think in the community discussion .
+Related Posts
+Oct.13 Improvement
+Audit GitHub Code Quality finding dismissals and reopenings
+application security
+platform governance
+...
++1
+Oct.13 Improvement
+Code scanning AI Scan metrics in security overview
+application security
+Oct.12 Release
+Push attribution for commits in limited public preview
+application security
+platform governance
+...
++1
+Oct.09 Improvement
+CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis
+application security
+Oct.07 Release
+Purpose-built model for leaked secret detection
+application security
+copilot
+...
++1
+Oct.07 Release
+Local sandboxing for GitHub Copilot now generally available
+application security
+copilot
+platform governance
+...
++2
+Oct.06 Improvement
+Code scanning AI Scan enablement status in security overview
+application security
+Oct.05 Improvement
+Secret scanning adds detectors for Lovable, Supabase, and more
+application security
+Oct.01 Improvement
+Scheduled code scanning skips inactive repositories
+application security
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

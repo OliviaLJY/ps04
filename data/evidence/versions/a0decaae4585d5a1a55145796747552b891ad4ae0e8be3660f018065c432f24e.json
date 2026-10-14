@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:a71b3f24c317c85f73fb",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "Intelligent local model routing is coming to GitHub Copilot",
+  "url": "https://www.youtube.com/watch?v=QIHnmqYU614",
+  "published_at": "2026-10-07T18:10:17Z",
+  "retrieved_at": "2026-10-14T14:33:22Z",
+  "media_url": null,
+  "version_id": "a0decaae4585d5a1a55145796747552b891ad4ae0e8be3660f018065c432f24e",
+  "text_path": "data/assets/38f278058c63657e08aabf2b/e98c915b6fccf5f492bf18ff1224830a610a32d3b26abe929ed1b6fbbc0f2c52.txt",
+  "segments_path": "data/assets/38f278058c63657e08aabf2b/3c948092872eceb248743eb95259dae960709c60fa1969e8845ec09536698f23.segments.json"
+}
