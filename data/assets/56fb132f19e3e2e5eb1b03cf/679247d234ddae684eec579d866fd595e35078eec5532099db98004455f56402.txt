@@ -1,0 +1,72 @@
+Download GitHub Code Quality license usage as a CSV - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 15, 2026 •
+1 minute read
+Download GitHub Code Quality license usage as a CSV
+You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records.
+The report includes:
+Each active committer who consumes a Code Quality license.
+The repositories that received their commits in the last 90 days.
+Whether each committer is unique to a single repository or organization.
+Use the unique committer details to identify where disabling Code Quality could free up licenses for the next billing period without changing your current license charge.
+To download your report, go to the Billing and licensing page in your organization or enterprise, open Licensing , and download the CSV from the Code Quality card.
+CSV downloads are available on GitHub Team and GitHub Enterprise Cloud.
+For details, see Viewing and managing GitHub Code Quality costs .
+Join the discussion in GitHub Community .
+Related Posts
+Oct.15 Release
+AI Scan for pull requests generally available
+application security
+Oct.15 Release
+Agentic autofix for code scanning alerts general availability
+application security
+copilot
+...
++1
+Oct.13 Improvement
+Audit GitHub Code Quality finding dismissals and reopenings
+application security
+platform governance
+...
++1
+Oct.13 Improvement
+Secret scanning blocks Anthropic keys by default, adds Salesforce
+application security
+Oct.13 Improvement
+Search and filter for budgets now available
+account management
+enterprise management tools
+...
++1
+Oct.13 Improvement
+Code scanning AI Scan metrics in security overview
+application security
+Oct.12 Release
+Push attribution for commits in limited public preview
+application security
+platform governance
+...
++1
+Oct.09 Improvement
+CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis
+application security
+Oct.07 Release
+Purpose-built model for leaked secret detection
+application security
+copilot
+...
++1
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

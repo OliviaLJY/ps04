@@ -1,0 +1,17 @@
+{
+  "stage": "select-items",
+  "status": "failed",
+  "input_count": 56,
+  "output_count": 0,
+  "started_at": "2026-10-16T17:21:13Z",
+  "finished_at": "2026-10-16T17:21:15Z",
+  "elapsed_seconds": 1.77,
+  "tools_or_models": [
+    "python-standard-library"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": [
+    "AI_COMMAND failed: Gemini API returned HTTP 503"
+  ]
+}

@@ -20,6 +20,21 @@ def source_note(ref, items):
     return f"[{item['title']}]({item['url']}) — {item['publisher_id']}, {item['published_at'][:10] if item.get('published_at') else 'undated'}, {locator}"
 
 
+def finalize_text(text, brief, run, items, kind):
+    piece=brief["piece_id"]
+    as_of=load_json(run/"run.json")["as_of_date"]
+    text=text.replace("{AS_OF}",as_of)
+    text=re.sub(r"As of [A-Za-z]+(?: \d{1,2},)? \d{4}(?:, Agent Operations Brief)?",f"As of {as_of}",text)
+    text=re.sub(r"claim:\d{2}-c(\d+)",lambda match:f"claim:{piece}-c{match.group(1)}",text)
+    refs=[]
+    for claim in brief["claims"]:
+        for ref in claim["evidence"]:
+            if (ref["item_id"],ref["version_id"]) not in {(x["item_id"],x["version_id"]) for x in refs}: refs.append(ref)
+    heading="Verified source notes" if kind=="articles" else "Verified description source notes"
+    notes="\n".join(f"- {source_note(ref,items)}" for ref in refs)
+    return text.rstrip()+f"\n\n## {heading}\n\n{notes}\n"
+
+
 def article_text(brief, project, items):
     claims = brief["claims"]; refs = []
     for c in claims:
@@ -60,7 +75,15 @@ def main():
         run=run_dir(sys.argv[2]); briefs=read_jsonl(sys.stdin); project=load_json(run/"config"/"project.json")
         items={x["item_id"]:x for x in read_jsonl((run/"eligible.jsonl").open(encoding="utf-8"))}
         prompt=(run/"prompts"/("write_articles.md" if kind=="articles" else "write_video_scripts.md")).read_text(encoding="utf-8")
-        modeled=model_json(f"write_{kind}",prompt,{"briefs":briefs,"project":project})
+        if os.environ.get("AI_COMMAND"):
+            modeled=[]
+            for brief in briefs:
+                result=model_json(f"write_{kind}",prompt,{"briefs":[brief],"project":project})
+                if not isinstance(result,list) or len(result)!=1 or not isinstance(result[0].get("markdown"),str):
+                    raise ValueError(f"model must return exactly one {kind} draft for piece {brief['piece_id']}")
+                modeled.append(result[0])
+        else:
+            modeled=None
         outdir=run/("articles" if kind=="articles" else "video_scripts"); outdir.mkdir(exist_ok=True)
         manifests=[]
         for i, brief in enumerate(briefs):
@@ -69,13 +92,13 @@ def main():
                 text=modeled[i]["markdown"]
             else:
                 text=article_text(brief,project,items) if kind=="articles" else script_text(brief,project,items)
-            text=text.replace("{AS_OF}",load_json(run/"run.json")["as_of_date"])
+            text=finalize_text(text,brief,run,items,kind)
             path=outdir/f"{piece}.md"; path.write_text(text,encoding="utf-8")
             manifests.append({"piece_id":piece,"path":repo_path(path),"claim_ids":[x["claim_id"] for x in brief["claims"]]})
         write_jsonl(manifests); tools=[os.environ.get("AI_MODEL_NAME", "AI_COMMAND")] if modeled is not None else ["deterministic-draft-fallback (set AI_COMMAND for submitted live runs)"]
         receipt(run,f"write-{kind}","completed",started,len(briefs),len(manifests),tools=tools,cost_usd=None if modeled is not None else 0.0)
         return 0
-    except (ValueError,KeyError,IndexError) as exc:
+    except (RuntimeError,ValueError,KeyError,IndexError) as exc:
         print(exc,file=sys.stderr); return 2
 
 

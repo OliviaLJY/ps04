@@ -1,0 +1,15 @@
+{
+  "stage": "write-articles",
+  "status": "completed",
+  "input_count": 3,
+  "output_count": 3,
+  "started_at": "2026-10-16T17:33:40Z",
+  "finished_at": "2026-10-16T17:34:24Z",
+  "elapsed_seconds": 44.155,
+  "tools_or_models": [
+    "gemini-flash-lite-latest"
+  ],
+  "cost_usd": null,
+  "cost_estimated": false,
+  "errors": []
+}

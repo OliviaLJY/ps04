@@ -1,0 +1,98 @@
+Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster
+- Google Developers Blog
+Search
+Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster
+OCT. 14, 2026
+Ayo Salawu
+Software Engineer
+Sundar Ramamoorthy
+Software Engineer
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+Last December, we announced preview of MCP support in Apigee : the ability to turn the APIs you already have, secured, governed and cataloged into tools that AI agents can discover and call, without writing code or standing up MCP servers of your own. The response from customers was immediate and so was the first question back: “ can I have this where my runtime actually lives?”
+For many Apigee customers, the runtime does not live on Google-managed infrastructure by accident. It lives in their own data center, in a colocation facility, or in another public cloud because a regulator requires it, because the systems of record are three racks away, or because a multi-cloud estate is simply the reality of the business. Those customers were not asking whether they wanted agentic access to their APIs. They were asking whether they could get it without moving the runtime.
+And now they can. With Apigee hybrid 1.17.0 , released on September 14, 2026, Model Context Protocol support is available in Apigee hybrid and the MCP data plane runs inside your own Kubernetes cluster.
+The same model, in a different place
+The conceptual model is the one we shipped on Apigee, unchanged. You describe your API with an OpenAPI 3.0.x specification and create an MCP Discovery Proxy from it. Every operation in that spec becomes an MCP tool. Agents talk to the endpoint over JSON-RPC using tools/list to discover what is available and tools/call to invoke it and Apigee handles the protocol and the transcoding. You do not write MCP server code and you do not operate an MCP server as a separate piece of software with its own lifecycle.
+What changes in hybrid is where the work happens. In Apigee hybrid, the MCP data plane runs inside your own Kubernetes cluster. The Apigee control plane generates MCP tool configuration from your OpenAPI Specification, your cluster fetches that configuration periodically and MCP request traffic never leaves the cluster. The diagram below shows where the MCP data plane runs in each deployment model.
+Two properties of that architecture are worth stating plainly because they are the ones your security review team will ask about.
+MCP request traffic stays inside your cluster. An agent's tools/call request is received, authorized and proxied to your backend entirely within your own infrastructure. No MCP request or response crosses the boundary to Google Cloud at request time.
+Configuration is pulled, not pushed. A sidecar alongside the MCP data plane (from within your cluster) reaches out to fetch the tool configuration derived from your spec. The Apigee control plane (in Google Cloud) never initiates a connection into your cluster, which means MCP requires no inbound path from Google into your network.
+What this means for multi-cloud and on-premises
+Agentic endpoints run where your APIs already run. Apigee hybrid already lets you host the runtime on the Kubernetes platform of your choice and MCP inherits that. The MCP sidecar reuses the existing apigee-watcher identity. There is no new Google service account to create and no new IAM role to grant. One control-plane grant per organization and the identity you already have does the rest.
+Data residency and sovereignty posture carry over. MCP in Apigee hybrid is available for Subscription and Evaluation organizations, including Data Residency–enabled organizations (configured at organization setup). On hybrid, configuration is fetched from your control plane location and the runtime request path stays in your cluster by construction. For teams whose constraint is "the request may not leave this jurisdiction, this facility, or this VPC," that constraint is supported by the architecture rather than by a setting.
+The governance you already wrote applies to agents. MCP endpoints are Apigee proxies, so they inherit the platform: OAuth 2.0 and OpenID Connect, API key verification as well as Apigee's built-in policy library. Tool-level control comes from a concept you already use, the API product . You list the specific tool operations a client is entitled to, optionally with a per-tool quota and Apigee enforces it. It also filters discovery automatically. When a client calls tools/list , the response contains only the tools in that client's API product. An agent cannot call delete_account if it was never allowed to see it.
+Your agentic traffic shows up where your API traffic does. Deployed MCP Discovery Proxies are automatically ingested into Apigee API hub, assigned the MCP API style and their operations mapped to individual tools a searchable catalog that developers can query in natural language rather than a spreadsheet of endpoints. In API insights, two filters, API style and MCP tool name let you isolate agentic traffic from ordinary REST traffic and look at a single tool across the API performance, error analysis, latency and target performance dashboards. You can see the ratio of discovery to execution and you can tell proxy overhead apart from backend time.
+Turning it on
+MCP is an optional feature in Apigee hybrid and is not enabled by default. Enabling it is a Helm operation on a cluster already running Apigee hybrid 1.17.0 or later. Steps to do this are as follows.
+Set the top-level enableMcpServer: true key in your overrides.yaml, then upgrade the apigee-operator chart first and the apigee-org chart second. The order matters. The operator chart owns the schema for the new MCP resources and upgrading in the wrong order produces a successful upgrade with no MCP pods. There is also a one-time, per-organization grant that adds the apigee-watcher identity to your organization's control plane access, so the sidecar can retrieve configuration. Defaults are sensible out of the box. Two MCP replicas, autoscaling to ten. Rolling back is the same field set to false and a single chart upgrade.
+A few things to plan for before you schedule the change. Enabling or disabling MCP triggers a staged canary release of runtime pods, so run it in an approved maintenance window. The public documentation here describes how to enable MCP in an existing Apigee hybrid cluster.
+Observing MCP Traffic within Apigee
+Your MCP proxy is exposed as a single endpoint. Every agent request, whatever tool it invokes, arrives at the same /mcp path. Apigee tags each of those requests with the name of the tool that was called, so API insights can break that one endpoint out by tool and show which tools your agents actually used, how often and over what period. The screenshot below shows API insights, including requests to the MCP proxy (mcp) and also see individual tools (as API proxies mcp-healthcare, mcp-petstore, mcp-statuscode) response time and tps. See public documentation on monitoring and analyzing mcp traffic with Apigee API insights here and here on how to use the API insights dashboard.
+We also have a view of tools being called in the tool performance tab within API insights below.
+What's next: tracing an agent's call end to end
+An MCP tool call crosses an AI client, Apigee and your backend. Today each of those is its own island of logs, so the question platform teams actually ask “where did the time go?” has no single answer.
+The snippet below is an example mcp tools call request from an AI client. The curl request below allows for end to end tracking of the request, when distributed trace is enabled in Apigee with OTEL.
+curl -X POST "https://xxx.xxx.xxx.net/mcp" \
+-H "Content-Type: application/json" \
+-H "MCP-Protocol-Version: 2025-11-25" \
+-d '{
+"jsonrpc": "2.0",
+"id": 321,
+"method": "tools/call",
+"params": {
+"name": "createReward",
+"arguments": {
+"reward": "123"
+},
+"_meta": {
+"traceparent": "00-3ad8012d970b3971cb16cda653a1a370-df3047d1d0830dc0-01"
+}
+}
+}'
+Shell
+Copied
+The same call as orchestrated by distributed trace in Google CloudTrace shows the calls in its entirety in one global view. (Assumption is all services (Apigee/Non-Apigee) in the chain report to the same Google CloudTrace)
+MCP clients carry W3C trace context inside the JSON-RPC _meta field, which a conventional REST backend has no idea how to read. Apigee extracts it and forwards it as ordinary traceparent and tracestate headers, so instrumented services downstream join the trace without code changes. Three things follow: a single trace ID spanning the AI client, the Apigee proxies and backend execution; backends that participate without recoding and less noise, because the gateway can forward context in passthrough mode rather than emitting infrastructure spans of its own which also trims trace ingestion cost.
+The ecosystem is converging on the same idea. SEP-2028 , an open proposal in the MCP community, aims to standardize _meta-to-header forwarding of W3C trace context standard behavior for MCP servers.
+The OpenTelemetry path that carries W3C trace context is available in Apigee today.
+Next steps
+MCP support is available now in Apigee hybrid 1.17.0. Start with the MCP in Apigee overview for the architecture, Enable MCP in Apigee hybrid for the Helm procedure and the MCP quickstart to get a first tool answering an agent.
+posted in:
+AI
+Cloud
+Announcements
+Problem-Solving
+Explore
+Agentic
+APIs
+Get Inspired
+Gateway
+Agents
+Resources
+MCP
+JSON-RPC
+Previous
+Next
+Related Posts
+AI
+Cloud
+Announcements
+Solutions
+Three layers, one repo: a tour of google/adk-recipes
+OCT. 15, 2026
+AI
+Cloud
+Best Practices
+Industry Trends
+Evaluating AI agents: moving past the vibe check
+OCT. 15, 2026
+Mobile
+Web
+How-To Guides
+Announcements
+Announcing DPoP Support for Google OAuth: Securing Refresh Tokens
+OCT. 15, 2026

@@ -8,7 +8,7 @@ cd "$ROOT" || exit 1
 if [ -z "${AI_COMMAND:-}" ]; then
   if [ -n "${GEMINI_API_KEY:-}" ] || { [ -f .env.local ] && awk -F= '$1=="GEMINI_API_KEY" && length($2)>0 {found=1} END {exit !found}' .env.local; }; then
     export AI_COMMAND="$ROOT/.venv/bin/python $ROOT/providers/gemini_command.py"
-    export AI_MODEL_NAME="${GEMINI_MODEL:-gemini-3.1-flash-lite}"
+    export AI_MODEL_NAME="${GEMINI_MODEL:-gemini-flash-lite-latest}"
   fi
 fi
 

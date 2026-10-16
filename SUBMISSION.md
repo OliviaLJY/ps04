@@ -28,7 +28,7 @@ Replace each placeholder with the title or working link. Verify that course staf
 
 ## Setup and Execution
 
-See [SETUP.md](SETUP.md). The runtime is Bash plus Python 3.9+ and the caption dependency in `requirements.txt`. The no-cost AI path uses `gemini-3.1-flash-lite` through `providers/gemini_command.py`; the only credential name is `GEMINI_API_KEY`, stored in ignored `.env.local`. Free-tier inputs may be used by Google to improve its products. `AI_COMMAND` can substitute another JSON-in/JSON-out provider.
+See [SETUP.md](SETUP.md). The runtime is Bash plus Python 3.9+ and the caption dependency in `requirements.txt`. The no-cost AI path uses `gemini-flash-lite-latest` through `providers/gemini_command.py`; the only credential name is `GEMINI_API_KEY`, stored in ignored `.env.local`. Free-tier inputs may be used by Google to improve its products. `AI_COMMAND` can substitute another JSON-in/JSON-out provider.
 
 Project, source, policy, and prompt inputs live in `config/` and `prompts/`; every run snapshots them. The deterministic fallback is for contract testing and cannot be represented as the required AI-backed editorial run.
 

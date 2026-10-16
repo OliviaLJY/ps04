@@ -1,0 +1,65 @@
+AI is mass decompiling games. That's both awesome and scary.
+Simon Willison’s Weblog
+Newsletter
+Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI
+14th October 2026 - Link Blog
+AI is mass decompiling games. That's both awesome and scary. ( via ) Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).
+I like how this piece captures both the positives and the negatives of this new development:
+Most people already realized the scary part by now. If AI can decompile games and software, then the entire tech industry is about to explode. Anybody can decompile other software and use it any way they'd like, and nobody can stop them. Companies can steal from competitors. Your paid game or app can be open-sourced against your will. This isn't exclusive to old video games, we can apply this to any software. [...]
+This is also a big win for preservation. Old games can be ported, modified, enhanced, and made much more easily accessible than before. [...[
+With console makers going all in on digital and games becoming entirely unplayable due to servers shutting down, this is fantastic news. We could own software we bought regardless of what the company thinks.
+Posted 14th October 2026 at 4:26 pm
+Recent articles
+Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026
+A new feature for my blog, built using my voice - 9th October 2026
+Claude Haiku 5.5 - 7th October 2026
+We're going to need default hard budget caps on pretty much everything - 3rd October 2026
+This is a link post by Simon Willison, posted on 14th October 2026 .
+computer-history
+20
+game-design
+25
+ai
+2,283
+webassembly
+134
+generative-ai
+2,025
+llms
+1,991
+ai-ethics
+345
+coding-agents
+258
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

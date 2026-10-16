@@ -1,0 +1,374 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 0.0,
+    "end_seconds": 5.8,
+    "text": "The Logitech MX Keypad is a developer"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 2.6,
+    "end_seconds": 7.880000000000001,
+    "text": "console and tactile AI control center."
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 5.8,
+    "end_seconds": 11.0,
+    "text": "And it has deep integration with the"
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 7.88,
+    "end_seconds": 12.76,
+    "text": "GitHub Copilot app. Let's take a look."
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 11.0,
+    "end_seconds": 14.64,
+    "text": "You can set up the GitHub Copilot app"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 12.76,
+    "end_seconds": 16.44,
+    "text": "integration by installing the GitHub"
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 14.64,
+    "end_seconds": 19.0,
+    "text": "Copilot plugin"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 16.44,
+    "end_seconds": 20.400000000000002,
+    "text": "from Logi Marketplace or Logi Options"
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 19.0,
+    "end_seconds": 21.92,
+    "text": "Plus."
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 20.4,
+    "end_seconds": 24.32,
+    "text": "Once installed, you can manage your"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 21.92,
+    "end_seconds": 26.8,
+    "text": "chats, projects, pin chats, and even"
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 24.32,
+    "end_seconds": 28.6,
+    "text": "customizations right from the keypad."
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 26.8,
+    "end_seconds": 31.36,
+    "text": "Clicking the new chat button starts a"
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 28.6,
+    "end_seconds": 32.92,
+    "text": "new chat in the GitHub Copilot app."
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 31.36,
+    "end_seconds": 35.92,
+    "text": "You can also start voice control with a"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 32.92,
+    "end_seconds": 38.0,
+    "text": "single press for hands-free prompting."
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 35.92,
+    "end_seconds": 39.440000000000005,
+    "text": "Toggle the microphone on and off as"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 38.0,
+    "end_seconds": 41.64,
+    "text": "needed."
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 39.44,
+    "end_seconds": 45.12,
+    "text": "You can see at a glance the model,"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 41.64,
+    "end_seconds": 47.92,
+    "text": "reasoning level, and context window."
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 45.12,
+    "end_seconds": 50.839999999999996,
+    "text": "The projects view on the keypad mirrors"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 47.92,
+    "end_seconds": 52.56,
+    "text": "your GitHub Copilot app setup exactly."
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 50.84,
+    "end_seconds": 54.720000000000006,
+    "text": "Any projects you have loaded in the app"
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 52.56,
+    "end_seconds": 57.160000000000004,
+    "text": "will appear in this view."
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 54.72,
+    "end_seconds": 59.4,
+    "text": "Drilling in shows you all sessions."
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 57.16,
+    "end_seconds": 61.4,
+    "text": "Within a session, you can see the model,"
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 59.4,
+    "end_seconds": 63.12,
+    "text": "the context window, start a voice chat,"
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 61.4,
+    "end_seconds": 65.4,
+    "text": "check the reasoning level. You can even"
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 63.12,
+    "end_seconds": 67.96,
+    "text": "see how many AI credits have been used"
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 65.4,
+    "end_seconds": 70.16000000000001,
+    "text": "on this session. The keypad reflects"
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 67.96,
+    "end_seconds": 71.55999999999999,
+    "text": "project status in real-time, so starting"
+  },
+  {
+    "segment_id": "yt-0032",
+    "start_seconds": 70.16,
+    "end_seconds": 74.16,
+    "text": "a session will be reflected on the"
+  },
+  {
+    "segment_id": "yt-0033",
+    "start_seconds": 71.56,
+    "end_seconds": 75.76,
+    "text": "keypad immediately. And you can see"
+  },
+  {
+    "segment_id": "yt-0034",
+    "start_seconds": 74.16,
+    "end_seconds": 77.56,
+    "text": "which sessions are running, which have"
+  },
+  {
+    "segment_id": "yt-0035",
+    "start_seconds": 75.76,
+    "end_seconds": 78.80000000000001,
+    "text": "finished, which have questions, et"
+  },
+  {
+    "segment_id": "yt-0036",
+    "start_seconds": 77.56,
+    "end_seconds": 80.76,
+    "text": "cetera."
+  },
+  {
+    "segment_id": "yt-0037",
+    "start_seconds": 78.8,
+    "end_seconds": 82.28,
+    "text": "You can also easily jump into pin chats"
+  },
+  {
+    "segment_id": "yt-0038",
+    "start_seconds": 80.76,
+    "end_seconds": 85.16000000000001,
+    "text": "as well as any regular chats that you"
+  },
+  {
+    "segment_id": "yt-0039",
+    "start_seconds": 82.28,
+    "end_seconds": 86.96000000000001,
+    "text": "have going on with Copilot."
+  },
+  {
+    "segment_id": "yt-0040",
+    "start_seconds": 85.16,
+    "end_seconds": 89.88,
+    "text": "The customize button lets you easily"
+  },
+  {
+    "segment_id": "yt-0041",
+    "start_seconds": 86.96,
+    "end_seconds": 92.16,
+    "text": "enable or disable MCP servers"
+  },
+  {
+    "segment_id": "yt-0042",
+    "start_seconds": 89.88,
+    "end_seconds": 94.8,
+    "text": "right from the keypad."
+  },
+  {
+    "segment_id": "yt-0043",
+    "start_seconds": 92.16,
+    "end_seconds": 97.28,
+    "text": "And the MX Keypad is app-aware, so it"
+  },
+  {
+    "segment_id": "yt-0044",
+    "start_seconds": 94.8,
+    "end_seconds": 98.96,
+    "text": "detects which app you're in and switches"
+  },
+  {
+    "segment_id": "yt-0045",
+    "start_seconds": 97.28,
+    "end_seconds": 100.92,
+    "text": "its keys to match."
+  },
+  {
+    "segment_id": "yt-0046",
+    "start_seconds": 98.96,
+    "end_seconds": 104.03999999999999,
+    "text": "For instance, if we jump over to Visual"
+  },
+  {
+    "segment_id": "yt-0047",
+    "start_seconds": 100.92,
+    "end_seconds": 108.36,
+    "text": "Studio Code, then we get a Visual Studio"
+  },
+  {
+    "segment_id": "yt-0048",
+    "start_seconds": 104.04,
+    "end_seconds": 111.08000000000001,
+    "text": "customized MX Keypad layout right here."
+  },
+  {
+    "segment_id": "yt-0049",
+    "start_seconds": 108.36,
+    "end_seconds": 113.32,
+    "text": "And the keypad is fully customizable, so"
+  },
+  {
+    "segment_id": "yt-0050",
+    "start_seconds": 111.08,
+    "end_seconds": 115.6,
+    "text": "in Logi Options Plus, you can drag and"
+  },
+  {
+    "segment_id": "yt-0051",
+    "start_seconds": 113.32,
+    "end_seconds": 118.08,
+    "text": "drop actions onto other keys, reorder"
+  },
+  {
+    "segment_id": "yt-0052",
+    "start_seconds": 115.6,
+    "end_seconds": 120.67999999999999,
+    "text": "things, even build macros for complex"
+  },
+  {
+    "segment_id": "yt-0053",
+    "start_seconds": 118.08,
+    "end_seconds": 123.0,
+    "text": "multi-step workflows. Or better yet, use"
+  },
+  {
+    "segment_id": "yt-0054",
+    "start_seconds": 120.68,
+    "end_seconds": 125.52000000000001,
+    "text": "the Logi Actions SDK and have GitHub"
+  },
+  {
+    "segment_id": "yt-0055",
+    "start_seconds": 123.0,
+    "end_seconds": 126.8,
+    "text": "Copilot build a custom plugin just for"
+  },
+  {
+    "segment_id": "yt-0056",
+    "start_seconds": 125.52,
+    "end_seconds": 129.119,
+    "text": "you."
+  },
+  {
+    "segment_id": "yt-0057",
+    "start_seconds": 126.8,
+    "end_seconds": 131.88,
+    "text": "The MX Keypad is available now, and"
+  },
+  {
+    "segment_id": "yt-0058",
+    "start_seconds": 129.119,
+    "end_seconds": 134.68,
+    "text": "every keypad includes three free months"
+  },
+  {
+    "segment_id": "yt-0059",
+    "start_seconds": 131.88,
+    "end_seconds": 137.04,
+    "text": "of GitHub Copilot Pro Plus for both new"
+  },
+  {
+    "segment_id": "yt-0060",
+    "start_seconds": 134.68,
+    "end_seconds": 139.04000000000002,
+    "text": "and existing users."
+  },
+  {
+    "segment_id": "yt-0061",
+    "start_seconds": 137.04,
+    "end_seconds": 142.0,
+    "text": "Put an AI control center"
+  },
+  {
+    "segment_id": "yt-0062",
+    "start_seconds": 139.04,
+    "end_seconds": 142.0,
+    "text": "on your desktop."
+  }
+]

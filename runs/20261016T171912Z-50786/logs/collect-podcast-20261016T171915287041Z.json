@@ -1,0 +1,16 @@
+{
+  "stage": "collect-podcast",
+  "status": "completed",
+  "input_count": 2,
+  "output_count": 12,
+  "started_at": "2026-10-16T17:19:14Z",
+  "finished_at": "2026-10-16T17:19:15Z",
+  "elapsed_seconds": 0.757,
+  "tools_or_models": [
+    "python-urllib",
+    "xml.etree.ElementTree"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

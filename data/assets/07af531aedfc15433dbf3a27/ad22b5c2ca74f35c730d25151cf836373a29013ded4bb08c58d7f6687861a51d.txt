@@ -1,0 +1,40 @@
+I found a very fun
+and new way to create music.
+I knew that my laptop had all of these
+different sensors to track things,
+like the angle of which it was positioned.
+I had the idea of building
+a digital synthesizer
+that would run on my browser without
+needing any additional hardware.
+Luckily, I had Gemini in my disposal.
+I found online, different projects
+that were open source and different
+files, with documentation
+that would explain
+how to access different sensors
+that my device has.
+and I was able to fit
+all of this documentation,
+all of this context to Google Gemini,
+and it was able to help me
+build an initial prototype
+and create an instrument.
+We were able to grab data in real time
+from all of the different sensors,
+and bring them into a hub that
+would allow me to visualize the data
+in real time, and then figure
+out what to do with it.
+And at the end, we ended
+up with this tool, with synth
+that would be driven by my own laptop,
+and I was able to create music
+in real time by just
+moving it,
+tilting it,
+shaking it,
+any way that felt natural
+to me as a performer.
+It was my vision and I was able to mold
+and achieve using a tool like Gemini.

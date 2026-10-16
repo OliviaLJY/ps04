@@ -1,0 +1,60 @@
+Email notifications for repository push events have been retired - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Retired
+October 15, 2026 •
+1 minute read
+Email notifications for repository push events have been retired
+As of October 15, 2026, email notifications for repository push events have been retired and are no longer sent.
+We shut down this feature to help prevent spam and abuse. Because recipients didn’t have to consent before receiving these emails, the feature could be misused to send unwanted messages through GitHub’s email infrastructure.
+To continue sending email notifications for repository push events, you can use a GitHub Actions workflow triggered by push events to send emails through your own SMTP server or email provider.
+Related Posts
+Sep.11 Improvement
+Profiles now show your highest achievement badge tier
+community engagement
+Aug.27 Retired
+GitHub Classroom deprecated
+community engagement
+Aug.10 Retired
+Custom thread subscriptions are being deprecated
+collaboration tools
+community engagement
+projects & issues
+...
++2
+May.26 Retired
+GitHub Classroom sign-ups are no longer available
+community engagement
+Apr.24 Improvement
+Changes to notification retention and archived repository watches
+community engagement
+Dec.11 Release
+Post as Admin now available in GitHub Discussions
+community engagement
+Nov.07 Retired
+Removing notifications for @mentions in commit messages
+community engagement
+Sep.22 Release
+Open sourcing the GitHub Annotation Toolkit
+community engagement
+ecosystem & accessibility
+...
++1
+Sep.11 Release
+Verified answers generally available in GitHub Discussions
+collaboration tools
+community engagement
+...
++1
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

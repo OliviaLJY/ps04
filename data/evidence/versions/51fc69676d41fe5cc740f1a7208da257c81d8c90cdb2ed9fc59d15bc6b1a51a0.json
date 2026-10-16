@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:6af0d47fddbc009b4a93",
+  "source_id": "google-developers-youtube",
+  "publisher_id": "google-developers-youtube",
+  "kind": "youtube",
+  "title": "Turning raw hardware sensor data into music with Gemini",
+  "url": "https://www.youtube.com/watch?v=i3X7Fv0Z3Uc",
+  "published_at": "2026-10-15T19:00:22Z",
+  "retrieved_at": "2026-10-16T17:19:14Z",
+  "media_url": null,
+  "version_id": "51fc69676d41fe5cc740f1a7208da257c81d8c90cdb2ed9fc59d15bc6b1a51a0",
+  "text_path": "data/assets/07af531aedfc15433dbf3a27/ad22b5c2ca74f35c730d25151cf836373a29013ded4bb08c58d7f6687861a51d.txt",
+  "segments_path": "data/assets/07af531aedfc15433dbf3a27/79722c42e3ca0455839f7408c0a94d4d7170a5b48830dbd76f81cb36f5586056.segments.json"
+}

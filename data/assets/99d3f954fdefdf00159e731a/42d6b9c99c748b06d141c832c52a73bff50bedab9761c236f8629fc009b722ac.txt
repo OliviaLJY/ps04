@@ -1,0 +1,76 @@
+Multi-repo support and other improvements for GitHub in Slack and Teams - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Improvement
+October 15, 2026 •
+1 minute read
+Multi-repo support and other improvements for GitHub in Slack and Teams
+Multi-repo support in Slack and Teams
+GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or catching up on project activity, you can get the information you need across repositories without switching between conversations.
+For example, you can ask @GitHub to:
+Track your work: “@GitHub Show me all my open pull requests across repositories and highlight which ones need my attention.”
+Get updates: “@GitHub What pull requests were merged this week across my repositories?”
+Investigate issues: “@GitHub Help me investigate an issue that spans our frontend and backend repositories.”
+Review progress: “@GitHub Summarize recent activity across our repositories.”
+You can ask these questions directly in Slack or Microsoft Teams, making it easier to stay on top of work across projects without leaving the conversation.
+Additional improvements
+We’ve also made several improvements to GitHub Copilot in Slack and Microsoft Teams:
+More natural conversations: Mention @GitHub anywhere in your message, not just at the beginning.
+Smoother repository switching: Move between repositories more easily during a conversation.
+Better Slack conversation context: @GitHub can use shared Slack messages and threads as context, making it easier to reference discussions without copying and pasting details.
+Improved reliability: We’ve made several improvements to reduce errors, improve task startup, and help @GitHub recover more smoothly from interruptions in Slack and Teams.
+Join the discussion within the GitHub Community .
+Related Posts
+Oct.15 Retired
+Upcoming deprecation of selected GitHub Copilot models in mid-November
+copilot
+Oct.15 Release
+Agentic autofix for code scanning alerts general availability
+application security
+copilot
+...
++1
+Oct.14 Release
+HydraFusion updates and new Max option
+copilot
+Oct.13 Release
+Gemini 4 Argon in GitHub Copilot
+copilot
+Oct.13 Improvement
+Enterprise managed settings enforcement updates
+client apps
+copilot
+enterprise management tools
+...
++2
+Oct.12 Improvement
+Client telemetry user attribution and configurable capture
+client apps
+copilot
+enterprise management tools
+...
++2
+Oct.10 Release
+New controls and chat improvements in Copilot for JetBrains
+copilot
+enterprise management tools
+...
++1
+Oct.09 Release
+GitHub Copilot weekly releases — October 5
+copilot
+Oct.08 Improvement
+Copilot code review: New organization billing options and controls
+copilot
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

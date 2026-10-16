@@ -1,0 +1,15 @@
+{
+  "stage": "check-content",
+  "status": "completed",
+  "input_count": 3,
+  "output_count": 1,
+  "started_at": "2026-10-16T17:37:17Z",
+  "finished_at": "2026-10-16T17:37:17Z",
+  "elapsed_seconds": 0.004,
+  "tools_or_models": [
+    "structural-evidence-checker"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

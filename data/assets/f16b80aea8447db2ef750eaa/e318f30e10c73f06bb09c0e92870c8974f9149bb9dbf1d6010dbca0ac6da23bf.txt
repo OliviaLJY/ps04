@@ -1,0 +1,107 @@
+ML Drift: Next-Gen GPU AI/ML Inference at the Edge
+- Google Developers Blog
+Search
+ML Drift: Next-Gen GPU AI/ML Inference at the Edge
+OCT. 8, 2026
+Chintan Parikh
+Product Manager
+Juhyun Lee
+Software Engineer
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+The Google AI Edge Team is excited to announce the open-source release of ML Drift , our high-performance, cross-platform, on-device GPU compute engine specifically built for on-device AI/ML inference, under the Apache 2.0 license. By abstracting hardware and low-level API complexities of on-device GPUs across OpenGL ES, OpenCL, Metal, and WebGPU, ML Drift empowers developers to build real-time, interactive ML experiences from advanced video effects to generative AI across multiple platforms. Serving as the core GPU acceleration engine within LiteRT , ML Drift is also available as a standalone library for custom graphics and inference runtimes providing a unified foundation to deliver peak performance everywhere.
+ML Drift's GPU API support matrix across platforms
+Why We Built ML Drift
+Unlike datacenter inference, where models run on homogeneous, predictable accelerator clusters, deploying GPU-accelerated AI to edge devices is defined by significant hardware diversity. Developers are faced with a wide range of GPU architectures, driver versions, and low-level APIs, not knowing a priori on which specific hardware the application will run on.
+The TensorFlow Lite GPU delegate established foundational GPU acceleration, but the ecosystem has since evolved: current on-device workloads now encompass a broad spectrum, ranging from real-time computer vision, audio, and depth processing models to high-parameter generative AI. These architectures push consumer silicon to its limits, creating compute and memory bottlenecks that legacy runtimes weren't designed to solve.
+This shift necessitates a universal engineering foundation of ensuring portability and performance across both classical and next-generation models. Drawing on optimization principles discussed in "Speed is all you need" , we've built a single, unified framework that delivers stability for traditional ML and peak performance for the most advanced generative AI, ensuring that your models are running on our most efficient, forward-looking GPU compute engine.
+Structural Modernization for Peak Performance & Coverage
+To achieve both peak performance and expanded model coverage across classical and generative architectures, ML Drift introduces core architectural changes and structural upgrades over the legacy TFLite GPU delegate.
+Unified Shaders via Tensor Virtualization: Historically, maintaining optimized shaders for the TFLite GPU delegate required hardcoding logical tensor mappings directly to physical GPU objects (such as textures and buffers) separately across OpenGL, OpenCL, and Metal backends. ML Drift introduces tensor virtualization, a core architectural paradigm that decouples a tensor's logical representation from its physical allocation on the GPU. By having dynamic shader templates resolve and translate coordinates during the compiler’s initialization phase, this unified shader model eliminates the need to maintain disparate, backend-specific shader codebases, adding minimal runtime overhead while preserving cross-platform model portability.
+Extensible Custom Op Framework: ML Drift adopts a modernized custom op framework that provides direct registration APIs with low-level shading language access. To accelerate this, ML Drift includes an agentic SKILL.md guide, enabling coding agents to author, register, and verify performant custom shaders in minutes. This provides developers with granular control to integrate specialized model blocks directly into the execution graph, drastically reducing the barrier to deploying proprietary architectures.
+5D Tensor Support: The TFLite GPU delegate is structurally hardcoded to 4D tensors, forcing developers to use layout hacks for complex models requiring 5D tensors. ML Drift reflected this long overdue functionality in the new LiteRT ML Drift GPU accelerator to enable 5D tensor support out-of-the-box. With this, LiteRT executes complex workloads like 3D convolutional networks for volumetric/spatial AI and spatiotemporal models (e.g., YOLO 11n, MobileViT v2, and Swin Transformer v2) directly on edge GPUs.
+Performance Upgrades for Classical Models: As the direct successor to our legacy GPU backend, ML Drift provides a strict performance upgrade for existing classical workloads. By decoupling the runtime from hardware-specific constraints and improving kernel execution efficiency, models that were already running on TFLite GPU gain immediate performance improvements. Migration is designed to be straightforward, with legacy workloads maintaining or exceeding previous benchmarks.
+Stage-aware Optimizations for Edge LLMs: Autoregressive LLMs have two different computational workloads during inference: the compute-bound KV cache prefill stage and the memory-bandwidth-bound decode stage, generating tokens one by one. ML Drift dynamically switches kernels and layout configurations depending on the active execution phase. During the decoding stage, it utilizes a custom, convolution-aligned KV cache layout and applies aggressive in-kernel activation quantization to bypass redundant memory roundtrips.
+Prefill 512, decode 128, context length 640, 4-bit weights (block size 32), fp16 KV cache, argmax sampling, sync every token.
+Prefill (solid bars; left ord.) and decode (hollow bars; right ord.) throughputs are presented.
+Gemma4 E2B performs better on frameworks supporting cross KV sharing.
+Broadening across Platforms (Desktop Previews): In today’s emerging agentic coding era, highly responsive desktop inference is becoming vital for powering local coding agents and workstation workflows. While we originally engineered ML Drift’s WebGPU backend for in-browser acceleration, Dawn (Chromium's WebGPU implementation) allowed us to compile that exact same codebase natively outside the browser. This unified API model enables ML Drift to run on Windows and Linux, leveraging WebGPU's modern, native hardware abstraction to bypass DirectX and Vulkan fragmentation, while complementing our existing high-performance native Metal backend on macOS.
+Our primary focus remains delivering lightweight, production-grade inference where resource constraints are tightest: mobile and edge devices. However, local development requires flexibility across developer machines. Below is an early snapshot of ML Drift running Gemma models on workstation hardware, illustrating how our unified runtime scales across environments.
+Desktop LLM performance. Prefill 8192, decode 1024, context length 9216,
+4-bit weights (block size 32), fp16 KV cache, argmax sampling, sync every token.
+Across edge and workstation environments alike, peak throughput only tells half the story: Memory footprint dictates what workloads can actually run concurrently. In our Gemma benchmarks, ML Drift achieves up to 12% lower memory overhead than other frameworks, freeing up memory for other local tasks.
+Battle-Tested at Scale: From Google’s Flagship to Industry Leaders
+ML Drift is already running in production across millions of devices daily, powering key features across Google's ecosystem, including Chrome , YouTube Shorts, Photos , and Meet . At the frontier, it acts as the runtime for pioneering on-device capabilities, powering Google AI Edge apps like Gallery , Foresight , and Eloquent .
+YouTube Shorts migrated its segmentation-based effects to use ML Drift. This delivered up to a 40% reduction in average frame latency across both Android and iOS, enabling creators to apply high-fidelity visual effects in real time without dropping camera frames.
+Sorry, your browser doesn't support playback for this video
+To deliver fast, seamless on-device photo editing, the Google Photos team integrated ML Drift across its computational photography and segmentation pipelines. This delivered up to 2 sec speedup compared to the legacy GPU delegate, making advanced photo enhancements feel instantaneous.
+Sorry, your browser doesn't support playback for this video
+Google Photos Unblur accelerated via ML Drift
+Google Chrome integrated ML Drift into its AI runtime infrastructure to power native hardware-accelerated Gemini Nano models for Built-In AI APIs (including the Prompt, Summarize, and Writer APIs). Across desktop platforms, ML Drift enables high-efficiency on-device AI across a growing ecosystem of web applications from e-commerce review summarization to enterprise customer workflows:
+Sorry, your browser doesn't support playback for this video
+Cafe24 using Prompt API for tag generation accelerated via ML Drift.
+Beyond Google products, leading developer partners have adopted ML Drift to bring desktop grade capabilities to mobile users:
+Adobe Lightroom and Adobe Photoshop upgraded key AI features, including Select Subject, Select Sky, and Adaptive Portrait, with ML Drift, achieving up to 30% faster on-device performance for pro-quality photo editing on mobile.
+Sorry, your browser doesn't support playback for this video
+Adobe Lightroom running on-device via mobile LiteRT ML Drift GPU accelerator
+Snap integrated LiteRT to power on-device inference on GPU across Android devices. ML Drift GPU accelerator brought 30% model latency improvements for ML-powered face and style generator effects in Snapchat lenses. ML Drift not only improves user experiences based on existing models, but also expands capabilities to run even large diffusion models.
+Sorry, your browser doesn't support playback for this video
+Optimized with Leading Hardware Partners
+Maximizing edge AI efficiency requires deep alignment between software architectures and physical silicon. Throughout ML Drift's development, Google worked closely with silicon and IP partners to enable optimizations that maximize hardware utilization across modern GPUs:
+Arm: Co-optimized compute kernels and texture cache locality for Mali and Immortalis GPUs, ensuring high-throughput, power-efficient inference across mobile devices.
+Intel: ML Drift harnessed native WebGPU compute and Xe Matrix Extensions (XMX) to accelerate client LLM and vision workloads on Intel® Core™ Ultra processors with Xe3 graphics.
+Qualcomm Technologies, Inc. : ML Drift optimized OpenCL kernels for peak ALU and memory bandwidth utilization, enabling efficient edge AI acceleration on Qualcomm® Adreno™ GPUs.
+By working hand-in-hand with silicon leaders, ML Drift ensures that state-of-the-art model optimizations translate into battery-conscious, high-frame rate performance on user devices.
+What's Next: Deprecation & Migration
+With the launch of ML Drift, the legacy TFLite GPU delegate will no longer receive new feature updates. We encourage all developers to transition to the LiteRT ML Drift GPU accelerator which offers full backwards compatibility for your existing models while immediately unlocking modern performance gains across Android, iOS, Web, and desktop. For Android developers using unbundled runtimes to minimize app binary size, ML Drift acceleration is available today in standalone LiteRT packages and is coming soon to LiteRT in Google Play Services .
+Getting Started
+Whether you are integrating on-device models into an app or authoring custom GPU shaders, ML Drift provides two straightforward paths:
+For Application Developers: Use the LiteRT ML Drift accelerator to get out-of-the-box model partitioning, tensor virtualization, and optimized LLM acceleration.
+For GPU & System Engineers: Build directly with ML Drift's standalone C++ APIs via the ML Drift GitHub repository to construct custom `GpuModel` compute graphs and write custom shaders (get started with our OpenCL on Android and WebGPU via Dawn quickstarts).
+Community feedback and Contributions
+ML Drift is fully open source under the Apache 2.0 license. We welcome contributions, RFCs, and community feedback:
+Source Code: github.com/google-ai-edge/ml-drift
+Issue Tracker & Feature Requests: File an Issue on GitHub
+Discussions & Q&A: Google AI Edge Community Forum
+Contributing: Review our Contributing Guide to add new UCL operators or hardware-specific optimizations.
+Acknowledgments:
+Andrei Kulik, Ankit Goyal, Bob Liu, Byungchul Kim, Champ Yen, Changming Sun, Chris McClanahan, Clark Duvall, Cormac Brick, Daniel Ho, David Neto, Ekaterina Ignasheva, Fengwu Yao, Frank Ban, Gerardo Carranza, Grant Jensen, Jacob Dormuth, Jagadeesh Pakaravoor, James Price, Jeremy Kemp, Jingjiang Li, Jiuqiang Tang, Kelvin Ma, Ken Russell, Kenji Baheux, Lin Chen, Loko Kung, Lu Wang, Marissa Ikonomidis, Matt Kreileder, Matthias Grundmann, Mattias Simonsson, Paweł Andruszkiewicz, Raman Sarokin, Romaric Jodin, Sachin Kotwani, Somdatta Banerjee, Suleman Shahid, Suril Shah, Terry Heo, Tyler Mullen, Vaibhav Jain, Weiyi Wang, Yu-Hui Chen
+General acknowledgement to partners, Albin Bernhardsson, Aleksei Lebedev, Anuradha Oberoi, Arselan Alvi, Bala Gattu, Enxing Xiong, Erin Di Leva, Hannah Stabingas, Jianhui Dai, Jiawei Shao, Jie Chen, Joseph Hsieh, Komal Desai, M N Suhas, Magzhan Gabidolla, My Linh Van, Ningxin Hu, Padmassri Chandrashekar, Rong Wang, Varun Chari, Viktor Zhou, Zhaoliang Ma
+posted in:
+Mobile
+Web
+AI
+Case Studies
+Announcements
+Learn
+Explore
+Influence
+Previous
+Next
+Related Posts
+AI
+Case Studies
+Announcements
+Gemini 4 Argon for Robotics
+OCT. 13, 2026
+Mobile
+Web
+How-To Guides
+Announcements
+Announcing DPoP Support for Google OAuth: Securing Refresh Tokens
+OCT. 15, 2026
+AI
+Cloud
+Tutorials
+Case Studies
+Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs
+SEPT. 30, 2026
+Mobile
+Web
+Announcements
+Learn
+Bring multimodal semantic search to the edge with EmbeddingGemma 2
+OCT. 6, 2026

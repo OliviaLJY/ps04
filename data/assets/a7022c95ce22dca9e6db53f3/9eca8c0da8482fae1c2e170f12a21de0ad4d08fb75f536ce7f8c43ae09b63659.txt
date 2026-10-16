@@ -1,0 +1,62 @@
+The Logitech MX Keypad is a developer
+console and tactile AI control center.
+And it has deep integration with the
+GitHub Copilot app. Let's take a look.
+You can set up the GitHub Copilot app
+integration by installing the GitHub
+Copilot plugin
+from Logi Marketplace or Logi Options
+Plus.
+Once installed, you can manage your
+chats, projects, pin chats, and even
+customizations right from the keypad.
+Clicking the new chat button starts a
+new chat in the GitHub Copilot app.
+You can also start voice control with a
+single press for hands-free prompting.
+Toggle the microphone on and off as
+needed.
+You can see at a glance the model,
+reasoning level, and context window.
+The projects view on the keypad mirrors
+your GitHub Copilot app setup exactly.
+Any projects you have loaded in the app
+will appear in this view.
+Drilling in shows you all sessions.
+Within a session, you can see the model,
+the context window, start a voice chat,
+check the reasoning level. You can even
+see how many AI credits have been used
+on this session. The keypad reflects
+project status in real-time, so starting
+a session will be reflected on the
+keypad immediately. And you can see
+which sessions are running, which have
+finished, which have questions, et
+cetera.
+You can also easily jump into pin chats
+as well as any regular chats that you
+have going on with Copilot.
+The customize button lets you easily
+enable or disable MCP servers
+right from the keypad.
+And the MX Keypad is app-aware, so it
+detects which app you're in and switches
+its keys to match.
+For instance, if we jump over to Visual
+Studio Code, then we get a Visual Studio
+customized MX Keypad layout right here.
+And the keypad is fully customizable, so
+in Logi Options Plus, you can drag and
+drop actions onto other keys, reorder
+things, even build macros for complex
+multi-step workflows. Or better yet, use
+the Logi Actions SDK and have GitHub
+Copilot build a custom plugin just for
+you.
+The MX Keypad is available now, and
+every keypad includes three free months
+of GitHub Copilot Pro Plus for both new
+and existing users.
+Put an AI control center
+on your desktop.

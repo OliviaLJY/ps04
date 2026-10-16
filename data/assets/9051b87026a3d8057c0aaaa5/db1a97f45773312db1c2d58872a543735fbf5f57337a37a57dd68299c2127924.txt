@@ -1,0 +1,188 @@
+Three layers, one repo: a tour of google/adk-recipes
+- Google Developers Blog
+Search
+Three layers, one repo: a tour of google/adk-recipes
+OCT. 15, 2026
+Pier Paolo Ippolito
+Product Manager
+Shahin Saadati
+Software Engineer
+Share
+Facebook
+Twitter
+LinkedIn
+Mail
+The curated library of ADK recipes powering Google Cloud's Agents CLI, Agent Garden, and Gemini Enterprise app.
+Introduction
+A developer building on Google Cloud today can scaffold a long-horizon memory agent from the terminal, install a retail vertical skill into a coding assistant with one line, and deploy a fully-wired production service to Cloud Run, Agent Runtime, Agent Garden, or Gemini Enterprise app — all from the same curated source tree. That tree is google/adk-recipes , the restructured successor to google/adk-samples that now serves Agent Platform from a single source of truth.
+ADK recipes are agent-friendly: we've made it easy for your agents to 1) discover relevant recipes for various agent use cases, and 2) install and use them automatically from your favorite harness.
+google/adk-recipes splits its content into three top-level folders: core/ for reference patterns curated by the Agents CLI and DevRel teams, plugins/ for installable vertical skills packaged as Plugin Recipes conforming to the Agent Plugins v1.0.0 spec, and contrib/ for end-to-end deployable services across five languages. Every piece has been designed with machine readability as the primary consideration.
+What follows is a walkthrough of the repository 's shape, three worked examples (one per layer), and a reflection on what the new structure enables.
+What's in the repo
+Three top-level roots, each anchored on one reader action:
+Every recipe ships a validated manifest.yaml , an AGENTS.md that tells the coding assistant opening it what the recipe is and how to use it, and (for contrib/ and plugins/ ) a Dockerfile plus a runnability test. CI enforces the standards on every PR, and a suite of coding-assistant skills in the repo ( prepare-python-recipe , generate-manifest , github-pr-review , and others) does most of the preparation, so your agent can scaffold, validate, and submit a recipe end-to-end.
+Built for coding assistants, not just developers
+Every AGENTS.md , every manifest.yaml , every SKILL.md is written primarily for the AI coding assistant that will open the repo on your behalf; README.md files are what humans still read. The handbook glossary captures the dual framing: "Recipe — a runnable agent example (or importable agent module) under core/ , contrib/ , or plugins/ , consumed by ADK developers and coding agents alike."
+What it powers across the Agent Platform
+adk-recipes serves as the single source of truth for ADK content across the three Agent Platform surfaces that consume it. Each reads the repository through its own protocol.
+Agents CLI reads core/ . When a developer runs uvx --from google-agents-cli agents-cli create my-agent , Agents CLI can scaffold on demand a core/ recipe. The CLI, launched earlier this year at Google Cloud Next, exposes the full scaffold → deploy → evaluate → publish lifecycle; the base content it serves comes from our recipes. Horizon, the reference harness we examine below, is an example pattern Agents CLI treats as a production template.
+Agent Garden features a curated selection. The developer-facing path into the repository is a pull request to contrib/ : a recipe lands in GitHub, becomes part of the public ADK ecosystem, and from that moment is discoverable by other developers and by coding assistants reading the repository. Appearing in the Agent Garden gallery is a separate editorial decision made by the Agent Garden team, which curates a subset of recipes and promotes them to the public catalog on their own cadence. Once an agent is in the gallery, any developer in a Google Cloud project gets a one-click install.
+Beyond these primary surfaces, Google Cloud's own infrastructure components appear as building blocks inside the recipes themselves. Horizon uses Agent Platform Sandboxes for per-user sandboxing, Memory Bank for durable memory, and Agent Platform Sessions for session state. The retail product-search Plugin Recipe uses Vector Search 2.0 on Gemini Enterprise Agent Platform paired with BigQuery. The retail virtual-tryon Plugin Recipe uses Gemini image models for still composites and Veo 3.1 Reference-to-Video for animated outputs. The recipes do not just live alongside Agent Platform; they document it in use.
+For developers working with coding assistants outside Google Cloud's tooling (Claude Code, Antigravity, Cursor, Windsurf, Zed, and others), Plugin Recipes additionally install through the open npx skills CLI maintained by vercel-labs.
+Horizon: a reference pattern for core/
+Building an agent that can handle a single conversation is a well-understood problem. Building one that holds its own across days of interaction, remembering what the user did yesterday and planning tasks for tomorrow, is a materially different undertaking. The hard parts of such a long-horizon system are the same regardless of what the agent is being built to do: cross-session memory, per-user sandboxing of tool execution, secrets management, guardrails against runaway behaviour, and the orchestration primitives that make multi-step tasks resumable. Horizon, which lives at core/python/long-horizon-harness , is the reference harness we built to collect these primitives in one place.
+The shortest path from a fresh clone to a running Horizon instance:
+uvx google-agents-cli setup
+gcloud auth application-default login
+gcloud config set project YOUR_PROJECT_ID
+gcloud services enable aiplatform.googleapis.com
+git clone --depth 1 --filter=blob:none --sparse https://github.com/google/adk-recipes.git
+cd adk-recipes
+git sparse-checkout set core/python/long-horizon-harness
+cd core/python/long-horizon-harness
+# Default: LHA_ENVIRONMENT_BACKEND=local, in-memory sessions, no cloud deploys needed
+make dev-local
+Plain text
+Copied
+make deploy rolls the backend to Cloud Run through Terraform; make destroy tears it back down. Horizon's evaluation suite lives in tests/eval/evalsets/ as eighteen named behavioural rubrics covering memory recall, injection-based exfiltration attempts, guardrail halting under adversarial input, tool-selection discipline, and a journey-level plot-artifact evaluation. The rubrics are executed with uv run pytest tests/eval .
+A first chat turn against the running backend confirms the memory layer is wired correctly:
+Horizon is the harness we give coding assistants to study before building something harder. When a developer asks their assistant to build an agent that must run across days of interaction, the right next step is uvx google-agents-cli create with Horizon as the scaffold, and the rest of the harness falls into place.
+The retail Plugin Recipe
+Horizon encodes a reference pattern. It does not encode a vertical. For that, the second layer of the repository holds Plugin Recipes, each addressing a specific industry domain. The first vertical fully covered in this launch is retail, available under plugins/retail/ .
+The Plugin Recipe format sits on top of the Agent Plugins v1.0.0 specification published at agent-plugins.org , an open standard for packaging installable AI skills across coding assistants. The specification defines a plugin as a bundle of one or more skills with a top-level plugin.json manifest declaring name, version, license, and ownership. Each skill is a self-contained folder with a SKILL.md conversational installer, a README.md , an EVAL.yaml of quality gates, and the scripts and assets the skill needs to do its work. The retail plugin's layout is:
+plugins/retail/
+├── plugin.json
+└── skills/
+├── product-search/
+│ ├── SKILL.md # Q-MODE conversational installer
+│ ├── README.md
+│ ├── EVAL.yaml # LLM-as-judge rubrics + deterministic assertions
+│ ├── scripts/
+│ ├── references/
+│ └── assets/
+└── virtual-tryon/
+└── ...
+Plain text
+Copied
+Two skills ship in this plugin today. The first, retail-product-search , builds an ADK agent with a vector-search retrieval tool backed by Vector Search 2.0 on the Gemini Enterprise Agent Platform and a BigQuery catalog. The skill handles the entire pipeline: ingesting a CSV or JSON catalog into BigQuery, generating multimodal and text embeddings with Vertex AI Embeddings, building the Vector Search collection, scaffolding the ADK agent with a retrieve_docs tool, and deploying to Cloud Run. The agent is deliberately single-agent: one root_agent with one retrieval tool and no coordinator layer. The semantic complexity sits in the retrieval pipeline and the evaluator rubric, not in agent-to-agent communication; adding orchestration layers would obscure the pattern rather than clarify it.
+The second skill, retail-virtual-tryon , generates a photorealistic composite of a model wearing or holding a product, with an optional eight-second studio catwalk video on top. It uses gemini-2.5-flash-image by default, falling back to gemini-2.5-pro-image when editorial quality matters more than latency. For video it uses veo-3.1-generate-001 in Reference-to-Video mode, conditioning the generated motion on the still produced by the image pipeline. The skill ships a pre-flight product-cutout classifier and configurable safety levels, operational details that become obvious after the third real production deployment.
+Both skills install into any coding assistant that reads skills with a single command:
+# From Antigravity, Claude Code, Codex, Cursor …
+npx skills add google/adk-recipes --skill retail-product-search --full-depth
+npx skills add google/adk-recipes --skill retail-virtual-tryon --full-depth
+Plain text
+Copied
+The --full-depth flag instructs the CLI to walk past its default top-level lookup and discover the nested plugins/retail/skills/ structure. The install lands in ~/.agents/skills/<skill-name>/ and is symlinked into every detected coding assistant on the local machine:
+$ npx skills add google/adk-recipes --skill retail-product-search --full-depth -g
+● claude-code_2-1-288_agent Agent detected — installing non-interactively
+◇ Source: https://github.com/google/adk-recipes.git
+◇ Repository cloned
+◇ Found 11 skills
+● Installing to: Antigravity CLI, Augment, IBM Bob, Claude Code, OpenClaw,
+CodeBuddy, Continue, Crush, Droid, Goose, Junie, iFlow CLI,
+Kilo Code, Kiro CLI, Kode, MCPJam, Mux, OpenHands, Qoder, Qwen Code,
+Roo Code, Trae, Windsurf, Zencoder, …
+◇ Installation Summary ──────────────────────────────────────────────────╮
+│ ~/.agents/skills/retail-product-search │
+│ universal: Antigravity CLI, Droid, Kilo Code, Amp +15 │
+│ symlink → Augment, IBM Bob, Claude Code, OpenClaw, CodeBuddy +25 │
+├────────────────────────────────────────────────────────────────────────╯
+◇ Installed 1 skill
+└ Done! Review skills before use; they run with full agent permissions.
+Plain text
+Copied
+The skill ecosystem is designed to compose. The retail-product-search SKILL.md instructs the host coding assistant to pull two companion skills from google/skills if they are not already installed, keeping cross-cutting concerns like BigQuery basics and Gemini API usage in one place and reusable by multiple vertical plugins.
+Once installed, the coding assistant reads SKILL.md and initiates a Q-MODE interview. For retail-product-search , Quick Start is two questions (GCP project ID and the path to product data, with sensible defaults for both); Full Setup adds two more covering product-fields level and GCP region. By the end of the interview the skill has written a ./design-spec.md reflecting the project's actual shape and executed scripts/setup.py to land the catalog in BigQuery, generate the embeddings, build the Vector Search collection, and run EVAL.yaml against the result. If the rubric and assertion checks fall below the 80 percent passing target, the skill halts and surfaces the specific failures.
+An end-to-end setup run on the bundled five-product demo catalog produces:
+$ .venv/bin/python scripts/setup.py --config ./design-spec.md
+INFO:__main__: SETUP PIPELINE (driven by design-spec.md)
+INFO:__main__: Project: testproject-425813
+INFO:__main__: Region: us-central1
+INFO:__main__: Validating sample data... Validated 5 records.
+INFO:__main__: Ingesting into BigQuery...
+INFO:ingest_bigquery: Creating dataset testproject-425813.retail_skill_products
+INFO:ingest_bigquery: Loaded 5 valid products
+INFO:__main__: Creating Vector Search collection...
+INFO:ingest_vertex_search: Collection created successfully
+INFO:ingest_vertex_search: Ingestion complete: 5 created, 0 skipped, 0 errors
+INFO:__main__: SETUP COMPLETE
+Plain text
+Copied
+A live retrieval against the collection the skill has just provisioned returns:
+>>> from app.agent import retrieve_docs
+>>> retrieve_docs("wireless headphones under 200")
+Plain text
+Copied
+Product 1: Wireless Headphones $199.99 by Sony (Audio) rated 4.5/5
+Premium noise-cancelling over-ear headphones with 30-hour battery
+Product 2: Laptop Stand $49.99 by Generic (Accessories) rated 4.2/5
+Product 3: Mechanical Keyboard $129.99 by Keychron (Peripherals) rated 4.6/5
+Product 4: USB-C Cable $19.99 by Anker (Cables) rated 4.7/5
+Product 5: Monitor Light Bar $59.99 by BenQ (Lighting) rated 4.4/5
+Plain text
+Copied
+The virtual-tryon skill is faster to demonstrate interactively. A direct call to generate_tryon_image with a user portrait and a product image produces the photorealistic composite shown at the top of this section in roughly ten seconds. The same inputs piped through generate_tryon_video and Veo Reference-to-Video turn that still into an eight-second studio catwalk animation of the composite in motion.
+The pipeline is category-agnostic. Swapping the product image for a pair of sunglasses, with product_category='eyewear' , invokes the same generate_tryon_image call and produces a composite in the correct category without any further configuration:
+Retail is the first vertical fully covered in this format. Additional verticals will land as their own folders under plugins/ , following the same anatomy and the same Agent Plugins specification, so developers can expect a consistent install experience across industries.
+In contrib/: a retail agent built on the plugin
+The contrib/ layer is where ADK recipes become end-to-end deployable services. Twelve Python agents live there today, spanning the kinds of applications ADK is typically used to build in practice: finance (financial advisor, small-business loan processor), evaluation (LLM auditor), document and knowledge pipelines (high-volume document analyzer, multiformat hybrid RAG), content and brand (brand-aligned presentations, brand-search optimization, on-brand genmedia), retail (product search, virtual try-on), and framework examples (agent-skills tutorial, staged UI widgets). Java, Go, TypeScript, and Kotlin each carry smaller sets. Every entry in contrib/ is a worked example of how a core/ pattern or a plugins/ skill becomes a running service.
+To make the relationship between a plugin and its deployable counterpart concrete, take contrib/python/retail-product-search as the example. The retail plugin from the previous section walked a developer through a conversational install that provisioned the Vector Search collection, the BigQuery catalog, and the embeddings. The contrib agent is the deployable counterpart: a long-running service that reads from that collection and answers natural-language shopping queries over it. The plugin owns the one-shot setup; the contrib agent owns the service shape. Both are maintained by the same team to stay synchronised, and the agent's README directs new users to run the plugin's setup first:
+make -C plugins/retail/skills/product-search setup PROJECT_ID=your-project
+Plain text
+Copied
+Once the collection ( retail-skill-products-collection ) is populated, the agent is cloned out of contrib/python/retail-product-search , pointed at a GCP project, and surfaced on one of five deployment personas controlled by boolean flags in .env .
+Once the deployment is live, the agent exposes a hosted shopping-assistant endpoint. The same retrieve_docs tool we called directly from Python now sits behind a chat interface, reachable through the deployed Reasoning Engine or, during development, through the ADK Web UI. The exact same agent code answering the exact same shopping query, run locally for inspection:
+The agent graph on the left of the UI confirms the single-agent architecture ( product_search_agent → retrieve_docs ). The right panel traces each tool invocation. The response grounds in a real catalog row from Vector Search: "Sony Wireless Headphones · Price: $199.99 · Brand: Sony · Rating: 4.5/5 (50 in stock) · Premium noise-cancelling over-ear headphones featuring an impressive 30-hour battery life." No products are hallucinated; the Vector Search collection on top of BigQuery is the source of truth.
+That is what the retail plugin gives a team. The plugin encodes the data-pipeline setup once, through a conversational install any coding assistant can execute. The contrib agent is the running service, deployable in five shapes, that any organisation can take as a starting point and swap in its own catalog. The virtual-tryon counterpart in contrib/python/retail-virtual-tryon follows the same pattern: a smaller root agent that orchestrates try_on_product_image and try_on_product_video tools, deployable in the same five shapes, built on the virtual-tryon plugin's one-shot setup.
+Why this matters
+A reference harness without a vertical is a toy; a vertical skill without a deployable artifact is a slide; a deployable agent without a reference pattern is a prototype no one can repeat. Shipping all three in one repository, under a shared manifest schema and governance pipeline, lets a developer or a coding assistant walk the stack in either direction, with every Agent Platform surface reading from the same source of truth.
+The practical result is a lower barrier from "I need an agent that does X" to a running production service: a coding assistant can scaffold a Horizon-shaped agent, install a vertical Plugin Recipe, and reach the deployment transcripts in contrib/ without translating between repositories or reconciling manifest formats. For teams building vertical solutions, Plugin Recipes package domain expertise once and distribute it to every coding assistant on the market with the same install flow and quality gates.
+Get started
+# Install Agents CLI
+uvx --from google-agents-cli agents-cli setup
+# Scaffold a Horizon-shaped agent
+uvx --from google-agents-cli agents-cli create my-agent
+# Install a retail skill into your coding assistant
+npx skills add google/adk-recipes --skill retail-product-search --full-depth
+# Launch the deployable retail agent as a managed artifact
+uvx --from google-agents-cli agents-cli create retail-product-search
+Plain text
+Copied
+Repository: github.com/google/adk-recipes
+Recipe handbook: github.com/google/adk-recipes/tree/main/docs/recipe-handbook
+Agents CLI documentation: uvx --from google-agents-cli agents-cli --help
+Agent Plugins v1.0.0 spec: agent-plugins.org/specification
+Not an officially supported Google product. Recipes are for demonstration and as starting points, not production use.
+posted in:
+AI
+Cloud
+Announcements
+Solutions
+Learn
+ADK
+Plugins
+Agent Garden
+Influence
+AI
+Agents
+Previous
+Next
+Related Posts
+AI
+Cloud
+Announcements
+Problem-Solving
+Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster
+OCT. 14, 2026
+AI
+Cloud
+Best Practices
+Industry Trends
+Evaluating AI agents: moving past the vibe check
+OCT. 15, 2026
+Mobile
+Web
+How-To Guides
+Announcements
+Announcing DPoP Support for Google OAuth: Securing Refresh Tokens
+OCT. 15, 2026

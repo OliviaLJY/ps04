@@ -4,7 +4,7 @@
 
 - macOS or Linux with Bash, Python 3.9+, `curl`, and standard Unix tools.
 - Network access to configured public feeds and source pages.
-- A Google AI Studio API key for the no-cost Gemini editorial path. The configured `gemini-3.1-flash-lite` model has free-tier pricing and rate limits; free-tier inputs may be used to improve Google's products.
+- A Google AI Studio API key for the no-cost Gemini editorial path. The configured `gemini-flash-lite-latest` alias uses a Flash-Lite model with free-tier pricing and rate limits; free-tier inputs may be used to improve Google's products.
 
 Create the local environment:
 
@@ -22,7 +22,7 @@ Create a key from the [Google AI Studio API keys page](https://aistudio.google.c
 bash run.sh
 ```
 
-The command prints a summary and leaves the immutable run under `runs/RUN_ID/`. If the key is present, model receipts identify `gemini-3.1-flash-lite`; otherwise the run uses a deterministic test fallback and is not suitable as the assignment's AI-backed submission run.
+The command prints a summary and leaves the immutable run under `runs/RUN_ID/`. If the key is present, model receipts identify `gemini-flash-lite-latest`; otherwise the run uses a deterministic test fallback and is not suitable as the assignment's AI-backed submission run.
 
 After checking the evidence, decisions, drafts, and `review.json`, create `approval.json` using the shape in `examples/approval.json`. The `review_id` must match exactly. Then run:
 

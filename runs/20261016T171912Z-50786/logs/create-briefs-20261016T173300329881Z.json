@@ -1,0 +1,16 @@
+{
+  "stage": "create-briefs",
+  "status": "completed",
+  "input_count": 56,
+  "output_count": 3,
+  "started_at": "2026-10-16T17:33:00Z",
+  "finished_at": "2026-10-16T17:33:00Z",
+  "elapsed_seconds": 0.015,
+  "tools_or_models": [
+    "gemini-flash-lite-latest",
+    "deterministic schema normalization/rebalance"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

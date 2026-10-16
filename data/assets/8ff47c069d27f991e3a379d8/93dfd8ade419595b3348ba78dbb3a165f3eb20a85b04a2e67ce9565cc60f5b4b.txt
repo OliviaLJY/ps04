@@ -1,0 +1,25 @@
+Google Antigravity is our agent-first development platform.
+You may have tried Antigravity before,
+but with Gemini 4 Argon,
+it's more fun to build than ever.
+Let me show you what I mean.
+We built this 3D pagoda model with a multi-agentic looping workflow.
+Antigravity coordinated specialized sub-agents through visual critique loops.
+Argon autonomously sculpted the architecture and surrounding environments
+without manual 3D modeling.
+We go from a text prompt to an explorable world in minutes.
+From a photo of a desk to a 3D racing game.
+With a single prompt, Antigravity orchestrates sub-agents,
+uses Blender MCP and Nano Banana to turn everyday objects into a playable game.
+We designed a handheld retro game console end-to-end in Antigravity.
+It generated the parts list,
+wiring diagrams, enclosure designs,
+and the AI game engine.
+We went from 3D renders to a playable piece of hardware.
+Here, we took a basic 2D map set,
+and Antigravity converted it to a 3D world
+running on a Pixel phone.
+Argon is rolling out in the Antigravity desktop app,
+Antigravity CLI,
+and by logging into Antigravity in Android Studio.
+Find more details on availability in the description below.

@@ -1,0 +1,59 @@
+Xcode 27 runner image generally available - GitHub Changelog
+Skip to content
+Skip to sidebar
+/
+Blog
+Try GitHub Copilot app
+Attend GitHub Universe
+Search
+Back to changelog
+Release
+October 15, 2026 •
+1 minute read
+Xcode 27 runner image generally available
+You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on macOS 27 and includes the Xcode 27 toolchain and Apple SDKs.
+Xcode-based images
+Each image supports one major Xcode version rather than targeting a specific operating system version. This makes it easier to select the toolchain your project needs and know what each runner provides.
+Get started
+To use the image, set your workflow’s runs-on: value to one of these labels:
+xcode-27
+xcode-27-xlarge
+If you already use these labels, you don’t need to change your workflows. The image is available on Apple Silicon (arm64) runners only, not Intel runners.
+To view the installed software or report an issue, visit the runner-images repository .
+Related Posts
+Oct.14 Release
+GitHub Actions workflow lockfiles in public preview
+actions
+Oct.02 Improvement
+Stateless GitHub App installation tokens rolled out
+actions
+ecosystem & accessibility
+...
++1
+Oct.01 Retired
+GitHub Actions: macOS 14 runner image retirement
+actions
+Oct.01 Retired
+Actions retention now covers checks, runs, and statuses
+actions
+Oct.01 Release
+Actions Runner Controller release 0.15.0
+actions
+Sep.28 Retired
+Self-hosted runner version enforcement date has moved
+actions
+Sep.25 Improvement
+Changes to query results in the GitHub Actions API and UI
+actions
+Sep.24 Improvement
+Expired GitHub Actions artifacts no longer shown in UI and API
+actions
+Sep.23 Retired
+Node 20 is no longer available in GitHub Actions
+actions
+Subscribe to our developer newsletter
+Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Enter your email *
+Subscribe
+By submitting, I agree to let GitHub and its affiliates use my information for personalized communications, targeted advertising, and campaign effectiveness. See the GitHub Privacy Statement for more details.
+Back to top

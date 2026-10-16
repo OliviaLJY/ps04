@@ -1,0 +1,15 @@
+{
+  "stage": "create-briefs",
+  "status": "completed",
+  "input_count": 56,
+  "output_count": 3,
+  "started_at": "2026-10-16T17:27:40Z",
+  "finished_at": "2026-10-16T17:27:55Z",
+  "elapsed_seconds": 14.097,
+  "tools_or_models": [
+    "gemini-flash-lite-latest"
+  ],
+  "cost_usd": null,
+  "cost_estimated": false,
+  "errors": []
+}

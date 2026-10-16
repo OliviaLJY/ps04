@@ -1,0 +1,1130 @@
+This is the GitHub podcast, a show
+dedicated to the topics, trends,
+stories, and culture in and around the
+open source developer community on
+GitHub. I'm Cassidy Williams, aka
+Cassadoo, and I am on the developer
+advocacy team at GitHub. And with me is
+my lovely co-host today, Andrea
+Griffiths.
+>> Hey, Cassidy. Hi, friends. I'm Andrea
+Griffith, senior developer advocate here
+at GitHub.
+>> We have a very exciting guest today. Are
+you excited, Andrea? I am
+>> I am super excited. I've actually
+recorded with him before. Um he is a
+legend around this part. Uh our amazing
+guest today is Samin Karim who is a
+senior product manager at GitHub and he
+is focused on developer workflows core
+review and he shipped my favorite thing
+that's shipped absolutely which is stack
+pull request. He has a talk at GitHub
+universe coming up about stacked PRs in
+practice and how big pull requests slow
+you down and how to practically break
+them up. We'll talk about this and more
+today and you can see us talk live in
+San Francisco on October 28th or
+register to see all of Universe and more
+online at githubuniverse.com.
+All that being said, hey Samine, how are
+you?
+>> Hey Cassie. Hey Andrea. Thanks for
+having me here. Super excited.
+>> We're so excited to have you. So could
+you give people a little bit of
+background on how you got to GitHub? How
+you got to where you are today?
+>> Oh yeah. You know, I have been using
+GitHub for as long as I can remember
+since I started coding in middle school
+and I started in the startup world.
+spent some time in advertising, sold my
+last startup, uh worked at the acquirer
+for a little bit, and after that, I
+really was trying to think about what do
+I want to work on next, and I really
+fell in love with developer tools
+because it's something that I used every
+day and started a startup in that area
+and eventually found my way to GitHub
+because what better place to make an
+impact on developer tools than the hub
+of all developer activity? And it's just
+so exciting to be here at GitHub now
+being able to actually improve the lives
+of hundreds of millions of developers
+around the world.
+>> And your team is working on such cool
+practical things that developers really
+care about. I would love to honestly
+just do a deep dive into PR stacks. And
+for those who don't know what they are,
+could you give just an overview and and
+how they have changed people's
+workflows?
+>> Yeah, absolutely. So happy to give just
+a high level overview of what stacked
+PRs are, where kind of this started
+from, and especially why it's more
+important today more than ever. So
+stacked pull requests, the idea behind
+it is you have a large set of changes.
+Maybe you're you're shipping a giant
+feature, you know, you have to make
+database migrations, API endpoints,
+front-end code. And normally the way
+that you would do this is either you
+would have one giant PR where you'd
+have, you know, maybe 10,000 plus lines
+of code and it would be very difficult
+for the reviewer and that probably would
+be sitting there for a while while
+you're trying to make sure everything
+looks good. It's this like big bang
+update or you'd have a series of sort of
+disconnected PRs. They're not exactly
+tied together. They could kind of get
+lost. You have to be like, hey, like
+make sure you don't merge this out of
+order. With stacked pull requests, it
+sort of streamlines that flow and gives
+you a very clear way to, as the name
+implies, stack your pull requests. So
+you have one PR for your database
+migrations, one for your API endpoints,
+one for your front-end changes, and it's
+all stacked together. And what's great
+is now it makes it really easy for you
+to manage this coordinated set of
+changes, but also avoids the the trap of
+having this giant PR with tens of
+thousands of lines of code that can take
+forever to review. So it's easier for
+you to write and organize your code, but
+it's also easier for the reviewers
+importantly uh to take a look at your
+changes and as I like to say help tell a
+story of the feature that you're
+shipping. I love this feature so much
+because I have been in that world where
+I where I've had to say like, "Okay,
+don't merge PRs B and C until A is done
+and make sure that you do this kind of
+rebase whenever you start reviewing B
+before you get into it." And and like it
+ends up being such a mess logistically
+because you basically just have to
+explicitly say do this, please read
+this, read this. Um and so the fact that
+STAX kind of solves that problem and
+takes care of that is very nice. Yeah, I
+think it's just one of those workflows
+that once you have used it, I think you
+will find all sorts of ways where it can
+supercharge your workflow, especially in
+this world where, you know, we're using
+agents. We're starting to work on larger
+changes all at once. And,
+[clears throat] you know, we're doing so
+much more. It's such a great way to sort
+of coordinate your workflow. And I think
+we're seeing more and more developers
+figure out different ways to use stacks.
+And we're super excited about it. I'm
+super excited about the cognitive load
+that this gonna help me kind of throw
+off like this promise of like smaller
+more focused reviews. Um at least for me
+I think even for projects where I am it
+like I'm the one that has to approve the
+entire stack. Um it's made a big
+difference.
+>> Uh what's something that you noticed I
+guess how has this changed the
+experience for people who are reviewing
+code now when they're using stack PRs?
+Oh yeah. I think this is again going
+back to the sort of previous era where
+you just had one giant PR for your huge
+feature. Uh a very common thing
+especially like larger organizations.
+What could happen is you probably have
+code owners especially if you're working
+in a mono repo and you have this giant
+PR. What ends up happening is you have
+multiple groups of code owners reviewing
+that single PR and it can get very
+complicated, very confusing and you got
+all sorts of threads you're trying to
+manage and it can be very confusing for
+both the reviewer and the person who's
+writing the code trying to figure out
+what's going on and then as you're
+making changes for everybody to follow
+along. The great thing about stacked PR
+is it breaks it up. So the way that I
+usually uh recommend folks to do uh
+stacking especially if they have like a
+large organization with code owner set
+up is to make sure each layer of the
+stack each PR targets one code owner. So
+again the database team or the API team
+or the front-end team or what have you.
+And what that really makes it easy is
+that that code owning team now has their
+like one individual slice where they
+know all they need to review and you can
+just have that like uh focused
+conversation with that team in that PR
+instead of having everybody trying to
+comment on one giant PR. This isn't a
+new concept. This is this is something
+that that like we we have seen out in
+the industry that where it was an
+extension to GitHub or a tool on top of
+GitHub and stuff and
+>> there has been some commentary saying
+what took us so long.
+>> I would love to you to for you to go
+into what took us so long [laughter]
+>> to build.
+>> Yeah. you know, uh, there's been a lot
+that is needed to be done to make
+stacked PRs work. And I think crucially,
+you know, there because there have been
+so many other sort of third-party tools
+and plugins to make it happen, you know,
+we didn't want to just create another
+plugin. We really wanted to create an
+experience that felt native to GitHub
+and offered some really unique
+advantages. And we wanted to make sure
+that stacked PRs just worked, that there
+were no compromises, that you just say,
+I want to create a stack and you didn't
+have to update all your configurations
+and your rules, your actions, configs,
+it just worked. We also wanted to make
+sure that it um sort of supported this
+ability to merge multiple PRs at once. I
+think uh for folks who've used stacked
+PRs, uh if you haven't, highly encourage
+you to do so. Merging multiple PRs at
+once is actually uh extremely
+complicated especially when you're
+dealing with squash merges and really
+high throughput repos where merges are
+happening sometimes multiple times a
+second uh and some of our like biggest
+customers. So it's really important that
+we make sure that this just works
+properly. And so what we actually end up
+having to do is not only having to
+rewrite a ton of stuff across GitHub cuz
+you know PRs are in many ways the center
+of GitHub. Every other service that
+GitHub has sort of goes off of PRs. Uh
+but then also, you know, we need to make
+sure all of the the services that depend
+on it were updated as well.
+>> Making something native native into a
+platform is not an easy thing to do.
+It's it's it's something they were
+you're not only dealing with just
+different parts of the codebase but also
+legacy parts of the codebase. Do you
+know like what the oldest part of the
+codebase had to be updated for this cuz
+I'm sure there were so many different
+layers to go through.
+>> Oh yeah. I think uh you know the way a
+PR is merged that is in a lot of ways
+like merging a PR is very standard. I
+think glue are touching parts of the
+code that hadn't been updated in at
+least a decade. And it's one of those
+things that like PRs have been around
+for a long time. So, you know, if it
+works, like it's solid and it's like
+stable core code and we need to go in
+there and and edit that. Um, yeah, for
+the first time in in quite a while.
+>> It's scary,
+>> but that's Yeah, [laughter] that was
+terrifying. Sorry.
+Well, and I know that like the merge box
+alone is such complex code and and what
+what is the merge box for those who
+don't know and please explain how
+complex that is because the more I learn
+about it, it it makes my head spin.
+>> Yeah, you know, I never as a developer,
+as an end user of GitHub, I never truly
+appreciated how complex the merge box
+was. And then now being on the other
+side, I have a very different uh view
+and appreciation for the merge box. So,
+for those of you who aren't aware, the
+merge box, you know, at the bottom of
+PR, it tells you if your PR is ready to
+merge or not, which it sounds very
+straightforward when you think about it.
+It's like, okay, like is it green? Is it
+red? Am I waiting for checks to finish?
+But there's actually so much that
+happens behind the scenes because
+there's of course like are your checks
+passing, are your bills passing? Uh do
+you have rules set up? Do you require an
+approval? And then of course, do you
+have conflicts? Do you need to resolve
+those conflicts? Are those conflicts
+automatically resol resolvable or do you
+need to do that in the command line? And
+there's u hundreds of conditions that we
+evaluate for. And the other thing that
+people may not realize is that it live
+updates. So as someone pushes a commit
+to their branch or you know someone
+submits an approval in another tab, it
+live reloads and auto updates. So
+basically what we're doing behind the
+scenes is you know backed behind GitHub
+of course is Git. There's a giant series
+of servers that we have that are
+constantly running git operations. So
+every time anything changes we are
+basically running a simulation of a git
+merge and trying to see okay does this
+commit actually pass? Is it are there
+merge conflicts? Does it like pass all
+the rules? you know, you could get
+really complicated with like making sure
+that the resulting commit has certain
+metadata, is it signed, etc. We could go
+on and on. Uh, and so that was already
+complicated as it is and it is a very
+core part of GitHub. Uh but then you
+also have stacked PRs which now
+introduces another layer of complexity
+and dependencies because in order to
+merge a stack you essentially need to
+make sure not only that your current PR
+is good but that all the PRs below it
+are green as well. Uh so now you're not
+only checking for the state of one PR
+but potentially up to 100 PRs.
+>> It goes so deep and the the the like
+ghost merge behind the scenes is the
+thing that blew my mind the most. I I
+just didn't know that that is how that
+worked. And that is so much compute just
+to make sure something can be merged.
+It's it's really interesting.
+>> Yeah, it's one of those things that
+again we really want to make this a
+seamless experience for the end user. So
+it's not something people should have to
+think about because GitHub is just doing
+it behind the scenes. But it's one of
+those things that when you are working
+on a a new feature like stacked PRs, it
+literally exponentially increases the
+complexity of something like that. And
+and those are the types of things that
+like we really need to make sure that
+not only do we did that properly to make
+sure like security uh is is in place,
+but also making sure it's reliable and
+available as well.
+>> I love this. How did you go from like
+someone on the internet say they wanted
+this to actually make it happen? I
+actually started in GitHub in January.
+So by the time I joined the stacked PRs
+project was already uh sort of green lit
+and there was a lot of interest already
+that been building up behind stacked
+PRs. What I will say is that there's
+actually been different attempts over
+the years at running stacked PRs in
+GitHub. This is actually I think the
+third or fourth attempt that we've
+>> I was going to say I saw there was an
+attempt in like 2022 at some point too.
+Yeah, I think there's been various types
+of attempts, some that tried to approach
+this as a completely different concept,
+something outside of PR, something that
+was very much related to get refs and
+essentially will we end up with the
+current iteration and the reason why it
+worked is we decided to stick with the
+core PR model instead of breaking away
+from the PR model which you know has
+definitely its benefits but ultimately
+required so much rebuilding.
+that it just was too expensive and and
+too complicated, especially in in such a
+big system.
+>> With PRs, what we decided to do was sort
+of use the existing PR concept that we
+have today and allow you to group it and
+group it as stacks, but of course make
+sure it natively works with all of
+GitHub. So I think that was really one
+of the core architectural decisions that
+allowed us to move forward with stacked
+PRs in a uh more approachable way.
+>> Did that lead to any negative trade-offs
+besides just dealing with the mountain
+of legacy or was that just really the
+right decision that was clear over time?
+>> Yeah, I mean you're we're obviously
+taking an existing model of pull
+requests and we are overloading it to to
+some extent. uh like one of the one of
+the interesting things that we we have
+to change as part of stat pull requests
+is generally when you when you have a PR
+your PR has a base or a target and it's
+assumed well you know that PR is going
+to merge into that target and there's
+logic in a gajillion different services
+across the board that literally assume
+that with stacked PRs we kind of
+introduced this new concept where you
+can have a base of a PR uh for example
+like PR2 is targeting PR1 one, but the
+merge target is actually different
+because the merge target is your main
+branch. And so you could have all these
+different PRs where the bases don't
+actually line up with their merge
+targets. Uh, and so that was a whole
+undertaking. That's probably one of the
+biggest things that we had to cuz that
+was like a
+>> Yeah.
+>> Yeah. Because it's not pointing at a
+branch, it's pointing at a PR.
+>> Exactly.
+>> That's a whole new data structure. Oh, I
+didn't even consider that. [laughter]
+>> It was It was quite a huge undertaking.
+And so I think there were definitely
+like those are some of the the
+trade-offs that we had to make and we
+definitely had to go and make a bunch of
+new APIs, update a bunch of services.
+You know, one of the things that we had
+to do also as part of u you know stacked
+pull requests is that we had to create
+an entirely new merge path essentially.
+uh and that meant as part of that
+operation like the the existing APIs
+that we gave to our customers and to
+other platforms uh to merge PRs wouldn't
+work because those APIs were synchronous
+and they would time out in 10 seconds
+and stacked PRs especially if you have a
+huge stack will definitely take longer
+than 10 seconds. Uh and so we had to
+create a new API that's like
+asynchronous and so we had to you know
+ask folks to move over. So there were
+definitely a number of trade-offs that
+we had to make but I think ultimately
+sort of sticking with PRs even though it
+definitely is not perfect sort of gave
+us the best path forward that still you
+know used familiar concepts that users
+and platforms and you know agents are
+familiar with as well uh and then sort
+of applying this additional concept on
+top of instead of trying to rebuild
+something entirely. Yeah, I didn't even
+consider that API end too. There there
+are so many things that you don't think
+about until you have to think about it.
+And that's why it takes so long. There's
+there's so much legacy and so many
+things to do.
+>> Oh, for sure. I mean, from the outside,
+most people are like, what's you know,
+it's just like show
+each other
+>> and merge them together. [laughter] Like
+I'm sure there's a lot of folks that
+have a lot of misconceptions about how
+things work internally and everything
+that needed to be changed and updated to
+make this work and to make it not just
+to make it work though. And I appreciate
+you mentioned that earlier Sam that you
+wanted this to be like a uh just a part
+of the platform itself like a first
+first class citizen like first support
+not just tagged on as an extension or
+another tool or like a and it does feel
+like that. It feels like it's very much
+part of of the pull request. um it just
+feels very native to the platform now.
+Um awesome. So for folks who already
+were using other things like they had
+other hacks or ways be it a an external
+plugin or they were they were making it
+work. Um I guess what's one thing that
+they can expect now when they start
+using um stock PRs as it is now a part
+of the platform and you yourself I don't
+know if before did you do you have a way
+that you were doing this before and now
+like is there anything that you can
+share about how that's changed or what
+can people expect I guess to be the the
+biggest difference?
+>> Yeah. um for folks who are maybe who may
+be using these other tools and now sort
+of looking at GitHub stack PRs, I think
+one of the best things is that it's
+natively integrated into GitHub. So when
+you're looking at your PRs, you'll be
+able to see all those PRs together. Uh
+and then some of the things that you
+maybe have had to do before that were a
+little bit hackier, you don't need to
+do. For example, like I know a lot of
+folks would have to configure their
+actions, you know, CI runs to run on
+every PR instead of just the PRs
+targeting main or they would have to
+relax their branch protection rules
+because of the way that things worked.
+You don't need to do that anymore. The
+way that we evaluate everything for
+stacks is that the protection rules, the
+CI configs, everything that you have
+that targets main is applied for every
+PR in the stack. So you can probably
+unwind maybe some of that those hacks or
+those workarounds you needed to have. Um
+the other thing that's that's really big
+is that you know we have a CLI that
+we're shipping GH stack which allows you
+to work with stacks locally.
+>> Uh but also we have a public API that's
+completely open and we've already seen a
+number of thirdparty plugins and tools
+and open source projects adopt using our
+our API. So if you don't want to use our
+CLI, you don't have to. that's also
+like, you know, compared to some other
+products. So, you could build your own
+tool to do your own stacking. And I and
+it's it's very open and and I think
+that's one of the the great things that
+I'm really excited about seeing is we
+have this open platform and we have a
+series of opinionated tools that we've
+built. But if you want to go build your
+own, you are welcome to do that. And
+honestly, I I would love to see that cuz
+that's stuff that we can learn from and
+and maybe we'll we'll pull those into
+into GitHub as well. I think that's a
+good misconception to address too where
+we aren't building these features to
+squash competition or anything like
+that. We're we're doing it because
+they're good ideas that we want
+everybody to have access to and build
+on. And so if you were using stacks in
+some other tool external to GitHub, now
+you not only don't have to, but maybe
+those tools can be better in different
+ways because it's natively built in and
+they don't have to build their own
+workarounds.
+>> Absolutely. I think we're all about
+developer choice around these parts and
+I love that.
+>> That's right.
+>> I love that for us.
+>> Anything else that we can share about
+how like the sausage was made? Maybe
+that's that's one of the misconceptions
+or like the things that you didn't
+expect to be like the biggest challenge
+once you actually got to work and like
+the internals of making this work.
+>> There's one interesting thing I I'll
+bring up which is uh so code owners is
+actually a really interesting one. So
+>> so code owners the concept is you
+actually pretty straightforward again
+like you have a code owners file that
+tells you who are the teams that own
+code review for a particular piece of
+the code um based off of the team that
+had the code in this directory or
+something like that. Now, with stacked
+PRs, this opened up this very
+interesting quirk that what you could do
+potentially is cuz your stack of PRs
+build on top of each other, you could
+make a change in your first your bottom
+PR that removes or changes the code
+owners so that when you went to write
+your second, third, fourth PRs, you kind
+of were able to get around the code
+owner review that was needed. So, it's a
+little bit of a weird quirk that you
+could run into. And the way that we we
+solved it is that we basically ignored
+any changes to code owners in the middle
+of a stack. So, when you have a stack of
+PRs, we always load code owners from
+your main branch because that is the
+source of truth and we don't want to
+allow people to kind of hijack code
+owners to kind of circumvent code review
+or do anything a little funny.
+>> I didn't even think about that.
+[clears throat] Ah, sorry. [laughter] Go
+ahead.
+>> No, it's it's there's again there's just
+all of these different things and it
+that is like the level of detail that we
+sort of paid attention to as we you know
+of course we're trying to make sure that
+this feature works. It's easy to use but
+also for GitHub and PRs this is very
+much a security product as well. Of
+course,
+>> you know, enterprises rely on this to
+ensure that their code is is well
+reviewed, meets all the requirements and
+it is, you know, for folks who are doing
+SOCK 2 or ISO 2701 like those are really
+important things and that is where the
+uh code owners and all those like
+security considerations were really
+important for us.
+>> I love how much of development is how is
+someone going to try to break this? Yes,
+>> it's fascinating to have to think about
+all of these different use cases where
+it's like how can someone break our
+pristine system?
+>> And you know what's even better nowadays
+is you can have agents uh do this as
+well. That's something that we did
+actually quite extensively is we just uh
+had a swarm of agents that were just
+running around the clock trying to break
+the feature, trying to circumvent the
+rules, do all sorts of things.
+>> That's a good test.
+>> They are they're very crafty. They're
+very resourceful and uh agentdriven
+testing. I think it's it's a new type of
+testing. We've always said test-driven
+development, but now I think there's
+this new era of have the agents go at it
+and try and break it. And they they they
+have learned from all our creativity and
+uh they are they are relentless.
+>> Yeah. And they can do it without having
+to rest at night too. That's Yeah,
+that's that's actually a really
+interesting way of just stress testing a
+system. I hadn't thought of it that way.
+Very cool. Can we talk about who um I
+guess how teams are adopting stacks now?
+So like teams start adopting these
+workflows like we've seen online like
+folks was there were some folks that
+obviously lots of opinions um lots of
+people happy lots of people with you
+know their valid criticisms but
+>> yeah exactly but like for the teams that
+are adopting these workflows let's let's
+talk about one thing that they they sort
+of need to do I guess as a team is there
+a habit that they need to change is
+there a way that they need to look at
+the way that they're building PRs that
+needs will adapt to this new new way of
+thinking and working or um and from the
+experiences that you've seen that how us
+internally have used them plus the early
+adopters any lessons learned that we can
+share so that folks have like an easier
+transition into stock PRs if they desire
+to.
+>> Yeah, that's a great question. I think
+the easiest thing to do honestly is ask
+your agents. Uh we have a skill file.
+The agents are really good at breaking
+down, especially if you're using plan
+mode. When you are asking your agent to
+plan this feature, make sure that the
+stack skill is installed and your agent
+will be able to go through it and use it
+to decompose your big plan into a stack
+of maybe a couple PRs. And what that'll
+do is what we found is it helps sort of
+steer the agent to break up its code as
+well. Instead of again pushing up one
+giant PR with tens of thousands of lines
+of changes, it breaks it up. So it it
+you know logically each PR is like an
+atomic unit of change that is
+independently reviewable. And that
+really makes it much easier for even
+your code review agents, your human code
+reviewers when it comes time to merge
+that. I think is is huge. Uh for folks
+who are who are adopting stacked PRs and
+looking into it for the first time, I'd
+say look at the areas where I mean just
+go back through your PR history and look
+at places where you had a bunch of PRs
+that you know as Cassie was mentioning
+like where you've tagged them together
+like hey like maybe don't merge this one
+just yet and you know like this one's
+related to this but needs to merge after
+that one but not before this one. There
+are all sorts of cases where we do this.
+You know, database migrations or any
+sort of migration is a common example
+where you kind of have this like
+sequence of things that need to go out
+and stacked PRs are great for that. Uh
+if you're working in a monor repo and
+you have all of your projects or your
+services within one repo and
+everything's within different
+directories and other you got code
+owners, you got all this stuff set up.
+That's another great use case for
+stacked PRs where you're working on one
+feature but you have different changes
+throughout the repo. You can use stacks
+to break that up into sort of individual
+parts. And and the last thing I'll say
+is is for stacks is it really is is up
+to you. Uh we've seen folks use stacks
+just to for their own personal
+development just to keep going there.
+You know if you're using squash merge
+there's actually like a really nice like
+rebase thing that squash uh squash
+merges and stacks do. So it just avoids
+you having to deal with merge conflicts
+if you're squash merging a lot. So
+there's a lot of ways in which even if
+you're not necessarily working on a a
+sequence of things, stacks can be
+helpful. But generally speaking, again,
+the the concept I'll go back to is a
+stack should tell the story of the
+feature that you're building. And
+there's literally like a little timeline
+view that you see on the PR page with
+each stacked PR. And what you really
+would like to do is for the reviewer or
+anyone who's looking at that code later
+that looking at that timeline, looking
+at that list of PRs should tell them the
+story of what you're trying to build. So
+in a quick glance, they can understand,
+okay, this is what is about about to
+ship. I feel like that kind of
+storytelling is more and more essential
+now in today's day and age of agentic
+development where people are shipping so
+much if you don't know the story an
+individual feature doesn't matter and
+and so being able to have that timeline
+and and understand where things go. It's
+it's very good for understanding which
+is the thing that we need the most right
+now.
+>> I agree. I agree. Uh what about for open
+source projects like have you seen a lot
+of adoption? like have you had any
+feedback from maintainers about how this
+is maybe changed the way that they work
+with contributors be human or agents cuz
+they'll be open in PRS too friends.
+[clears throat]
+>> Uh yeah, we've had a lot of open- source
+projects from Verscell uh Nex.js to NX
+to the React team and and many others
+homebrew uh using stacked PRs. We're
+very excited to see the adoption there.
+One of the things that is still the
+limitation of stacked PRs that we are
+working on uh which is next up for us is
+support for stacked PRs across forks.
+This is one of the big requests from the
+community.
+>> So right now stacked PRs only works
+within a single repo but uh if you have
+a fork you can't create a stacked PR. We
+are working on changing that. Again this
+is one of those things that is it's
+there's a lot of stuff involved. So,
+we're working through it, but I'm very
+excited uh once we will release that.
+>> Yeah, just understanding again how how
+the base branch is different from the
+base PR and stuff. I can imagine across
+forks, it's a whole other beast to
+tackle, but I'm so excited that that's
+coming.
+>> That's sweet. Oh, you bring us to a good
+place, a good moment in time to talk
+about what else is out there. you
+already done so much and like this has
+been like an incredible like long time
+coming and uh shout out to the teams
+that tried it before whoever that was in
+2022 that gave it the last uh honest go
+plus everyone that's been here working
+really hard on making this happen and
+having you join the mean and also like
+bring it home amazing uh this has
+definitely been a a great effort by the
+GitHub team long time coming happy it's
+finally here what else is in the
+horizons before support for besides
+support for forks which I'm really
+excited about as well.
+>> Yeah. U as I mentioned with stacked PRs
+we had to create a whole new code path
+for merging. So one of the limitations
+that we do have for stacked PRs is that
+there are some features that are missing
+for stacked PR merges. Automerge we
+don't have that bypassing rules and
+merge forks of course as we already
+talked about. So, those are things that
+we are working to uh include uh to bring
+stack merges up to par with regular PR
+merges. Uh but there's there's more that
+we're uh we've just actually recently
+released. We just released the ability
+for rebases to create signed commits. Uh
+for those of you who are part of the the
+rebase uh force push gang, you know, I
+personally never used merge commits. I
+personally find merge commit my hot
+take. I I hate merge commits. I think
+they're ugly. So, I personally love
+rebasing and force pushing. I like the
+linear uh history, but even regardless
+of that, I know a lot of folks have been
+asking for rebases to create signed
+commits cuz when you create a merge
+commit, it creates a signed commit on
+GitHub, but rebases don't. And that is
+one of the things that stack rebases do
+create signed commits now, which if you
+have rules that require signed commits,
+it's one of those things that again we
+have to dig back through and and redo a
+bunch of stuff, but it is here now.
+We're super excited about it. Uh we just
+there's a lot more we just need to do in
+general. Speaking of rebase force push
+to improve it in the PR experience,
+there's a lot that has been built up in
+the PR experience over the years and
+outside of just stacks. We as a team are
+looking broadly at how people are
+writing code, how people are
+collaborating with their agents, with
+each other, and really redesigning the
+PR experience to be a lot faster, get
+you the information that you need, and
+just allow you to just move faster
+through the experience. Good.
+>> I love that. I love that. And actually
+bring me to the point of like developer
+choice which is my favorite song of the
+day here today but because you can use
+stack PRs across every surface on.com
+right so maybe tell us a little bit
+about what you can use it on the CLI uh
+you can use it the copilot app which is
+one of my most favorite new things
+because there is a CLI skill for it can
+you talk a little bit about why that was
+important to make sure that it was
+accessible everywhere
+>> yeah I I think we just want Again, stack
+PR is to be just a first class part of
+PRs in GitHub. And that means it just
+needs to work everywhere. The CLI,
+Copilot CLI, the GitHub Copilot app, the
+mobile app, Android, iOS, uh obviously
+github.com.
+>> And in order to make that happen, there
+was really just a lot that we had to do.
+We already talked about the models that
+we needed to change and whatnot, but
+ultimately again people are writing code
+from so many different places now.
+People are, you know, coding from their
+phone. They're, you know, doing remote
+sessions with agents. And we just want
+to make it easy. And really again, even
+if you're not using the co-pilot app or
+any of those tools, we have the skill
+file and you could point any agent uh
+regardless of the vendor at the skill
+file and it can create stacked PRs using
+either the CLI or the public API. So
+it's meant to be very open and as Andrew
+you mentioned it's all about developer
+choice and we just want to build the
+platform and any developers de
+regardless of their workflows they can
+figure out however they want to
+integrated with it. I love that so much
+and I I want to give like you and your
+team flowers because you've been working
+on this so hard and suddenly there were
+a lot of big spotlights on your team at
+at certain points as it got particularly
+viral on the various social medias that
+there was a team actually working on it
+and y'all did such a great job kind of
+cutting through the noise and just
+getting to the meat of it of making it
+open, making it secure and and just
+making it work on the platform. So
+again, huge kudos and and thank you for
+driving it home because that was no
+small feat.
+>> All the flowers, all the flowers to you
+and the team. [laughter]
+>> Thank you. And I I have to uh pass that
+on to all of our customers, our users,
+all the developers who were part of the
+beta, who were asking for it. I mean,
+first off, the reason that Stack PRS was
+prioritized, the reason it got done is
+because the community kept asking for
+it, and I know folks have been asking
+for it for a really long time. Um, and
+it took a while, but we did it. And it's
+not the end. There's a lot more that we
+need to do, and we really rely on the
+community's input and feedback. And I
+know it could be a lot. There's a lot
+that's going on, but it really like we
+really do listen to that. We spend a lot
+of time on all the platforms and
+discussion posts and everything really
+listening to what folks are are saying
+because we want to make the platform
+better and we can't do that without the
+input and feedback from folks and it
+really is a partnership between us and
+the developers and the community
+>> for sure.
+>> I love that and a continue partnership
+right like the the things chip but that
+you're still as you continue to grow and
+I love it. folks sometimes find like the
+most unique um edge cases that they're
+like so
+>> and what a pleasure that is.
+>> Yeah.
+>> That being said, we are getting to the
+end of our time here. So before we go,
+we all have various open- source
+projects and things that we would like
+to share. And if y'all don't mind, I
+will go first. So the link that I'll
+share, and these links are all in the
+show notes, um is a project by Sarah
+Drazner. She is a distinguished engineer
+over at Google and in a previous life
+before she went into tech she was a
+scientific illustrator and she's kind of
+combining her tech skills and her
+illustration skills to make visual
+explorations of code. And so if you go
+to her website and again the URL is in
+the show notes sarah.dev/projects dev/
+projects. You can see her code drawings
+and she goes very deep into how MCP
+works in practice or the differences
+between GPUs and CPUs or vector
+databases or just various types of
+software architecture. And it's really
+cool to see that visually explained. And
+she's also just a really talented artist
+and this was her actual job before going
+into the tech industry. And so it's a
+very cool mashing of skills that also
+can teach you something. And so that is
+that is my pick for this episode.
+>> I love that. I am a big fan of Sarah
+like embarrassing. So um and also I am a
+big visual learner. Like I love it when
+people draw me things to explain things
+to me. [laughter]
+I am excited for this project. I have to
+check it out. That's awesome. Awesome.
+I'll go next. Um, I'm going to shout out
+a classic, a new classic, and it's
+agents.md. Did you know that that is an
+actual open source project, right? Uh,
+and what agents is all about? Well,
+>> those setup commands that get buried in
+like your read mess, like the tests that
+like nobody ever runs,
+>> the rules that you know, you don't
+really they live in your head, I guess,
+but they they need to live on a file.
+Um, but they don't necessarily belong in
+PRs. So all of that context that your
+coding agent needs regardless of the
+coding agent of the provider uh most of
+the times they don't really know where
+to find it right like they only have
+access to what we tell them and so
+agents.md gives repose that obvious
+place to put it uh it is a standard it's
+a standard in the industry has aligned
+and decided that is the way to work with
+agents uh and it's also an open source
+project itself under the Aif a AIF
+foundation so uh you can find the
+project itself under github.com/ SL
+aents MD/agents.mmd.
+Um, I love this. It's a boring standard
+that works. It's open. And
+>> boring standards are the best standards.
+>> Exactly. Exactly. And anything that can
+help like your agents make fewer
+assumptions and like just go make stuff
+up that you know is not going to work
+for your project. Uh, it's going to be
+awesome. So, uh, check it out if you
+haven't started the project and if you
+have feedback or actually are interested
+in the way that agents MD can get
+better. uh open an issue.
+>> Sam mean what did you bring for us
+today?
+>> Well, maybe this is cheating a little
+bit, but I do have to shout out the GH
+stack CLI.
+>> Ooh, yes. So good.
+>> The the stack CLI is is one that uh
+there's there's a funny story behind it.
+So, as we were starting working on the
+stacked PRs project, we actually were
+not really planning on a CLI. It was
+well, maybe it'll be like something more
+lightweight. And as I sort of started
+working with folks, I was like, we we
+really do need a CLI. And uh as a
+product manager, I was like, well, you
+know, I'm probably not going to be the
+one building this, but I'm going to
+start just putting together some some
+scripts, some some things to just help,
+you know, create some issues and
+tickets. And so I had a series of bash
+scripts on my computer that I was like,
+"Yeah, this is how we could, you know,
+do run a cascading rebase or here's how
+we could sort of, you know, manage a
+stack locally." And that that those
+scripts just kept building and building
+and building. And then I I wrote a
+series of of basically documentation for
+the CLI to share it with customers and
+early users and be like, "Hey, like does
+this seem like the you know, does this
+have all the commands? Would this have
+all the things that you would like
+need?" And people like, "Yeah, we have
+feedback or this or that." Um, but
+ultimately I was like, you know, this is
+really hard to get feedback on this if
+it's just documentation. And I was like,
+you know what? I'm just going to go
+ahead and and start building it. And so
+I just started started building the the
+CLI and it went from something that was
+written completely in in bash to I
+rewrote it in Go uh which is actually
+what the main GH CLI is is written in as
+well and has turned into this behemoth
+that does local stack operations that
+can of course push up and create your
+stack PRs. has all these tuies, these
+cool graphical interfaces in your
+terminal for viewing a stack that for uh
+submitting a stack of PRs, for modifying
+a stack. I had a lot of fun with those
+for sure. Uh but would definitely, you
+know, encourage folks to like check it
+out, especially if you know, again, it's
+open source, so feel free to fork it. Uh
+leave your uh suggestions, file an
+issue. There's a lot I I I have on my
+road map that I want to continue to
+improve there. And again, would really
+love a bunch of feedback on it because
+it's one of those things that we really
+want to make it a core part of the STAX
+experience and there's a lot more that I
+know we want to do and it I had a lot of
+fun building it.
+>> It's a gorgeous CLI. Like it is you're
+just like, "Oh yeah, no big deal. I just
+rewrote it all in Go and now it's a
+spectacular CLI tool that people are
+using." the fact that you can rearrange
+your stack or remove something in the
+middle, add something at the end, it's
+it's so well done and looks so good for
+a terminal user interface. I I was so
+impressed with it the first time I tried
+it and so don't be humble. It's an it's
+an awesome CLI tool.
+>> Thanks.
+>> Okay, that being said, everybody, we've
+made it to the end of our episode. Thank
+you so much for joining us today. I have
+been Cassidy Williams. You can find me
+at Cassadoo C A S I D O O on most things
+>> and I still am Andrea Griffets and you
+can find me at Colombia Dev in most
+places. Uh please reach out. Let us
+know. You know, we never ask for
+feedback. Let us know how you like this
+episode. Did you hate it? Send it to
+your friends and your enemies
+>> and say you love it. [laughter]
+>> And Seamine, where could people find you
+on the internet?
+Uh, you can find me at Samine Karim on
+Twitter or escare on GitHub.
+>> All right, y'all. We'll see you next
+time. Bye bye.
+>> Bye.

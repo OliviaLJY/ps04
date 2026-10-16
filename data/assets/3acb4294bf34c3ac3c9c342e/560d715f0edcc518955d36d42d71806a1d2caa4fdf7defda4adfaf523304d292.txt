@@ -1,0 +1,20 @@
+The Pulse: new trend of building “internal vibe-coding apps” at tech companies
+The Pragmatic Engineer
+Subscribe Sign in The Pulse The Pulse: new trend of building “internal vibe-coding apps” at tech companies
+Also: do us engineers truly enjoy ‘hard problems’, or do we really just want to solve those which attract promotions, new open models launch in the EU and US, and more
+Gergely Orosz Oct 08, 2026 ∙ Paid 81 6 2 Share The Pulse is a series covering events, insights, and trends within Big Tech and startups.
+Today, we cover:
+New trend: building internal vibe-coding apps at mid-sized companies. Ramp and Stripe built platforms for non-engineers to build internal websites and tools with, and both are taking off in those workplaces. I expect more companies to do the same.
+Do us engineers really enjoy hard problems? Or do we actually like pattern-matching with backend problems? A provocative post by Cloudflare engineer, Sunil Pai, suggests there are other motives.
+New open models launch in the EU and US . Kolibri, Mistral Large 4, and Beam by Reflection AI could challenge China’s dominance in open weight models.
+Industry Pulse. Why Figma doesn’t let any agent use its MCP server; Google Cloud adds Swift support on the server side, Anthropic’s two-week sprint to speed up Claude Code, Coinbase dumps React Native shortly after Shopify announces doing so, Claude Opus 5.5 formats the C: drive, and more.
+1. New trend: building internal vibe-coding platforms at mid-sized companies
+When I visited Ramp’s headquarters last month in New York, I talked with the four-person development team behind ‘Glass,’ which is Ramp’s “internal Lovable.” This name refers to Lovable.dev, the leading AI vibe-coding tool.
+Ramp’s ‘Glass’ is basically a vibe-coding platform for non-engineers to create complex applications which run internally. They can share the applications they make with others to use and modify. This is what the landing page looks like:
+The landing page for Glass. Source: Ramp Users can connect various internal systems as “connectors” that can then be used as data sources for their apps:
+Setting up connectors in Glass The team showed me a few popular apps, including a custom CRM built by someone in marketing, which had 50+ fields and filters on-screen. It seemed overwhelming to me, but the creator reportedly finds it extremely powerful to use.
+Since then, I’ve learned that many other mid-sized-and-above companies are building similar “internal Lovables” that don’t usually see the light of day in the outside world.
+Stripe’s “internal Lovable”, Harbor
+This post is for paid subscribers
+Subscribe Already a paid subscriber? Sign in © 2026 Gergely Orosz · Privacy ∙ Terms ∙ Collection notice Start your Substack Get the app Substack is the home for great culture
+This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts

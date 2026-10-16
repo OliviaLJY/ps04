@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:80c65f42ca5c65440a37",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "How stacked PRs work behind the scenes at GitHub | S02E05 | The GitHub Podcast",
+  "url": "https://www.youtube.com/watch?v=sbHoDdAalMI",
+  "published_at": "2026-10-14T15:00:01Z",
+  "retrieved_at": "2026-10-16T17:19:14Z",
+  "media_url": null,
+  "version_id": "56e9c92dc37b9e9fd2a0deeed0adbf29a79678d7bd5f765f52f50b75613fe3fe",
+  "text_path": "data/assets/862fd20524a632bfee0d41c5/5dcdddbddeca86effb159c9fd07453dba5957e808b52a6ac01f1e03698e4138a.txt",
+  "segments_path": "data/assets/862fd20524a632bfee0d41c5/e0f3c265b785258e4c5503a443c371542f7cd4089287f48db57ff4fb1dff47ea.segments.json"
+}

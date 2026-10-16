@@ -1,0 +1,15 @@
+{
+  "stage": "create-briefs",
+  "status": "completed",
+  "input_count": 56,
+  "output_count": 3,
+  "started_at": "2026-10-16T17:27:15Z",
+  "finished_at": "2026-10-16T17:27:16Z",
+  "elapsed_seconds": 0.01,
+  "tools_or_models": [
+    "deterministic-brief-fallback (set AI_COMMAND for submitted live runs)"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

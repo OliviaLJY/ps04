@@ -1,0 +1,146 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 2.335,
+    "end_seconds": 4.212,
+    "text": "I found a very fun"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 4.212,
+    "end_seconds": 7.215,
+    "text": "and new way to create music."
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 8.258,
+    "end_seconds": 10.759999999999998,
+    "text": "I knew that my laptop had all of these"
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 10.76,
+    "end_seconds": 14.931000000000001,
+    "text": "different sensors to track things,\nlike the angle of which it was positioned."
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 14.931,
+    "end_seconds": 18.183999999999997,
+    "text": "I had the idea of building\na digital synthesizer"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 18.184,
+    "end_seconds": 21.688000000000002,
+    "text": "that would run on my browser without\nneeding any additional hardware."
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 21.688,
+    "end_seconds": 23.773,
+    "text": "Luckily, I had Gemini in my disposal."
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 26.526,
+    "end_seconds": 31.031,
+    "text": "I found online, different projects\nthat were open source and different"
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 31.031,
+    "end_seconds": 33.283,
+    "text": "files, with documentation\nthat would explain"
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 33.283,
+    "end_seconds": 37.537,
+    "text": "how to access different sensors\nthat my device has."
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 37.537,
+    "end_seconds": 40.582,
+    "text": "and I was able to fit\nall of this documentation,"
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 40.582,
+    "end_seconds": 44.294000000000004,
+    "text": "all of this context to Google Gemini,\nand it was able to help me"
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 44.294,
+    "end_seconds": 47.087999999999994,
+    "text": "build an initial prototype\nand create an instrument."
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 51.801,
+    "end_seconds": 56.181000000000004,
+    "text": "We were able to grab data in real time\nfrom all of the different sensors,"
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 56.181,
+    "end_seconds": 59.516999999999996,
+    "text": "and bring them into a hub that\nwould allow me to visualize the data"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 59.517,
+    "end_seconds": 61.978,
+    "text": "in real time, and then figure\nout what to do with it."
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 61.978,
+    "end_seconds": 65.315,
+    "text": "And at the end, we ended\nup with this tool, with synth"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 65.315,
+    "end_seconds": 70.32,
+    "text": "that would be driven by my own laptop,\nand I was able to create music"
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 70.32,
+    "end_seconds": 72.238,
+    "text": "in real time by just"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 72.238,
+    "end_seconds": 73.448,
+    "text": "moving it,"
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 73.448,
+    "end_seconds": 74.407,
+    "text": "tilting it,"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 74.407,
+    "end_seconds": 75.075,
+    "text": "shaking it,"
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 75.075,
+    "end_seconds": 78.912,
+    "text": "any way that felt natural\nto me as a performer."
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 78.912,
+    "end_seconds": 83.54100000000001,
+    "text": "It was my vision and I was able to mold\nand achieve using a tool like Gemini."
+  }
+]

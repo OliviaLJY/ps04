@@ -23,7 +23,9 @@ def main():
         articles=lines(run/"articles.jsonl"); scripts=lines(run/"video_scripts.jsonl")
         receipts=[]
         for path in sorted((run/"logs").glob("*.json")):
-            try: receipts.append(load_json(path))
+            try:
+                value=load_json(path)
+                if isinstance(value,dict) and value.get("stage"): receipts.append(value)
             except Exception: pass
         failed=[{"stage":x.get("stage"),"status":x.get("status"),"errors":x.get("errors",[])} for x in receipts if x.get("status") not in ("completed",)]
         review=load_json(run/"review.json") if (run/"review.json").is_file() else None

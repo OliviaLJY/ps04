@@ -1,0 +1,14 @@
+{
+  "item_id": "youtube:9d74334962bb250e22fa",
+  "source_id": "github-youtube",
+  "publisher_id": "github-youtube",
+  "kind": "youtube",
+  "title": "GitHub Copilot app with the Logitech MX Keypad",
+  "url": "https://www.youtube.com/watch?v=EQeJj0hoPS8",
+  "published_at": "2026-10-15T19:38:38Z",
+  "retrieved_at": "2026-10-16T17:19:14Z",
+  "media_url": null,
+  "version_id": "bd87a2e7ce137880cb161ff5f9d1d72ef6175374f934a8fc4350c3e902aa3f01",
+  "text_path": "data/assets/a7022c95ce22dca9e6db53f3/9eca8c0da8482fae1c2e170f12a21de0ad4d08fb75f536ce7f8c43ae09b63659.txt",
+  "segments_path": "data/assets/a7022c95ce22dca9e6db53f3/06dd8fe9c985dfd8c820ecaea0105421827be4621b858a7a5208910f5dc630b4.segments.json"
+}

@@ -1,0 +1,6782 @@
+[
+  {
+    "segment_id": "yt-0001",
+    "start_seconds": 3.36,
+    "end_seconds": 6.96,
+    "text": "This is the GitHub podcast, a show"
+  },
+  {
+    "segment_id": "yt-0002",
+    "start_seconds": 5.359,
+    "end_seconds": 8.879999999999999,
+    "text": "dedicated to the topics, trends,"
+  },
+  {
+    "segment_id": "yt-0003",
+    "start_seconds": 6.96,
+    "end_seconds": 10.24,
+    "text": "stories, and culture in and around the"
+  },
+  {
+    "segment_id": "yt-0004",
+    "start_seconds": 8.88,
+    "end_seconds": 12.639000000000001,
+    "text": "open source developer community on"
+  },
+  {
+    "segment_id": "yt-0005",
+    "start_seconds": 10.24,
+    "end_seconds": 14.32,
+    "text": "GitHub. I'm Cassidy Williams, aka"
+  },
+  {
+    "segment_id": "yt-0006",
+    "start_seconds": 12.639,
+    "end_seconds": 16.799999999999997,
+    "text": "Cassadoo, and I am on the developer"
+  },
+  {
+    "segment_id": "yt-0007",
+    "start_seconds": 14.32,
+    "end_seconds": 18.72,
+    "text": "advocacy team at GitHub. And with me is"
+  },
+  {
+    "segment_id": "yt-0008",
+    "start_seconds": 16.8,
+    "end_seconds": 19.84,
+    "text": "my lovely co-host today, Andrea"
+  },
+  {
+    "segment_id": "yt-0009",
+    "start_seconds": 18.72,
+    "end_seconds": 22.08,
+    "text": "Griffiths."
+  },
+  {
+    "segment_id": "yt-0010",
+    "start_seconds": 19.84,
+    "end_seconds": 24.4,
+    "text": ">> Hey, Cassidy. Hi, friends. I'm Andrea"
+  },
+  {
+    "segment_id": "yt-0011",
+    "start_seconds": 22.08,
+    "end_seconds": 25.519,
+    "text": "Griffith, senior developer advocate here"
+  },
+  {
+    "segment_id": "yt-0012",
+    "start_seconds": 24.4,
+    "end_seconds": 28.24,
+    "text": "at GitHub."
+  },
+  {
+    "segment_id": "yt-0013",
+    "start_seconds": 25.519,
+    "end_seconds": 30.08,
+    "text": ">> We have a very exciting guest today. Are"
+  },
+  {
+    "segment_id": "yt-0014",
+    "start_seconds": 28.24,
+    "end_seconds": 31.919999999999998,
+    "text": "you excited, Andrea? I am"
+  },
+  {
+    "segment_id": "yt-0015",
+    "start_seconds": 30.08,
+    "end_seconds": 34.48,
+    "text": ">> I am super excited. I've actually"
+  },
+  {
+    "segment_id": "yt-0016",
+    "start_seconds": 31.92,
+    "end_seconds": 37.36,
+    "text": "recorded with him before. Um he is a"
+  },
+  {
+    "segment_id": "yt-0017",
+    "start_seconds": 34.48,
+    "end_seconds": 40.48,
+    "text": "legend around this part. Uh our amazing"
+  },
+  {
+    "segment_id": "yt-0018",
+    "start_seconds": 37.36,
+    "end_seconds": 42.64,
+    "text": "guest today is Samin Karim who is a"
+  },
+  {
+    "segment_id": "yt-0019",
+    "start_seconds": 40.48,
+    "end_seconds": 45.04,
+    "text": "senior product manager at GitHub and he"
+  },
+  {
+    "segment_id": "yt-0020",
+    "start_seconds": 42.64,
+    "end_seconds": 47.68,
+    "text": "is focused on developer workflows core"
+  },
+  {
+    "segment_id": "yt-0021",
+    "start_seconds": 45.04,
+    "end_seconds": 50.239,
+    "text": "review and he shipped my favorite thing"
+  },
+  {
+    "segment_id": "yt-0022",
+    "start_seconds": 47.68,
+    "end_seconds": 52.239,
+    "text": "that's shipped absolutely which is stack"
+  },
+  {
+    "segment_id": "yt-0023",
+    "start_seconds": 50.239,
+    "end_seconds": 54.32,
+    "text": "pull request. He has a talk at GitHub"
+  },
+  {
+    "segment_id": "yt-0024",
+    "start_seconds": 52.239,
+    "end_seconds": 56.239,
+    "text": "universe coming up about stacked PRs in"
+  },
+  {
+    "segment_id": "yt-0025",
+    "start_seconds": 54.32,
+    "end_seconds": 57.68,
+    "text": "practice and how big pull requests slow"
+  },
+  {
+    "segment_id": "yt-0026",
+    "start_seconds": 56.239,
+    "end_seconds": 59.76,
+    "text": "you down and how to practically break"
+  },
+  {
+    "segment_id": "yt-0027",
+    "start_seconds": 57.68,
+    "end_seconds": 61.76,
+    "text": "them up. We'll talk about this and more"
+  },
+  {
+    "segment_id": "yt-0028",
+    "start_seconds": 59.76,
+    "end_seconds": 63.92,
+    "text": "today and you can see us talk live in"
+  },
+  {
+    "segment_id": "yt-0029",
+    "start_seconds": 61.76,
+    "end_seconds": 66.0,
+    "text": "San Francisco on October 28th or"
+  },
+  {
+    "segment_id": "yt-0030",
+    "start_seconds": 63.92,
+    "end_seconds": 68.72,
+    "text": "register to see all of Universe and more"
+  },
+  {
+    "segment_id": "yt-0031",
+    "start_seconds": 66.0,
+    "end_seconds": 70.799,
+    "text": "online at githubuniverse.com."
+  },
+  {
+    "segment_id": "yt-0032",
+    "start_seconds": 68.72,
+    "end_seconds": 71.2,
+    "text": "All that being said, hey Samine, how are"
+  },
+  {
+    "segment_id": "yt-0033",
+    "start_seconds": 70.799,
+    "end_seconds": 73.04,
+    "text": "you?"
+  },
+  {
+    "segment_id": "yt-0034",
+    "start_seconds": 71.2,
+    "end_seconds": 74.799,
+    "text": ">> Hey Cassie. Hey Andrea. Thanks for"
+  },
+  {
+    "segment_id": "yt-0035",
+    "start_seconds": 73.04,
+    "end_seconds": 76.96000000000001,
+    "text": "having me here. Super excited."
+  },
+  {
+    "segment_id": "yt-0036",
+    "start_seconds": 74.799,
+    "end_seconds": 78.159,
+    "text": ">> We're so excited to have you. So could"
+  },
+  {
+    "segment_id": "yt-0037",
+    "start_seconds": 76.96,
+    "end_seconds": 80.15899999999999,
+    "text": "you give people a little bit of"
+  },
+  {
+    "segment_id": "yt-0038",
+    "start_seconds": 78.159,
+    "end_seconds": 81.60000000000001,
+    "text": "background on how you got to GitHub? How"
+  },
+  {
+    "segment_id": "yt-0039",
+    "start_seconds": 80.159,
+    "end_seconds": 84.24000000000001,
+    "text": "you got to where you are today?"
+  },
+  {
+    "segment_id": "yt-0040",
+    "start_seconds": 81.6,
+    "end_seconds": 87.119,
+    "text": ">> Oh yeah. You know, I have been using"
+  },
+  {
+    "segment_id": "yt-0041",
+    "start_seconds": 84.24,
+    "end_seconds": 90.39999999999999,
+    "text": "GitHub for as long as I can remember"
+  },
+  {
+    "segment_id": "yt-0042",
+    "start_seconds": 87.119,
+    "end_seconds": 93.92,
+    "text": "since I started coding in middle school"
+  },
+  {
+    "segment_id": "yt-0043",
+    "start_seconds": 90.4,
+    "end_seconds": 96.159,
+    "text": "and I started in the startup world."
+  },
+  {
+    "segment_id": "yt-0044",
+    "start_seconds": 93.92,
+    "end_seconds": 98.479,
+    "text": "spent some time in advertising, sold my"
+  },
+  {
+    "segment_id": "yt-0045",
+    "start_seconds": 96.159,
+    "end_seconds": 100.47900000000001,
+    "text": "last startup, uh worked at the acquirer"
+  },
+  {
+    "segment_id": "yt-0046",
+    "start_seconds": 98.479,
+    "end_seconds": 102.0,
+    "text": "for a little bit, and after that, I"
+  },
+  {
+    "segment_id": "yt-0047",
+    "start_seconds": 100.479,
+    "end_seconds": 103.84,
+    "text": "really was trying to think about what do"
+  },
+  {
+    "segment_id": "yt-0048",
+    "start_seconds": 102.0,
+    "end_seconds": 105.439,
+    "text": "I want to work on next, and I really"
+  },
+  {
+    "segment_id": "yt-0049",
+    "start_seconds": 103.84,
+    "end_seconds": 107.36,
+    "text": "fell in love with developer tools"
+  },
+  {
+    "segment_id": "yt-0050",
+    "start_seconds": 105.439,
+    "end_seconds": 109.83999999999999,
+    "text": "because it's something that I used every"
+  },
+  {
+    "segment_id": "yt-0051",
+    "start_seconds": 107.36,
+    "end_seconds": 111.759,
+    "text": "day and started a startup in that area"
+  },
+  {
+    "segment_id": "yt-0052",
+    "start_seconds": 109.84,
+    "end_seconds": 114.159,
+    "text": "and eventually found my way to GitHub"
+  },
+  {
+    "segment_id": "yt-0053",
+    "start_seconds": 111.759,
+    "end_seconds": 116.96,
+    "text": "because what better place to make an"
+  },
+  {
+    "segment_id": "yt-0054",
+    "start_seconds": 114.159,
+    "end_seconds": 120.32000000000001,
+    "text": "impact on developer tools than the hub"
+  },
+  {
+    "segment_id": "yt-0055",
+    "start_seconds": 116.96,
+    "end_seconds": 122.96,
+    "text": "of all developer activity? And it's just"
+  },
+  {
+    "segment_id": "yt-0056",
+    "start_seconds": 120.32,
+    "end_seconds": 125.83999999999999,
+    "text": "so exciting to be here at GitHub now"
+  },
+  {
+    "segment_id": "yt-0057",
+    "start_seconds": 122.96,
+    "end_seconds": 127.36,
+    "text": "being able to actually improve the lives"
+  },
+  {
+    "segment_id": "yt-0058",
+    "start_seconds": 125.84,
+    "end_seconds": 128.239,
+    "text": "of hundreds of millions of developers"
+  },
+  {
+    "segment_id": "yt-0059",
+    "start_seconds": 127.36,
+    "end_seconds": 130.399,
+    "text": "around the world."
+  },
+  {
+    "segment_id": "yt-0060",
+    "start_seconds": 128.239,
+    "end_seconds": 132.239,
+    "text": ">> And your team is working on such cool"
+  },
+  {
+    "segment_id": "yt-0061",
+    "start_seconds": 130.399,
+    "end_seconds": 134.4,
+    "text": "practical things that developers really"
+  },
+  {
+    "segment_id": "yt-0062",
+    "start_seconds": 132.239,
+    "end_seconds": 136.879,
+    "text": "care about. I would love to honestly"
+  },
+  {
+    "segment_id": "yt-0063",
+    "start_seconds": 134.4,
+    "end_seconds": 138.8,
+    "text": "just do a deep dive into PR stacks. And"
+  },
+  {
+    "segment_id": "yt-0064",
+    "start_seconds": 136.879,
+    "end_seconds": 140.72,
+    "text": "for those who don't know what they are,"
+  },
+  {
+    "segment_id": "yt-0065",
+    "start_seconds": 138.8,
+    "end_seconds": 142.239,
+    "text": "could you give just an overview and and"
+  },
+  {
+    "segment_id": "yt-0066",
+    "start_seconds": 140.72,
+    "end_seconds": 143.04,
+    "text": "how they have changed people's"
+  },
+  {
+    "segment_id": "yt-0067",
+    "start_seconds": 142.239,
+    "end_seconds": 145.52,
+    "text": "workflows?"
+  },
+  {
+    "segment_id": "yt-0068",
+    "start_seconds": 143.04,
+    "end_seconds": 147.35999999999999,
+    "text": ">> Yeah, absolutely. So happy to give just"
+  },
+  {
+    "segment_id": "yt-0069",
+    "start_seconds": 145.52,
+    "end_seconds": 149.36,
+    "text": "a high level overview of what stacked"
+  },
+  {
+    "segment_id": "yt-0070",
+    "start_seconds": 147.36,
+    "end_seconds": 150.87900000000002,
+    "text": "PRs are, where kind of this started"
+  },
+  {
+    "segment_id": "yt-0071",
+    "start_seconds": 149.36,
+    "end_seconds": 153.68,
+    "text": "from, and especially why it's more"
+  },
+  {
+    "segment_id": "yt-0072",
+    "start_seconds": 150.879,
+    "end_seconds": 156.64,
+    "text": "important today more than ever. So"
+  },
+  {
+    "segment_id": "yt-0073",
+    "start_seconds": 153.68,
+    "end_seconds": 159.28,
+    "text": "stacked pull requests, the idea behind"
+  },
+  {
+    "segment_id": "yt-0074",
+    "start_seconds": 156.64,
+    "end_seconds": 161.67999999999998,
+    "text": "it is you have a large set of changes."
+  },
+  {
+    "segment_id": "yt-0075",
+    "start_seconds": 159.28,
+    "end_seconds": 163.12,
+    "text": "Maybe you're you're shipping a giant"
+  },
+  {
+    "segment_id": "yt-0076",
+    "start_seconds": 161.68,
+    "end_seconds": 165.59900000000002,
+    "text": "feature, you know, you have to make"
+  },
+  {
+    "segment_id": "yt-0077",
+    "start_seconds": 163.12,
+    "end_seconds": 168.64000000000001,
+    "text": "database migrations, API endpoints,"
+  },
+  {
+    "segment_id": "yt-0078",
+    "start_seconds": 165.599,
+    "end_seconds": 170.07999999999998,
+    "text": "front-end code. And normally the way"
+  },
+  {
+    "segment_id": "yt-0079",
+    "start_seconds": 168.64,
+    "end_seconds": 173.51899999999998,
+    "text": "that you would do this is either you"
+  },
+  {
+    "segment_id": "yt-0080",
+    "start_seconds": 170.08,
+    "end_seconds": 175.76000000000002,
+    "text": "would have one giant PR where you'd"
+  },
+  {
+    "segment_id": "yt-0081",
+    "start_seconds": 173.519,
+    "end_seconds": 177.84,
+    "text": "have, you know, maybe 10,000 plus lines"
+  },
+  {
+    "segment_id": "yt-0082",
+    "start_seconds": 175.76,
+    "end_seconds": 179.599,
+    "text": "of code and it would be very difficult"
+  },
+  {
+    "segment_id": "yt-0083",
+    "start_seconds": 177.84,
+    "end_seconds": 180.959,
+    "text": "for the reviewer and that probably would"
+  },
+  {
+    "segment_id": "yt-0084",
+    "start_seconds": 179.599,
+    "end_seconds": 182.0,
+    "text": "be sitting there for a while while"
+  },
+  {
+    "segment_id": "yt-0085",
+    "start_seconds": 180.959,
+    "end_seconds": 183.84,
+    "text": "you're trying to make sure everything"
+  },
+  {
+    "segment_id": "yt-0086",
+    "start_seconds": 182.0,
+    "end_seconds": 186.0,
+    "text": "looks good. It's this like big bang"
+  },
+  {
+    "segment_id": "yt-0087",
+    "start_seconds": 183.84,
+    "end_seconds": 188.239,
+    "text": "update or you'd have a series of sort of"
+  },
+  {
+    "segment_id": "yt-0088",
+    "start_seconds": 186.0,
+    "end_seconds": 190.319,
+    "text": "disconnected PRs. They're not exactly"
+  },
+  {
+    "segment_id": "yt-0089",
+    "start_seconds": 188.239,
+    "end_seconds": 191.92000000000002,
+    "text": "tied together. They could kind of get"
+  },
+  {
+    "segment_id": "yt-0090",
+    "start_seconds": 190.319,
+    "end_seconds": 193.2,
+    "text": "lost. You have to be like, hey, like"
+  },
+  {
+    "segment_id": "yt-0091",
+    "start_seconds": 191.92,
+    "end_seconds": 196.0,
+    "text": "make sure you don't merge this out of"
+  },
+  {
+    "segment_id": "yt-0092",
+    "start_seconds": 193.2,
+    "end_seconds": 198.0,
+    "text": "order. With stacked pull requests, it"
+  },
+  {
+    "segment_id": "yt-0093",
+    "start_seconds": 196.0,
+    "end_seconds": 201.28,
+    "text": "sort of streamlines that flow and gives"
+  },
+  {
+    "segment_id": "yt-0094",
+    "start_seconds": 198.0,
+    "end_seconds": 203.519,
+    "text": "you a very clear way to, as the name"
+  },
+  {
+    "segment_id": "yt-0095",
+    "start_seconds": 201.28,
+    "end_seconds": 205.36,
+    "text": "implies, stack your pull requests. So"
+  },
+  {
+    "segment_id": "yt-0096",
+    "start_seconds": 203.519,
+    "end_seconds": 208.08,
+    "text": "you have one PR for your database"
+  },
+  {
+    "segment_id": "yt-0097",
+    "start_seconds": 205.36,
+    "end_seconds": 210.0,
+    "text": "migrations, one for your API endpoints,"
+  },
+  {
+    "segment_id": "yt-0098",
+    "start_seconds": 208.08,
+    "end_seconds": 212.15900000000002,
+    "text": "one for your front-end changes, and it's"
+  },
+  {
+    "segment_id": "yt-0099",
+    "start_seconds": 210.0,
+    "end_seconds": 214.239,
+    "text": "all stacked together. And what's great"
+  },
+  {
+    "segment_id": "yt-0100",
+    "start_seconds": 212.159,
+    "end_seconds": 216.64,
+    "text": "is now it makes it really easy for you"
+  },
+  {
+    "segment_id": "yt-0101",
+    "start_seconds": 214.239,
+    "end_seconds": 220.0,
+    "text": "to manage this coordinated set of"
+  },
+  {
+    "segment_id": "yt-0102",
+    "start_seconds": 216.64,
+    "end_seconds": 222.07999999999998,
+    "text": "changes, but also avoids the the trap of"
+  },
+  {
+    "segment_id": "yt-0103",
+    "start_seconds": 220.0,
+    "end_seconds": 224.159,
+    "text": "having this giant PR with tens of"
+  },
+  {
+    "segment_id": "yt-0104",
+    "start_seconds": 222.08,
+    "end_seconds": 226.72,
+    "text": "thousands of lines of code that can take"
+  },
+  {
+    "segment_id": "yt-0105",
+    "start_seconds": 224.159,
+    "end_seconds": 228.72,
+    "text": "forever to review. So it's easier for"
+  },
+  {
+    "segment_id": "yt-0106",
+    "start_seconds": 226.72,
+    "end_seconds": 230.56,
+    "text": "you to write and organize your code, but"
+  },
+  {
+    "segment_id": "yt-0107",
+    "start_seconds": 228.72,
+    "end_seconds": 232.64,
+    "text": "it's also easier for the reviewers"
+  },
+  {
+    "segment_id": "yt-0108",
+    "start_seconds": 230.56,
+    "end_seconds": 235.36,
+    "text": "importantly uh to take a look at your"
+  },
+  {
+    "segment_id": "yt-0109",
+    "start_seconds": 232.64,
+    "end_seconds": 236.79899999999998,
+    "text": "changes and as I like to say help tell a"
+  },
+  {
+    "segment_id": "yt-0110",
+    "start_seconds": 235.36,
+    "end_seconds": 239.43900000000002,
+    "text": "story of the feature that you're"
+  },
+  {
+    "segment_id": "yt-0111",
+    "start_seconds": 236.799,
+    "end_seconds": 242.4,
+    "text": "shipping. I love this feature so much"
+  },
+  {
+    "segment_id": "yt-0112",
+    "start_seconds": 239.439,
+    "end_seconds": 244.0,
+    "text": "because I have been in that world where"
+  },
+  {
+    "segment_id": "yt-0113",
+    "start_seconds": 242.4,
+    "end_seconds": 246.959,
+    "text": "I where I've had to say like, \"Okay,"
+  },
+  {
+    "segment_id": "yt-0114",
+    "start_seconds": 244.0,
+    "end_seconds": 248.64,
+    "text": "don't merge PRs B and C until A is done"
+  },
+  {
+    "segment_id": "yt-0115",
+    "start_seconds": 246.959,
+    "end_seconds": 251.2,
+    "text": "and make sure that you do this kind of"
+  },
+  {
+    "segment_id": "yt-0116",
+    "start_seconds": 248.64,
+    "end_seconds": 253.51899999999998,
+    "text": "rebase whenever you start reviewing B"
+  },
+  {
+    "segment_id": "yt-0117",
+    "start_seconds": 251.2,
+    "end_seconds": 256.4,
+    "text": "before you get into it.\" And and like it"
+  },
+  {
+    "segment_id": "yt-0118",
+    "start_seconds": 253.519,
+    "end_seconds": 257.759,
+    "text": "ends up being such a mess logistically"
+  },
+  {
+    "segment_id": "yt-0119",
+    "start_seconds": 256.4,
+    "end_seconds": 259.75899999999996,
+    "text": "because you basically just have to"
+  },
+  {
+    "segment_id": "yt-0120",
+    "start_seconds": 257.759,
+    "end_seconds": 262.079,
+    "text": "explicitly say do this, please read"
+  },
+  {
+    "segment_id": "yt-0121",
+    "start_seconds": 259.759,
+    "end_seconds": 263.6,
+    "text": "this, read this. Um and so the fact that"
+  },
+  {
+    "segment_id": "yt-0122",
+    "start_seconds": 262.079,
+    "end_seconds": 265.68,
+    "text": "STAX kind of solves that problem and"
+  },
+  {
+    "segment_id": "yt-0123",
+    "start_seconds": 263.6,
+    "end_seconds": 267.199,
+    "text": "takes care of that is very nice. Yeah, I"
+  },
+  {
+    "segment_id": "yt-0124",
+    "start_seconds": 265.68,
+    "end_seconds": 270.32,
+    "text": "think it's just one of those workflows"
+  },
+  {
+    "segment_id": "yt-0125",
+    "start_seconds": 267.199,
+    "end_seconds": 272.16,
+    "text": "that once you have used it, I think you"
+  },
+  {
+    "segment_id": "yt-0126",
+    "start_seconds": 270.32,
+    "end_seconds": 275.04,
+    "text": "will find all sorts of ways where it can"
+  },
+  {
+    "segment_id": "yt-0127",
+    "start_seconds": 272.16,
+    "end_seconds": 276.639,
+    "text": "supercharge your workflow, especially in"
+  },
+  {
+    "segment_id": "yt-0128",
+    "start_seconds": 275.04,
+    "end_seconds": 279.52000000000004,
+    "text": "this world where, you know, we're using"
+  },
+  {
+    "segment_id": "yt-0129",
+    "start_seconds": 276.639,
+    "end_seconds": 281.653,
+    "text": "agents. We're starting to work on larger"
+  },
+  {
+    "segment_id": "yt-0130",
+    "start_seconds": 279.52,
+    "end_seconds": 282.639,
+    "text": "changes all at once. And,"
+  },
+  {
+    "segment_id": "yt-0131",
+    "start_seconds": 281.653,
+    "end_seconds": 284.47900000000004,
+    "text": "[clears throat] you know, we're doing so"
+  },
+  {
+    "segment_id": "yt-0132",
+    "start_seconds": 282.639,
+    "end_seconds": 286.479,
+    "text": "much more. It's such a great way to sort"
+  },
+  {
+    "segment_id": "yt-0133",
+    "start_seconds": 284.479,
+    "end_seconds": 287.84,
+    "text": "of coordinate your workflow. And I think"
+  },
+  {
+    "segment_id": "yt-0134",
+    "start_seconds": 286.479,
+    "end_seconds": 289.35999999999996,
+    "text": "we're seeing more and more developers"
+  },
+  {
+    "segment_id": "yt-0135",
+    "start_seconds": 287.84,
+    "end_seconds": 291.11999999999995,
+    "text": "figure out different ways to use stacks."
+  },
+  {
+    "segment_id": "yt-0136",
+    "start_seconds": 289.36,
+    "end_seconds": 294.08000000000004,
+    "text": "And we're super excited about it. I'm"
+  },
+  {
+    "segment_id": "yt-0137",
+    "start_seconds": 291.12,
+    "end_seconds": 296.4,
+    "text": "super excited about the cognitive load"
+  },
+  {
+    "segment_id": "yt-0138",
+    "start_seconds": 294.08,
+    "end_seconds": 299.28,
+    "text": "that this gonna help me kind of throw"
+  },
+  {
+    "segment_id": "yt-0139",
+    "start_seconds": 296.4,
+    "end_seconds": 301.919,
+    "text": "off like this promise of like smaller"
+  },
+  {
+    "segment_id": "yt-0140",
+    "start_seconds": 299.28,
+    "end_seconds": 304.55999999999995,
+    "text": "more focused reviews. Um at least for me"
+  },
+  {
+    "segment_id": "yt-0141",
+    "start_seconds": 301.919,
+    "end_seconds": 307.12,
+    "text": "I think even for projects where I am it"
+  },
+  {
+    "segment_id": "yt-0142",
+    "start_seconds": 304.56,
+    "end_seconds": 309.68,
+    "text": "like I'm the one that has to approve the"
+  },
+  {
+    "segment_id": "yt-0143",
+    "start_seconds": 307.12,
+    "end_seconds": 310.8,
+    "text": "entire stack. Um it's made a big"
+  },
+  {
+    "segment_id": "yt-0144",
+    "start_seconds": 309.68,
+    "end_seconds": 313.12,
+    "text": "difference."
+  },
+  {
+    "segment_id": "yt-0145",
+    "start_seconds": 310.8,
+    "end_seconds": 314.72,
+    "text": ">> Uh what's something that you noticed I"
+  },
+  {
+    "segment_id": "yt-0146",
+    "start_seconds": 313.12,
+    "end_seconds": 316.639,
+    "text": "guess how has this changed the"
+  },
+  {
+    "segment_id": "yt-0147",
+    "start_seconds": 314.72,
+    "end_seconds": 318.96000000000004,
+    "text": "experience for people who are reviewing"
+  },
+  {
+    "segment_id": "yt-0148",
+    "start_seconds": 316.639,
+    "end_seconds": 321.199,
+    "text": "code now when they're using stack PRs?"
+  },
+  {
+    "segment_id": "yt-0149",
+    "start_seconds": 318.96,
+    "end_seconds": 324.4,
+    "text": "Oh yeah. I think this is again going"
+  },
+  {
+    "segment_id": "yt-0150",
+    "start_seconds": 321.199,
+    "end_seconds": 326.88,
+    "text": "back to the sort of previous era where"
+  },
+  {
+    "segment_id": "yt-0151",
+    "start_seconds": 324.4,
+    "end_seconds": 328.79999999999995,
+    "text": "you just had one giant PR for your huge"
+  },
+  {
+    "segment_id": "yt-0152",
+    "start_seconds": 326.88,
+    "end_seconds": 330.639,
+    "text": "feature. Uh a very common thing"
+  },
+  {
+    "segment_id": "yt-0153",
+    "start_seconds": 328.8,
+    "end_seconds": 332.32,
+    "text": "especially like larger organizations."
+  },
+  {
+    "segment_id": "yt-0154",
+    "start_seconds": 330.639,
+    "end_seconds": 334.08,
+    "text": "What could happen is you probably have"
+  },
+  {
+    "segment_id": "yt-0155",
+    "start_seconds": 332.32,
+    "end_seconds": 336.8,
+    "text": "code owners especially if you're working"
+  },
+  {
+    "segment_id": "yt-0156",
+    "start_seconds": 334.08,
+    "end_seconds": 339.59999999999997,
+    "text": "in a mono repo and you have this giant"
+  },
+  {
+    "segment_id": "yt-0157",
+    "start_seconds": 336.8,
+    "end_seconds": 342.16,
+    "text": "PR. What ends up happening is you have"
+  },
+  {
+    "segment_id": "yt-0158",
+    "start_seconds": 339.6,
+    "end_seconds": 345.759,
+    "text": "multiple groups of code owners reviewing"
+  },
+  {
+    "segment_id": "yt-0159",
+    "start_seconds": 342.16,
+    "end_seconds": 348.0,
+    "text": "that single PR and it can get very"
+  },
+  {
+    "segment_id": "yt-0160",
+    "start_seconds": 345.759,
+    "end_seconds": 349.44,
+    "text": "complicated, very confusing and you got"
+  },
+  {
+    "segment_id": "yt-0161",
+    "start_seconds": 348.0,
+    "end_seconds": 352.16,
+    "text": "all sorts of threads you're trying to"
+  },
+  {
+    "segment_id": "yt-0162",
+    "start_seconds": 349.44,
+    "end_seconds": 353.68,
+    "text": "manage and it can be very confusing for"
+  },
+  {
+    "segment_id": "yt-0163",
+    "start_seconds": 352.16,
+    "end_seconds": 354.88000000000005,
+    "text": "both the reviewer and the person who's"
+  },
+  {
+    "segment_id": "yt-0164",
+    "start_seconds": 353.68,
+    "end_seconds": 356.8,
+    "text": "writing the code trying to figure out"
+  },
+  {
+    "segment_id": "yt-0165",
+    "start_seconds": 354.88,
+    "end_seconds": 358.32,
+    "text": "what's going on and then as you're"
+  },
+  {
+    "segment_id": "yt-0166",
+    "start_seconds": 356.8,
+    "end_seconds": 360.8,
+    "text": "making changes for everybody to follow"
+  },
+  {
+    "segment_id": "yt-0167",
+    "start_seconds": 358.32,
+    "end_seconds": 363.039,
+    "text": "along. The great thing about stacked PR"
+  },
+  {
+    "segment_id": "yt-0168",
+    "start_seconds": 360.8,
+    "end_seconds": 365.6,
+    "text": "is it breaks it up. So the way that I"
+  },
+  {
+    "segment_id": "yt-0169",
+    "start_seconds": 363.039,
+    "end_seconds": 368.0,
+    "text": "usually uh recommend folks to do uh"
+  },
+  {
+    "segment_id": "yt-0170",
+    "start_seconds": 365.6,
+    "end_seconds": 369.84000000000003,
+    "text": "stacking especially if they have like a"
+  },
+  {
+    "segment_id": "yt-0171",
+    "start_seconds": 368.0,
+    "end_seconds": 372.8,
+    "text": "large organization with code owner set"
+  },
+  {
+    "segment_id": "yt-0172",
+    "start_seconds": 369.84,
+    "end_seconds": 376.23999999999995,
+    "text": "up is to make sure each layer of the"
+  },
+  {
+    "segment_id": "yt-0173",
+    "start_seconds": 372.8,
+    "end_seconds": 378.72,
+    "text": "stack each PR targets one code owner. So"
+  },
+  {
+    "segment_id": "yt-0174",
+    "start_seconds": 376.24,
+    "end_seconds": 380.72,
+    "text": "again the database team or the API team"
+  },
+  {
+    "segment_id": "yt-0175",
+    "start_seconds": 378.72,
+    "end_seconds": 382.72,
+    "text": "or the front-end team or what have you."
+  },
+  {
+    "segment_id": "yt-0176",
+    "start_seconds": 380.72,
+    "end_seconds": 385.36,
+    "text": "And what that really makes it easy is"
+  },
+  {
+    "segment_id": "yt-0177",
+    "start_seconds": 382.72,
+    "end_seconds": 387.68,
+    "text": "that that code owning team now has their"
+  },
+  {
+    "segment_id": "yt-0178",
+    "start_seconds": 385.36,
+    "end_seconds": 389.52000000000004,
+    "text": "like one individual slice where they"
+  },
+  {
+    "segment_id": "yt-0179",
+    "start_seconds": 387.68,
+    "end_seconds": 392.08,
+    "text": "know all they need to review and you can"
+  },
+  {
+    "segment_id": "yt-0180",
+    "start_seconds": 389.52,
+    "end_seconds": 395.039,
+    "text": "just have that like uh focused"
+  },
+  {
+    "segment_id": "yt-0181",
+    "start_seconds": 392.08,
+    "end_seconds": 397.44,
+    "text": "conversation with that team in that PR"
+  },
+  {
+    "segment_id": "yt-0182",
+    "start_seconds": 395.039,
+    "end_seconds": 401.59999999999997,
+    "text": "instead of having everybody trying to"
+  },
+  {
+    "segment_id": "yt-0183",
+    "start_seconds": 397.44,
+    "end_seconds": 404.24,
+    "text": "comment on one giant PR. This isn't a"
+  },
+  {
+    "segment_id": "yt-0184",
+    "start_seconds": 401.6,
+    "end_seconds": 406.40000000000003,
+    "text": "new concept. This is this is something"
+  },
+  {
+    "segment_id": "yt-0185",
+    "start_seconds": 404.24,
+    "end_seconds": 408.639,
+    "text": "that that like we we have seen out in"
+  },
+  {
+    "segment_id": "yt-0186",
+    "start_seconds": 406.4,
+    "end_seconds": 410.71999999999997,
+    "text": "the industry that where it was an"
+  },
+  {
+    "segment_id": "yt-0187",
+    "start_seconds": 408.639,
+    "end_seconds": 413.039,
+    "text": "extension to GitHub or a tool on top of"
+  },
+  {
+    "segment_id": "yt-0188",
+    "start_seconds": 410.72,
+    "end_seconds": 414.639,
+    "text": "GitHub and stuff and"
+  },
+  {
+    "segment_id": "yt-0189",
+    "start_seconds": 413.039,
+    "end_seconds": 416.15999999999997,
+    "text": ">> there has been some commentary saying"
+  },
+  {
+    "segment_id": "yt-0190",
+    "start_seconds": 414.639,
+    "end_seconds": 418.319,
+    "text": "what took us so long."
+  },
+  {
+    "segment_id": "yt-0191",
+    "start_seconds": 416.16,
+    "end_seconds": 420.96000000000004,
+    "text": ">> I would love to you to for you to go"
+  },
+  {
+    "segment_id": "yt-0192",
+    "start_seconds": 418.319,
+    "end_seconds": 423.759,
+    "text": "into what took us so long [laughter]"
+  },
+  {
+    "segment_id": "yt-0193",
+    "start_seconds": 420.96,
+    "end_seconds": 427.039,
+    "text": ">> to build."
+  },
+  {
+    "segment_id": "yt-0194",
+    "start_seconds": 423.759,
+    "end_seconds": 429.36,
+    "text": ">> Yeah. you know, uh, there's been a lot"
+  },
+  {
+    "segment_id": "yt-0195",
+    "start_seconds": 427.039,
+    "end_seconds": 432.479,
+    "text": "that is needed to be done to make"
+  },
+  {
+    "segment_id": "yt-0196",
+    "start_seconds": 429.36,
+    "end_seconds": 434.24,
+    "text": "stacked PRs work. And I think crucially,"
+  },
+  {
+    "segment_id": "yt-0197",
+    "start_seconds": 432.479,
+    "end_seconds": 437.36,
+    "text": "you know, there because there have been"
+  },
+  {
+    "segment_id": "yt-0198",
+    "start_seconds": 434.24,
+    "end_seconds": 439.84000000000003,
+    "text": "so many other sort of third-party tools"
+  },
+  {
+    "segment_id": "yt-0199",
+    "start_seconds": 437.36,
+    "end_seconds": 441.84000000000003,
+    "text": "and plugins to make it happen, you know,"
+  },
+  {
+    "segment_id": "yt-0200",
+    "start_seconds": 439.84,
+    "end_seconds": 444.15999999999997,
+    "text": "we didn't want to just create another"
+  },
+  {
+    "segment_id": "yt-0201",
+    "start_seconds": 441.84,
+    "end_seconds": 446.31899999999996,
+    "text": "plugin. We really wanted to create an"
+  },
+  {
+    "segment_id": "yt-0202",
+    "start_seconds": 444.16,
+    "end_seconds": 448.319,
+    "text": "experience that felt native to GitHub"
+  },
+  {
+    "segment_id": "yt-0203",
+    "start_seconds": 446.319,
+    "end_seconds": 450.8,
+    "text": "and offered some really unique"
+  },
+  {
+    "segment_id": "yt-0204",
+    "start_seconds": 448.319,
+    "end_seconds": 453.28000000000003,
+    "text": "advantages. And we wanted to make sure"
+  },
+  {
+    "segment_id": "yt-0205",
+    "start_seconds": 450.8,
+    "end_seconds": 456.24,
+    "text": "that stacked PRs just worked, that there"
+  },
+  {
+    "segment_id": "yt-0206",
+    "start_seconds": 453.28,
+    "end_seconds": 457.75899999999996,
+    "text": "were no compromises, that you just say,"
+  },
+  {
+    "segment_id": "yt-0207",
+    "start_seconds": 456.24,
+    "end_seconds": 459.36,
+    "text": "I want to create a stack and you didn't"
+  },
+  {
+    "segment_id": "yt-0208",
+    "start_seconds": 457.759,
+    "end_seconds": 462.08000000000004,
+    "text": "have to update all your configurations"
+  },
+  {
+    "segment_id": "yt-0209",
+    "start_seconds": 459.36,
+    "end_seconds": 464.96000000000004,
+    "text": "and your rules, your actions, configs,"
+  },
+  {
+    "segment_id": "yt-0210",
+    "start_seconds": 462.08,
+    "end_seconds": 468.71999999999997,
+    "text": "it just worked. We also wanted to make"
+  },
+  {
+    "segment_id": "yt-0211",
+    "start_seconds": 464.96,
+    "end_seconds": 471.19899999999996,
+    "text": "sure that it um sort of supported this"
+  },
+  {
+    "segment_id": "yt-0212",
+    "start_seconds": 468.72,
+    "end_seconds": 472.8,
+    "text": "ability to merge multiple PRs at once. I"
+  },
+  {
+    "segment_id": "yt-0213",
+    "start_seconds": 471.199,
+    "end_seconds": 475.12,
+    "text": "think uh for folks who've used stacked"
+  },
+  {
+    "segment_id": "yt-0214",
+    "start_seconds": 472.8,
+    "end_seconds": 477.84000000000003,
+    "text": "PRs, uh if you haven't, highly encourage"
+  },
+  {
+    "segment_id": "yt-0215",
+    "start_seconds": 475.12,
+    "end_seconds": 479.84000000000003,
+    "text": "you to do so. Merging multiple PRs at"
+  },
+  {
+    "segment_id": "yt-0216",
+    "start_seconds": 477.84,
+    "end_seconds": 481.599,
+    "text": "once is actually uh extremely"
+  },
+  {
+    "segment_id": "yt-0217",
+    "start_seconds": 479.84,
+    "end_seconds": 483.84,
+    "text": "complicated especially when you're"
+  },
+  {
+    "segment_id": "yt-0218",
+    "start_seconds": 481.599,
+    "end_seconds": 485.759,
+    "text": "dealing with squash merges and really"
+  },
+  {
+    "segment_id": "yt-0219",
+    "start_seconds": 483.84,
+    "end_seconds": 487.28,
+    "text": "high throughput repos where merges are"
+  },
+  {
+    "segment_id": "yt-0220",
+    "start_seconds": 485.759,
+    "end_seconds": 489.199,
+    "text": "happening sometimes multiple times a"
+  },
+  {
+    "segment_id": "yt-0221",
+    "start_seconds": 487.28,
+    "end_seconds": 491.75899999999996,
+    "text": "second uh and some of our like biggest"
+  },
+  {
+    "segment_id": "yt-0222",
+    "start_seconds": 489.199,
+    "end_seconds": 494.24,
+    "text": "customers. So it's really important that"
+  },
+  {
+    "segment_id": "yt-0223",
+    "start_seconds": 491.759,
+    "end_seconds": 496.879,
+    "text": "we make sure that this just works"
+  },
+  {
+    "segment_id": "yt-0224",
+    "start_seconds": 494.24,
+    "end_seconds": 499.28000000000003,
+    "text": "properly. And so what we actually end up"
+  },
+  {
+    "segment_id": "yt-0225",
+    "start_seconds": 496.879,
+    "end_seconds": 501.91900000000004,
+    "text": "having to do is not only having to"
+  },
+  {
+    "segment_id": "yt-0226",
+    "start_seconds": 499.28,
+    "end_seconds": 504.479,
+    "text": "rewrite a ton of stuff across GitHub cuz"
+  },
+  {
+    "segment_id": "yt-0227",
+    "start_seconds": 501.919,
+    "end_seconds": 507.039,
+    "text": "you know PRs are in many ways the center"
+  },
+  {
+    "segment_id": "yt-0228",
+    "start_seconds": 504.479,
+    "end_seconds": 511.599,
+    "text": "of GitHub. Every other service that"
+  },
+  {
+    "segment_id": "yt-0229",
+    "start_seconds": 507.039,
+    "end_seconds": 513.36,
+    "text": "GitHub has sort of goes off of PRs. Uh"
+  },
+  {
+    "segment_id": "yt-0230",
+    "start_seconds": 511.599,
+    "end_seconds": 515.12,
+    "text": "but then also, you know, we need to make"
+  },
+  {
+    "segment_id": "yt-0231",
+    "start_seconds": 513.36,
+    "end_seconds": 516.719,
+    "text": "sure all of the the services that depend"
+  },
+  {
+    "segment_id": "yt-0232",
+    "start_seconds": 515.12,
+    "end_seconds": 518.8,
+    "text": "on it were updated as well."
+  },
+  {
+    "segment_id": "yt-0233",
+    "start_seconds": 516.719,
+    "end_seconds": 521.36,
+    "text": ">> Making something native native into a"
+  },
+  {
+    "segment_id": "yt-0234",
+    "start_seconds": 518.8,
+    "end_seconds": 523.4399999999999,
+    "text": "platform is not an easy thing to do."
+  },
+  {
+    "segment_id": "yt-0235",
+    "start_seconds": 521.36,
+    "end_seconds": 524.9590000000001,
+    "text": "It's it's it's something they were"
+  },
+  {
+    "segment_id": "yt-0236",
+    "start_seconds": 523.44,
+    "end_seconds": 526.48,
+    "text": "you're not only dealing with just"
+  },
+  {
+    "segment_id": "yt-0237",
+    "start_seconds": 524.959,
+    "end_seconds": 528.3199999999999,
+    "text": "different parts of the codebase but also"
+  },
+  {
+    "segment_id": "yt-0238",
+    "start_seconds": 526.48,
+    "end_seconds": 529.9200000000001,
+    "text": "legacy parts of the codebase. Do you"
+  },
+  {
+    "segment_id": "yt-0239",
+    "start_seconds": 528.32,
+    "end_seconds": 531.7600000000001,
+    "text": "know like what the oldest part of the"
+  },
+  {
+    "segment_id": "yt-0240",
+    "start_seconds": 529.92,
+    "end_seconds": 533.1999999999999,
+    "text": "codebase had to be updated for this cuz"
+  },
+  {
+    "segment_id": "yt-0241",
+    "start_seconds": 531.76,
+    "end_seconds": 534.3199999999999,
+    "text": "I'm sure there were so many different"
+  },
+  {
+    "segment_id": "yt-0242",
+    "start_seconds": 533.2,
+    "end_seconds": 537.519,
+    "text": "layers to go through."
+  },
+  {
+    "segment_id": "yt-0243",
+    "start_seconds": 534.32,
+    "end_seconds": 540.24,
+    "text": ">> Oh yeah. I think uh you know the way a"
+  },
+  {
+    "segment_id": "yt-0244",
+    "start_seconds": 537.519,
+    "end_seconds": 544.24,
+    "text": "PR is merged that is in a lot of ways"
+  },
+  {
+    "segment_id": "yt-0245",
+    "start_seconds": 540.24,
+    "end_seconds": 545.519,
+    "text": "like merging a PR is very standard. I"
+  },
+  {
+    "segment_id": "yt-0246",
+    "start_seconds": 544.24,
+    "end_seconds": 546.88,
+    "text": "think glue are touching parts of the"
+  },
+  {
+    "segment_id": "yt-0247",
+    "start_seconds": 545.519,
+    "end_seconds": 549.279,
+    "text": "code that hadn't been updated in at"
+  },
+  {
+    "segment_id": "yt-0248",
+    "start_seconds": 546.88,
+    "end_seconds": 550.959,
+    "text": "least a decade. And it's one of those"
+  },
+  {
+    "segment_id": "yt-0249",
+    "start_seconds": 549.279,
+    "end_seconds": 553.2,
+    "text": "things that like PRs have been around"
+  },
+  {
+    "segment_id": "yt-0250",
+    "start_seconds": 550.959,
+    "end_seconds": 555.1199999999999,
+    "text": "for a long time. So, you know, if it"
+  },
+  {
+    "segment_id": "yt-0251",
+    "start_seconds": 553.2,
+    "end_seconds": 557.6800000000001,
+    "text": "works, like it's solid and it's like"
+  },
+  {
+    "segment_id": "yt-0252",
+    "start_seconds": 555.12,
+    "end_seconds": 559.839,
+    "text": "stable core code and we need to go in"
+  },
+  {
+    "segment_id": "yt-0253",
+    "start_seconds": 557.68,
+    "end_seconds": 561.76,
+    "text": "there and and edit that. Um, yeah, for"
+  },
+  {
+    "segment_id": "yt-0254",
+    "start_seconds": 559.839,
+    "end_seconds": 562.5600000000001,
+    "text": "the first time in in quite a while."
+  },
+  {
+    "segment_id": "yt-0255",
+    "start_seconds": 561.76,
+    "end_seconds": 564.3199999999999,
+    "text": ">> It's scary,"
+  },
+  {
+    "segment_id": "yt-0256",
+    "start_seconds": 562.56,
+    "end_seconds": 566.4799999999999,
+    "text": ">> but that's Yeah, [laughter] that was"
+  },
+  {
+    "segment_id": "yt-0257",
+    "start_seconds": 564.32,
+    "end_seconds": 568.8000000000001,
+    "text": "terrifying. Sorry."
+  },
+  {
+    "segment_id": "yt-0258",
+    "start_seconds": 566.48,
+    "end_seconds": 571.9200000000001,
+    "text": "Well, and I know that like the merge box"
+  },
+  {
+    "segment_id": "yt-0259",
+    "start_seconds": 568.8,
+    "end_seconds": 573.4399999999999,
+    "text": "alone is such complex code and and what"
+  },
+  {
+    "segment_id": "yt-0260",
+    "start_seconds": 571.92,
+    "end_seconds": 575.279,
+    "text": "what is the merge box for those who"
+  },
+  {
+    "segment_id": "yt-0261",
+    "start_seconds": 573.44,
+    "end_seconds": 576.8000000000001,
+    "text": "don't know and please explain how"
+  },
+  {
+    "segment_id": "yt-0262",
+    "start_seconds": 575.279,
+    "end_seconds": 579.4399999999999,
+    "text": "complex that is because the more I learn"
+  },
+  {
+    "segment_id": "yt-0263",
+    "start_seconds": 576.8,
+    "end_seconds": 582.16,
+    "text": "about it, it it makes my head spin."
+  },
+  {
+    "segment_id": "yt-0264",
+    "start_seconds": 579.44,
+    "end_seconds": 584.48,
+    "text": ">> Yeah, you know, I never as a developer,"
+  },
+  {
+    "segment_id": "yt-0265",
+    "start_seconds": 582.16,
+    "end_seconds": 586.64,
+    "text": "as an end user of GitHub, I never truly"
+  },
+  {
+    "segment_id": "yt-0266",
+    "start_seconds": 584.48,
+    "end_seconds": 588.48,
+    "text": "appreciated how complex the merge box"
+  },
+  {
+    "segment_id": "yt-0267",
+    "start_seconds": 586.64,
+    "end_seconds": 590.64,
+    "text": "was. And then now being on the other"
+  },
+  {
+    "segment_id": "yt-0268",
+    "start_seconds": 588.48,
+    "end_seconds": 593.279,
+    "text": "side, I have a very different uh view"
+  },
+  {
+    "segment_id": "yt-0269",
+    "start_seconds": 590.64,
+    "end_seconds": 594.48,
+    "text": "and appreciation for the merge box. So,"
+  },
+  {
+    "segment_id": "yt-0270",
+    "start_seconds": 593.279,
+    "end_seconds": 596.0,
+    "text": "for those of you who aren't aware, the"
+  },
+  {
+    "segment_id": "yt-0271",
+    "start_seconds": 594.48,
+    "end_seconds": 599.04,
+    "text": "merge box, you know, at the bottom of"
+  },
+  {
+    "segment_id": "yt-0272",
+    "start_seconds": 596.0,
+    "end_seconds": 601.2,
+    "text": "PR, it tells you if your PR is ready to"
+  },
+  {
+    "segment_id": "yt-0273",
+    "start_seconds": 599.04,
+    "end_seconds": 602.56,
+    "text": "merge or not, which it sounds very"
+  },
+  {
+    "segment_id": "yt-0274",
+    "start_seconds": 601.2,
+    "end_seconds": 603.839,
+    "text": "straightforward when you think about it."
+  },
+  {
+    "segment_id": "yt-0275",
+    "start_seconds": 602.56,
+    "end_seconds": 605.92,
+    "text": "It's like, okay, like is it green? Is it"
+  },
+  {
+    "segment_id": "yt-0276",
+    "start_seconds": 603.839,
+    "end_seconds": 608.5600000000001,
+    "text": "red? Am I waiting for checks to finish?"
+  },
+  {
+    "segment_id": "yt-0277",
+    "start_seconds": 605.92,
+    "end_seconds": 611.04,
+    "text": "But there's actually so much that"
+  },
+  {
+    "segment_id": "yt-0278",
+    "start_seconds": 608.56,
+    "end_seconds": 612.7199999999999,
+    "text": "happens behind the scenes because"
+  },
+  {
+    "segment_id": "yt-0279",
+    "start_seconds": 611.04,
+    "end_seconds": 615.04,
+    "text": "there's of course like are your checks"
+  },
+  {
+    "segment_id": "yt-0280",
+    "start_seconds": 612.72,
+    "end_seconds": 616.88,
+    "text": "passing, are your bills passing? Uh do"
+  },
+  {
+    "segment_id": "yt-0281",
+    "start_seconds": 615.04,
+    "end_seconds": 618.959,
+    "text": "you have rules set up? Do you require an"
+  },
+  {
+    "segment_id": "yt-0282",
+    "start_seconds": 616.88,
+    "end_seconds": 620.56,
+    "text": "approval? And then of course, do you"
+  },
+  {
+    "segment_id": "yt-0283",
+    "start_seconds": 618.959,
+    "end_seconds": 622.0,
+    "text": "have conflicts? Do you need to resolve"
+  },
+  {
+    "segment_id": "yt-0284",
+    "start_seconds": 620.56,
+    "end_seconds": 624.959,
+    "text": "those conflicts? Are those conflicts"
+  },
+  {
+    "segment_id": "yt-0285",
+    "start_seconds": 622.0,
+    "end_seconds": 627.04,
+    "text": "automatically resol resolvable or do you"
+  },
+  {
+    "segment_id": "yt-0286",
+    "start_seconds": 624.959,
+    "end_seconds": 631.1999999999999,
+    "text": "need to do that in the command line? And"
+  },
+  {
+    "segment_id": "yt-0287",
+    "start_seconds": 627.04,
+    "end_seconds": 633.8389999999999,
+    "text": "there's u hundreds of conditions that we"
+  },
+  {
+    "segment_id": "yt-0288",
+    "start_seconds": 631.2,
+    "end_seconds": 635.76,
+    "text": "evaluate for. And the other thing that"
+  },
+  {
+    "segment_id": "yt-0289",
+    "start_seconds": 633.839,
+    "end_seconds": 638.72,
+    "text": "people may not realize is that it live"
+  },
+  {
+    "segment_id": "yt-0290",
+    "start_seconds": 635.76,
+    "end_seconds": 640.8,
+    "text": "updates. So as someone pushes a commit"
+  },
+  {
+    "segment_id": "yt-0291",
+    "start_seconds": 638.72,
+    "end_seconds": 643.519,
+    "text": "to their branch or you know someone"
+  },
+  {
+    "segment_id": "yt-0292",
+    "start_seconds": 640.8,
+    "end_seconds": 646.4799999999999,
+    "text": "submits an approval in another tab, it"
+  },
+  {
+    "segment_id": "yt-0293",
+    "start_seconds": 643.519,
+    "end_seconds": 648.24,
+    "text": "live reloads and auto updates. So"
+  },
+  {
+    "segment_id": "yt-0294",
+    "start_seconds": 646.48,
+    "end_seconds": 650.32,
+    "text": "basically what we're doing behind the"
+  },
+  {
+    "segment_id": "yt-0295",
+    "start_seconds": 648.24,
+    "end_seconds": 653.12,
+    "text": "scenes is you know backed behind GitHub"
+  },
+  {
+    "segment_id": "yt-0296",
+    "start_seconds": 650.32,
+    "end_seconds": 654.48,
+    "text": "of course is Git. There's a giant series"
+  },
+  {
+    "segment_id": "yt-0297",
+    "start_seconds": 653.12,
+    "end_seconds": 656.72,
+    "text": "of servers that we have that are"
+  },
+  {
+    "segment_id": "yt-0298",
+    "start_seconds": 654.48,
+    "end_seconds": 660.0,
+    "text": "constantly running git operations. So"
+  },
+  {
+    "segment_id": "yt-0299",
+    "start_seconds": 656.72,
+    "end_seconds": 662.5600000000001,
+    "text": "every time anything changes we are"
+  },
+  {
+    "segment_id": "yt-0300",
+    "start_seconds": 660.0,
+    "end_seconds": 665.68,
+    "text": "basically running a simulation of a git"
+  },
+  {
+    "segment_id": "yt-0301",
+    "start_seconds": 662.56,
+    "end_seconds": 667.76,
+    "text": "merge and trying to see okay does this"
+  },
+  {
+    "segment_id": "yt-0302",
+    "start_seconds": 665.68,
+    "end_seconds": 670.2399999999999,
+    "text": "commit actually pass? Is it are there"
+  },
+  {
+    "segment_id": "yt-0303",
+    "start_seconds": 667.76,
+    "end_seconds": 671.76,
+    "text": "merge conflicts? Does it like pass all"
+  },
+  {
+    "segment_id": "yt-0304",
+    "start_seconds": 670.24,
+    "end_seconds": 674.0790000000001,
+    "text": "the rules? you know, you could get"
+  },
+  {
+    "segment_id": "yt-0305",
+    "start_seconds": 671.76,
+    "end_seconds": 676.24,
+    "text": "really complicated with like making sure"
+  },
+  {
+    "segment_id": "yt-0306",
+    "start_seconds": 674.079,
+    "end_seconds": 679.279,
+    "text": "that the resulting commit has certain"
+  },
+  {
+    "segment_id": "yt-0307",
+    "start_seconds": 676.24,
+    "end_seconds": 682.16,
+    "text": "metadata, is it signed, etc. We could go"
+  },
+  {
+    "segment_id": "yt-0308",
+    "start_seconds": 679.279,
+    "end_seconds": 684.399,
+    "text": "on and on. Uh, and so that was already"
+  },
+  {
+    "segment_id": "yt-0309",
+    "start_seconds": 682.16,
+    "end_seconds": 686.64,
+    "text": "complicated as it is and it is a very"
+  },
+  {
+    "segment_id": "yt-0310",
+    "start_seconds": 684.399,
+    "end_seconds": 688.24,
+    "text": "core part of GitHub. Uh but then you"
+  },
+  {
+    "segment_id": "yt-0311",
+    "start_seconds": 686.64,
+    "end_seconds": 691.1999999999999,
+    "text": "also have stacked PRs which now"
+  },
+  {
+    "segment_id": "yt-0312",
+    "start_seconds": 688.24,
+    "end_seconds": 693.44,
+    "text": "introduces another layer of complexity"
+  },
+  {
+    "segment_id": "yt-0313",
+    "start_seconds": 691.2,
+    "end_seconds": 696.0,
+    "text": "and dependencies because in order to"
+  },
+  {
+    "segment_id": "yt-0314",
+    "start_seconds": 693.44,
+    "end_seconds": 698.0790000000001,
+    "text": "merge a stack you essentially need to"
+  },
+  {
+    "segment_id": "yt-0315",
+    "start_seconds": 696.0,
+    "end_seconds": 700.56,
+    "text": "make sure not only that your current PR"
+  },
+  {
+    "segment_id": "yt-0316",
+    "start_seconds": 698.079,
+    "end_seconds": 702.88,
+    "text": "is good but that all the PRs below it"
+  },
+  {
+    "segment_id": "yt-0317",
+    "start_seconds": 700.56,
+    "end_seconds": 704.2399999999999,
+    "text": "are green as well. Uh so now you're not"
+  },
+  {
+    "segment_id": "yt-0318",
+    "start_seconds": 702.88,
+    "end_seconds": 706.399,
+    "text": "only checking for the state of one PR"
+  },
+  {
+    "segment_id": "yt-0319",
+    "start_seconds": 704.24,
+    "end_seconds": 709.44,
+    "text": "but potentially up to 100 PRs."
+  },
+  {
+    "segment_id": "yt-0320",
+    "start_seconds": 706.399,
+    "end_seconds": 711.279,
+    "text": ">> It goes so deep and the the the like"
+  },
+  {
+    "segment_id": "yt-0321",
+    "start_seconds": 709.44,
+    "end_seconds": 713.7600000000001,
+    "text": "ghost merge behind the scenes is the"
+  },
+  {
+    "segment_id": "yt-0322",
+    "start_seconds": 711.279,
+    "end_seconds": 715.76,
+    "text": "thing that blew my mind the most. I I"
+  },
+  {
+    "segment_id": "yt-0323",
+    "start_seconds": 713.76,
+    "end_seconds": 718.48,
+    "text": "just didn't know that that is how that"
+  },
+  {
+    "segment_id": "yt-0324",
+    "start_seconds": 715.76,
+    "end_seconds": 720.959,
+    "text": "worked. And that is so much compute just"
+  },
+  {
+    "segment_id": "yt-0325",
+    "start_seconds": 718.48,
+    "end_seconds": 722.88,
+    "text": "to make sure something can be merged."
+  },
+  {
+    "segment_id": "yt-0326",
+    "start_seconds": 720.959,
+    "end_seconds": 724.8,
+    "text": "It's it's really interesting."
+  },
+  {
+    "segment_id": "yt-0327",
+    "start_seconds": 722.88,
+    "end_seconds": 727.36,
+    "text": ">> Yeah, it's one of those things that"
+  },
+  {
+    "segment_id": "yt-0328",
+    "start_seconds": 724.8,
+    "end_seconds": 730.3199999999999,
+    "text": "again we really want to make this a"
+  },
+  {
+    "segment_id": "yt-0329",
+    "start_seconds": 727.36,
+    "end_seconds": 732.16,
+    "text": "seamless experience for the end user. So"
+  },
+  {
+    "segment_id": "yt-0330",
+    "start_seconds": 730.32,
+    "end_seconds": 733.7600000000001,
+    "text": "it's not something people should have to"
+  },
+  {
+    "segment_id": "yt-0331",
+    "start_seconds": 732.16,
+    "end_seconds": 736.079,
+    "text": "think about because GitHub is just doing"
+  },
+  {
+    "segment_id": "yt-0332",
+    "start_seconds": 733.76,
+    "end_seconds": 737.279,
+    "text": "it behind the scenes. But it's one of"
+  },
+  {
+    "segment_id": "yt-0333",
+    "start_seconds": 736.079,
+    "end_seconds": 741.279,
+    "text": "those things that when you are working"
+  },
+  {
+    "segment_id": "yt-0334",
+    "start_seconds": 737.279,
+    "end_seconds": 743.4399999999999,
+    "text": "on a a new feature like stacked PRs, it"
+  },
+  {
+    "segment_id": "yt-0335",
+    "start_seconds": 741.279,
+    "end_seconds": 745.519,
+    "text": "literally exponentially increases the"
+  },
+  {
+    "segment_id": "yt-0336",
+    "start_seconds": 743.44,
+    "end_seconds": 747.2,
+    "text": "complexity of something like that. And"
+  },
+  {
+    "segment_id": "yt-0337",
+    "start_seconds": 745.519,
+    "end_seconds": 748.72,
+    "text": "and those are the types of things that"
+  },
+  {
+    "segment_id": "yt-0338",
+    "start_seconds": 747.2,
+    "end_seconds": 750.9590000000001,
+    "text": "like we really need to make sure that"
+  },
+  {
+    "segment_id": "yt-0339",
+    "start_seconds": 748.72,
+    "end_seconds": 753.6,
+    "text": "not only do we did that properly to make"
+  },
+  {
+    "segment_id": "yt-0340",
+    "start_seconds": 750.959,
+    "end_seconds": 755.76,
+    "text": "sure like security uh is is in place,"
+  },
+  {
+    "segment_id": "yt-0341",
+    "start_seconds": 753.6,
+    "end_seconds": 756.72,
+    "text": "but also making sure it's reliable and"
+  },
+  {
+    "segment_id": "yt-0342",
+    "start_seconds": 755.76,
+    "end_seconds": 758.639,
+    "text": "available as well."
+  },
+  {
+    "segment_id": "yt-0343",
+    "start_seconds": 756.72,
+    "end_seconds": 760.399,
+    "text": ">> I love this. How did you go from like"
+  },
+  {
+    "segment_id": "yt-0344",
+    "start_seconds": 758.639,
+    "end_seconds": 762.8,
+    "text": "someone on the internet say they wanted"
+  },
+  {
+    "segment_id": "yt-0345",
+    "start_seconds": 760.399,
+    "end_seconds": 765.12,
+    "text": "this to actually make it happen? I"
+  },
+  {
+    "segment_id": "yt-0346",
+    "start_seconds": 762.8,
+    "end_seconds": 767.1999999999999,
+    "text": "actually started in GitHub in January."
+  },
+  {
+    "segment_id": "yt-0347",
+    "start_seconds": 765.12,
+    "end_seconds": 770.32,
+    "text": "So by the time I joined the stacked PRs"
+  },
+  {
+    "segment_id": "yt-0348",
+    "start_seconds": 767.2,
+    "end_seconds": 772.9590000000001,
+    "text": "project was already uh sort of green lit"
+  },
+  {
+    "segment_id": "yt-0349",
+    "start_seconds": 770.32,
+    "end_seconds": 774.88,
+    "text": "and there was a lot of interest already"
+  },
+  {
+    "segment_id": "yt-0350",
+    "start_seconds": 772.959,
+    "end_seconds": 777.4399999999999,
+    "text": "that been building up behind stacked"
+  },
+  {
+    "segment_id": "yt-0351",
+    "start_seconds": 774.88,
+    "end_seconds": 779.4399999999999,
+    "text": "PRs. What I will say is that there's"
+  },
+  {
+    "segment_id": "yt-0352",
+    "start_seconds": 777.44,
+    "end_seconds": 782.639,
+    "text": "actually been different attempts over"
+  },
+  {
+    "segment_id": "yt-0353",
+    "start_seconds": 779.44,
+    "end_seconds": 784.0790000000001,
+    "text": "the years at running stacked PRs in"
+  },
+  {
+    "segment_id": "yt-0354",
+    "start_seconds": 782.639,
+    "end_seconds": 785.279,
+    "text": "GitHub. This is actually I think the"
+  },
+  {
+    "segment_id": "yt-0355",
+    "start_seconds": 784.079,
+    "end_seconds": 786.8,
+    "text": "third or fourth attempt that we've"
+  },
+  {
+    "segment_id": "yt-0356",
+    "start_seconds": 785.279,
+    "end_seconds": 790.16,
+    "text": ">> I was going to say I saw there was an"
+  },
+  {
+    "segment_id": "yt-0357",
+    "start_seconds": 786.8,
+    "end_seconds": 792.7199999999999,
+    "text": "attempt in like 2022 at some point too."
+  },
+  {
+    "segment_id": "yt-0358",
+    "start_seconds": 790.16,
+    "end_seconds": 794.959,
+    "text": "Yeah, I think there's been various types"
+  },
+  {
+    "segment_id": "yt-0359",
+    "start_seconds": 792.72,
+    "end_seconds": 797.0400000000001,
+    "text": "of attempts, some that tried to approach"
+  },
+  {
+    "segment_id": "yt-0360",
+    "start_seconds": 794.959,
+    "end_seconds": 798.959,
+    "text": "this as a completely different concept,"
+  },
+  {
+    "segment_id": "yt-0361",
+    "start_seconds": 797.04,
+    "end_seconds": 801.76,
+    "text": "something outside of PR, something that"
+  },
+  {
+    "segment_id": "yt-0362",
+    "start_seconds": 798.959,
+    "end_seconds": 805.4399999999999,
+    "text": "was very much related to get refs and"
+  },
+  {
+    "segment_id": "yt-0363",
+    "start_seconds": 801.76,
+    "end_seconds": 807.36,
+    "text": "essentially will we end up with the"
+  },
+  {
+    "segment_id": "yt-0364",
+    "start_seconds": 805.44,
+    "end_seconds": 809.2,
+    "text": "current iteration and the reason why it"
+  },
+  {
+    "segment_id": "yt-0365",
+    "start_seconds": 807.36,
+    "end_seconds": 811.6800000000001,
+    "text": "worked is we decided to stick with the"
+  },
+  {
+    "segment_id": "yt-0366",
+    "start_seconds": 809.2,
+    "end_seconds": 814.8000000000001,
+    "text": "core PR model instead of breaking away"
+  },
+  {
+    "segment_id": "yt-0367",
+    "start_seconds": 811.68,
+    "end_seconds": 817.1999999999999,
+    "text": "from the PR model which you know has"
+  },
+  {
+    "segment_id": "yt-0368",
+    "start_seconds": 814.8,
+    "end_seconds": 819.5999999999999,
+    "text": "definitely its benefits but ultimately"
+  },
+  {
+    "segment_id": "yt-0369",
+    "start_seconds": 817.2,
+    "end_seconds": 822.48,
+    "text": "required so much rebuilding."
+  },
+  {
+    "segment_id": "yt-0370",
+    "start_seconds": 819.6,
+    "end_seconds": 824.5600000000001,
+    "text": "that it just was too expensive and and"
+  },
+  {
+    "segment_id": "yt-0371",
+    "start_seconds": 822.48,
+    "end_seconds": 825.6,
+    "text": "too complicated, especially in in such a"
+  },
+  {
+    "segment_id": "yt-0372",
+    "start_seconds": 824.56,
+    "end_seconds": 828.3199999999999,
+    "text": "big system."
+  },
+  {
+    "segment_id": "yt-0373",
+    "start_seconds": 825.6,
+    "end_seconds": 830.9590000000001,
+    "text": ">> With PRs, what we decided to do was sort"
+  },
+  {
+    "segment_id": "yt-0374",
+    "start_seconds": 828.32,
+    "end_seconds": 833.36,
+    "text": "of use the existing PR concept that we"
+  },
+  {
+    "segment_id": "yt-0375",
+    "start_seconds": 830.959,
+    "end_seconds": 835.5189999999999,
+    "text": "have today and allow you to group it and"
+  },
+  {
+    "segment_id": "yt-0376",
+    "start_seconds": 833.36,
+    "end_seconds": 837.44,
+    "text": "group it as stacks, but of course make"
+  },
+  {
+    "segment_id": "yt-0377",
+    "start_seconds": 835.519,
+    "end_seconds": 839.36,
+    "text": "sure it natively works with all of"
+  },
+  {
+    "segment_id": "yt-0378",
+    "start_seconds": 837.44,
+    "end_seconds": 841.6800000000001,
+    "text": "GitHub. So I think that was really one"
+  },
+  {
+    "segment_id": "yt-0379",
+    "start_seconds": 839.36,
+    "end_seconds": 844.48,
+    "text": "of the core architectural decisions that"
+  },
+  {
+    "segment_id": "yt-0380",
+    "start_seconds": 841.68,
+    "end_seconds": 848.8,
+    "text": "allowed us to move forward with stacked"
+  },
+  {
+    "segment_id": "yt-0381",
+    "start_seconds": 844.48,
+    "end_seconds": 851.519,
+    "text": "PRs in a uh more approachable way."
+  },
+  {
+    "segment_id": "yt-0382",
+    "start_seconds": 848.8,
+    "end_seconds": 853.12,
+    "text": ">> Did that lead to any negative trade-offs"
+  },
+  {
+    "segment_id": "yt-0383",
+    "start_seconds": 851.519,
+    "end_seconds": 855.199,
+    "text": "besides just dealing with the mountain"
+  },
+  {
+    "segment_id": "yt-0384",
+    "start_seconds": 853.12,
+    "end_seconds": 857.6,
+    "text": "of legacy or was that just really the"
+  },
+  {
+    "segment_id": "yt-0385",
+    "start_seconds": 855.199,
+    "end_seconds": 859.8389999999999,
+    "text": "right decision that was clear over time?"
+  },
+  {
+    "segment_id": "yt-0386",
+    "start_seconds": 857.6,
+    "end_seconds": 861.9200000000001,
+    "text": ">> Yeah, I mean you're we're obviously"
+  },
+  {
+    "segment_id": "yt-0387",
+    "start_seconds": 859.839,
+    "end_seconds": 864.399,
+    "text": "taking an existing model of pull"
+  },
+  {
+    "segment_id": "yt-0388",
+    "start_seconds": 861.92,
+    "end_seconds": 867.12,
+    "text": "requests and we are overloading it to to"
+  },
+  {
+    "segment_id": "yt-0389",
+    "start_seconds": 864.399,
+    "end_seconds": 868.88,
+    "text": "some extent. uh like one of the one of"
+  },
+  {
+    "segment_id": "yt-0390",
+    "start_seconds": 867.12,
+    "end_seconds": 870.639,
+    "text": "the interesting things that we we have"
+  },
+  {
+    "segment_id": "yt-0391",
+    "start_seconds": 868.88,
+    "end_seconds": 873.199,
+    "text": "to change as part of stat pull requests"
+  },
+  {
+    "segment_id": "yt-0392",
+    "start_seconds": 870.639,
+    "end_seconds": 875.44,
+    "text": "is generally when you when you have a PR"
+  },
+  {
+    "segment_id": "yt-0393",
+    "start_seconds": 873.199,
+    "end_seconds": 877.4399999999999,
+    "text": "your PR has a base or a target and it's"
+  },
+  {
+    "segment_id": "yt-0394",
+    "start_seconds": 875.44,
+    "end_seconds": 880.32,
+    "text": "assumed well you know that PR is going"
+  },
+  {
+    "segment_id": "yt-0395",
+    "start_seconds": 877.44,
+    "end_seconds": 882.48,
+    "text": "to merge into that target and there's"
+  },
+  {
+    "segment_id": "yt-0396",
+    "start_seconds": 880.32,
+    "end_seconds": 884.399,
+    "text": "logic in a gajillion different services"
+  },
+  {
+    "segment_id": "yt-0397",
+    "start_seconds": 882.48,
+    "end_seconds": 886.639,
+    "text": "across the board that literally assume"
+  },
+  {
+    "segment_id": "yt-0398",
+    "start_seconds": 884.399,
+    "end_seconds": 888.959,
+    "text": "that with stacked PRs we kind of"
+  },
+  {
+    "segment_id": "yt-0399",
+    "start_seconds": 886.639,
+    "end_seconds": 892.32,
+    "text": "introduced this new concept where you"
+  },
+  {
+    "segment_id": "yt-0400",
+    "start_seconds": 888.959,
+    "end_seconds": 896.079,
+    "text": "can have a base of a PR uh for example"
+  },
+  {
+    "segment_id": "yt-0401",
+    "start_seconds": 892.32,
+    "end_seconds": 897.6,
+    "text": "like PR2 is targeting PR1 one, but the"
+  },
+  {
+    "segment_id": "yt-0402",
+    "start_seconds": 896.079,
+    "end_seconds": 899.12,
+    "text": "merge target is actually different"
+  },
+  {
+    "segment_id": "yt-0403",
+    "start_seconds": 897.6,
+    "end_seconds": 900.639,
+    "text": "because the merge target is your main"
+  },
+  {
+    "segment_id": "yt-0404",
+    "start_seconds": 899.12,
+    "end_seconds": 903.36,
+    "text": "branch. And so you could have all these"
+  },
+  {
+    "segment_id": "yt-0405",
+    "start_seconds": 900.639,
+    "end_seconds": 904.8,
+    "text": "different PRs where the bases don't"
+  },
+  {
+    "segment_id": "yt-0406",
+    "start_seconds": 903.36,
+    "end_seconds": 907.519,
+    "text": "actually line up with their merge"
+  },
+  {
+    "segment_id": "yt-0407",
+    "start_seconds": 904.8,
+    "end_seconds": 908.7199999999999,
+    "text": "targets. Uh, and so that was a whole"
+  },
+  {
+    "segment_id": "yt-0408",
+    "start_seconds": 907.519,
+    "end_seconds": 909.76,
+    "text": "undertaking. That's probably one of the"
+  },
+  {
+    "segment_id": "yt-0409",
+    "start_seconds": 908.72,
+    "end_seconds": 912.0,
+    "text": "biggest things that we had to cuz that"
+  },
+  {
+    "segment_id": "yt-0410",
+    "start_seconds": 909.76,
+    "end_seconds": 912.24,
+    "text": "was like a"
+  },
+  {
+    "segment_id": "yt-0411",
+    "start_seconds": 912.0,
+    "end_seconds": 913.519,
+    "text": ">> Yeah."
+  },
+  {
+    "segment_id": "yt-0412",
+    "start_seconds": 912.24,
+    "end_seconds": 916.639,
+    "text": ">> Yeah. Because it's not pointing at a"
+  },
+  {
+    "segment_id": "yt-0413",
+    "start_seconds": 913.519,
+    "end_seconds": 916.9590000000001,
+    "text": "branch, it's pointing at a PR."
+  },
+  {
+    "segment_id": "yt-0414",
+    "start_seconds": 916.639,
+    "end_seconds": 918.48,
+    "text": ">> Exactly."
+  },
+  {
+    "segment_id": "yt-0415",
+    "start_seconds": 916.959,
+    "end_seconds": 920.16,
+    "text": ">> That's a whole new data structure. Oh, I"
+  },
+  {
+    "segment_id": "yt-0416",
+    "start_seconds": 918.48,
+    "end_seconds": 922.72,
+    "text": "didn't even consider that. [laughter]"
+  },
+  {
+    "segment_id": "yt-0417",
+    "start_seconds": 920.16,
+    "end_seconds": 924.88,
+    "text": ">> It was It was quite a huge undertaking."
+  },
+  {
+    "segment_id": "yt-0418",
+    "start_seconds": 922.72,
+    "end_seconds": 926.24,
+    "text": "And so I think there were definitely"
+  },
+  {
+    "segment_id": "yt-0419",
+    "start_seconds": 924.88,
+    "end_seconds": 928.8,
+    "text": "like those are some of the the"
+  },
+  {
+    "segment_id": "yt-0420",
+    "start_seconds": 926.24,
+    "end_seconds": 932.32,
+    "text": "trade-offs that we had to make and we"
+  },
+  {
+    "segment_id": "yt-0421",
+    "start_seconds": 928.8,
+    "end_seconds": 935.519,
+    "text": "definitely had to go and make a bunch of"
+  },
+  {
+    "segment_id": "yt-0422",
+    "start_seconds": 932.32,
+    "end_seconds": 936.88,
+    "text": "new APIs, update a bunch of services."
+  },
+  {
+    "segment_id": "yt-0423",
+    "start_seconds": 935.519,
+    "end_seconds": 939.36,
+    "text": "You know, one of the things that we had"
+  },
+  {
+    "segment_id": "yt-0424",
+    "start_seconds": 936.88,
+    "end_seconds": 941.4399999999999,
+    "text": "to do also as part of u you know stacked"
+  },
+  {
+    "segment_id": "yt-0425",
+    "start_seconds": 939.36,
+    "end_seconds": 944.16,
+    "text": "pull requests is that we had to create"
+  },
+  {
+    "segment_id": "yt-0426",
+    "start_seconds": 941.44,
+    "end_seconds": 945.839,
+    "text": "an entirely new merge path essentially."
+  },
+  {
+    "segment_id": "yt-0427",
+    "start_seconds": 944.16,
+    "end_seconds": 948.48,
+    "text": "uh and that meant as part of that"
+  },
+  {
+    "segment_id": "yt-0428",
+    "start_seconds": 945.839,
+    "end_seconds": 950.5600000000001,
+    "text": "operation like the the existing APIs"
+  },
+  {
+    "segment_id": "yt-0429",
+    "start_seconds": 948.48,
+    "end_seconds": 954.16,
+    "text": "that we gave to our customers and to"
+  },
+  {
+    "segment_id": "yt-0430",
+    "start_seconds": 950.56,
+    "end_seconds": 956.6389999999999,
+    "text": "other platforms uh to merge PRs wouldn't"
+  },
+  {
+    "segment_id": "yt-0431",
+    "start_seconds": 954.16,
+    "end_seconds": 958.3199999999999,
+    "text": "work because those APIs were synchronous"
+  },
+  {
+    "segment_id": "yt-0432",
+    "start_seconds": 956.639,
+    "end_seconds": 960.5600000000001,
+    "text": "and they would time out in 10 seconds"
+  },
+  {
+    "segment_id": "yt-0433",
+    "start_seconds": 958.32,
+    "end_seconds": 962.639,
+    "text": "and stacked PRs especially if you have a"
+  },
+  {
+    "segment_id": "yt-0434",
+    "start_seconds": 960.56,
+    "end_seconds": 965.199,
+    "text": "huge stack will definitely take longer"
+  },
+  {
+    "segment_id": "yt-0435",
+    "start_seconds": 962.639,
+    "end_seconds": 966.639,
+    "text": "than 10 seconds. Uh and so we had to"
+  },
+  {
+    "segment_id": "yt-0436",
+    "start_seconds": 965.199,
+    "end_seconds": 968.959,
+    "text": "create a new API that's like"
+  },
+  {
+    "segment_id": "yt-0437",
+    "start_seconds": 966.639,
+    "end_seconds": 970.9590000000001,
+    "text": "asynchronous and so we had to you know"
+  },
+  {
+    "segment_id": "yt-0438",
+    "start_seconds": 968.959,
+    "end_seconds": 972.6389999999999,
+    "text": "ask folks to move over. So there were"
+  },
+  {
+    "segment_id": "yt-0439",
+    "start_seconds": 970.959,
+    "end_seconds": 975.5189999999999,
+    "text": "definitely a number of trade-offs that"
+  },
+  {
+    "segment_id": "yt-0440",
+    "start_seconds": 972.639,
+    "end_seconds": 978.0790000000001,
+    "text": "we had to make but I think ultimately"
+  },
+  {
+    "segment_id": "yt-0441",
+    "start_seconds": 975.519,
+    "end_seconds": 981.759,
+    "text": "sort of sticking with PRs even though it"
+  },
+  {
+    "segment_id": "yt-0442",
+    "start_seconds": 978.079,
+    "end_seconds": 984.959,
+    "text": "definitely is not perfect sort of gave"
+  },
+  {
+    "segment_id": "yt-0443",
+    "start_seconds": 981.759,
+    "end_seconds": 987.519,
+    "text": "us the best path forward that still you"
+  },
+  {
+    "segment_id": "yt-0444",
+    "start_seconds": 984.959,
+    "end_seconds": 990.399,
+    "text": "know used familiar concepts that users"
+  },
+  {
+    "segment_id": "yt-0445",
+    "start_seconds": 987.519,
+    "end_seconds": 992.9590000000001,
+    "text": "and platforms and you know agents are"
+  },
+  {
+    "segment_id": "yt-0446",
+    "start_seconds": 990.399,
+    "end_seconds": 994.72,
+    "text": "familiar with as well uh and then sort"
+  },
+  {
+    "segment_id": "yt-0447",
+    "start_seconds": 992.959,
+    "end_seconds": 996.2399999999999,
+    "text": "of applying this additional concept on"
+  },
+  {
+    "segment_id": "yt-0448",
+    "start_seconds": 994.72,
+    "end_seconds": 998.24,
+    "text": "top of instead of trying to rebuild"
+  },
+  {
+    "segment_id": "yt-0449",
+    "start_seconds": 996.24,
+    "end_seconds": 1000.0790000000001,
+    "text": "something entirely. Yeah, I didn't even"
+  },
+  {
+    "segment_id": "yt-0450",
+    "start_seconds": 998.24,
+    "end_seconds": 1001.519,
+    "text": "consider that API end too. There there"
+  },
+  {
+    "segment_id": "yt-0451",
+    "start_seconds": 1000.079,
+    "end_seconds": 1003.8389999999999,
+    "text": "are so many things that you don't think"
+  },
+  {
+    "segment_id": "yt-0452",
+    "start_seconds": 1001.519,
+    "end_seconds": 1006.48,
+    "text": "about until you have to think about it."
+  },
+  {
+    "segment_id": "yt-0453",
+    "start_seconds": 1003.839,
+    "end_seconds": 1008.0790000000001,
+    "text": "And that's why it takes so long. There's"
+  },
+  {
+    "segment_id": "yt-0454",
+    "start_seconds": 1006.48,
+    "end_seconds": 1009.04,
+    "text": "there's so much legacy and so many"
+  },
+  {
+    "segment_id": "yt-0455",
+    "start_seconds": 1008.079,
+    "end_seconds": 1010.56,
+    "text": "things to do."
+  },
+  {
+    "segment_id": "yt-0456",
+    "start_seconds": 1009.04,
+    "end_seconds": 1012.16,
+    "text": ">> Oh, for sure. I mean, from the outside,"
+  },
+  {
+    "segment_id": "yt-0457",
+    "start_seconds": 1010.56,
+    "end_seconds": 1014.88,
+    "text": "most people are like, what's you know,"
+  },
+  {
+    "segment_id": "yt-0458",
+    "start_seconds": 1012.16,
+    "end_seconds": 1015.68,
+    "text": "it's just like show"
+  },
+  {
+    "segment_id": "yt-0459",
+    "start_seconds": 1014.88,
+    "end_seconds": 1017.759,
+    "text": "each other"
+  },
+  {
+    "segment_id": "yt-0460",
+    "start_seconds": 1015.68,
+    "end_seconds": 1019.04,
+    "text": ">> and merge them together. [laughter] Like"
+  },
+  {
+    "segment_id": "yt-0461",
+    "start_seconds": 1017.759,
+    "end_seconds": 1020.5600000000001,
+    "text": "I'm sure there's a lot of folks that"
+  },
+  {
+    "segment_id": "yt-0462",
+    "start_seconds": 1019.04,
+    "end_seconds": 1022.7199999999999,
+    "text": "have a lot of misconceptions about how"
+  },
+  {
+    "segment_id": "yt-0463",
+    "start_seconds": 1020.56,
+    "end_seconds": 1024.6399999999999,
+    "text": "things work internally and everything"
+  },
+  {
+    "segment_id": "yt-0464",
+    "start_seconds": 1022.72,
+    "end_seconds": 1026.48,
+    "text": "that needed to be changed and updated to"
+  },
+  {
+    "segment_id": "yt-0465",
+    "start_seconds": 1024.64,
+    "end_seconds": 1027.76,
+    "text": "make this work and to make it not just"
+  },
+  {
+    "segment_id": "yt-0466",
+    "start_seconds": 1026.48,
+    "end_seconds": 1029.3600000000001,
+    "text": "to make it work though. And I appreciate"
+  },
+  {
+    "segment_id": "yt-0467",
+    "start_seconds": 1027.76,
+    "end_seconds": 1032.559,
+    "text": "you mentioned that earlier Sam that you"
+  },
+  {
+    "segment_id": "yt-0468",
+    "start_seconds": 1029.36,
+    "end_seconds": 1034.8799999999999,
+    "text": "wanted this to be like a uh just a part"
+  },
+  {
+    "segment_id": "yt-0469",
+    "start_seconds": 1032.559,
+    "end_seconds": 1037.199,
+    "text": "of the platform itself like a first"
+  },
+  {
+    "segment_id": "yt-0470",
+    "start_seconds": 1034.88,
+    "end_seconds": 1039.7600000000002,
+    "text": "first class citizen like first support"
+  },
+  {
+    "segment_id": "yt-0471",
+    "start_seconds": 1037.199,
+    "end_seconds": 1042.72,
+    "text": "not just tagged on as an extension or"
+  },
+  {
+    "segment_id": "yt-0472",
+    "start_seconds": 1039.76,
+    "end_seconds": 1044.24,
+    "text": "another tool or like a and it does feel"
+  },
+  {
+    "segment_id": "yt-0473",
+    "start_seconds": 1042.72,
+    "end_seconds": 1047.919,
+    "text": "like that. It feels like it's very much"
+  },
+  {
+    "segment_id": "yt-0474",
+    "start_seconds": 1044.24,
+    "end_seconds": 1050.4,
+    "text": "part of of the pull request. um it just"
+  },
+  {
+    "segment_id": "yt-0475",
+    "start_seconds": 1047.919,
+    "end_seconds": 1054.4,
+    "text": "feels very native to the platform now."
+  },
+  {
+    "segment_id": "yt-0476",
+    "start_seconds": 1050.4,
+    "end_seconds": 1057.2,
+    "text": "Um awesome. So for folks who already"
+  },
+  {
+    "segment_id": "yt-0477",
+    "start_seconds": 1054.4,
+    "end_seconds": 1060.5590000000002,
+    "text": "were using other things like they had"
+  },
+  {
+    "segment_id": "yt-0478",
+    "start_seconds": 1057.2,
+    "end_seconds": 1063.52,
+    "text": "other hacks or ways be it a an external"
+  },
+  {
+    "segment_id": "yt-0479",
+    "start_seconds": 1060.559,
+    "end_seconds": 1066.0,
+    "text": "plugin or they were they were making it"
+  },
+  {
+    "segment_id": "yt-0480",
+    "start_seconds": 1063.52,
+    "end_seconds": 1067.76,
+    "text": "work. Um I guess what's one thing that"
+  },
+  {
+    "segment_id": "yt-0481",
+    "start_seconds": 1066.0,
+    "end_seconds": 1071.12,
+    "text": "they can expect now when they start"
+  },
+  {
+    "segment_id": "yt-0482",
+    "start_seconds": 1067.76,
+    "end_seconds": 1073.36,
+    "text": "using um stock PRs as it is now a part"
+  },
+  {
+    "segment_id": "yt-0483",
+    "start_seconds": 1071.12,
+    "end_seconds": 1075.12,
+    "text": "of the platform and you yourself I don't"
+  },
+  {
+    "segment_id": "yt-0484",
+    "start_seconds": 1073.36,
+    "end_seconds": 1076.9599999999998,
+    "text": "know if before did you do you have a way"
+  },
+  {
+    "segment_id": "yt-0485",
+    "start_seconds": 1075.12,
+    "end_seconds": 1079.039,
+    "text": "that you were doing this before and now"
+  },
+  {
+    "segment_id": "yt-0486",
+    "start_seconds": 1076.96,
+    "end_seconds": 1081.3600000000001,
+    "text": "like is there anything that you can"
+  },
+  {
+    "segment_id": "yt-0487",
+    "start_seconds": 1079.039,
+    "end_seconds": 1084.08,
+    "text": "share about how that's changed or what"
+  },
+  {
+    "segment_id": "yt-0488",
+    "start_seconds": 1081.36,
+    "end_seconds": 1085.28,
+    "text": "can people expect I guess to be the the"
+  },
+  {
+    "segment_id": "yt-0489",
+    "start_seconds": 1084.08,
+    "end_seconds": 1088.48,
+    "text": "biggest difference?"
+  },
+  {
+    "segment_id": "yt-0490",
+    "start_seconds": 1085.28,
+    "end_seconds": 1090.08,
+    "text": ">> Yeah. um for folks who are maybe who may"
+  },
+  {
+    "segment_id": "yt-0491",
+    "start_seconds": 1088.48,
+    "end_seconds": 1092.72,
+    "text": "be using these other tools and now sort"
+  },
+  {
+    "segment_id": "yt-0492",
+    "start_seconds": 1090.08,
+    "end_seconds": 1094.48,
+    "text": "of looking at GitHub stack PRs, I think"
+  },
+  {
+    "segment_id": "yt-0493",
+    "start_seconds": 1092.72,
+    "end_seconds": 1097.1200000000001,
+    "text": "one of the best things is that it's"
+  },
+  {
+    "segment_id": "yt-0494",
+    "start_seconds": 1094.48,
+    "end_seconds": 1098.72,
+    "text": "natively integrated into GitHub. So when"
+  },
+  {
+    "segment_id": "yt-0495",
+    "start_seconds": 1097.12,
+    "end_seconds": 1101.36,
+    "text": "you're looking at your PRs, you'll be"
+  },
+  {
+    "segment_id": "yt-0496",
+    "start_seconds": 1098.72,
+    "end_seconds": 1102.88,
+    "text": "able to see all those PRs together. Uh"
+  },
+  {
+    "segment_id": "yt-0497",
+    "start_seconds": 1101.36,
+    "end_seconds": 1105.9189999999999,
+    "text": "and then some of the things that you"
+  },
+  {
+    "segment_id": "yt-0498",
+    "start_seconds": 1102.88,
+    "end_seconds": 1107.5200000000002,
+    "text": "maybe have had to do before that were a"
+  },
+  {
+    "segment_id": "yt-0499",
+    "start_seconds": 1105.919,
+    "end_seconds": 1110.64,
+    "text": "little bit hackier, you don't need to"
+  },
+  {
+    "segment_id": "yt-0500",
+    "start_seconds": 1107.52,
+    "end_seconds": 1113.039,
+    "text": "do. For example, like I know a lot of"
+  },
+  {
+    "segment_id": "yt-0501",
+    "start_seconds": 1110.64,
+    "end_seconds": 1115.3600000000001,
+    "text": "folks would have to configure their"
+  },
+  {
+    "segment_id": "yt-0502",
+    "start_seconds": 1113.039,
+    "end_seconds": 1117.44,
+    "text": "actions, you know, CI runs to run on"
+  },
+  {
+    "segment_id": "yt-0503",
+    "start_seconds": 1115.36,
+    "end_seconds": 1119.6789999999999,
+    "text": "every PR instead of just the PRs"
+  },
+  {
+    "segment_id": "yt-0504",
+    "start_seconds": 1117.44,
+    "end_seconds": 1121.6000000000001,
+    "text": "targeting main or they would have to"
+  },
+  {
+    "segment_id": "yt-0505",
+    "start_seconds": 1119.679,
+    "end_seconds": 1123.44,
+    "text": "relax their branch protection rules"
+  },
+  {
+    "segment_id": "yt-0506",
+    "start_seconds": 1121.6,
+    "end_seconds": 1124.8799999999999,
+    "text": "because of the way that things worked."
+  },
+  {
+    "segment_id": "yt-0507",
+    "start_seconds": 1123.44,
+    "end_seconds": 1126.64,
+    "text": "You don't need to do that anymore. The"
+  },
+  {
+    "segment_id": "yt-0508",
+    "start_seconds": 1124.88,
+    "end_seconds": 1129.44,
+    "text": "way that we evaluate everything for"
+  },
+  {
+    "segment_id": "yt-0509",
+    "start_seconds": 1126.64,
+    "end_seconds": 1131.2800000000002,
+    "text": "stacks is that the protection rules, the"
+  },
+  {
+    "segment_id": "yt-0510",
+    "start_seconds": 1129.44,
+    "end_seconds": 1134.16,
+    "text": "CI configs, everything that you have"
+  },
+  {
+    "segment_id": "yt-0511",
+    "start_seconds": 1131.28,
+    "end_seconds": 1136.48,
+    "text": "that targets main is applied for every"
+  },
+  {
+    "segment_id": "yt-0512",
+    "start_seconds": 1134.16,
+    "end_seconds": 1138.799,
+    "text": "PR in the stack. So you can probably"
+  },
+  {
+    "segment_id": "yt-0513",
+    "start_seconds": 1136.48,
+    "end_seconds": 1140.88,
+    "text": "unwind maybe some of that those hacks or"
+  },
+  {
+    "segment_id": "yt-0514",
+    "start_seconds": 1138.799,
+    "end_seconds": 1142.72,
+    "text": "those workarounds you needed to have. Um"
+  },
+  {
+    "segment_id": "yt-0515",
+    "start_seconds": 1140.88,
+    "end_seconds": 1145.6000000000001,
+    "text": "the other thing that's that's really big"
+  },
+  {
+    "segment_id": "yt-0516",
+    "start_seconds": 1142.72,
+    "end_seconds": 1147.919,
+    "text": "is that you know we have a CLI that"
+  },
+  {
+    "segment_id": "yt-0517",
+    "start_seconds": 1145.6,
+    "end_seconds": 1150.0,
+    "text": "we're shipping GH stack which allows you"
+  },
+  {
+    "segment_id": "yt-0518",
+    "start_seconds": 1147.919,
+    "end_seconds": 1153.5200000000002,
+    "text": "to work with stacks locally."
+  },
+  {
+    "segment_id": "yt-0519",
+    "start_seconds": 1150.0,
+    "end_seconds": 1155.84,
+    "text": ">> Uh but also we have a public API that's"
+  },
+  {
+    "segment_id": "yt-0520",
+    "start_seconds": 1153.52,
+    "end_seconds": 1157.6,
+    "text": "completely open and we've already seen a"
+  },
+  {
+    "segment_id": "yt-0521",
+    "start_seconds": 1155.84,
+    "end_seconds": 1160.1599999999999,
+    "text": "number of thirdparty plugins and tools"
+  },
+  {
+    "segment_id": "yt-0522",
+    "start_seconds": 1157.6,
+    "end_seconds": 1162.1599999999999,
+    "text": "and open source projects adopt using our"
+  },
+  {
+    "segment_id": "yt-0523",
+    "start_seconds": 1160.16,
+    "end_seconds": 1164.64,
+    "text": "our API. So if you don't want to use our"
+  },
+  {
+    "segment_id": "yt-0524",
+    "start_seconds": 1162.16,
+    "end_seconds": 1166.24,
+    "text": "CLI, you don't have to. that's also"
+  },
+  {
+    "segment_id": "yt-0525",
+    "start_seconds": 1164.64,
+    "end_seconds": 1167.76,
+    "text": "like, you know, compared to some other"
+  },
+  {
+    "segment_id": "yt-0526",
+    "start_seconds": 1166.24,
+    "end_seconds": 1169.84,
+    "text": "products. So, you could build your own"
+  },
+  {
+    "segment_id": "yt-0527",
+    "start_seconds": 1167.76,
+    "end_seconds": 1172.0,
+    "text": "tool to do your own stacking. And I and"
+  },
+  {
+    "segment_id": "yt-0528",
+    "start_seconds": 1169.84,
+    "end_seconds": 1173.28,
+    "text": "it's it's very open and and I think"
+  },
+  {
+    "segment_id": "yt-0529",
+    "start_seconds": 1172.0,
+    "end_seconds": 1175.28,
+    "text": "that's one of the the great things that"
+  },
+  {
+    "segment_id": "yt-0530",
+    "start_seconds": 1173.28,
+    "end_seconds": 1178.72,
+    "text": "I'm really excited about seeing is we"
+  },
+  {
+    "segment_id": "yt-0531",
+    "start_seconds": 1175.28,
+    "end_seconds": 1180.799,
+    "text": "have this open platform and we have a"
+  },
+  {
+    "segment_id": "yt-0532",
+    "start_seconds": 1178.72,
+    "end_seconds": 1182.48,
+    "text": "series of opinionated tools that we've"
+  },
+  {
+    "segment_id": "yt-0533",
+    "start_seconds": 1180.799,
+    "end_seconds": 1184.6399999999999,
+    "text": "built. But if you want to go build your"
+  },
+  {
+    "segment_id": "yt-0534",
+    "start_seconds": 1182.48,
+    "end_seconds": 1186.799,
+    "text": "own, you are welcome to do that. And"
+  },
+  {
+    "segment_id": "yt-0535",
+    "start_seconds": 1184.64,
+    "end_seconds": 1188.24,
+    "text": "honestly, I I would love to see that cuz"
+  },
+  {
+    "segment_id": "yt-0536",
+    "start_seconds": 1186.799,
+    "end_seconds": 1190.0,
+    "text": "that's stuff that we can learn from and"
+  },
+  {
+    "segment_id": "yt-0537",
+    "start_seconds": 1188.24,
+    "end_seconds": 1193.1200000000001,
+    "text": "and maybe we'll we'll pull those into"
+  },
+  {
+    "segment_id": "yt-0538",
+    "start_seconds": 1190.0,
+    "end_seconds": 1195.52,
+    "text": "into GitHub as well. I think that's a"
+  },
+  {
+    "segment_id": "yt-0539",
+    "start_seconds": 1193.12,
+    "end_seconds": 1197.52,
+    "text": "good misconception to address too where"
+  },
+  {
+    "segment_id": "yt-0540",
+    "start_seconds": 1195.52,
+    "end_seconds": 1199.52,
+    "text": "we aren't building these features to"
+  },
+  {
+    "segment_id": "yt-0541",
+    "start_seconds": 1197.52,
+    "end_seconds": 1201.28,
+    "text": "squash competition or anything like"
+  },
+  {
+    "segment_id": "yt-0542",
+    "start_seconds": 1199.52,
+    "end_seconds": 1202.6399999999999,
+    "text": "that. We're we're doing it because"
+  },
+  {
+    "segment_id": "yt-0543",
+    "start_seconds": 1201.28,
+    "end_seconds": 1204.8799999999999,
+    "text": "they're good ideas that we want"
+  },
+  {
+    "segment_id": "yt-0544",
+    "start_seconds": 1202.64,
+    "end_seconds": 1207.919,
+    "text": "everybody to have access to and build"
+  },
+  {
+    "segment_id": "yt-0545",
+    "start_seconds": 1204.88,
+    "end_seconds": 1210.5590000000002,
+    "text": "on. And so if you were using stacks in"
+  },
+  {
+    "segment_id": "yt-0546",
+    "start_seconds": 1207.919,
+    "end_seconds": 1213.679,
+    "text": "some other tool external to GitHub, now"
+  },
+  {
+    "segment_id": "yt-0547",
+    "start_seconds": 1210.559,
+    "end_seconds": 1215.12,
+    "text": "you not only don't have to, but maybe"
+  },
+  {
+    "segment_id": "yt-0548",
+    "start_seconds": 1213.679,
+    "end_seconds": 1216.799,
+    "text": "those tools can be better in different"
+  },
+  {
+    "segment_id": "yt-0549",
+    "start_seconds": 1215.12,
+    "end_seconds": 1217.84,
+    "text": "ways because it's natively built in and"
+  },
+  {
+    "segment_id": "yt-0550",
+    "start_seconds": 1216.799,
+    "end_seconds": 1218.8799999999999,
+    "text": "they don't have to build their own"
+  },
+  {
+    "segment_id": "yt-0551",
+    "start_seconds": 1217.84,
+    "end_seconds": 1220.24,
+    "text": "workarounds."
+  },
+  {
+    "segment_id": "yt-0552",
+    "start_seconds": 1218.88,
+    "end_seconds": 1222.0800000000002,
+    "text": ">> Absolutely. I think we're all about"
+  },
+  {
+    "segment_id": "yt-0553",
+    "start_seconds": 1220.24,
+    "end_seconds": 1222.559,
+    "text": "developer choice around these parts and"
+  },
+  {
+    "segment_id": "yt-0554",
+    "start_seconds": 1222.08,
+    "end_seconds": 1223.12,
+    "text": "I love that."
+  },
+  {
+    "segment_id": "yt-0555",
+    "start_seconds": 1222.559,
+    "end_seconds": 1224.3999999999999,
+    "text": ">> That's right."
+  },
+  {
+    "segment_id": "yt-0556",
+    "start_seconds": 1223.12,
+    "end_seconds": 1225.6,
+    "text": ">> I love that for us."
+  },
+  {
+    "segment_id": "yt-0557",
+    "start_seconds": 1224.4,
+    "end_seconds": 1227.6000000000001,
+    "text": ">> Anything else that we can share about"
+  },
+  {
+    "segment_id": "yt-0558",
+    "start_seconds": 1225.6,
+    "end_seconds": 1229.9189999999999,
+    "text": "how like the sausage was made? Maybe"
+  },
+  {
+    "segment_id": "yt-0559",
+    "start_seconds": 1227.6,
+    "end_seconds": 1231.039,
+    "text": "that's that's one of the misconceptions"
+  },
+  {
+    "segment_id": "yt-0560",
+    "start_seconds": 1229.919,
+    "end_seconds": 1233.039,
+    "text": "or like the things that you didn't"
+  },
+  {
+    "segment_id": "yt-0561",
+    "start_seconds": 1231.039,
+    "end_seconds": 1234.72,
+    "text": "expect to be like the biggest challenge"
+  },
+  {
+    "segment_id": "yt-0562",
+    "start_seconds": 1233.039,
+    "end_seconds": 1237.36,
+    "text": "once you actually got to work and like"
+  },
+  {
+    "segment_id": "yt-0563",
+    "start_seconds": 1234.72,
+    "end_seconds": 1238.799,
+    "text": "the internals of making this work."
+  },
+  {
+    "segment_id": "yt-0564",
+    "start_seconds": 1237.36,
+    "end_seconds": 1241.4399999999998,
+    "text": ">> There's one interesting thing I I'll"
+  },
+  {
+    "segment_id": "yt-0565",
+    "start_seconds": 1238.799,
+    "end_seconds": 1244.6399999999999,
+    "text": "bring up which is uh so code owners is"
+  },
+  {
+    "segment_id": "yt-0566",
+    "start_seconds": 1241.44,
+    "end_seconds": 1246.72,
+    "text": "actually a really interesting one. So"
+  },
+  {
+    "segment_id": "yt-0567",
+    "start_seconds": 1244.64,
+    "end_seconds": 1247.919,
+    "text": ">> so code owners the concept is you"
+  },
+  {
+    "segment_id": "yt-0568",
+    "start_seconds": 1246.72,
+    "end_seconds": 1250.08,
+    "text": "actually pretty straightforward again"
+  },
+  {
+    "segment_id": "yt-0569",
+    "start_seconds": 1247.919,
+    "end_seconds": 1252.159,
+    "text": "like you have a code owners file that"
+  },
+  {
+    "segment_id": "yt-0570",
+    "start_seconds": 1250.08,
+    "end_seconds": 1254.0,
+    "text": "tells you who are the teams that own"
+  },
+  {
+    "segment_id": "yt-0571",
+    "start_seconds": 1252.159,
+    "end_seconds": 1256.48,
+    "text": "code review for a particular piece of"
+  },
+  {
+    "segment_id": "yt-0572",
+    "start_seconds": 1254.0,
+    "end_seconds": 1258.159,
+    "text": "the code um based off of the team that"
+  },
+  {
+    "segment_id": "yt-0573",
+    "start_seconds": 1256.48,
+    "end_seconds": 1260.4,
+    "text": "had the code in this directory or"
+  },
+  {
+    "segment_id": "yt-0574",
+    "start_seconds": 1258.159,
+    "end_seconds": 1262.72,
+    "text": "something like that. Now, with stacked"
+  },
+  {
+    "segment_id": "yt-0575",
+    "start_seconds": 1260.4,
+    "end_seconds": 1265.6000000000001,
+    "text": "PRs, this opened up this very"
+  },
+  {
+    "segment_id": "yt-0576",
+    "start_seconds": 1262.72,
+    "end_seconds": 1268.4,
+    "text": "interesting quirk that what you could do"
+  },
+  {
+    "segment_id": "yt-0577",
+    "start_seconds": 1265.6,
+    "end_seconds": 1270.559,
+    "text": "potentially is cuz your stack of PRs"
+  },
+  {
+    "segment_id": "yt-0578",
+    "start_seconds": 1268.4,
+    "end_seconds": 1273.679,
+    "text": "build on top of each other, you could"
+  },
+  {
+    "segment_id": "yt-0579",
+    "start_seconds": 1270.559,
+    "end_seconds": 1277.2,
+    "text": "make a change in your first your bottom"
+  },
+  {
+    "segment_id": "yt-0580",
+    "start_seconds": 1273.679,
+    "end_seconds": 1279.919,
+    "text": "PR that removes or changes the code"
+  },
+  {
+    "segment_id": "yt-0581",
+    "start_seconds": 1277.2,
+    "end_seconds": 1282.64,
+    "text": "owners so that when you went to write"
+  },
+  {
+    "segment_id": "yt-0582",
+    "start_seconds": 1279.919,
+    "end_seconds": 1284.7990000000002,
+    "text": "your second, third, fourth PRs, you kind"
+  },
+  {
+    "segment_id": "yt-0583",
+    "start_seconds": 1282.64,
+    "end_seconds": 1288.48,
+    "text": "of were able to get around the code"
+  },
+  {
+    "segment_id": "yt-0584",
+    "start_seconds": 1284.799,
+    "end_seconds": 1290.72,
+    "text": "owner review that was needed. So, it's a"
+  },
+  {
+    "segment_id": "yt-0585",
+    "start_seconds": 1288.48,
+    "end_seconds": 1292.72,
+    "text": "little bit of a weird quirk that you"
+  },
+  {
+    "segment_id": "yt-0586",
+    "start_seconds": 1290.72,
+    "end_seconds": 1295.1200000000001,
+    "text": "could run into. And the way that we we"
+  },
+  {
+    "segment_id": "yt-0587",
+    "start_seconds": 1292.72,
+    "end_seconds": 1297.28,
+    "text": "solved it is that we basically ignored"
+  },
+  {
+    "segment_id": "yt-0588",
+    "start_seconds": 1295.12,
+    "end_seconds": 1299.76,
+    "text": "any changes to code owners in the middle"
+  },
+  {
+    "segment_id": "yt-0589",
+    "start_seconds": 1297.28,
+    "end_seconds": 1303.2,
+    "text": "of a stack. So, when you have a stack of"
+  },
+  {
+    "segment_id": "yt-0590",
+    "start_seconds": 1299.76,
+    "end_seconds": 1305.84,
+    "text": "PRs, we always load code owners from"
+  },
+  {
+    "segment_id": "yt-0591",
+    "start_seconds": 1303.2,
+    "end_seconds": 1308.159,
+    "text": "your main branch because that is the"
+  },
+  {
+    "segment_id": "yt-0592",
+    "start_seconds": 1305.84,
+    "end_seconds": 1310.72,
+    "text": "source of truth and we don't want to"
+  },
+  {
+    "segment_id": "yt-0593",
+    "start_seconds": 1308.159,
+    "end_seconds": 1312.96,
+    "text": "allow people to kind of hijack code"
+  },
+  {
+    "segment_id": "yt-0594",
+    "start_seconds": 1310.72,
+    "end_seconds": 1314.64,
+    "text": "owners to kind of circumvent code review"
+  },
+  {
+    "segment_id": "yt-0595",
+    "start_seconds": 1312.96,
+    "end_seconds": 1316.565,
+    "text": "or do anything a little funny."
+  },
+  {
+    "segment_id": "yt-0596",
+    "start_seconds": 1314.64,
+    "end_seconds": 1318.24,
+    "text": ">> I didn't even think about that."
+  },
+  {
+    "segment_id": "yt-0597",
+    "start_seconds": 1316.565,
+    "end_seconds": 1319.6000000000001,
+    "text": "[clears throat] Ah, sorry. [laughter] Go"
+  },
+  {
+    "segment_id": "yt-0598",
+    "start_seconds": 1318.24,
+    "end_seconds": 1321.84,
+    "text": "ahead."
+  },
+  {
+    "segment_id": "yt-0599",
+    "start_seconds": 1319.6,
+    "end_seconds": 1324.08,
+    "text": ">> No, it's it's there's again there's just"
+  },
+  {
+    "segment_id": "yt-0600",
+    "start_seconds": 1321.84,
+    "end_seconds": 1326.799,
+    "text": "all of these different things and it"
+  },
+  {
+    "segment_id": "yt-0601",
+    "start_seconds": 1324.08,
+    "end_seconds": 1329.84,
+    "text": "that is like the level of detail that we"
+  },
+  {
+    "segment_id": "yt-0602",
+    "start_seconds": 1326.799,
+    "end_seconds": 1332.08,
+    "text": "sort of paid attention to as we you know"
+  },
+  {
+    "segment_id": "yt-0603",
+    "start_seconds": 1329.84,
+    "end_seconds": 1334.559,
+    "text": "of course we're trying to make sure that"
+  },
+  {
+    "segment_id": "yt-0604",
+    "start_seconds": 1332.08,
+    "end_seconds": 1336.799,
+    "text": "this feature works. It's easy to use but"
+  },
+  {
+    "segment_id": "yt-0605",
+    "start_seconds": 1334.559,
+    "end_seconds": 1338.559,
+    "text": "also for GitHub and PRs this is very"
+  },
+  {
+    "segment_id": "yt-0606",
+    "start_seconds": 1336.799,
+    "end_seconds": 1339.2,
+    "text": "much a security product as well. Of"
+  },
+  {
+    "segment_id": "yt-0607",
+    "start_seconds": 1338.559,
+    "end_seconds": 1341.6,
+    "text": "course,"
+  },
+  {
+    "segment_id": "yt-0608",
+    "start_seconds": 1339.2,
+    "end_seconds": 1343.8400000000001,
+    "text": ">> you know, enterprises rely on this to"
+  },
+  {
+    "segment_id": "yt-0609",
+    "start_seconds": 1341.6,
+    "end_seconds": 1347.1999999999998,
+    "text": "ensure that their code is is well"
+  },
+  {
+    "segment_id": "yt-0610",
+    "start_seconds": 1343.84,
+    "end_seconds": 1349.12,
+    "text": "reviewed, meets all the requirements and"
+  },
+  {
+    "segment_id": "yt-0611",
+    "start_seconds": 1347.2,
+    "end_seconds": 1352.96,
+    "text": "it is, you know, for folks who are doing"
+  },
+  {
+    "segment_id": "yt-0612",
+    "start_seconds": 1349.12,
+    "end_seconds": 1356.3999999999999,
+    "text": "SOCK 2 or ISO 2701 like those are really"
+  },
+  {
+    "segment_id": "yt-0613",
+    "start_seconds": 1352.96,
+    "end_seconds": 1357.8400000000001,
+    "text": "important things and that is where the"
+  },
+  {
+    "segment_id": "yt-0614",
+    "start_seconds": 1356.4,
+    "end_seconds": 1359.2800000000002,
+    "text": "uh code owners and all those like"
+  },
+  {
+    "segment_id": "yt-0615",
+    "start_seconds": 1357.84,
+    "end_seconds": 1360.32,
+    "text": "security considerations were really"
+  },
+  {
+    "segment_id": "yt-0616",
+    "start_seconds": 1359.28,
+    "end_seconds": 1363.2,
+    "text": "important for us."
+  },
+  {
+    "segment_id": "yt-0617",
+    "start_seconds": 1360.32,
+    "end_seconds": 1365.76,
+    "text": ">> I love how much of development is how is"
+  },
+  {
+    "segment_id": "yt-0618",
+    "start_seconds": 1363.2,
+    "end_seconds": 1367.6000000000001,
+    "text": "someone going to try to break this? Yes,"
+  },
+  {
+    "segment_id": "yt-0619",
+    "start_seconds": 1365.76,
+    "end_seconds": 1369.2,
+    "text": ">> it's fascinating to have to think about"
+  },
+  {
+    "segment_id": "yt-0620",
+    "start_seconds": 1367.6,
+    "end_seconds": 1371.1999999999998,
+    "text": "all of these different use cases where"
+  },
+  {
+    "segment_id": "yt-0621",
+    "start_seconds": 1369.2,
+    "end_seconds": 1372.559,
+    "text": "it's like how can someone break our"
+  },
+  {
+    "segment_id": "yt-0622",
+    "start_seconds": 1371.2,
+    "end_seconds": 1374.32,
+    "text": "pristine system?"
+  },
+  {
+    "segment_id": "yt-0623",
+    "start_seconds": 1372.559,
+    "end_seconds": 1377.12,
+    "text": ">> And you know what's even better nowadays"
+  },
+  {
+    "segment_id": "yt-0624",
+    "start_seconds": 1374.32,
+    "end_seconds": 1378.24,
+    "text": "is you can have agents uh do this as"
+  },
+  {
+    "segment_id": "yt-0625",
+    "start_seconds": 1377.12,
+    "end_seconds": 1380.6399999999999,
+    "text": "well. That's something that we did"
+  },
+  {
+    "segment_id": "yt-0626",
+    "start_seconds": 1378.24,
+    "end_seconds": 1382.96,
+    "text": "actually quite extensively is we just uh"
+  },
+  {
+    "segment_id": "yt-0627",
+    "start_seconds": 1380.64,
+    "end_seconds": 1384.5590000000002,
+    "text": "had a swarm of agents that were just"
+  },
+  {
+    "segment_id": "yt-0628",
+    "start_seconds": 1382.96,
+    "end_seconds": 1386.559,
+    "text": "running around the clock trying to break"
+  },
+  {
+    "segment_id": "yt-0629",
+    "start_seconds": 1384.559,
+    "end_seconds": 1388.08,
+    "text": "the feature, trying to circumvent the"
+  },
+  {
+    "segment_id": "yt-0630",
+    "start_seconds": 1386.559,
+    "end_seconds": 1389.76,
+    "text": "rules, do all sorts of things."
+  },
+  {
+    "segment_id": "yt-0631",
+    "start_seconds": 1388.08,
+    "end_seconds": 1392.32,
+    "text": ">> That's a good test."
+  },
+  {
+    "segment_id": "yt-0632",
+    "start_seconds": 1389.76,
+    "end_seconds": 1395.679,
+    "text": ">> They are they're very crafty. They're"
+  },
+  {
+    "segment_id": "yt-0633",
+    "start_seconds": 1392.32,
+    "end_seconds": 1397.2,
+    "text": "very resourceful and uh agentdriven"
+  },
+  {
+    "segment_id": "yt-0634",
+    "start_seconds": 1395.679,
+    "end_seconds": 1398.88,
+    "text": "testing. I think it's it's a new type of"
+  },
+  {
+    "segment_id": "yt-0635",
+    "start_seconds": 1397.2,
+    "end_seconds": 1400.559,
+    "text": "testing. We've always said test-driven"
+  },
+  {
+    "segment_id": "yt-0636",
+    "start_seconds": 1398.88,
+    "end_seconds": 1403.3600000000001,
+    "text": "development, but now I think there's"
+  },
+  {
+    "segment_id": "yt-0637",
+    "start_seconds": 1400.559,
+    "end_seconds": 1405.84,
+    "text": "this new era of have the agents go at it"
+  },
+  {
+    "segment_id": "yt-0638",
+    "start_seconds": 1403.36,
+    "end_seconds": 1408.24,
+    "text": "and try and break it. And they they they"
+  },
+  {
+    "segment_id": "yt-0639",
+    "start_seconds": 1405.84,
+    "end_seconds": 1410.6399999999999,
+    "text": "have learned from all our creativity and"
+  },
+  {
+    "segment_id": "yt-0640",
+    "start_seconds": 1408.24,
+    "end_seconds": 1413.1200000000001,
+    "text": "uh they are they are relentless."
+  },
+  {
+    "segment_id": "yt-0641",
+    "start_seconds": 1410.64,
+    "end_seconds": 1415.8400000000001,
+    "text": ">> Yeah. And they can do it without having"
+  },
+  {
+    "segment_id": "yt-0642",
+    "start_seconds": 1413.12,
+    "end_seconds": 1417.12,
+    "text": "to rest at night too. That's Yeah,"
+  },
+  {
+    "segment_id": "yt-0643",
+    "start_seconds": 1415.84,
+    "end_seconds": 1419.039,
+    "text": "that's that's actually a really"
+  },
+  {
+    "segment_id": "yt-0644",
+    "start_seconds": 1417.12,
+    "end_seconds": 1420.9599999999998,
+    "text": "interesting way of just stress testing a"
+  },
+  {
+    "segment_id": "yt-0645",
+    "start_seconds": 1419.039,
+    "end_seconds": 1424.24,
+    "text": "system. I hadn't thought of it that way."
+  },
+  {
+    "segment_id": "yt-0646",
+    "start_seconds": 1420.96,
+    "end_seconds": 1426.96,
+    "text": "Very cool. Can we talk about who um I"
+  },
+  {
+    "segment_id": "yt-0647",
+    "start_seconds": 1424.24,
+    "end_seconds": 1428.4,
+    "text": "guess how teams are adopting stacks now?"
+  },
+  {
+    "segment_id": "yt-0648",
+    "start_seconds": 1426.96,
+    "end_seconds": 1430.88,
+    "text": "So like teams start adopting these"
+  },
+  {
+    "segment_id": "yt-0649",
+    "start_seconds": 1428.4,
+    "end_seconds": 1432.4,
+    "text": "workflows like we've seen online like"
+  },
+  {
+    "segment_id": "yt-0650",
+    "start_seconds": 1430.88,
+    "end_seconds": 1434.96,
+    "text": "folks was there were some folks that"
+  },
+  {
+    "segment_id": "yt-0651",
+    "start_seconds": 1432.4,
+    "end_seconds": 1437.1200000000001,
+    "text": "obviously lots of opinions um lots of"
+  },
+  {
+    "segment_id": "yt-0652",
+    "start_seconds": 1434.96,
+    "end_seconds": 1439.919,
+    "text": "people happy lots of people with you"
+  },
+  {
+    "segment_id": "yt-0653",
+    "start_seconds": 1437.12,
+    "end_seconds": 1442.2399999999998,
+    "text": "know their valid criticisms but"
+  },
+  {
+    "segment_id": "yt-0654",
+    "start_seconds": 1439.919,
+    "end_seconds": 1444.48,
+    "text": ">> yeah exactly but like for the teams that"
+  },
+  {
+    "segment_id": "yt-0655",
+    "start_seconds": 1442.24,
+    "end_seconds": 1447.6,
+    "text": "are adopting these workflows let's let's"
+  },
+  {
+    "segment_id": "yt-0656",
+    "start_seconds": 1444.48,
+    "end_seconds": 1450.799,
+    "text": "talk about one thing that they they sort"
+  },
+  {
+    "segment_id": "yt-0657",
+    "start_seconds": 1447.6,
+    "end_seconds": 1452.6399999999999,
+    "text": "of need to do I guess as a team is there"
+  },
+  {
+    "segment_id": "yt-0658",
+    "start_seconds": 1450.799,
+    "end_seconds": 1454.0,
+    "text": "a habit that they need to change is"
+  },
+  {
+    "segment_id": "yt-0659",
+    "start_seconds": 1452.64,
+    "end_seconds": 1456.0,
+    "text": "there a way that they need to look at"
+  },
+  {
+    "segment_id": "yt-0660",
+    "start_seconds": 1454.0,
+    "end_seconds": 1458.32,
+    "text": "the way that they're building PRs that"
+  },
+  {
+    "segment_id": "yt-0661",
+    "start_seconds": 1456.0,
+    "end_seconds": 1462.559,
+    "text": "needs will adapt to this new new way of"
+  },
+  {
+    "segment_id": "yt-0662",
+    "start_seconds": 1458.32,
+    "end_seconds": 1465.12,
+    "text": "thinking and working or um and from the"
+  },
+  {
+    "segment_id": "yt-0663",
+    "start_seconds": 1462.559,
+    "end_seconds": 1467.039,
+    "text": "experiences that you've seen that how us"
+  },
+  {
+    "segment_id": "yt-0664",
+    "start_seconds": 1465.12,
+    "end_seconds": 1469.84,
+    "text": "internally have used them plus the early"
+  },
+  {
+    "segment_id": "yt-0665",
+    "start_seconds": 1467.039,
+    "end_seconds": 1472.64,
+    "text": "adopters any lessons learned that we can"
+  },
+  {
+    "segment_id": "yt-0666",
+    "start_seconds": 1469.84,
+    "end_seconds": 1475.279,
+    "text": "share so that folks have like an easier"
+  },
+  {
+    "segment_id": "yt-0667",
+    "start_seconds": 1472.64,
+    "end_seconds": 1476.0800000000002,
+    "text": "transition into stock PRs if they desire"
+  },
+  {
+    "segment_id": "yt-0668",
+    "start_seconds": 1475.279,
+    "end_seconds": 1478.08,
+    "text": "to."
+  },
+  {
+    "segment_id": "yt-0669",
+    "start_seconds": 1476.08,
+    "end_seconds": 1481.76,
+    "text": ">> Yeah, that's a great question. I think"
+  },
+  {
+    "segment_id": "yt-0670",
+    "start_seconds": 1478.08,
+    "end_seconds": 1485.9189999999999,
+    "text": "the easiest thing to do honestly is ask"
+  },
+  {
+    "segment_id": "yt-0671",
+    "start_seconds": 1481.76,
+    "end_seconds": 1489.36,
+    "text": "your agents. Uh we have a skill file."
+  },
+  {
+    "segment_id": "yt-0672",
+    "start_seconds": 1485.919,
+    "end_seconds": 1491.2,
+    "text": "The agents are really good at breaking"
+  },
+  {
+    "segment_id": "yt-0673",
+    "start_seconds": 1489.36,
+    "end_seconds": 1494.6399999999999,
+    "text": "down, especially if you're using plan"
+  },
+  {
+    "segment_id": "yt-0674",
+    "start_seconds": 1491.2,
+    "end_seconds": 1497.2,
+    "text": "mode. When you are asking your agent to"
+  },
+  {
+    "segment_id": "yt-0675",
+    "start_seconds": 1494.64,
+    "end_seconds": 1500.24,
+    "text": "plan this feature, make sure that the"
+  },
+  {
+    "segment_id": "yt-0676",
+    "start_seconds": 1497.2,
+    "end_seconds": 1503.8400000000001,
+    "text": "stack skill is installed and your agent"
+  },
+  {
+    "segment_id": "yt-0677",
+    "start_seconds": 1500.24,
+    "end_seconds": 1507.1200000000001,
+    "text": "will be able to go through it and use it"
+  },
+  {
+    "segment_id": "yt-0678",
+    "start_seconds": 1503.84,
+    "end_seconds": 1510.3999999999999,
+    "text": "to decompose your big plan into a stack"
+  },
+  {
+    "segment_id": "yt-0679",
+    "start_seconds": 1507.12,
+    "end_seconds": 1512.9599999999998,
+    "text": "of maybe a couple PRs. And what that'll"
+  },
+  {
+    "segment_id": "yt-0680",
+    "start_seconds": 1510.4,
+    "end_seconds": 1515.3600000000001,
+    "text": "do is what we found is it helps sort of"
+  },
+  {
+    "segment_id": "yt-0681",
+    "start_seconds": 1512.96,
+    "end_seconds": 1518.24,
+    "text": "steer the agent to break up its code as"
+  },
+  {
+    "segment_id": "yt-0682",
+    "start_seconds": 1515.36,
+    "end_seconds": 1520.799,
+    "text": "well. Instead of again pushing up one"
+  },
+  {
+    "segment_id": "yt-0683",
+    "start_seconds": 1518.24,
+    "end_seconds": 1523.44,
+    "text": "giant PR with tens of thousands of lines"
+  },
+  {
+    "segment_id": "yt-0684",
+    "start_seconds": 1520.799,
+    "end_seconds": 1526.72,
+    "text": "of changes, it breaks it up. So it it"
+  },
+  {
+    "segment_id": "yt-0685",
+    "start_seconds": 1523.44,
+    "end_seconds": 1528.3200000000002,
+    "text": "you know logically each PR is like an"
+  },
+  {
+    "segment_id": "yt-0686",
+    "start_seconds": 1526.72,
+    "end_seconds": 1530.559,
+    "text": "atomic unit of change that is"
+  },
+  {
+    "segment_id": "yt-0687",
+    "start_seconds": 1528.32,
+    "end_seconds": 1533.4399999999998,
+    "text": "independently reviewable. And that"
+  },
+  {
+    "segment_id": "yt-0688",
+    "start_seconds": 1530.559,
+    "end_seconds": 1535.9189999999999,
+    "text": "really makes it much easier for even"
+  },
+  {
+    "segment_id": "yt-0689",
+    "start_seconds": 1533.44,
+    "end_seconds": 1538.159,
+    "text": "your code review agents, your human code"
+  },
+  {
+    "segment_id": "yt-0690",
+    "start_seconds": 1535.919,
+    "end_seconds": 1540.96,
+    "text": "reviewers when it comes time to merge"
+  },
+  {
+    "segment_id": "yt-0691",
+    "start_seconds": 1538.159,
+    "end_seconds": 1543.2,
+    "text": "that. I think is is huge. Uh for folks"
+  },
+  {
+    "segment_id": "yt-0692",
+    "start_seconds": 1540.96,
+    "end_seconds": 1545.52,
+    "text": "who are who are adopting stacked PRs and"
+  },
+  {
+    "segment_id": "yt-0693",
+    "start_seconds": 1543.2,
+    "end_seconds": 1549.1200000000001,
+    "text": "looking into it for the first time, I'd"
+  },
+  {
+    "segment_id": "yt-0694",
+    "start_seconds": 1545.52,
+    "end_seconds": 1550.96,
+    "text": "say look at the areas where I mean just"
+  },
+  {
+    "segment_id": "yt-0695",
+    "start_seconds": 1549.12,
+    "end_seconds": 1553.6,
+    "text": "go back through your PR history and look"
+  },
+  {
+    "segment_id": "yt-0696",
+    "start_seconds": 1550.96,
+    "end_seconds": 1555.3600000000001,
+    "text": "at places where you had a bunch of PRs"
+  },
+  {
+    "segment_id": "yt-0697",
+    "start_seconds": 1553.6,
+    "end_seconds": 1556.559,
+    "text": "that you know as Cassie was mentioning"
+  },
+  {
+    "segment_id": "yt-0698",
+    "start_seconds": 1555.36,
+    "end_seconds": 1558.32,
+    "text": "like where you've tagged them together"
+  },
+  {
+    "segment_id": "yt-0699",
+    "start_seconds": 1556.559,
+    "end_seconds": 1560.24,
+    "text": "like hey like maybe don't merge this one"
+  },
+  {
+    "segment_id": "yt-0700",
+    "start_seconds": 1558.32,
+    "end_seconds": 1561.84,
+    "text": "just yet and you know like this one's"
+  },
+  {
+    "segment_id": "yt-0701",
+    "start_seconds": 1560.24,
+    "end_seconds": 1564.08,
+    "text": "related to this but needs to merge after"
+  },
+  {
+    "segment_id": "yt-0702",
+    "start_seconds": 1561.84,
+    "end_seconds": 1565.84,
+    "text": "that one but not before this one. There"
+  },
+  {
+    "segment_id": "yt-0703",
+    "start_seconds": 1564.08,
+    "end_seconds": 1567.84,
+    "text": "are all sorts of cases where we do this."
+  },
+  {
+    "segment_id": "yt-0704",
+    "start_seconds": 1565.84,
+    "end_seconds": 1570.3999999999999,
+    "text": "You know, database migrations or any"
+  },
+  {
+    "segment_id": "yt-0705",
+    "start_seconds": 1567.84,
+    "end_seconds": 1571.76,
+    "text": "sort of migration is a common example"
+  },
+  {
+    "segment_id": "yt-0706",
+    "start_seconds": 1570.4,
+    "end_seconds": 1574.24,
+    "text": "where you kind of have this like"
+  },
+  {
+    "segment_id": "yt-0707",
+    "start_seconds": 1571.76,
+    "end_seconds": 1577.2,
+    "text": "sequence of things that need to go out"
+  },
+  {
+    "segment_id": "yt-0708",
+    "start_seconds": 1574.24,
+    "end_seconds": 1579.76,
+    "text": "and stacked PRs are great for that. Uh"
+  },
+  {
+    "segment_id": "yt-0709",
+    "start_seconds": 1577.2,
+    "end_seconds": 1584.0,
+    "text": "if you're working in a monor repo and"
+  },
+  {
+    "segment_id": "yt-0710",
+    "start_seconds": 1579.76,
+    "end_seconds": 1586.8799999999999,
+    "text": "you have all of your projects or your"
+  },
+  {
+    "segment_id": "yt-0711",
+    "start_seconds": 1584.0,
+    "end_seconds": 1588.0,
+    "text": "services within one repo and"
+  },
+  {
+    "segment_id": "yt-0712",
+    "start_seconds": 1586.88,
+    "end_seconds": 1589.3600000000001,
+    "text": "everything's within different"
+  },
+  {
+    "segment_id": "yt-0713",
+    "start_seconds": 1588.0,
+    "end_seconds": 1591.039,
+    "text": "directories and other you got code"
+  },
+  {
+    "segment_id": "yt-0714",
+    "start_seconds": 1589.36,
+    "end_seconds": 1593.1999999999998,
+    "text": "owners, you got all this stuff set up."
+  },
+  {
+    "segment_id": "yt-0715",
+    "start_seconds": 1591.039,
+    "end_seconds": 1595.279,
+    "text": "That's another great use case for"
+  },
+  {
+    "segment_id": "yt-0716",
+    "start_seconds": 1593.2,
+    "end_seconds": 1596.72,
+    "text": "stacked PRs where you're working on one"
+  },
+  {
+    "segment_id": "yt-0717",
+    "start_seconds": 1595.279,
+    "end_seconds": 1598.96,
+    "text": "feature but you have different changes"
+  },
+  {
+    "segment_id": "yt-0718",
+    "start_seconds": 1596.72,
+    "end_seconds": 1601.679,
+    "text": "throughout the repo. You can use stacks"
+  },
+  {
+    "segment_id": "yt-0719",
+    "start_seconds": 1598.96,
+    "end_seconds": 1604.159,
+    "text": "to break that up into sort of individual"
+  },
+  {
+    "segment_id": "yt-0720",
+    "start_seconds": 1601.679,
+    "end_seconds": 1606.96,
+    "text": "parts. And and the last thing I'll say"
+  },
+  {
+    "segment_id": "yt-0721",
+    "start_seconds": 1604.159,
+    "end_seconds": 1609.279,
+    "text": "is is for stacks is it really is is up"
+  },
+  {
+    "segment_id": "yt-0722",
+    "start_seconds": 1606.96,
+    "end_seconds": 1610.559,
+    "text": "to you. Uh we've seen folks use stacks"
+  },
+  {
+    "segment_id": "yt-0723",
+    "start_seconds": 1609.279,
+    "end_seconds": 1612.64,
+    "text": "just to for their own personal"
+  },
+  {
+    "segment_id": "yt-0724",
+    "start_seconds": 1610.559,
+    "end_seconds": 1614.24,
+    "text": "development just to keep going there."
+  },
+  {
+    "segment_id": "yt-0725",
+    "start_seconds": 1612.64,
+    "end_seconds": 1616.0800000000002,
+    "text": "You know if you're using squash merge"
+  },
+  {
+    "segment_id": "yt-0726",
+    "start_seconds": 1614.24,
+    "end_seconds": 1618.72,
+    "text": "there's actually like a really nice like"
+  },
+  {
+    "segment_id": "yt-0727",
+    "start_seconds": 1616.08,
+    "end_seconds": 1621.52,
+    "text": "rebase thing that squash uh squash"
+  },
+  {
+    "segment_id": "yt-0728",
+    "start_seconds": 1618.72,
+    "end_seconds": 1623.6000000000001,
+    "text": "merges and stacks do. So it just avoids"
+  },
+  {
+    "segment_id": "yt-0729",
+    "start_seconds": 1621.52,
+    "end_seconds": 1625.36,
+    "text": "you having to deal with merge conflicts"
+  },
+  {
+    "segment_id": "yt-0730",
+    "start_seconds": 1623.6,
+    "end_seconds": 1627.279,
+    "text": "if you're squash merging a lot. So"
+  },
+  {
+    "segment_id": "yt-0731",
+    "start_seconds": 1625.36,
+    "end_seconds": 1630.6399999999999,
+    "text": "there's a lot of ways in which even if"
+  },
+  {
+    "segment_id": "yt-0732",
+    "start_seconds": 1627.279,
+    "end_seconds": 1632.48,
+    "text": "you're not necessarily working on a a"
+  },
+  {
+    "segment_id": "yt-0733",
+    "start_seconds": 1630.64,
+    "end_seconds": 1634.96,
+    "text": "sequence of things, stacks can be"
+  },
+  {
+    "segment_id": "yt-0734",
+    "start_seconds": 1632.48,
+    "end_seconds": 1638.72,
+    "text": "helpful. But generally speaking, again,"
+  },
+  {
+    "segment_id": "yt-0735",
+    "start_seconds": 1634.96,
+    "end_seconds": 1641.8400000000001,
+    "text": "the the concept I'll go back to is a"
+  },
+  {
+    "segment_id": "yt-0736",
+    "start_seconds": 1638.72,
+    "end_seconds": 1644.08,
+    "text": "stack should tell the story of the"
+  },
+  {
+    "segment_id": "yt-0737",
+    "start_seconds": 1641.84,
+    "end_seconds": 1645.6,
+    "text": "feature that you're building. And"
+  },
+  {
+    "segment_id": "yt-0738",
+    "start_seconds": 1644.08,
+    "end_seconds": 1648.48,
+    "text": "there's literally like a little timeline"
+  },
+  {
+    "segment_id": "yt-0739",
+    "start_seconds": 1645.6,
+    "end_seconds": 1651.36,
+    "text": "view that you see on the PR page with"
+  },
+  {
+    "segment_id": "yt-0740",
+    "start_seconds": 1648.48,
+    "end_seconds": 1653.6,
+    "text": "each stacked PR. And what you really"
+  },
+  {
+    "segment_id": "yt-0741",
+    "start_seconds": 1651.36,
+    "end_seconds": 1655.84,
+    "text": "would like to do is for the reviewer or"
+  },
+  {
+    "segment_id": "yt-0742",
+    "start_seconds": 1653.6,
+    "end_seconds": 1657.6,
+    "text": "anyone who's looking at that code later"
+  },
+  {
+    "segment_id": "yt-0743",
+    "start_seconds": 1655.84,
+    "end_seconds": 1660.08,
+    "text": "that looking at that timeline, looking"
+  },
+  {
+    "segment_id": "yt-0744",
+    "start_seconds": 1657.6,
+    "end_seconds": 1662.08,
+    "text": "at that list of PRs should tell them the"
+  },
+  {
+    "segment_id": "yt-0745",
+    "start_seconds": 1660.08,
+    "end_seconds": 1663.84,
+    "text": "story of what you're trying to build. So"
+  },
+  {
+    "segment_id": "yt-0746",
+    "start_seconds": 1662.08,
+    "end_seconds": 1666.3999999999999,
+    "text": "in a quick glance, they can understand,"
+  },
+  {
+    "segment_id": "yt-0747",
+    "start_seconds": 1663.84,
+    "end_seconds": 1667.76,
+    "text": "okay, this is what is about about to"
+  },
+  {
+    "segment_id": "yt-0748",
+    "start_seconds": 1666.4,
+    "end_seconds": 1669.8400000000001,
+    "text": "ship. I feel like that kind of"
+  },
+  {
+    "segment_id": "yt-0749",
+    "start_seconds": 1667.76,
+    "end_seconds": 1673.2,
+    "text": "storytelling is more and more essential"
+  },
+  {
+    "segment_id": "yt-0750",
+    "start_seconds": 1669.84,
+    "end_seconds": 1675.4399999999998,
+    "text": "now in today's day and age of agentic"
+  },
+  {
+    "segment_id": "yt-0751",
+    "start_seconds": 1673.2,
+    "end_seconds": 1677.3600000000001,
+    "text": "development where people are shipping so"
+  },
+  {
+    "segment_id": "yt-0752",
+    "start_seconds": 1675.44,
+    "end_seconds": 1679.52,
+    "text": "much if you don't know the story an"
+  },
+  {
+    "segment_id": "yt-0753",
+    "start_seconds": 1677.36,
+    "end_seconds": 1681.6789999999999,
+    "text": "individual feature doesn't matter and"
+  },
+  {
+    "segment_id": "yt-0754",
+    "start_seconds": 1679.52,
+    "end_seconds": 1684.0,
+    "text": "and so being able to have that timeline"
+  },
+  {
+    "segment_id": "yt-0755",
+    "start_seconds": 1681.679,
+    "end_seconds": 1685.679,
+    "text": "and and understand where things go. It's"
+  },
+  {
+    "segment_id": "yt-0756",
+    "start_seconds": 1684.0,
+    "end_seconds": 1687.039,
+    "text": "it's very good for understanding which"
+  },
+  {
+    "segment_id": "yt-0757",
+    "start_seconds": 1685.679,
+    "end_seconds": 1687.44,
+    "text": "is the thing that we need the most right"
+  },
+  {
+    "segment_id": "yt-0758",
+    "start_seconds": 1687.039,
+    "end_seconds": 1690.399,
+    "text": "now."
+  },
+  {
+    "segment_id": "yt-0759",
+    "start_seconds": 1687.44,
+    "end_seconds": 1693.039,
+    "text": ">> I agree. I agree. Uh what about for open"
+  },
+  {
+    "segment_id": "yt-0760",
+    "start_seconds": 1690.399,
+    "end_seconds": 1696.0,
+    "text": "source projects like have you seen a lot"
+  },
+  {
+    "segment_id": "yt-0761",
+    "start_seconds": 1693.039,
+    "end_seconds": 1697.76,
+    "text": "of adoption? like have you had any"
+  },
+  {
+    "segment_id": "yt-0762",
+    "start_seconds": 1696.0,
+    "end_seconds": 1699.6,
+    "text": "feedback from maintainers about how this"
+  },
+  {
+    "segment_id": "yt-0763",
+    "start_seconds": 1697.76,
+    "end_seconds": 1703.44,
+    "text": "is maybe changed the way that they work"
+  },
+  {
+    "segment_id": "yt-0764",
+    "start_seconds": 1699.6,
+    "end_seconds": 1706.2939999999999,
+    "text": "with contributors be human or agents cuz"
+  },
+  {
+    "segment_id": "yt-0765",
+    "start_seconds": 1703.44,
+    "end_seconds": 1707.2,
+    "text": "they'll be open in PRS too friends."
+  },
+  {
+    "segment_id": "yt-0766",
+    "start_seconds": 1706.294,
+    "end_seconds": 1709.76,
+    "text": "[clears throat]"
+  },
+  {
+    "segment_id": "yt-0767",
+    "start_seconds": 1707.2,
+    "end_seconds": 1713.52,
+    "text": ">> Uh yeah, we've had a lot of open- source"
+  },
+  {
+    "segment_id": "yt-0768",
+    "start_seconds": 1709.76,
+    "end_seconds": 1715.919,
+    "text": "projects from Verscell uh Nex.js to NX"
+  },
+  {
+    "segment_id": "yt-0769",
+    "start_seconds": 1713.52,
+    "end_seconds": 1718.96,
+    "text": "to the React team and and many others"
+  },
+  {
+    "segment_id": "yt-0770",
+    "start_seconds": 1715.919,
+    "end_seconds": 1720.96,
+    "text": "homebrew uh using stacked PRs. We're"
+  },
+  {
+    "segment_id": "yt-0771",
+    "start_seconds": 1718.96,
+    "end_seconds": 1722.72,
+    "text": "very excited to see the adoption there."
+  },
+  {
+    "segment_id": "yt-0772",
+    "start_seconds": 1720.96,
+    "end_seconds": 1724.24,
+    "text": "One of the things that is still the"
+  },
+  {
+    "segment_id": "yt-0773",
+    "start_seconds": 1722.72,
+    "end_seconds": 1727.039,
+    "text": "limitation of stacked PRs that we are"
+  },
+  {
+    "segment_id": "yt-0774",
+    "start_seconds": 1724.24,
+    "end_seconds": 1729.44,
+    "text": "working on uh which is next up for us is"
+  },
+  {
+    "segment_id": "yt-0775",
+    "start_seconds": 1727.039,
+    "end_seconds": 1731.52,
+    "text": "support for stacked PRs across forks."
+  },
+  {
+    "segment_id": "yt-0776",
+    "start_seconds": 1729.44,
+    "end_seconds": 1732.48,
+    "text": "This is one of the big requests from the"
+  },
+  {
+    "segment_id": "yt-0777",
+    "start_seconds": 1731.52,
+    "end_seconds": 1735.279,
+    "text": "community."
+  },
+  {
+    "segment_id": "yt-0778",
+    "start_seconds": 1732.48,
+    "end_seconds": 1739.1200000000001,
+    "text": ">> So right now stacked PRs only works"
+  },
+  {
+    "segment_id": "yt-0779",
+    "start_seconds": 1735.279,
+    "end_seconds": 1741.919,
+    "text": "within a single repo but uh if you have"
+  },
+  {
+    "segment_id": "yt-0780",
+    "start_seconds": 1739.12,
+    "end_seconds": 1743.76,
+    "text": "a fork you can't create a stacked PR. We"
+  },
+  {
+    "segment_id": "yt-0781",
+    "start_seconds": 1741.919,
+    "end_seconds": 1745.76,
+    "text": "are working on changing that. Again this"
+  },
+  {
+    "segment_id": "yt-0782",
+    "start_seconds": 1743.76,
+    "end_seconds": 1747.36,
+    "text": "is one of those things that is it's"
+  },
+  {
+    "segment_id": "yt-0783",
+    "start_seconds": 1745.76,
+    "end_seconds": 1749.44,
+    "text": "there's a lot of stuff involved. So,"
+  },
+  {
+    "segment_id": "yt-0784",
+    "start_seconds": 1747.36,
+    "end_seconds": 1751.36,
+    "text": "we're working through it, but I'm very"
+  },
+  {
+    "segment_id": "yt-0785",
+    "start_seconds": 1749.44,
+    "end_seconds": 1753.8400000000001,
+    "text": "excited uh once we will release that."
+  },
+  {
+    "segment_id": "yt-0786",
+    "start_seconds": 1751.36,
+    "end_seconds": 1756.1589999999999,
+    "text": ">> Yeah, just understanding again how how"
+  },
+  {
+    "segment_id": "yt-0787",
+    "start_seconds": 1753.84,
+    "end_seconds": 1758.9599999999998,
+    "text": "the base branch is different from the"
+  },
+  {
+    "segment_id": "yt-0788",
+    "start_seconds": 1756.159,
+    "end_seconds": 1760.88,
+    "text": "base PR and stuff. I can imagine across"
+  },
+  {
+    "segment_id": "yt-0789",
+    "start_seconds": 1758.96,
+    "end_seconds": 1762.799,
+    "text": "forks, it's a whole other beast to"
+  },
+  {
+    "segment_id": "yt-0790",
+    "start_seconds": 1760.88,
+    "end_seconds": 1763.2,
+    "text": "tackle, but I'm so excited that that's"
+  },
+  {
+    "segment_id": "yt-0791",
+    "start_seconds": 1762.799,
+    "end_seconds": 1765.6,
+    "text": "coming."
+  },
+  {
+    "segment_id": "yt-0792",
+    "start_seconds": 1763.2,
+    "end_seconds": 1767.2,
+    "text": ">> That's sweet. Oh, you bring us to a good"
+  },
+  {
+    "segment_id": "yt-0793",
+    "start_seconds": 1765.6,
+    "end_seconds": 1768.8799999999999,
+    "text": "place, a good moment in time to talk"
+  },
+  {
+    "segment_id": "yt-0794",
+    "start_seconds": 1767.2,
+    "end_seconds": 1771.8400000000001,
+    "text": "about what else is out there. you"
+  },
+  {
+    "segment_id": "yt-0795",
+    "start_seconds": 1768.88,
+    "end_seconds": 1773.6000000000001,
+    "text": "already done so much and like this has"
+  },
+  {
+    "segment_id": "yt-0796",
+    "start_seconds": 1771.84,
+    "end_seconds": 1776.24,
+    "text": "been like an incredible like long time"
+  },
+  {
+    "segment_id": "yt-0797",
+    "start_seconds": 1773.6,
+    "end_seconds": 1778.24,
+    "text": "coming and uh shout out to the teams"
+  },
+  {
+    "segment_id": "yt-0798",
+    "start_seconds": 1776.24,
+    "end_seconds": 1781.76,
+    "text": "that tried it before whoever that was in"
+  },
+  {
+    "segment_id": "yt-0799",
+    "start_seconds": 1778.24,
+    "end_seconds": 1783.52,
+    "text": "2022 that gave it the last uh honest go"
+  },
+  {
+    "segment_id": "yt-0800",
+    "start_seconds": 1781.76,
+    "end_seconds": 1785.44,
+    "text": "plus everyone that's been here working"
+  },
+  {
+    "segment_id": "yt-0801",
+    "start_seconds": 1783.52,
+    "end_seconds": 1787.039,
+    "text": "really hard on making this happen and"
+  },
+  {
+    "segment_id": "yt-0802",
+    "start_seconds": 1785.44,
+    "end_seconds": 1789.52,
+    "text": "having you join the mean and also like"
+  },
+  {
+    "segment_id": "yt-0803",
+    "start_seconds": 1787.039,
+    "end_seconds": 1791.76,
+    "text": "bring it home amazing uh this has"
+  },
+  {
+    "segment_id": "yt-0804",
+    "start_seconds": 1789.52,
+    "end_seconds": 1794.72,
+    "text": "definitely been a a great effort by the"
+  },
+  {
+    "segment_id": "yt-0805",
+    "start_seconds": 1791.76,
+    "end_seconds": 1796.48,
+    "text": "GitHub team long time coming happy it's"
+  },
+  {
+    "segment_id": "yt-0806",
+    "start_seconds": 1794.72,
+    "end_seconds": 1798.559,
+    "text": "finally here what else is in the"
+  },
+  {
+    "segment_id": "yt-0807",
+    "start_seconds": 1796.48,
+    "end_seconds": 1800.159,
+    "text": "horizons before support for besides"
+  },
+  {
+    "segment_id": "yt-0808",
+    "start_seconds": 1798.559,
+    "end_seconds": 1801.279,
+    "text": "support for forks which I'm really"
+  },
+  {
+    "segment_id": "yt-0809",
+    "start_seconds": 1800.159,
+    "end_seconds": 1804.3200000000002,
+    "text": "excited about as well."
+  },
+  {
+    "segment_id": "yt-0810",
+    "start_seconds": 1801.279,
+    "end_seconds": 1806.32,
+    "text": ">> Yeah. U as I mentioned with stacked PRs"
+  },
+  {
+    "segment_id": "yt-0811",
+    "start_seconds": 1804.32,
+    "end_seconds": 1808.6399999999999,
+    "text": "we had to create a whole new code path"
+  },
+  {
+    "segment_id": "yt-0812",
+    "start_seconds": 1806.32,
+    "end_seconds": 1811.12,
+    "text": "for merging. So one of the limitations"
+  },
+  {
+    "segment_id": "yt-0813",
+    "start_seconds": 1808.64,
+    "end_seconds": 1813.2,
+    "text": "that we do have for stacked PRs is that"
+  },
+  {
+    "segment_id": "yt-0814",
+    "start_seconds": 1811.12,
+    "end_seconds": 1816.559,
+    "text": "there are some features that are missing"
+  },
+  {
+    "segment_id": "yt-0815",
+    "start_seconds": 1813.2,
+    "end_seconds": 1818.64,
+    "text": "for stacked PR merges. Automerge we"
+  },
+  {
+    "segment_id": "yt-0816",
+    "start_seconds": 1816.559,
+    "end_seconds": 1820.399,
+    "text": "don't have that bypassing rules and"
+  },
+  {
+    "segment_id": "yt-0817",
+    "start_seconds": 1818.64,
+    "end_seconds": 1822.159,
+    "text": "merge forks of course as we already"
+  },
+  {
+    "segment_id": "yt-0818",
+    "start_seconds": 1820.399,
+    "end_seconds": 1825.9189999999999,
+    "text": "talked about. So, those are things that"
+  },
+  {
+    "segment_id": "yt-0819",
+    "start_seconds": 1822.159,
+    "end_seconds": 1828.24,
+    "text": "we are working to uh include uh to bring"
+  },
+  {
+    "segment_id": "yt-0820",
+    "start_seconds": 1825.919,
+    "end_seconds": 1830.3990000000001,
+    "text": "stack merges up to par with regular PR"
+  },
+  {
+    "segment_id": "yt-0821",
+    "start_seconds": 1828.24,
+    "end_seconds": 1832.48,
+    "text": "merges. Uh but there's there's more that"
+  },
+  {
+    "segment_id": "yt-0822",
+    "start_seconds": 1830.399,
+    "end_seconds": 1834.32,
+    "text": "we're uh we've just actually recently"
+  },
+  {
+    "segment_id": "yt-0823",
+    "start_seconds": 1832.48,
+    "end_seconds": 1837.6,
+    "text": "released. We just released the ability"
+  },
+  {
+    "segment_id": "yt-0824",
+    "start_seconds": 1834.32,
+    "end_seconds": 1839.6,
+    "text": "for rebases to create signed commits. Uh"
+  },
+  {
+    "segment_id": "yt-0825",
+    "start_seconds": 1837.6,
+    "end_seconds": 1843.039,
+    "text": "for those of you who are part of the the"
+  },
+  {
+    "segment_id": "yt-0826",
+    "start_seconds": 1839.6,
+    "end_seconds": 1844.9599999999998,
+    "text": "rebase uh force push gang, you know, I"
+  },
+  {
+    "segment_id": "yt-0827",
+    "start_seconds": 1843.039,
+    "end_seconds": 1846.559,
+    "text": "personally never used merge commits. I"
+  },
+  {
+    "segment_id": "yt-0828",
+    "start_seconds": 1844.96,
+    "end_seconds": 1848.72,
+    "text": "personally find merge commit my hot"
+  },
+  {
+    "segment_id": "yt-0829",
+    "start_seconds": 1846.559,
+    "end_seconds": 1850.96,
+    "text": "take. I I hate merge commits. I think"
+  },
+  {
+    "segment_id": "yt-0830",
+    "start_seconds": 1848.72,
+    "end_seconds": 1853.76,
+    "text": "they're ugly. So, I personally love"
+  },
+  {
+    "segment_id": "yt-0831",
+    "start_seconds": 1850.96,
+    "end_seconds": 1856.32,
+    "text": "rebasing and force pushing. I like the"
+  },
+  {
+    "segment_id": "yt-0832",
+    "start_seconds": 1853.76,
+    "end_seconds": 1858.08,
+    "text": "linear uh history, but even regardless"
+  },
+  {
+    "segment_id": "yt-0833",
+    "start_seconds": 1856.32,
+    "end_seconds": 1860.96,
+    "text": "of that, I know a lot of folks have been"
+  },
+  {
+    "segment_id": "yt-0834",
+    "start_seconds": 1858.08,
+    "end_seconds": 1862.559,
+    "text": "asking for rebases to create signed"
+  },
+  {
+    "segment_id": "yt-0835",
+    "start_seconds": 1860.96,
+    "end_seconds": 1864.64,
+    "text": "commits cuz when you create a merge"
+  },
+  {
+    "segment_id": "yt-0836",
+    "start_seconds": 1862.559,
+    "end_seconds": 1867.52,
+    "text": "commit, it creates a signed commit on"
+  },
+  {
+    "segment_id": "yt-0837",
+    "start_seconds": 1864.64,
+    "end_seconds": 1869.44,
+    "text": "GitHub, but rebases don't. And that is"
+  },
+  {
+    "segment_id": "yt-0838",
+    "start_seconds": 1867.52,
+    "end_seconds": 1871.76,
+    "text": "one of the things that stack rebases do"
+  },
+  {
+    "segment_id": "yt-0839",
+    "start_seconds": 1869.44,
+    "end_seconds": 1873.919,
+    "text": "create signed commits now, which if you"
+  },
+  {
+    "segment_id": "yt-0840",
+    "start_seconds": 1871.76,
+    "end_seconds": 1875.36,
+    "text": "have rules that require signed commits,"
+  },
+  {
+    "segment_id": "yt-0841",
+    "start_seconds": 1873.919,
+    "end_seconds": 1878.24,
+    "text": "it's one of those things that again we"
+  },
+  {
+    "segment_id": "yt-0842",
+    "start_seconds": 1875.36,
+    "end_seconds": 1879.76,
+    "text": "have to dig back through and and redo a"
+  },
+  {
+    "segment_id": "yt-0843",
+    "start_seconds": 1878.24,
+    "end_seconds": 1882.24,
+    "text": "bunch of stuff, but it is here now."
+  },
+  {
+    "segment_id": "yt-0844",
+    "start_seconds": 1879.76,
+    "end_seconds": 1883.52,
+    "text": "We're super excited about it. Uh we just"
+  },
+  {
+    "segment_id": "yt-0845",
+    "start_seconds": 1882.24,
+    "end_seconds": 1885.2,
+    "text": "there's a lot more we just need to do in"
+  },
+  {
+    "segment_id": "yt-0846",
+    "start_seconds": 1883.52,
+    "end_seconds": 1887.9189999999999,
+    "text": "general. Speaking of rebase force push"
+  },
+  {
+    "segment_id": "yt-0847",
+    "start_seconds": 1885.2,
+    "end_seconds": 1891.1200000000001,
+    "text": "to improve it in the PR experience,"
+  },
+  {
+    "segment_id": "yt-0848",
+    "start_seconds": 1887.919,
+    "end_seconds": 1894.0800000000002,
+    "text": "there's a lot that has been built up in"
+  },
+  {
+    "segment_id": "yt-0849",
+    "start_seconds": 1891.12,
+    "end_seconds": 1897.12,
+    "text": "the PR experience over the years and"
+  },
+  {
+    "segment_id": "yt-0850",
+    "start_seconds": 1894.08,
+    "end_seconds": 1899.279,
+    "text": "outside of just stacks. We as a team are"
+  },
+  {
+    "segment_id": "yt-0851",
+    "start_seconds": 1897.12,
+    "end_seconds": 1900.4799999999998,
+    "text": "looking broadly at how people are"
+  },
+  {
+    "segment_id": "yt-0852",
+    "start_seconds": 1899.279,
+    "end_seconds": 1901.84,
+    "text": "writing code, how people are"
+  },
+  {
+    "segment_id": "yt-0853",
+    "start_seconds": 1900.48,
+    "end_seconds": 1904.48,
+    "text": "collaborating with their agents, with"
+  },
+  {
+    "segment_id": "yt-0854",
+    "start_seconds": 1901.84,
+    "end_seconds": 1907.1999999999998,
+    "text": "each other, and really redesigning the"
+  },
+  {
+    "segment_id": "yt-0855",
+    "start_seconds": 1904.48,
+    "end_seconds": 1910.0,
+    "text": "PR experience to be a lot faster, get"
+  },
+  {
+    "segment_id": "yt-0856",
+    "start_seconds": 1907.2,
+    "end_seconds": 1912.88,
+    "text": "you the information that you need, and"
+  },
+  {
+    "segment_id": "yt-0857",
+    "start_seconds": 1910.0,
+    "end_seconds": 1913.919,
+    "text": "just allow you to just move faster"
+  },
+  {
+    "segment_id": "yt-0858",
+    "start_seconds": 1912.88,
+    "end_seconds": 1916.0800000000002,
+    "text": "through the experience. Good."
+  },
+  {
+    "segment_id": "yt-0859",
+    "start_seconds": 1913.919,
+    "end_seconds": 1917.8400000000001,
+    "text": ">> I love that. I love that. And actually"
+  },
+  {
+    "segment_id": "yt-0860",
+    "start_seconds": 1916.08,
+    "end_seconds": 1920.48,
+    "text": "bring me to the point of like developer"
+  },
+  {
+    "segment_id": "yt-0861",
+    "start_seconds": 1917.84,
+    "end_seconds": 1923.039,
+    "text": "choice which is my favorite song of the"
+  },
+  {
+    "segment_id": "yt-0862",
+    "start_seconds": 1920.48,
+    "end_seconds": 1926.48,
+    "text": "day here today but because you can use"
+  },
+  {
+    "segment_id": "yt-0863",
+    "start_seconds": 1923.039,
+    "end_seconds": 1928.32,
+    "text": "stack PRs across every surface on.com"
+  },
+  {
+    "segment_id": "yt-0864",
+    "start_seconds": 1926.48,
+    "end_seconds": 1931.039,
+    "text": "right so maybe tell us a little bit"
+  },
+  {
+    "segment_id": "yt-0865",
+    "start_seconds": 1928.32,
+    "end_seconds": 1932.799,
+    "text": "about what you can use it on the CLI uh"
+  },
+  {
+    "segment_id": "yt-0866",
+    "start_seconds": 1931.039,
+    "end_seconds": 1934.799,
+    "text": "you can use it the copilot app which is"
+  },
+  {
+    "segment_id": "yt-0867",
+    "start_seconds": 1932.799,
+    "end_seconds": 1936.559,
+    "text": "one of my most favorite new things"
+  },
+  {
+    "segment_id": "yt-0868",
+    "start_seconds": 1934.799,
+    "end_seconds": 1937.9189999999999,
+    "text": "because there is a CLI skill for it can"
+  },
+  {
+    "segment_id": "yt-0869",
+    "start_seconds": 1936.559,
+    "end_seconds": 1938.96,
+    "text": "you talk a little bit about why that was"
+  },
+  {
+    "segment_id": "yt-0870",
+    "start_seconds": 1937.919,
+    "end_seconds": 1941.6000000000001,
+    "text": "important to make sure that it was"
+  },
+  {
+    "segment_id": "yt-0871",
+    "start_seconds": 1938.96,
+    "end_seconds": 1945.1200000000001,
+    "text": "accessible everywhere"
+  },
+  {
+    "segment_id": "yt-0872",
+    "start_seconds": 1941.6,
+    "end_seconds": 1947.6789999999999,
+    "text": ">> yeah I I think we just want Again, stack"
+  },
+  {
+    "segment_id": "yt-0873",
+    "start_seconds": 1945.12,
+    "end_seconds": 1949.9189999999999,
+    "text": "PR is to be just a first class part of"
+  },
+  {
+    "segment_id": "yt-0874",
+    "start_seconds": 1947.679,
+    "end_seconds": 1952.3990000000001,
+    "text": "PRs in GitHub. And that means it just"
+  },
+  {
+    "segment_id": "yt-0875",
+    "start_seconds": 1949.919,
+    "end_seconds": 1955.3600000000001,
+    "text": "needs to work everywhere. The CLI,"
+  },
+  {
+    "segment_id": "yt-0876",
+    "start_seconds": 1952.399,
+    "end_seconds": 1958.7199999999998,
+    "text": "Copilot CLI, the GitHub Copilot app, the"
+  },
+  {
+    "segment_id": "yt-0877",
+    "start_seconds": 1955.36,
+    "end_seconds": 1960.559,
+    "text": "mobile app, Android, iOS, uh obviously"
+  },
+  {
+    "segment_id": "yt-0878",
+    "start_seconds": 1958.72,
+    "end_seconds": 1962.799,
+    "text": "github.com."
+  },
+  {
+    "segment_id": "yt-0879",
+    "start_seconds": 1960.559,
+    "end_seconds": 1964.72,
+    "text": ">> And in order to make that happen, there"
+  },
+  {
+    "segment_id": "yt-0880",
+    "start_seconds": 1962.799,
+    "end_seconds": 1966.1589999999999,
+    "text": "was really just a lot that we had to do."
+  },
+  {
+    "segment_id": "yt-0881",
+    "start_seconds": 1964.72,
+    "end_seconds": 1968.559,
+    "text": "We already talked about the models that"
+  },
+  {
+    "segment_id": "yt-0882",
+    "start_seconds": 1966.159,
+    "end_seconds": 1971.3600000000001,
+    "text": "we needed to change and whatnot, but"
+  },
+  {
+    "segment_id": "yt-0883",
+    "start_seconds": 1968.559,
+    "end_seconds": 1973.76,
+    "text": "ultimately again people are writing code"
+  },
+  {
+    "segment_id": "yt-0884",
+    "start_seconds": 1971.36,
+    "end_seconds": 1975.84,
+    "text": "from so many different places now."
+  },
+  {
+    "segment_id": "yt-0885",
+    "start_seconds": 1973.76,
+    "end_seconds": 1978.32,
+    "text": "People are, you know, coding from their"
+  },
+  {
+    "segment_id": "yt-0886",
+    "start_seconds": 1975.84,
+    "end_seconds": 1980.48,
+    "text": "phone. They're, you know, doing remote"
+  },
+  {
+    "segment_id": "yt-0887",
+    "start_seconds": 1978.32,
+    "end_seconds": 1983.12,
+    "text": "sessions with agents. And we just want"
+  },
+  {
+    "segment_id": "yt-0888",
+    "start_seconds": 1980.48,
+    "end_seconds": 1985.76,
+    "text": "to make it easy. And really again, even"
+  },
+  {
+    "segment_id": "yt-0889",
+    "start_seconds": 1983.12,
+    "end_seconds": 1987.6,
+    "text": "if you're not using the co-pilot app or"
+  },
+  {
+    "segment_id": "yt-0890",
+    "start_seconds": 1985.76,
+    "end_seconds": 1991.12,
+    "text": "any of those tools, we have the skill"
+  },
+  {
+    "segment_id": "yt-0891",
+    "start_seconds": 1987.6,
+    "end_seconds": 1992.799,
+    "text": "file and you could point any agent uh"
+  },
+  {
+    "segment_id": "yt-0892",
+    "start_seconds": 1991.12,
+    "end_seconds": 1995.039,
+    "text": "regardless of the vendor at the skill"
+  },
+  {
+    "segment_id": "yt-0893",
+    "start_seconds": 1992.799,
+    "end_seconds": 1997.6,
+    "text": "file and it can create stacked PRs using"
+  },
+  {
+    "segment_id": "yt-0894",
+    "start_seconds": 1995.039,
+    "end_seconds": 2001.12,
+    "text": "either the CLI or the public API. So"
+  },
+  {
+    "segment_id": "yt-0895",
+    "start_seconds": 1997.6,
+    "end_seconds": 2002.559,
+    "text": "it's meant to be very open and as Andrew"
+  },
+  {
+    "segment_id": "yt-0896",
+    "start_seconds": 2001.12,
+    "end_seconds": 2005.76,
+    "text": "you mentioned it's all about developer"
+  },
+  {
+    "segment_id": "yt-0897",
+    "start_seconds": 2002.559,
+    "end_seconds": 2008.799,
+    "text": "choice and we just want to build the"
+  },
+  {
+    "segment_id": "yt-0898",
+    "start_seconds": 2005.76,
+    "end_seconds": 2010.399,
+    "text": "platform and any developers de"
+  },
+  {
+    "segment_id": "yt-0899",
+    "start_seconds": 2008.799,
+    "end_seconds": 2011.679,
+    "text": "regardless of their workflows they can"
+  },
+  {
+    "segment_id": "yt-0900",
+    "start_seconds": 2010.399,
+    "end_seconds": 2013.9189999999999,
+    "text": "figure out however they want to"
+  },
+  {
+    "segment_id": "yt-0901",
+    "start_seconds": 2011.679,
+    "end_seconds": 2016.0800000000002,
+    "text": "integrated with it. I love that so much"
+  },
+  {
+    "segment_id": "yt-0902",
+    "start_seconds": 2013.919,
+    "end_seconds": 2018.48,
+    "text": "and I I want to give like you and your"
+  },
+  {
+    "segment_id": "yt-0903",
+    "start_seconds": 2016.08,
+    "end_seconds": 2020.1589999999999,
+    "text": "team flowers because you've been working"
+  },
+  {
+    "segment_id": "yt-0904",
+    "start_seconds": 2018.48,
+    "end_seconds": 2022.32,
+    "text": "on this so hard and suddenly there were"
+  },
+  {
+    "segment_id": "yt-0905",
+    "start_seconds": 2020.159,
+    "end_seconds": 2024.7990000000002,
+    "text": "a lot of big spotlights on your team at"
+  },
+  {
+    "segment_id": "yt-0906",
+    "start_seconds": 2022.32,
+    "end_seconds": 2027.2,
+    "text": "at certain points as it got particularly"
+  },
+  {
+    "segment_id": "yt-0907",
+    "start_seconds": 2024.799,
+    "end_seconds": 2029.2,
+    "text": "viral on the various social medias that"
+  },
+  {
+    "segment_id": "yt-0908",
+    "start_seconds": 2027.2,
+    "end_seconds": 2031.44,
+    "text": "there was a team actually working on it"
+  },
+  {
+    "segment_id": "yt-0909",
+    "start_seconds": 2029.2,
+    "end_seconds": 2032.799,
+    "text": "and y'all did such a great job kind of"
+  },
+  {
+    "segment_id": "yt-0910",
+    "start_seconds": 2031.44,
+    "end_seconds": 2034.3200000000002,
+    "text": "cutting through the noise and just"
+  },
+  {
+    "segment_id": "yt-0911",
+    "start_seconds": 2032.799,
+    "end_seconds": 2036.799,
+    "text": "getting to the meat of it of making it"
+  },
+  {
+    "segment_id": "yt-0912",
+    "start_seconds": 2034.32,
+    "end_seconds": 2039.12,
+    "text": "open, making it secure and and just"
+  },
+  {
+    "segment_id": "yt-0913",
+    "start_seconds": 2036.799,
+    "end_seconds": 2041.9189999999999,
+    "text": "making it work on the platform. So"
+  },
+  {
+    "segment_id": "yt-0914",
+    "start_seconds": 2039.12,
+    "end_seconds": 2044.0,
+    "text": "again, huge kudos and and thank you for"
+  },
+  {
+    "segment_id": "yt-0915",
+    "start_seconds": 2041.919,
+    "end_seconds": 2045.44,
+    "text": "driving it home because that was no"
+  },
+  {
+    "segment_id": "yt-0916",
+    "start_seconds": 2044.0,
+    "end_seconds": 2047.2,
+    "text": "small feat."
+  },
+  {
+    "segment_id": "yt-0917",
+    "start_seconds": 2045.44,
+    "end_seconds": 2048.8,
+    "text": ">> All the flowers, all the flowers to you"
+  },
+  {
+    "segment_id": "yt-0918",
+    "start_seconds": 2047.2,
+    "end_seconds": 2052.7200000000003,
+    "text": "and the team. [laughter]"
+  },
+  {
+    "segment_id": "yt-0919",
+    "start_seconds": 2048.8,
+    "end_seconds": 2056.8,
+    "text": ">> Thank you. And I I have to uh pass that"
+  },
+  {
+    "segment_id": "yt-0920",
+    "start_seconds": 2052.72,
+    "end_seconds": 2058.56,
+    "text": "on to all of our customers, our users,"
+  },
+  {
+    "segment_id": "yt-0921",
+    "start_seconds": 2056.8,
+    "end_seconds": 2060.8790000000004,
+    "text": "all the developers who were part of the"
+  },
+  {
+    "segment_id": "yt-0922",
+    "start_seconds": 2058.56,
+    "end_seconds": 2064.0789999999997,
+    "text": "beta, who were asking for it. I mean,"
+  },
+  {
+    "segment_id": "yt-0923",
+    "start_seconds": 2060.879,
+    "end_seconds": 2066.159,
+    "text": "first off, the reason that Stack PRS was"
+  },
+  {
+    "segment_id": "yt-0924",
+    "start_seconds": 2064.079,
+    "end_seconds": 2067.8390000000004,
+    "text": "prioritized, the reason it got done is"
+  },
+  {
+    "segment_id": "yt-0925",
+    "start_seconds": 2066.159,
+    "end_seconds": 2069.679,
+    "text": "because the community kept asking for"
+  },
+  {
+    "segment_id": "yt-0926",
+    "start_seconds": 2067.839,
+    "end_seconds": 2072.32,
+    "text": "it, and I know folks have been asking"
+  },
+  {
+    "segment_id": "yt-0927",
+    "start_seconds": 2069.679,
+    "end_seconds": 2074.399,
+    "text": "for it for a really long time. Um, and"
+  },
+  {
+    "segment_id": "yt-0928",
+    "start_seconds": 2072.32,
+    "end_seconds": 2076.079,
+    "text": "it took a while, but we did it. And it's"
+  },
+  {
+    "segment_id": "yt-0929",
+    "start_seconds": 2074.399,
+    "end_seconds": 2079.2799999999997,
+    "text": "not the end. There's a lot more that we"
+  },
+  {
+    "segment_id": "yt-0930",
+    "start_seconds": 2076.079,
+    "end_seconds": 2081.9190000000003,
+    "text": "need to do, and we really rely on the"
+  },
+  {
+    "segment_id": "yt-0931",
+    "start_seconds": 2079.28,
+    "end_seconds": 2083.28,
+    "text": "community's input and feedback. And I"
+  },
+  {
+    "segment_id": "yt-0932",
+    "start_seconds": 2081.919,
+    "end_seconds": 2085.44,
+    "text": "know it could be a lot. There's a lot"
+  },
+  {
+    "segment_id": "yt-0933",
+    "start_seconds": 2083.28,
+    "end_seconds": 2087.44,
+    "text": "that's going on, but it really like we"
+  },
+  {
+    "segment_id": "yt-0934",
+    "start_seconds": 2085.44,
+    "end_seconds": 2089.359,
+    "text": "really do listen to that. We spend a lot"
+  },
+  {
+    "segment_id": "yt-0935",
+    "start_seconds": 2087.44,
+    "end_seconds": 2091.679,
+    "text": "of time on all the platforms and"
+  },
+  {
+    "segment_id": "yt-0936",
+    "start_seconds": 2089.359,
+    "end_seconds": 2093.5989999999997,
+    "text": "discussion posts and everything really"
+  },
+  {
+    "segment_id": "yt-0937",
+    "start_seconds": 2091.679,
+    "end_seconds": 2095.28,
+    "text": "listening to what folks are are saying"
+  },
+  {
+    "segment_id": "yt-0938",
+    "start_seconds": 2093.599,
+    "end_seconds": 2097.839,
+    "text": "because we want to make the platform"
+  },
+  {
+    "segment_id": "yt-0939",
+    "start_seconds": 2095.28,
+    "end_seconds": 2100.32,
+    "text": "better and we can't do that without the"
+  },
+  {
+    "segment_id": "yt-0940",
+    "start_seconds": 2097.839,
+    "end_seconds": 2102.64,
+    "text": "input and feedback from folks and it"
+  },
+  {
+    "segment_id": "yt-0941",
+    "start_seconds": 2100.32,
+    "end_seconds": 2104.4,
+    "text": "really is a partnership between us and"
+  },
+  {
+    "segment_id": "yt-0942",
+    "start_seconds": 2102.64,
+    "end_seconds": 2104.7999999999997,
+    "text": "the developers and the community"
+  },
+  {
+    "segment_id": "yt-0943",
+    "start_seconds": 2104.4,
+    "end_seconds": 2106.64,
+    "text": ">> for sure."
+  },
+  {
+    "segment_id": "yt-0944",
+    "start_seconds": 2104.8,
+    "end_seconds": 2108.8,
+    "text": ">> I love that and a continue partnership"
+  },
+  {
+    "segment_id": "yt-0945",
+    "start_seconds": 2106.64,
+    "end_seconds": 2110.8799999999997,
+    "text": "right like the the things chip but that"
+  },
+  {
+    "segment_id": "yt-0946",
+    "start_seconds": 2108.8,
+    "end_seconds": 2112.5600000000004,
+    "text": "you're still as you continue to grow and"
+  },
+  {
+    "segment_id": "yt-0947",
+    "start_seconds": 2110.88,
+    "end_seconds": 2116.6400000000003,
+    "text": "I love it. folks sometimes find like the"
+  },
+  {
+    "segment_id": "yt-0948",
+    "start_seconds": 2112.56,
+    "end_seconds": 2117.52,
+    "text": "most unique um edge cases that they're"
+  },
+  {
+    "segment_id": "yt-0949",
+    "start_seconds": 2116.64,
+    "end_seconds": 2119.1189999999997,
+    "text": "like so"
+  },
+  {
+    "segment_id": "yt-0950",
+    "start_seconds": 2117.52,
+    "end_seconds": 2119.599,
+    "text": ">> and what a pleasure that is."
+  },
+  {
+    "segment_id": "yt-0951",
+    "start_seconds": 2119.119,
+    "end_seconds": 2121.44,
+    "text": ">> Yeah."
+  },
+  {
+    "segment_id": "yt-0952",
+    "start_seconds": 2119.599,
+    "end_seconds": 2123.76,
+    "text": ">> That being said, we are getting to the"
+  },
+  {
+    "segment_id": "yt-0953",
+    "start_seconds": 2121.44,
+    "end_seconds": 2125.68,
+    "text": "end of our time here. So before we go,"
+  },
+  {
+    "segment_id": "yt-0954",
+    "start_seconds": 2123.76,
+    "end_seconds": 2127.0400000000004,
+    "text": "we all have various open- source"
+  },
+  {
+    "segment_id": "yt-0955",
+    "start_seconds": 2125.68,
+    "end_seconds": 2129.2,
+    "text": "projects and things that we would like"
+  },
+  {
+    "segment_id": "yt-0956",
+    "start_seconds": 2127.04,
+    "end_seconds": 2131.2,
+    "text": "to share. And if y'all don't mind, I"
+  },
+  {
+    "segment_id": "yt-0957",
+    "start_seconds": 2129.2,
+    "end_seconds": 2132.3999999999996,
+    "text": "will go first. So the link that I'll"
+  },
+  {
+    "segment_id": "yt-0958",
+    "start_seconds": 2131.2,
+    "end_seconds": 2135.9199999999996,
+    "text": "share, and these links are all in the"
+  },
+  {
+    "segment_id": "yt-0959",
+    "start_seconds": 2132.4,
+    "end_seconds": 2138.0,
+    "text": "show notes, um is a project by Sarah"
+  },
+  {
+    "segment_id": "yt-0960",
+    "start_seconds": 2135.92,
+    "end_seconds": 2140.64,
+    "text": "Drazner. She is a distinguished engineer"
+  },
+  {
+    "segment_id": "yt-0961",
+    "start_seconds": 2138.0,
+    "end_seconds": 2142.24,
+    "text": "over at Google and in a previous life"
+  },
+  {
+    "segment_id": "yt-0962",
+    "start_seconds": 2140.64,
+    "end_seconds": 2144.56,
+    "text": "before she went into tech she was a"
+  },
+  {
+    "segment_id": "yt-0963",
+    "start_seconds": 2142.24,
+    "end_seconds": 2147.1189999999997,
+    "text": "scientific illustrator and she's kind of"
+  },
+  {
+    "segment_id": "yt-0964",
+    "start_seconds": 2144.56,
+    "end_seconds": 2149.359,
+    "text": "combining her tech skills and her"
+  },
+  {
+    "segment_id": "yt-0965",
+    "start_seconds": 2147.119,
+    "end_seconds": 2151.76,
+    "text": "illustration skills to make visual"
+  },
+  {
+    "segment_id": "yt-0966",
+    "start_seconds": 2149.359,
+    "end_seconds": 2153.7599999999998,
+    "text": "explorations of code. And so if you go"
+  },
+  {
+    "segment_id": "yt-0967",
+    "start_seconds": 2151.76,
+    "end_seconds": 2155.599,
+    "text": "to her website and again the URL is in"
+  },
+  {
+    "segment_id": "yt-0968",
+    "start_seconds": 2153.76,
+    "end_seconds": 2157.92,
+    "text": "the show notes sarah.dev/projects dev/"
+  },
+  {
+    "segment_id": "yt-0969",
+    "start_seconds": 2155.599,
+    "end_seconds": 2161.52,
+    "text": "projects. You can see her code drawings"
+  },
+  {
+    "segment_id": "yt-0970",
+    "start_seconds": 2157.92,
+    "end_seconds": 2163.76,
+    "text": "and she goes very deep into how MCP"
+  },
+  {
+    "segment_id": "yt-0971",
+    "start_seconds": 2161.52,
+    "end_seconds": 2167.2,
+    "text": "works in practice or the differences"
+  },
+  {
+    "segment_id": "yt-0972",
+    "start_seconds": 2163.76,
+    "end_seconds": 2170.0,
+    "text": "between GPUs and CPUs or vector"
+  },
+  {
+    "segment_id": "yt-0973",
+    "start_seconds": 2167.2,
+    "end_seconds": 2171.9199999999996,
+    "text": "databases or just various types of"
+  },
+  {
+    "segment_id": "yt-0974",
+    "start_seconds": 2170.0,
+    "end_seconds": 2174.56,
+    "text": "software architecture. And it's really"
+  },
+  {
+    "segment_id": "yt-0975",
+    "start_seconds": 2171.92,
+    "end_seconds": 2176.8,
+    "text": "cool to see that visually explained. And"
+  },
+  {
+    "segment_id": "yt-0976",
+    "start_seconds": 2174.56,
+    "end_seconds": 2179.7599999999998,
+    "text": "she's also just a really talented artist"
+  },
+  {
+    "segment_id": "yt-0977",
+    "start_seconds": 2176.8,
+    "end_seconds": 2181.44,
+    "text": "and this was her actual job before going"
+  },
+  {
+    "segment_id": "yt-0978",
+    "start_seconds": 2179.76,
+    "end_seconds": 2184.96,
+    "text": "into the tech industry. And so it's a"
+  },
+  {
+    "segment_id": "yt-0979",
+    "start_seconds": 2181.44,
+    "end_seconds": 2186.7200000000003,
+    "text": "very cool mashing of skills that also"
+  },
+  {
+    "segment_id": "yt-0980",
+    "start_seconds": 2184.96,
+    "end_seconds": 2189.04,
+    "text": "can teach you something. And so that is"
+  },
+  {
+    "segment_id": "yt-0981",
+    "start_seconds": 2186.72,
+    "end_seconds": 2192.0,
+    "text": "that is my pick for this episode."
+  },
+  {
+    "segment_id": "yt-0982",
+    "start_seconds": 2189.04,
+    "end_seconds": 2196.0,
+    "text": ">> I love that. I am a big fan of Sarah"
+  },
+  {
+    "segment_id": "yt-0983",
+    "start_seconds": 2192.0,
+    "end_seconds": 2198.4,
+    "text": "like embarrassing. So um and also I am a"
+  },
+  {
+    "segment_id": "yt-0984",
+    "start_seconds": 2196.0,
+    "end_seconds": 2200.24,
+    "text": "big visual learner. Like I love it when"
+  },
+  {
+    "segment_id": "yt-0985",
+    "start_seconds": 2198.4,
+    "end_seconds": 2201.76,
+    "text": "people draw me things to explain things"
+  },
+  {
+    "segment_id": "yt-0986",
+    "start_seconds": 2200.24,
+    "end_seconds": 2203.68,
+    "text": "to me. [laughter]"
+  },
+  {
+    "segment_id": "yt-0987",
+    "start_seconds": 2201.76,
+    "end_seconds": 2206.0,
+    "text": "I am excited for this project. I have to"
+  },
+  {
+    "segment_id": "yt-0988",
+    "start_seconds": 2203.68,
+    "end_seconds": 2207.9199999999996,
+    "text": "check it out. That's awesome. Awesome."
+  },
+  {
+    "segment_id": "yt-0989",
+    "start_seconds": 2206.0,
+    "end_seconds": 2210.48,
+    "text": "I'll go next. Um, I'm going to shout out"
+  },
+  {
+    "segment_id": "yt-0990",
+    "start_seconds": 2207.92,
+    "end_seconds": 2212.64,
+    "text": "a classic, a new classic, and it's"
+  },
+  {
+    "segment_id": "yt-0991",
+    "start_seconds": 2210.48,
+    "end_seconds": 2214.72,
+    "text": "agents.md. Did you know that that is an"
+  },
+  {
+    "segment_id": "yt-0992",
+    "start_seconds": 2212.64,
+    "end_seconds": 2217.52,
+    "text": "actual open source project, right? Uh,"
+  },
+  {
+    "segment_id": "yt-0993",
+    "start_seconds": 2214.72,
+    "end_seconds": 2219.7599999999998,
+    "text": "and what agents is all about? Well,"
+  },
+  {
+    "segment_id": "yt-0994",
+    "start_seconds": 2217.52,
+    "end_seconds": 2221.68,
+    "text": ">> those setup commands that get buried in"
+  },
+  {
+    "segment_id": "yt-0995",
+    "start_seconds": 2219.76,
+    "end_seconds": 2223.6800000000003,
+    "text": "like your read mess, like the tests that"
+  },
+  {
+    "segment_id": "yt-0996",
+    "start_seconds": 2221.68,
+    "end_seconds": 2226.3999999999996,
+    "text": "like nobody ever runs,"
+  },
+  {
+    "segment_id": "yt-0997",
+    "start_seconds": 2223.68,
+    "end_seconds": 2228.0789999999997,
+    "text": ">> the rules that you know, you don't"
+  },
+  {
+    "segment_id": "yt-0998",
+    "start_seconds": 2226.4,
+    "end_seconds": 2229.839,
+    "text": "really they live in your head, I guess,"
+  },
+  {
+    "segment_id": "yt-0999",
+    "start_seconds": 2228.079,
+    "end_seconds": 2232.1600000000003,
+    "text": "but they they need to live on a file."
+  },
+  {
+    "segment_id": "yt-1000",
+    "start_seconds": 2229.839,
+    "end_seconds": 2234.64,
+    "text": "Um, but they don't necessarily belong in"
+  },
+  {
+    "segment_id": "yt-1001",
+    "start_seconds": 2232.16,
+    "end_seconds": 2236.56,
+    "text": "PRs. So all of that context that your"
+  },
+  {
+    "segment_id": "yt-1002",
+    "start_seconds": 2234.64,
+    "end_seconds": 2239.5989999999997,
+    "text": "coding agent needs regardless of the"
+  },
+  {
+    "segment_id": "yt-1003",
+    "start_seconds": 2236.56,
+    "end_seconds": 2240.64,
+    "text": "coding agent of the provider uh most of"
+  },
+  {
+    "segment_id": "yt-1004",
+    "start_seconds": 2239.599,
+    "end_seconds": 2242.079,
+    "text": "the times they don't really know where"
+  },
+  {
+    "segment_id": "yt-1005",
+    "start_seconds": 2240.64,
+    "end_seconds": 2243.92,
+    "text": "to find it right like they only have"
+  },
+  {
+    "segment_id": "yt-1006",
+    "start_seconds": 2242.079,
+    "end_seconds": 2246.5600000000004,
+    "text": "access to what we tell them and so"
+  },
+  {
+    "segment_id": "yt-1007",
+    "start_seconds": 2243.92,
+    "end_seconds": 2249.2000000000003,
+    "text": "agents.md gives repose that obvious"
+  },
+  {
+    "segment_id": "yt-1008",
+    "start_seconds": 2246.56,
+    "end_seconds": 2251.52,
+    "text": "place to put it uh it is a standard it's"
+  },
+  {
+    "segment_id": "yt-1009",
+    "start_seconds": 2249.2,
+    "end_seconds": 2253.1189999999997,
+    "text": "a standard in the industry has aligned"
+  },
+  {
+    "segment_id": "yt-1010",
+    "start_seconds": 2251.52,
+    "end_seconds": 2255.28,
+    "text": "and decided that is the way to work with"
+  },
+  {
+    "segment_id": "yt-1011",
+    "start_seconds": 2253.119,
+    "end_seconds": 2258.32,
+    "text": "agents uh and it's also an open source"
+  },
+  {
+    "segment_id": "yt-1012",
+    "start_seconds": 2255.28,
+    "end_seconds": 2260.4,
+    "text": "project itself under the Aif a AIF"
+  },
+  {
+    "segment_id": "yt-1013",
+    "start_seconds": 2258.32,
+    "end_seconds": 2262.96,
+    "text": "foundation so uh you can find the"
+  },
+  {
+    "segment_id": "yt-1014",
+    "start_seconds": 2260.4,
+    "end_seconds": 2266.52,
+    "text": "project itself under github.com/ SL"
+  },
+  {
+    "segment_id": "yt-1015",
+    "start_seconds": 2262.96,
+    "end_seconds": 2266.52,
+    "text": "aents MD/agents.mmd."
+  },
+  {
+    "segment_id": "yt-1016",
+    "start_seconds": 2266.64,
+    "end_seconds": 2271.5989999999997,
+    "text": "Um, I love this. It's a boring standard"
+  },
+  {
+    "segment_id": "yt-1017",
+    "start_seconds": 2269.359,
+    "end_seconds": 2273.359,
+    "text": "that works. It's open. And"
+  },
+  {
+    "segment_id": "yt-1018",
+    "start_seconds": 2271.599,
+    "end_seconds": 2275.76,
+    "text": ">> boring standards are the best standards."
+  },
+  {
+    "segment_id": "yt-1019",
+    "start_seconds": 2273.359,
+    "end_seconds": 2277.92,
+    "text": ">> Exactly. Exactly. And anything that can"
+  },
+  {
+    "segment_id": "yt-1020",
+    "start_seconds": 2275.76,
+    "end_seconds": 2279.92,
+    "text": "help like your agents make fewer"
+  },
+  {
+    "segment_id": "yt-1021",
+    "start_seconds": 2277.92,
+    "end_seconds": 2281.28,
+    "text": "assumptions and like just go make stuff"
+  },
+  {
+    "segment_id": "yt-1022",
+    "start_seconds": 2279.92,
+    "end_seconds": 2283.6800000000003,
+    "text": "up that you know is not going to work"
+  },
+  {
+    "segment_id": "yt-1023",
+    "start_seconds": 2281.28,
+    "end_seconds": 2285.3590000000004,
+    "text": "for your project. Uh, it's going to be"
+  },
+  {
+    "segment_id": "yt-1024",
+    "start_seconds": 2283.68,
+    "end_seconds": 2286.96,
+    "text": "awesome. So, uh, check it out if you"
+  },
+  {
+    "segment_id": "yt-1025",
+    "start_seconds": 2285.359,
+    "end_seconds": 2288.48,
+    "text": "haven't started the project and if you"
+  },
+  {
+    "segment_id": "yt-1026",
+    "start_seconds": 2286.96,
+    "end_seconds": 2291.119,
+    "text": "have feedback or actually are interested"
+  },
+  {
+    "segment_id": "yt-1027",
+    "start_seconds": 2288.48,
+    "end_seconds": 2293.359,
+    "text": "in the way that agents MD can get"
+  },
+  {
+    "segment_id": "yt-1028",
+    "start_seconds": 2291.119,
+    "end_seconds": 2294.8,
+    "text": "better. uh open an issue."
+  },
+  {
+    "segment_id": "yt-1029",
+    "start_seconds": 2293.359,
+    "end_seconds": 2295.52,
+    "text": ">> Sam mean what did you bring for us"
+  },
+  {
+    "segment_id": "yt-1030",
+    "start_seconds": 2294.8,
+    "end_seconds": 2297.28,
+    "text": "today?"
+  },
+  {
+    "segment_id": "yt-1031",
+    "start_seconds": 2295.52,
+    "end_seconds": 2301.119,
+    "text": ">> Well, maybe this is cheating a little"
+  },
+  {
+    "segment_id": "yt-1032",
+    "start_seconds": 2297.28,
+    "end_seconds": 2302.6400000000003,
+    "text": "bit, but I do have to shout out the GH"
+  },
+  {
+    "segment_id": "yt-1033",
+    "start_seconds": 2301.119,
+    "end_seconds": 2304.4,
+    "text": "stack CLI."
+  },
+  {
+    "segment_id": "yt-1034",
+    "start_seconds": 2302.64,
+    "end_seconds": 2308.24,
+    "text": ">> Ooh, yes. So good."
+  },
+  {
+    "segment_id": "yt-1035",
+    "start_seconds": 2304.4,
+    "end_seconds": 2309.92,
+    "text": ">> The the stack CLI is is one that uh"
+  },
+  {
+    "segment_id": "yt-1036",
+    "start_seconds": 2308.24,
+    "end_seconds": 2312.24,
+    "text": "there's there's a funny story behind it."
+  },
+  {
+    "segment_id": "yt-1037",
+    "start_seconds": 2309.92,
+    "end_seconds": 2314.88,
+    "text": "So, as we were starting working on the"
+  },
+  {
+    "segment_id": "yt-1038",
+    "start_seconds": 2312.24,
+    "end_seconds": 2317.1189999999997,
+    "text": "stacked PRs project, we actually were"
+  },
+  {
+    "segment_id": "yt-1039",
+    "start_seconds": 2314.88,
+    "end_seconds": 2318.48,
+    "text": "not really planning on a CLI. It was"
+  },
+  {
+    "segment_id": "yt-1040",
+    "start_seconds": 2317.119,
+    "end_seconds": 2321.44,
+    "text": "well, maybe it'll be like something more"
+  },
+  {
+    "segment_id": "yt-1041",
+    "start_seconds": 2318.48,
+    "end_seconds": 2323.04,
+    "text": "lightweight. And as I sort of started"
+  },
+  {
+    "segment_id": "yt-1042",
+    "start_seconds": 2321.44,
+    "end_seconds": 2326.16,
+    "text": "working with folks, I was like, we we"
+  },
+  {
+    "segment_id": "yt-1043",
+    "start_seconds": 2323.04,
+    "end_seconds": 2328.0,
+    "text": "really do need a CLI. And uh as a"
+  },
+  {
+    "segment_id": "yt-1044",
+    "start_seconds": 2326.16,
+    "end_seconds": 2328.96,
+    "text": "product manager, I was like, well, you"
+  },
+  {
+    "segment_id": "yt-1045",
+    "start_seconds": 2328.0,
+    "end_seconds": 2330.079,
+    "text": "know, I'm probably not going to be the"
+  },
+  {
+    "segment_id": "yt-1046",
+    "start_seconds": 2328.96,
+    "end_seconds": 2332.48,
+    "text": "one building this, but I'm going to"
+  },
+  {
+    "segment_id": "yt-1047",
+    "start_seconds": 2330.079,
+    "end_seconds": 2334.48,
+    "text": "start just putting together some some"
+  },
+  {
+    "segment_id": "yt-1048",
+    "start_seconds": 2332.48,
+    "end_seconds": 2336.64,
+    "text": "scripts, some some things to just help,"
+  },
+  {
+    "segment_id": "yt-1049",
+    "start_seconds": 2334.48,
+    "end_seconds": 2338.72,
+    "text": "you know, create some issues and"
+  },
+  {
+    "segment_id": "yt-1050",
+    "start_seconds": 2336.64,
+    "end_seconds": 2340.72,
+    "text": "tickets. And so I had a series of bash"
+  },
+  {
+    "segment_id": "yt-1051",
+    "start_seconds": 2338.72,
+    "end_seconds": 2342.0789999999997,
+    "text": "scripts on my computer that I was like,"
+  },
+  {
+    "segment_id": "yt-1052",
+    "start_seconds": 2340.72,
+    "end_seconds": 2344.24,
+    "text": "\"Yeah, this is how we could, you know,"
+  },
+  {
+    "segment_id": "yt-1053",
+    "start_seconds": 2342.079,
+    "end_seconds": 2345.92,
+    "text": "do run a cascading rebase or here's how"
+  },
+  {
+    "segment_id": "yt-1054",
+    "start_seconds": 2344.24,
+    "end_seconds": 2349.4399999999996,
+    "text": "we could sort of, you know, manage a"
+  },
+  {
+    "segment_id": "yt-1055",
+    "start_seconds": 2345.92,
+    "end_seconds": 2350.8,
+    "text": "stack locally.\" And that that those"
+  },
+  {
+    "segment_id": "yt-1056",
+    "start_seconds": 2349.44,
+    "end_seconds": 2354.0,
+    "text": "scripts just kept building and building"
+  },
+  {
+    "segment_id": "yt-1057",
+    "start_seconds": 2350.8,
+    "end_seconds": 2356.96,
+    "text": "and building. And then I I wrote a"
+  },
+  {
+    "segment_id": "yt-1058",
+    "start_seconds": 2354.0,
+    "end_seconds": 2359.92,
+    "text": "series of of basically documentation for"
+  },
+  {
+    "segment_id": "yt-1059",
+    "start_seconds": 2356.96,
+    "end_seconds": 2361.68,
+    "text": "the CLI to share it with customers and"
+  },
+  {
+    "segment_id": "yt-1060",
+    "start_seconds": 2359.92,
+    "end_seconds": 2363.28,
+    "text": "early users and be like, \"Hey, like does"
+  },
+  {
+    "segment_id": "yt-1061",
+    "start_seconds": 2361.68,
+    "end_seconds": 2364.8799999999997,
+    "text": "this seem like the you know, does this"
+  },
+  {
+    "segment_id": "yt-1062",
+    "start_seconds": 2363.28,
+    "end_seconds": 2366.4,
+    "text": "have all the commands? Would this have"
+  },
+  {
+    "segment_id": "yt-1063",
+    "start_seconds": 2364.88,
+    "end_seconds": 2367.839,
+    "text": "all the things that you would like"
+  },
+  {
+    "segment_id": "yt-1064",
+    "start_seconds": 2366.4,
+    "end_seconds": 2369.76,
+    "text": "need?\" And people like, \"Yeah, we have"
+  },
+  {
+    "segment_id": "yt-1065",
+    "start_seconds": 2367.839,
+    "end_seconds": 2370.88,
+    "text": "feedback or this or that.\" Um, but"
+  },
+  {
+    "segment_id": "yt-1066",
+    "start_seconds": 2369.76,
+    "end_seconds": 2372.8,
+    "text": "ultimately I was like, you know, this is"
+  },
+  {
+    "segment_id": "yt-1067",
+    "start_seconds": 2370.88,
+    "end_seconds": 2375.04,
+    "text": "really hard to get feedback on this if"
+  },
+  {
+    "segment_id": "yt-1068",
+    "start_seconds": 2372.8,
+    "end_seconds": 2376.0,
+    "text": "it's just documentation. And I was like,"
+  },
+  {
+    "segment_id": "yt-1069",
+    "start_seconds": 2375.04,
+    "end_seconds": 2377.599,
+    "text": "you know what? I'm just going to go"
+  },
+  {
+    "segment_id": "yt-1070",
+    "start_seconds": 2376.0,
+    "end_seconds": 2379.599,
+    "text": "ahead and and start building it. And so"
+  },
+  {
+    "segment_id": "yt-1071",
+    "start_seconds": 2377.599,
+    "end_seconds": 2382.56,
+    "text": "I just started started building the the"
+  },
+  {
+    "segment_id": "yt-1072",
+    "start_seconds": 2379.599,
+    "end_seconds": 2384.7200000000003,
+    "text": "CLI and it went from something that was"
+  },
+  {
+    "segment_id": "yt-1073",
+    "start_seconds": 2382.56,
+    "end_seconds": 2387.04,
+    "text": "written completely in in bash to I"
+  },
+  {
+    "segment_id": "yt-1074",
+    "start_seconds": 2384.72,
+    "end_seconds": 2389.4399999999996,
+    "text": "rewrote it in Go uh which is actually"
+  },
+  {
+    "segment_id": "yt-1075",
+    "start_seconds": 2387.04,
+    "end_seconds": 2392.88,
+    "text": "what the main GH CLI is is written in as"
+  },
+  {
+    "segment_id": "yt-1076",
+    "start_seconds": 2389.44,
+    "end_seconds": 2395.52,
+    "text": "well and has turned into this behemoth"
+  },
+  {
+    "segment_id": "yt-1077",
+    "start_seconds": 2392.88,
+    "end_seconds": 2397.119,
+    "text": "that does local stack operations that"
+  },
+  {
+    "segment_id": "yt-1078",
+    "start_seconds": 2395.52,
+    "end_seconds": 2399.7599999999998,
+    "text": "can of course push up and create your"
+  },
+  {
+    "segment_id": "yt-1079",
+    "start_seconds": 2397.119,
+    "end_seconds": 2401.359,
+    "text": "stack PRs. has all these tuies, these"
+  },
+  {
+    "segment_id": "yt-1080",
+    "start_seconds": 2399.76,
+    "end_seconds": 2404.96,
+    "text": "cool graphical interfaces in your"
+  },
+  {
+    "segment_id": "yt-1081",
+    "start_seconds": 2401.359,
+    "end_seconds": 2407.119,
+    "text": "terminal for viewing a stack that for uh"
+  },
+  {
+    "segment_id": "yt-1082",
+    "start_seconds": 2404.96,
+    "end_seconds": 2408.64,
+    "text": "submitting a stack of PRs, for modifying"
+  },
+  {
+    "segment_id": "yt-1083",
+    "start_seconds": 2407.119,
+    "end_seconds": 2411.6800000000003,
+    "text": "a stack. I had a lot of fun with those"
+  },
+  {
+    "segment_id": "yt-1084",
+    "start_seconds": 2408.64,
+    "end_seconds": 2413.2799999999997,
+    "text": "for sure. Uh but would definitely, you"
+  },
+  {
+    "segment_id": "yt-1085",
+    "start_seconds": 2411.68,
+    "end_seconds": 2415.1189999999997,
+    "text": "know, encourage folks to like check it"
+  },
+  {
+    "segment_id": "yt-1086",
+    "start_seconds": 2413.28,
+    "end_seconds": 2417.6800000000003,
+    "text": "out, especially if you know, again, it's"
+  },
+  {
+    "segment_id": "yt-1087",
+    "start_seconds": 2415.119,
+    "end_seconds": 2420.1600000000003,
+    "text": "open source, so feel free to fork it. Uh"
+  },
+  {
+    "segment_id": "yt-1088",
+    "start_seconds": 2417.68,
+    "end_seconds": 2423.1189999999997,
+    "text": "leave your uh suggestions, file an"
+  },
+  {
+    "segment_id": "yt-1089",
+    "start_seconds": 2420.16,
+    "end_seconds": 2424.48,
+    "text": "issue. There's a lot I I I have on my"
+  },
+  {
+    "segment_id": "yt-1090",
+    "start_seconds": 2423.119,
+    "end_seconds": 2426.4,
+    "text": "road map that I want to continue to"
+  },
+  {
+    "segment_id": "yt-1091",
+    "start_seconds": 2424.48,
+    "end_seconds": 2428.64,
+    "text": "improve there. And again, would really"
+  },
+  {
+    "segment_id": "yt-1092",
+    "start_seconds": 2426.4,
+    "end_seconds": 2430.8,
+    "text": "love a bunch of feedback on it because"
+  },
+  {
+    "segment_id": "yt-1093",
+    "start_seconds": 2428.64,
+    "end_seconds": 2433.04,
+    "text": "it's one of those things that we really"
+  },
+  {
+    "segment_id": "yt-1094",
+    "start_seconds": 2430.8,
+    "end_seconds": 2434.88,
+    "text": "want to make it a core part of the STAX"
+  },
+  {
+    "segment_id": "yt-1095",
+    "start_seconds": 2433.04,
+    "end_seconds": 2437.7599999999998,
+    "text": "experience and there's a lot more that I"
+  },
+  {
+    "segment_id": "yt-1096",
+    "start_seconds": 2434.88,
+    "end_seconds": 2439.119,
+    "text": "know we want to do and it I had a lot of"
+  },
+  {
+    "segment_id": "yt-1097",
+    "start_seconds": 2437.76,
+    "end_seconds": 2442.4,
+    "text": "fun building it."
+  },
+  {
+    "segment_id": "yt-1098",
+    "start_seconds": 2439.119,
+    "end_seconds": 2444.0,
+    "text": ">> It's a gorgeous CLI. Like it is you're"
+  },
+  {
+    "segment_id": "yt-1099",
+    "start_seconds": 2442.4,
+    "end_seconds": 2445.839,
+    "text": "just like, \"Oh yeah, no big deal. I just"
+  },
+  {
+    "segment_id": "yt-1100",
+    "start_seconds": 2444.0,
+    "end_seconds": 2447.839,
+    "text": "rewrote it all in Go and now it's a"
+  },
+  {
+    "segment_id": "yt-1101",
+    "start_seconds": 2445.839,
+    "end_seconds": 2450.0789999999997,
+    "text": "spectacular CLI tool that people are"
+  },
+  {
+    "segment_id": "yt-1102",
+    "start_seconds": 2447.839,
+    "end_seconds": 2451.7599999999998,
+    "text": "using.\" the fact that you can rearrange"
+  },
+  {
+    "segment_id": "yt-1103",
+    "start_seconds": 2450.079,
+    "end_seconds": 2453.8390000000004,
+    "text": "your stack or remove something in the"
+  },
+  {
+    "segment_id": "yt-1104",
+    "start_seconds": 2451.76,
+    "end_seconds": 2457.0400000000004,
+    "text": "middle, add something at the end, it's"
+  },
+  {
+    "segment_id": "yt-1105",
+    "start_seconds": 2453.839,
+    "end_seconds": 2459.2799999999997,
+    "text": "it's so well done and looks so good for"
+  },
+  {
+    "segment_id": "yt-1106",
+    "start_seconds": 2457.04,
+    "end_seconds": 2460.8,
+    "text": "a terminal user interface. I I was so"
+  },
+  {
+    "segment_id": "yt-1107",
+    "start_seconds": 2459.28,
+    "end_seconds": 2463.599,
+    "text": "impressed with it the first time I tried"
+  },
+  {
+    "segment_id": "yt-1108",
+    "start_seconds": 2460.8,
+    "end_seconds": 2465.8390000000004,
+    "text": "it and so don't be humble. It's an it's"
+  },
+  {
+    "segment_id": "yt-1109",
+    "start_seconds": 2463.599,
+    "end_seconds": 2466.6400000000003,
+    "text": "an awesome CLI tool."
+  },
+  {
+    "segment_id": "yt-1110",
+    "start_seconds": 2465.839,
+    "end_seconds": 2468.7999999999997,
+    "text": ">> Thanks."
+  },
+  {
+    "segment_id": "yt-1111",
+    "start_seconds": 2466.64,
+    "end_seconds": 2470.8799999999997,
+    "text": ">> Okay, that being said, everybody, we've"
+  },
+  {
+    "segment_id": "yt-1112",
+    "start_seconds": 2468.8,
+    "end_seconds": 2472.88,
+    "text": "made it to the end of our episode. Thank"
+  },
+  {
+    "segment_id": "yt-1113",
+    "start_seconds": 2470.88,
+    "end_seconds": 2474.56,
+    "text": "you so much for joining us today. I have"
+  },
+  {
+    "segment_id": "yt-1114",
+    "start_seconds": 2472.88,
+    "end_seconds": 2478.8,
+    "text": "been Cassidy Williams. You can find me"
+  },
+  {
+    "segment_id": "yt-1115",
+    "start_seconds": 2474.56,
+    "end_seconds": 2481.68,
+    "text": "at Cassadoo C A S I D O O on most things"
+  },
+  {
+    "segment_id": "yt-1116",
+    "start_seconds": 2478.8,
+    "end_seconds": 2484.8,
+    "text": ">> and I still am Andrea Griffets and you"
+  },
+  {
+    "segment_id": "yt-1117",
+    "start_seconds": 2481.68,
+    "end_seconds": 2487.44,
+    "text": "can find me at Colombia Dev in most"
+  },
+  {
+    "segment_id": "yt-1118",
+    "start_seconds": 2484.8,
+    "end_seconds": 2488.6400000000003,
+    "text": "places. Uh please reach out. Let us"
+  },
+  {
+    "segment_id": "yt-1119",
+    "start_seconds": 2487.44,
+    "end_seconds": 2490.56,
+    "text": "know. You know, we never ask for"
+  },
+  {
+    "segment_id": "yt-1120",
+    "start_seconds": 2488.64,
+    "end_seconds": 2492.96,
+    "text": "feedback. Let us know how you like this"
+  },
+  {
+    "segment_id": "yt-1121",
+    "start_seconds": 2490.56,
+    "end_seconds": 2494.72,
+    "text": "episode. Did you hate it? Send it to"
+  },
+  {
+    "segment_id": "yt-1122",
+    "start_seconds": 2492.96,
+    "end_seconds": 2497.2,
+    "text": "your friends and your enemies"
+  },
+  {
+    "segment_id": "yt-1123",
+    "start_seconds": 2494.72,
+    "end_seconds": 2499.359,
+    "text": ">> and say you love it. [laughter]"
+  },
+  {
+    "segment_id": "yt-1124",
+    "start_seconds": 2497.2,
+    "end_seconds": 2501.359,
+    "text": ">> And Seamine, where could people find you"
+  },
+  {
+    "segment_id": "yt-1125",
+    "start_seconds": 2499.359,
+    "end_seconds": 2504.64,
+    "text": "on the internet?"
+  },
+  {
+    "segment_id": "yt-1126",
+    "start_seconds": 2501.359,
+    "end_seconds": 2508.0,
+    "text": "Uh, you can find me at Samine Karim on"
+  },
+  {
+    "segment_id": "yt-1127",
+    "start_seconds": 2504.64,
+    "end_seconds": 2509.2799999999997,
+    "text": "Twitter or escare on GitHub."
+  },
+  {
+    "segment_id": "yt-1128",
+    "start_seconds": 2508.0,
+    "end_seconds": 2511.76,
+    "text": ">> All right, y'all. We'll see you next"
+  },
+  {
+    "segment_id": "yt-1129",
+    "start_seconds": 2509.28,
+    "end_seconds": 2514.76,
+    "text": "time. Bye bye."
+  },
+  {
+    "segment_id": "yt-1130",
+    "start_seconds": 2511.76,
+    "end_seconds": 2514.76,
+    "text": ">> Bye."
+  }
+]

@@ -1,0 +1,101 @@
+Distributed databases with Peter Mattis - by Gergely Orosz
+The Pragmatic Engineer
+Subscribe Sign in The Pragmatic Engineer Distributed databases with Peter Mattis 72 1 4 1 × 0:00 Current time : 0:00 / Total time : -1:41:49 -1:41:49 Audio playback is not supported on your browser. Please upgrade. Distributed databases with Peter Mattis
+Cockroach Labs co-founder Peter Mattis discusses building reliable distributed systems and how AI helps him write more code without sacrificing quality. Gergely Orosz Sep 30, 2026 72 1 4 Share Transcript Stream the latest episode
+Listen and watch now on YouTube , Apple , and Spotify . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.
+Brought to You by
+• turbopuffer – The turbopuffer engineering team is doing something really cool: they are completely redesigning their storage architecture from first principles to make search faster, cheaper, and more reliable at scale. And they’re documenting all of it! Follow along their rewrite at turbopuffer.com/v3
+• Linear – most of us work with agents in a “single-player” setting. Linear’s take is agent work should be teamwork: your teammates can follow the session of the agent, check out the PR it produces, and join the review. Works with Codex, Cursor, Linear’s own agent, or custom agents. Check it out
+• WorkOS – how do you deal with agents and permissions? WorkOS built Airlock , the authorization layer for AI agents. It evaluates every request against the agent’s intent and your rules and either allows it, denies it, or routes it to a human for approval. Works with Claude Code, Codex and MCP gateways. Give it a spin .
+In this episode
+How is it that a software veteran who regularly shipped ~100K of database-grade code to production each year, pre-AI, feels like he’s even more productive today, with no drop in quality? Peter Mattis is co-founder and CTO of Cockroach Labs , and an original creator of GIMP. He also worked on Gmail and distributed storage at Google.
+In this episode, Peter reflects on his journey from open source to Google to founding a database company, and we explore how to keep systems fast, reliable, and correct at scale, from Gmail’s early storage challenges to the tradeoffs in building distributed databases.
+Peter tells us how AI has brought him back to writing code after his work shifted toward management, and why he believes AI can improve quality and multiply the impact of domain experts. We also consider the future of code review, and Peter has some advice about how to level up our engineering skills.
+Takeaways from the conversation with Peter
+1. Peter initially turned down Sergey Brin’s offer to join Google because of the commute. The very first version of the famous Google logo was made in GIMP, the free, open-source raster graphics and image editing software created by Peter and his college roommate Spencer Kimball.
+The first version of the Google logo, created by GIMP In 2001, Sergey reached out to Peter, invited him to an interview and then made an offer. But Peter said “no” because he lived in San Francisco and did not fancy the hour-long commute to Mountain View. Instead, he joined another startup, but that didn’t go anywhere. When Google reached out again, he took the chance.
+2. Peter almost did not ship GIMP after learning about an even more ambitious photo editor. Peter and Spencer worked hard on GIMP, but a few weeks before launching it, they saw an announcement about another program that promised to do everything GIMP did – and then some! Peter and Spencer felt discouraged but shipped anyway – and the rest is history. They never heard about the other ambitious project again. “There’s always going to be someone else working on your idea,” says Peter. “You can’t get dissuaded if they pre-announce it. To founders: assume that dozens of people have the same idea you have, but most won’t ship it! Know that it’s a competition; you’ve got to enjoy that aspect of it – don’t be afraid of it.”
+3. B-trees were used in the first version of Gmail. Gmail launched on 1 April 2004, offering 1GB of email storage for free, an offer seen as so ridiculously generous at the time that most people assumed it was an April Fool’s joke! B-trees played a role in Gmail’s storage layer, thanks to storing email threads. Under the hood, each incoming message was matched to a thread using the search index. Threads and their unread counts were tracked by B-trees.
+4. Colossus reduced Google’s file storage overhead by 33%, while increasing redundancy. Before Colossus, Google File System (GFS) stored three full copies of data. For Colossus, which became GFS’s successor, Peter and the team pioneered Reed–Solomon erasure coding in a distributed file system. Data was stored twice, but redundancy increased!
+5. The fastest way to send a packet around the globe is through space! Peter keeps “speed of light numbers” in his head – similar to what turbopuffer founder Simon Eskildsen does with ”napkin math” calculations. For example, a network round trip within a zone went from milliseconds when Colossus was built to about 100 microseconds today (10x faster!). But sometimes the bottleneck is the speed of light, and as light speed is faster in a vacuum than anywhere else, that means the fastest global route is straight up to Starlink, across by laser, and then back down. Find out more in ‘ Delay is not an option: low latency routing in space ’.
+6. Peter twice “beat” standard library data structures in performance terms. At Google, one of his colleagues noticed that std::map showed up in memory profiles. Peter looked closer and figured out that the std::map implementation is a red-black tree , meaning every node has two pointers. Peter built a B-tree with nearly the same semantics which was both faster, due to spatial locality, and smaller because it used fewer pointers. They used this data structure inside Google. Peter also did something similar with Go’s map: it was performant, but he built a Swiss Table implementation that was faster. That implementation later made it into the Go library, with the Go team helping to finish it!
+7. If you squint hard, everything in distributed databases and storage systems starts looking like a B-tree. These B-trees are a recurring theme in this podcast episode: the backend of Gmail, the std::map replacement, CockroachDB’s range index, etc. There’s even a paper on this phenomenon, The Ubiquitous B-Tree .
+A B-tree: a very useful data structure. Source: Wikipedia 8. For consensus in a distributed database, at least three replicas are needed. With only one, recovery after it crashes isn’t possible. With primary and secondary replicas, neither one will know if the other received the last write following a crash. So, CockroachDB uses three replicas by default – and up to five for some system tables – and customers can add more, although this will result in higher latency.
+9. CockroachDB’s design was inspired by Google’s Colossus data storage system and Spanner. Colossus was append-only, meaning you could only add to files and not mutate them. Google’s distributed database, Spanner, was built on top of Colossus, and so Spanner’s design decisions came from Colossus’ append-only nature. But if you cannot update files and only append to them, it’s not possible to use B-trees as the database’s design structure since B-trees need the files to be updated. An ideal data structure for append-only filesystems is the Log-structured merge tree (LSM tree), where writes are appended to a log file for durability:
+A log-structured merge tree. Source: Wikipedia Google popularized LSMs with LevelDB , and RocksDB later forked LevelDB. RocksDB was the underlying storage engine that CockroachDB used in its early years. In 2019, Peter wrote and open sourced Pebble , which is now CockroachDB’s storage engine.
+10. Peter, the former C++ readability reviewer at Google, predicts we will stop reviewing code: At Google, every code change needs to be signed off for “readability” by a language readability reviewer, and Peter was a C++ readability reviewer for years. But these days, he’s reviewing less code and foresees this continuing. As he puts it: “What I’m finding is the agents are getting better; you’re having to give less and less scrutiny. I don’t know if it’s going to be this year or next, [but] we’re materially going to stop looking at the code in the same way we don’t look at assembly anymore.”
+11. Non-engineers at Cockroach Labs built ~1,000 internal apps (!!) in a couple of months. Earlier this year, Cockroach Labs launched an internal platform for non-devs to build apps (think of it as an “internal Lovable”). Folks jumped at it; HR professionals built new tools they’d only dreamt of, while the CFO created the dashboards they’d always longed for, and many others too. Peter and the engineering team were surprised at this uptake, but it chimes with how OpenAI saw nearly all its non-engineers move almost their entire token spend from ChatGPT to Codex within just 4 months.
+12. Does “flow” still exist with AI? I asked Peter this, and he believes it does, but it’s different from the “coding flow” state: “It definitely feels a bit different. It’s maybe a bit less intense, but you’re managing more things cognitively. I’m thinking of ideas that normally would’ve taken me a week to experiment with. And I think of multiple of these experiments and then fire them off all simultaneously. [It feels as] if I was a college professor with a whole swarm of research assistants, and they’re all off doing things and it’s coming back really rapidly.”
+The Pragmatic Engineer deepdives relevant for this episode
+• Inside Google’s Engineering Culture
+• Resiliency in distributed systems
+• How to debug large, distributed systems: Antithesis
+• Pushing software engineering limits with “napkin math”
+• Designing Data-intensive Applications with Martin Kleppmann
+• Formal methods with Hillel Wayne
+Timestamps
+00:00 Intro
+02:42 Peter’s path into tech
+04:00 Building GIMP
+09:30 Working on Gmail at Google
+14:51 Google’s infra: google3, build files, Bazel, and Colossus
+21:30 Distributed storage bottlenecks
+23:59 Latency, throughput, and availability
+30:04 Contributing to libraries
+41:52 Google Spanner
+46:10 CockroachDB
+52:00 Manual vs. automatic sharding
+55:28 Consistency models and strong consistency
+1:00:03 Raft consensus
+1:06:15 How AI brought Peter back to coding
+1:19:12 Peter’s tools and agentic workflows
+1:23:08 How AI can improve quality
+1:26:39 Code reviews: are they done?
+1:29:17 100x engineers
+1:35:33 Peter’s advice for leveling up your engineering skills
+References
+Where to find Peter Mattis:
+• X: https://x.com/petermattis
+• LinkedIn: https://www.linkedin.com/in/peter-mattis-46549144
+Mentions during the episode:
+• Cockroach Labs: https://www.cockroachlabs.com
+• GIMP: https://www.gimp.org
+• Usenet: https://en.wikipedia.org/wiki/Usenet
+• Larry Page: https://en.wikipedia.org/wiki/Larry_Page
+• Sergey Brin: https://en.wikipedia.org/wiki/Sergey_Brin
+• Paul Buchheit on X: https://x.com/paultoo
+• Y Combinator: https://www.ycombinator.com
+• Delay is Not an Option: Low Latency Routing in Space: https://discovery.ucl.ac.uk/id/eprint/10062262/7/Handley_hotnets.pdf
+• Bazel: https://opensource.google/projects/bazel
+• Colossus under the hood: a peek into Google’s scalable storage system: https://cloud.google.com/blog/products/storage-data-transfer/a-peek-behind-colossus-googles-file-system
+• Pushing software engineering limits with “napkin math”: https://newsletter.pragmaticengineer.com/p/pushing-software-engineering-limits
+• turbopuffer: https://turbopuffer.com
+• Trimodal Nature of Tech Compensation in the US, UK and India: https://newsletter.pragmaticengineer.com/p/trimodal
+• Quicksort: https://en.wikipedia.org/wiki/Quicksort
+• B-tree: https://en.wikipedia.org/wiki/B-tree
+• Go: https://go.dev
+• Google Goggles: https://en.wikipedia.org/wiki/Google_Goggles
+• Spencer Kimball on LinkedIn: linkedin.com/in/spencerwkimball
+• Ben Darnell: https://en.wikipedia.org/wiki/Ben_Darnell
+• The Ubiquitous B-Tree: https://dl.acm.org/doi/pdf/10.1145/356770.356776
+• Paxos: https://martinfowler.com/articles/patterns-of-distributed-systems/paxos.html
+• Raft is so fetch: The Raft Consensus Algorithm explained through “Mean Girls”: https://www.cockroachlabs.com/blog/raft-is-so-fetch/
+• DoorDash: https://www.doordash.com
+• RocksDB: https://rocksdb.org
+• Rubber duck debugging: https://rubberduckdebugging.com
+• Claude Code: https://claude.com/product/claude-code
+• Codex: https://chatgpt.com/codex
+• Building Claude Code with Boris Cherny: https://newsletter.pragmaticengineer.com/p/building-claude-code-with-boris-cherny
+• Programming TypeScript: https://www.oreilly.com/library/view/programming-typescript/9781492037644
+• Building Codex with Tibo Sottiaux: https://newsletter.pragmaticengineer.com/p/building-codex-with-tibo-sottiaux
+• Terence Tao Digests the Jacobian Conjecture Counterexample: How Claude Fable 5 Broke an 87-Year-Old Math Problem: https://www.developersdigest.tech/blog/jacobian-conjecture-counterexample-fable
+• Jeff Dean on LinkedIn: https://www.linkedin.com/in/jeff-dean-8b212555
+• Sanjay Ghemawat on LinkedIn: https://www.linkedin.com/in/sanjay-ghemawat-763485428
+—
+Production and marketing by Pen Name .
+Discussion about this episode
+Comments Restacks THIS EPISODE IS PRESENTED BY The Pragmatic Engineer Software engineering at Big Tech and startups, from the inside. Deepdives with experienced engineers and tech professionals who share their hard-earned lessons, interesting stories and advice they have on building software.
+Especially relevant for software engineers and engineering leaders: useful for those working in tech. Software engineering at Big Tech and startups, from the inside. Deepdives with experienced engineers and tech professionals who share their hard-earned lessons, interesting stories and advice they have on building software.
+Especially relevant for software engineers and engineering leaders: useful for those working in tech. Subscribe Listen on Substack App Apple Podcasts Spotify YouTube Music YouTube RSS Feed Appears in episode Gergely Orosz Recent Episodes Uber’s AI infra, from the inside Oct 14 • Gergely Orosz Building resilient systems with Sam Newman Oct 7 • Gergely Orosz Design Engineering with Maggie Appleton Sep 23 • Gergely Orosz AI Skills with Matt Pocock Sep 17 • Gergely Orosz Building Codex with Tibo Sottiaux Sep 9 • Gergely Orosz Why performant code matters (but gets widely ignored), with Casey Muratori Aug 26 • Gergely Orosz From Chrome DevTools to AI Engineering, with Addy Osmani Aug 19 • Gergely Orosz Ready for more?
+Subscribe © 2026 Gergely Orosz · Privacy ∙ Terms ∙ Collection notice Start your Substack Get the app Substack is the home for great culture
+This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts

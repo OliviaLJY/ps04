@@ -1,0 +1,3 @@
+# Retained evidence is byte-for-byte source material; do not rewrite it to
+# satisfy source-code whitespace conventions.
+data/assets/** -whitespace

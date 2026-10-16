@@ -1,0 +1,59 @@
+Tool: Chirp Pong
+Simon Willison’s Weblog
+Newsletter
+Sponsored by: Pomerium — Static OAuth scopes won't stop AI agent breakouts. Upgrade to Pomerium's agentic access management trusted by NVIDIA and OpenAI
+15th October 2026
+Tool
+Chirp Pong
+Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone. It seems to work!
+Build a two player competitive pong like game where two players use their phones close to each other and the game state is sent via audio noises which the web microphone API can interpret - but add graphical and gameplay twists to make it a lot more fun and intertwine than pong
+Claude Opus 5.5 Extra in Claude Code .
+Posted 15th October 2026 at 7:47 pm
+Recent articles
+Hello Python 3.15, goodbye 3.10, and now I can use 3.11 - 12th October 2026
+A new feature for my blog, built using my voice - 9th October 2026
+Claude Haiku 5.5 - 7th October 2026
+We're going to need default hard budget caps on pretty much everything - 3rd October 2026
+This is a beat by Simon Willison, posted on 15th October 2026 .
+game-design
+25
+ai
+2,283
+generative-ai
+2,025
+llms
+1,991
+claude-code
+130
+Monthly briefing
+Sponsor me for $10/month and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
