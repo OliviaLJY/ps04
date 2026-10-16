@@ -45,9 +45,16 @@ def main():
             path=package/f"sources-{brief['piece_id']}.md"; path.write_text("\n".join(notes)+"\n",encoding="utf-8")
             assets.append({"piece_id":brief["piece_id"],"kind":"source_notes","path":repo_path(path)})
         dump_json(links_path,links)
+        manual_steps=[]
+        if any(not link.get("substack_url") for link in links):
+            manual_steps.append("Publish each reviewed article on Substack and record its URL.")
+        if any(not link.get("youtube_url") for link in links):
+            manual_steps.extend(["Render each script in Google Vids or HeyGen and apply human corrections.",
+                                 "Upload each rendered video to YouTube with source notes and the article URL."])
+        if any(not link.get("substack_url") or not link.get("youtube_url") for link in links):
+            manual_steps.append("Replace remaining null URLs in publication_links.json and verify share access.")
         manifest={"run_id":load_json(run/"run.json")["run_id"],"review_id":review["review_id"],"assets":assets,
-                  "publication_links_path":repo_path(links_path),
-                  "manual_steps":["Render each script in Google Vids or HeyGen and apply human corrections.","Publish each reviewed article on Substack and link its video.","Upload each rendered video to YouTube with source notes and the article URL.","Replace null URLs in publication_links.json and verify share access."]}
+                  "publication_links_path":repo_path(links_path),"manual_steps":manual_steps}
         dump_json(package/"manifest.json",manifest); print(json.dumps(manifest,ensure_ascii=False,indent=2))
         receipt(run,"prepare-package","completed",started,6,len(assets),tools=["python-file-packager"]); return 0
     except RuntimeError as exc:

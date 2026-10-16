@@ -52,7 +52,7 @@
       ]
     }
   ],
-  "elapsed_seconds": 217.04,
+  "elapsed_seconds": 217.101,
   "tools_or_models": [
     "deterministic schema normalization/rebalance",
     "gemini-flash-lite-latest",
@@ -77,23 +77,23 @@
   "remaining_manual_actions": [
     "Inspect at least three accepted and three rejected/deferred decisions.",
     "Revise policy and preserve the comparison run.",
-    "Render in Google Vids or HeyGen, publish on Substack/YouTube, and verify links.",
+    "Render in Google Vids or HeyGen, publish on YouTube, and verify links.",
     "Record the separate technical demonstration."
   ],
   "publication_links": [
     {
       "piece_id": "01",
-      "substack_url": null,
+      "substack_url": "https://jiayuli2.substack.com/p/the-shift-in-engineering-velocity",
       "youtube_url": null
     },
     {
       "piece_id": "02",
-      "substack_url": null,
+      "substack_url": "https://jiayuli2.substack.com/p/scrutinizing-agent-reliability-and",
       "youtube_url": null
     },
     {
       "piece_id": "03",
-      "substack_url": null,
+      "substack_url": "https://jiayuli2.substack.com/p/enterprise-implications-and-what",
       "youtube_url": null
     }
   ]

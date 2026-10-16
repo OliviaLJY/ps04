@@ -38,12 +38,16 @@ def main():
         raw=len(candidates) if candidates is not None else None; distinct=len({x["item_id"] for x in candidates}) if candidates is not None else None
         known_costs=[x["cost_usd"] for x in receipts if isinstance(x.get("cost_usd"),(int,float))]
         unknown=[x.get("stage") for x in receipts if x.get("cost_usd") is None]
+        publication_links=load_json(run/"package/publication_links.json") if (run/"package/publication_links.json").is_file() else []
         manual_actions=["Inspect at least three accepted and three rejected/deferred decisions.",
                         "Revise policy and preserve the comparison run."]
         if not approval or approval.get("decision")!="approve" or approval.get("review_id")!=(review or {}).get("review_id"):
             manual_actions.append("Create matching human approval.json after corrections.")
-        manual_actions.extend(["Render in Google Vids or HeyGen, publish on Substack/YouTube, and verify links.",
-                               "Record the separate technical demonstration."])
+        if not publication_links or any(not link.get("substack_url") for link in publication_links):
+            manual_actions.append("Publish the reviewed articles on Substack and verify links.")
+        if not publication_links or any(not link.get("youtube_url") for link in publication_links):
+            manual_actions.append("Render in Google Vids or HeyGen, publish on YouTube, and verify links.")
+        manual_actions.append("Record the separate technical demonstration.")
         summary={"run_id":meta["run_id"],"status":status,"counts":{"discovered":raw,"distinct_discovered":distinct,"duplicate_observations":None if raw is None else raw-distinct,
                   "extracted":None if items is None else len(items),"new":count_where(changes,"change","new"),"changed":count_where(changes,"change","changed"),"unchanged":count_where(changes,"change","unchanged"),
                   "eligible":None if eligible is None else len(eligible),"excluded":None if exclusions is None else len(exclusions),"accepted":count_where(decisions,"decision","accept"),"rejected":count_where(decisions,"decision","reject"),"deferred":count_where(decisions,"decision","defer"),
@@ -53,7 +57,7 @@ def main():
                  "tools_or_models":sorted({tool for x in receipts for tool in x.get("tools_or_models",[])}),
                  "cost":{"known_or_estimated_usd":round(sum(known_costs),4),"unknown_stage_costs":unknown},
                  "remaining_manual_actions":manual_actions,
-                 "publication_links":load_json(run/"package/publication_links.json") if (run/"package/publication_links.json").is_file() else []}
+                 "publication_links":publication_links}
         print(json.dumps(summary,ensure_ascii=False,indent=2)); return 0
     except (IndexError,ValueError,KeyError,json.JSONDecodeError) as exc:
         print(exc,file=sys.stderr); return 2

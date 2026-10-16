@@ -51,8 +51,7 @@
   "publication_links_path": "runs/20261016T171912Z-50786/package/publication_links.json",
   "manual_steps": [
     "Render each script in Google Vids or HeyGen and apply human corrections.",
-    "Publish each reviewed article on Substack and link its video.",
     "Upload each rendered video to YouTube with source notes and the article URL.",
-    "Replace null URLs in publication_links.json and verify share access."
+    "Replace remaining null URLs in publication_links.json and verify share access."
   ]
 }
