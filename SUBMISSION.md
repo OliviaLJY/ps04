@@ -22,7 +22,7 @@ This document is the entry point to the completed Agent Operations Brief pipelin
 | 2 | Scrutinizing Agent Reliability and Evidence Tensions | [Substack](https://jiayuli2.substack.com/p/scrutinizing-agent-reliability-and) | [YouTube](https://youtu.be/jrnvnG0aBts) |
 | 3 | Enterprise Implications and What to Watch Next | [Substack](https://jiayuli2.substack.com/p/enterprise-implications-and-what) | [YouTube](https://youtu.be/pf7xPDqorgI) |
 
-**Separate technical demonstration video:** Pending final 4–6 minute recording and upload; add the shareable URL here before submission.
+**Separate technical demonstration video:** [YouTube](https://youtu.be/VPIDv-zWuC4)
 
 ## Setup and Execution
 
