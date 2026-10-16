@@ -1,6 +1,6 @@
 {
   "run_id": "20261016T171912Z-50786",
-  "status": "awaiting_review",
+  "status": "ready_for_production",
   "counts": {
     "discovered": 64,
     "distinct_discovered": 64,
@@ -52,13 +52,14 @@
       ]
     }
   ],
-  "elapsed_seconds": 216.975,
+  "elapsed_seconds": 217.04,
   "tools_or_models": [
     "deterministic schema normalization/rebalance",
     "gemini-flash-lite-latest",
     "html-text-extractor",
     "json-version-store",
     "python-datetime",
+    "python-file-packager",
     "python-urllib",
     "structural-evidence-checker",
     "xml.etree.ElementTree",
@@ -76,9 +77,24 @@
   "remaining_manual_actions": [
     "Inspect at least three accepted and three rejected/deferred decisions.",
     "Revise policy and preserve the comparison run.",
-    "Create matching human approval.json after corrections.",
     "Render in Google Vids or HeyGen, publish on Substack/YouTube, and verify links.",
     "Record the separate technical demonstration."
   ],
-  "publication_links": []
+  "publication_links": [
+    {
+      "piece_id": "01",
+      "substack_url": null,
+      "youtube_url": null
+    },
+    {
+      "piece_id": "02",
+      "substack_url": null,
+      "youtube_url": null
+    },
+    {
+      "piece_id": "03",
+      "substack_url": null,
+      "youtube_url": null
+    }
+  ]
 }

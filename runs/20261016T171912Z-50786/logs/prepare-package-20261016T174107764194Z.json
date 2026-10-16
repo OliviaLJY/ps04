@@ -1,0 +1,15 @@
+{
+  "stage": "prepare-package",
+  "status": "completed",
+  "input_count": 6,
+  "output_count": 9,
+  "started_at": "2026-10-16T17:41:07Z",
+  "finished_at": "2026-10-16T17:41:07Z",
+  "elapsed_seconds": 0.053,
+  "tools_or_models": [
+    "python-file-packager"
+  ],
+  "cost_usd": 0.0,
+  "cost_estimated": false,
+  "errors": []
+}

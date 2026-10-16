@@ -1,0 +1,58 @@
+{
+  "run_id": "20261016T171912Z-50786",
+  "review_id": "b57ec781c5506841f30c95b0b594858ed7b295a98085193184f50ed307c3e96e",
+  "assets": [
+    {
+      "piece_id": "01",
+      "kind": "article",
+      "path": "runs/20261016T171912Z-50786/package/articles/01.md"
+    },
+    {
+      "piece_id": "02",
+      "kind": "article",
+      "path": "runs/20261016T171912Z-50786/package/articles/02.md"
+    },
+    {
+      "piece_id": "03",
+      "kind": "article",
+      "path": "runs/20261016T171912Z-50786/package/articles/03.md"
+    },
+    {
+      "piece_id": "01",
+      "kind": "video_script",
+      "path": "runs/20261016T171912Z-50786/package/video_scripts/01.md"
+    },
+    {
+      "piece_id": "02",
+      "kind": "video_script",
+      "path": "runs/20261016T171912Z-50786/package/video_scripts/02.md"
+    },
+    {
+      "piece_id": "03",
+      "kind": "video_script",
+      "path": "runs/20261016T171912Z-50786/package/video_scripts/03.md"
+    },
+    {
+      "piece_id": "01",
+      "kind": "source_notes",
+      "path": "runs/20261016T171912Z-50786/package/sources-01.md"
+    },
+    {
+      "piece_id": "02",
+      "kind": "source_notes",
+      "path": "runs/20261016T171912Z-50786/package/sources-02.md"
+    },
+    {
+      "piece_id": "03",
+      "kind": "source_notes",
+      "path": "runs/20261016T171912Z-50786/package/sources-03.md"
+    }
+  ],
+  "publication_links_path": "runs/20261016T171912Z-50786/package/publication_links.json",
+  "manual_steps": [
+    "Render each script in Google Vids or HeyGen and apply human corrections.",
+    "Publish each reviewed article on Substack and link its video.",
+    "Upload each rendered video to YouTube with source notes and the article URL.",
+    "Replace null URLs in publication_links.json and verify share access."
+  ]
+}
